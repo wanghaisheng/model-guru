@@ -1,0 +1,89 @@
+.report-preview {
+    margin: 2rem 0;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.report-preview-content {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.preview-header {
+    margin-bottom: 1.5rem;
+}
+
+.preview-header h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.user-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+    font-style: italic;
+}
+
+.user-name {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.blur-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    background: linear-gradient(to bottom, transparent, var(--bg-secondary));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.blur-overlay .btn {
+    background: var(--primary);
+    color: var(--text-on-primary);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.blur-overlay .btn:hover {
+    background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .report-preview-content {
+        padding: 1rem;
+    }
+
+    .user-testimonial {
+        padding: 0.75rem;
+    }
+}

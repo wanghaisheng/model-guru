@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  <path d="M350 150h100v100h-100z" fill="none" stroke="currentColor" stroke-width="4"/>
+  <path d="M375 175l50 50M425 175l-50 50" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="320" text-anchor="middle" fill="currentColor" font-family="Arial" font-size="24">Blog Post Image</text>
+</svg> 

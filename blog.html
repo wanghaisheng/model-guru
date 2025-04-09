@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="blog.pageTitle">AI模型洞察与教程 - Model Guru</title>
+    <meta name="description" data-i18n="blog.pageDescription" content="探索最新的AI模型趋势、教程和最佳实践，帮助您更好地理解和使用AI模型。">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Model Guru</a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link active" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="blog.title">AI 模型洞察与教程</h1>
+                <p data-i18n="blog.subtitle">最新的 AI 模型趋势、教程和最佳实践</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">全部</button>
+                <button class="category-tab" data-category="tutorials">教程</button>
+                <button class="category-tab" data-category="trends">趋势分析</button>
+                <button class="category-tab" data-category="case-studies">案例研究</button>
+                <button class="category-tab" data-category="best-practices">最佳实践</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-main">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- 博客文章卡片 1 -->
+                <div class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="img/blog/stable-diffusion-guide.jpg" alt="Stable Diffusion Guide">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年4月15日</span>
+                        <h3 class="blog-title">Stable Diffusion XL 完全指南：参数优化与提示词技巧</h3>
+                        <p class="blog-excerpt">了解如何充分利用 Stable Diffusion XL 的强大功能，包括关键参数设置和提示词工程最佳实践...</p>
+                        <a href="/blog/stable-diffusion-guide" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+
+                <!-- 博客文章卡片 2 -->
+                <div class="blog-card" data-category="trends">
+                    <div class="blog-image">
+                        <img src="img/blog/llm-trends-2024.jpg" alt="LLM Trends 2024">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年4月10日</span>
+                        <h3 class="blog-title">2024年大语言模型发展趋势：从Mixtral到Claude 3</h3>
+                        <p class="blog-excerpt">探索2024年大语言模型领域的最新发展趋势，包括开源模型的崛起和商业应用的新方向...</p>
+                        <a href="/blog/llm-trends-2024" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+
+                <!-- 博客文章卡片 3 -->
+                <div class="blog-card" data-category="case-studies">
+                    <div class="blog-image">
+                        <img src="img/blog/midjourney-case-study.jpg" alt="Midjourney Case Study">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年4月5日</span>
+                        <h3 class="blog-title">案例研究：设计工作室如何利用Midjourney提升创意效率</h3>
+                        <p class="blog-excerpt">深入了解一家设计工作室如何将Midjourney整合到其工作流程中，大幅提升创意产出效率...</p>
+                        <a href="/blog/midjourney-case-study" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+
+                <!-- 博客文章卡片 4 -->
+                <div class="blog-card" data-category="best-practices">
+                    <div class="blog-image">
+                        <img src="img/blog/ai-model-selection.jpg" alt="AI Model Selection">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年3月28日</span>
+                        <h3 class="blog-title">如何为您的项目选择最合适的AI模型：决策框架</h3>
+                        <p class="blog-excerpt">提供一个实用的决策框架，帮助开发者和创意人员为特定项目选择最合适的AI模型...</p>
+                        <a href="/blog/ai-model-selection" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+
+                <!-- 博客文章卡片 5 -->
+                <div class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="img/blog/audio-generation-guide.jpg" alt="Audio Generation Guide">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年3月20日</span>
+                        <h3 class="blog-title">AI音频生成入门：从Stable Audio到AudioCraft</h3>
+                        <p class="blog-excerpt">探索当前最先进的AI音频生成模型，学习如何创建高质量的音乐、音效和语音内容...</p>
+                        <a href="/blog/audio-generation-guide" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+
+                <!-- 博客文章卡片 6 -->
+                <div class="blog-card" data-category="trends">
+                    <div class="blog-image">
+                        <img src="img/blog/multimodal-ai-future.jpg" alt="Multimodal AI Future">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2024年3月15日</span>
+                        <h3 class="blog-title">多模态AI的未来：GPT-4V、Claude 3和Gemini的比较</h3>
+                        <p class="blog-excerpt">分析当前领先的多模态AI模型，探讨它们的能力差异和未来发展方向...</p>
+                        <a href="/blog/multimodal-ai-future" class="btn btn-text">阅读更多</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn pagination-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 data-i18n="newsletter.title">订阅 AI 模型更新</h2>
+                <p data-i18n="newsletter.description">每周接收最新的 AI 模型、趋势和教程直接发送到您的收件箱</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="您的电子邮件地址" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="newsletter.subscribe">订阅</button>
+                    </div>
+                    <p class="newsletter-privacy" data-i18n="newsletter.privacy">我们尊重您的隐私，绝不会分享您的电子邮件。您可以随时取消订阅。</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Model Guru</h3>
+                    <p>Your AI Model Discovery & Analytics Hub</p>
+                    <select id="languageSwitcher" class="language-switcher">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <div class="footer-links-container">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
+                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
+                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        // Blog category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Show/hide blog cards based on category
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

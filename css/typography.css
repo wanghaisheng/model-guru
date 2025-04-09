@@ -1,0 +1,46 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: var(--neon-glow);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  text-shadow: var(--neon-glow-blue);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  text-shadow: var(--neon-glow-yellow);
+}
+
+@keyframes glow {
+  0% { 
+    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.8),
+                 0 0 20px rgba(var(--primary-rgb), 0.4);
+  }
+  50% { 
+    text-shadow: 0 0 20px rgba(var(--primary-rgb), 1),
+                 0 0 30px rgba(var(--primary-rgb), 0.6),
+                 0 0 40px rgba(var(--accent-rgb), 0.4);
+  }
+  100% { 
+    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.8),
+                 0 0 20px rgba(var(--primary-rgb), 0.4);
+  }
+}

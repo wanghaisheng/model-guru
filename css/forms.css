@@ -1,0 +1,62 @@
+/* Forms */
+.form-control {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  background: rgba(10, 10, 10, 0.7);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.form-control:hover, .form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Form Controls Enhancement */
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 200px;
+}
+
+.form-control:hover, .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+  outline: none;
+}
+
+.model-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background: rgba(10, 10, 10, 0.8);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+  transform: translateZ(0);
+}
+
+.form-control:hover, .form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+  outline: none;
+  transform: translateZ(20px) scale(1.05);
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  <path d="M400 200m-80 0a80 80 0 1 0 160 0a80 80 0 1 0 -160 0" fill="none" stroke="currentColor" stroke-width="4"/>
+  <path d="M360 200l30 30l50-50" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="320" text-anchor="middle" fill="currentColor" font-family="Arial" font-size="24">Case Study Image</text>
+</svg> 

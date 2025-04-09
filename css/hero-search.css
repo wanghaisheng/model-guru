@@ -1,0 +1,89 @@
+/**
+ * Model Guru - Hero Search Styles
+ * This file contains specific styles for the hero search functionality
+ */
+
+/* Hero Search Container */
+.hero .search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2.5rem auto;
+  z-index: 10;
+}
+
+/* Hero Search Input */
+.hero .search-input {
+  width: 100%;
+  padding: 1.2rem 3.5rem 1.2rem 1.8rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.hero .search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
+  border-color: var(--secondary);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+/* Hero Search Icon */
+.hero .search-icon {
+  position: absolute;
+  right: 1.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 1.3rem;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.hero .search-input:focus + .search-icon {
+  color: var(--secondary);
+}
+
+/* Hero Search Results */
+.hero .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  margin-top: 0.8rem;
+  max-height: 400px;
+  overflow-y: auto;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 11;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero .search-results.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero .search-container {
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+  
+  .hero .search-input {
+    padding: 1rem 3rem 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.modelsTitle">Model Guru - Explore All AI Models</title>
+    <meta name="description" data-i18n="meta.modelsDescription" content="Browse and compare AI models from all major platforms. Filter by category, performance metrics, and popularity to find the perfect model for your needs.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Model Guru</a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link active" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn btn-outline" data-i18n="nav.login">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="models.hero.title">Explore All AI Models</h1>
+                <p data-i18n="models.hero.subtitle">Find, compare, and track the best AI models across platforms</p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for AI models..." data-i18n="models.searchPlaceholder">
+                    <i class="fas fa-search search-icon"></i>
+                    <div class="search-results">
+                        <!-- Search results will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Filter Section -->
+    <section class="models-filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter" data-i18n="models.filters.category">Category</label>
+                    <select id="category-filter" class="form-control">
+                        <option value="" data-i18n="models.filters.allCategories">All Categories</option>
+                        <option value="text-generation" data-i18n="models.filters.categories.textGeneration">Text Generation</option>
+                        <option value="image-generation" data-i18n="models.filters.categories.imageGeneration">Image Generation</option>
+                        <option value="video-generation" data-i18n="models.filters.categories.videoGeneration">Video Generation</option>
+                        <option value="audio-generation" data-i18n="models.filters.categories.audioGeneration">Audio Generation</option>
+                        <option value="multimodal" data-i18n="models.filters.categories.multimodal">Multimodal</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="platform-filter" data-i18n="models.filters.platform">Platform</label>
+                    <select id="platform-filter" class="form-control">
+                        <option value="" data-i18n="models.filters.allPlatforms">All Platforms</option>
+                        <option value="openai" data-i18n="models.filters.platforms.openai">OpenAI</option>
+                        <option value="replicate" data-i18n="models.filters.platforms.replicate">Replicate</option>
+                        <option value="huggingface" data-i18n="models.filters.platforms.huggingface">Hugging Face</option>
+                        <option value="stability" data-i18n="models.filters.platforms.stability">Stability AI</option>
+                        <option value="anthropic" data-i18n="models.filters.platforms.anthropic">Anthropic</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter" data-i18n="models.filters.sortBy">Sort By</label>
+                    <select id="sort-filter" class="form-control">
+                        <option value="popular" data-i18n="models.filters.sortOptions.popular">Most Popular</option>
+                        <option value="newest" data-i18n="models.filters.sortOptions.newest">Newest First</option>
+                        <option value="oldest" data-i18n="models.filters.sortOptions.oldest">Oldest First</option>
+                        <option value="a-z" data-i18n="models.filters.sortOptions.alphabetical">A-Z</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary filter-apply-btn" data-i18n="models.filters.applyFilters">Apply Filters</button>
+                <button class="btn btn-outline filter-reset-btn" data-i18n="models.filters.resetFilters">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Grid Section -->
+    <section class="models-grid-section">
+        <div class="container">
+            <div class="models-count">
+                <span class="total-count">245</span> <span data-i18n="models.modelsFound">models found</span>
+            </div>
+            
+            <div class="models-grid">
+                <!-- Model Card 1 -->
+                <div class="model-card" data-category="text-generation" data-platform="openai">
+                    <div class="model-card-header">
+                        <img src="img/svg/openai-logo.svg" alt="OpenAI" class="platform-logo">
+                        <span class="model-date">2023-11-06</span>
+                    </div>
+                    <h3 class="model-title">GPT-4 Turbo</h3>
+                    <p class="model-description">OpenAI's most capable model, optimized for chat at 1/3 the cost of GPT-4. Supports 128K context window.</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <i class="fas fa-play"></i>
+                            <span>3.2M runs</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-heart"></i>
+                            <span>128K likes</span>
+                        </div>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Text Generation</span>
+                        <span class="tag">Chat</span>
+                        <span class="tag">Code</span>
+                    </div>
+                    <div class="model-actions">
+                        <button class="btn btn-secondary add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            <span data-i18n="models.addToComparison">Add to Comparison</span>
+                        </button>
+                        <a href="#" class="btn btn-outline view-details-btn" data-i18n="models.viewDetails">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Model Card 2 -->
+                <div class="model-card" data-category="image-generation" data-platform="stability">
+                    <div class="model-card-header">
+                        <img src="img/svg/stability-logo.svg" alt="Stability AI" class="platform-logo">
+                        <span class="model-date">2023-07-26</span>
+                    </div>
+                    <h3 class="model-title">Stable Diffusion XL</h3>
+                    <p class="model-description">A state-of-the-art text-to-image model with exceptional quality and versatility for creative image generation.</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <i class="fas fa-play"></i>
+                            <span>2.8M runs</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-heart"></i>
+                            <span>95K likes</span>
+                        </div>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Image Generation</span>
+                        <span class="tag">Text-to-Image</span>
+                    </div>
+                    <div class="model-actions">
+                        <button class="btn btn-secondary add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            <span data-i18n="models.addToComparison">Add to Comparison</span>
+                        </button>
+                        <a href="#" class="btn btn-outline view-details-btn" data-i18n="models.viewDetails">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Model Card 3 -->
+                <div class="model-card" data-category="video-generation" data-platform="replicate">
+                    <div class="model-card-header">
+                        <img src="img/svg/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                        <span class="model-date">2023-12-15</span>
+                    </div>
+                    <h3 class="model-title">Zeroscope XL</h3>
+                    <p class="model-description">Advanced text-to-video generation model capable of creating high-quality, coherent videos from text prompts.</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <i class="fas fa-play"></i>
+                            <span>1.5M runs</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-heart"></i>
+                            <span>62K likes</span>
+                        </div>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Video Generation</span>
+                        <span class="tag">Text-to-Video</span>
+                    </div>
+                    <div class="model-actions">
+                        <button class="btn btn-secondary add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            <span data-i18n="models.addToComparison">Add to Comparison</span>
+                        </button>
+                        <a href="#" class="btn btn-outline view-details-btn" data-i18n="models.viewDetails">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Model Card 4 -->
+                <div class="model-card" data-category="multimodal" data-platform="anthropic">
+                    <div class="model-card-header">
+                        <img src="img/anthropic-logo.svg" alt="Anthropic" class="platform-logo">
+                        <span class="model-date">2023-12-08</span>
+                    </div>
+                    <h3 class="model-title">Claude 2.1</h3>
+                    <p class="model-description">Anthropic's most capable model with improved reasoning, coding, and instruction following abilities.</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <i class="fas fa-play"></i>
+                            <span>1.8M runs</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-heart"></i>
+                            <span>75K likes</span>
+                        </div>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Text Generation</span>
+                        <span class="tag">Chat</span>
+                        <span class="tag">Reasoning</span>
+                    </div>
+                    <div class="model-actions">
+                        <button class="btn btn-secondary add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            <span data-i18n="models.addToComparison">Add to Comparison</span>
+                        </button>
+                        <a href="#" class="btn btn-outline view-details-btn" data-i18n="models.viewDetails">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- More model cards would be dynamically loaded here -->
+            </div>
+            
+            <div class="pagination">
+                <button class="pagination-btn prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="pagination-numbers">
+                    <a href="#" class="pagination-number active">1</a>
+                    <a href="#" class="pagination-number">2</a>
+                    <a href="#" class="pagination-number">3</a>
+                    <span class="pagination-ellipsis">...</span>
+                    <a href="#" class="pagination-number">12</a>
+                </div>
+                <button class="pagination-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Comparison Tool Section -->
+    <section class="model-comparison-section">
+        <div class="container">
+            <div class="comparison-header">
+                <h2 data-i18n="models.comparison.title">Model Comparison Tool</h2>
+                <p data-i18n="models.comparison.subtitle">Compare features, performance, and pricing across different models</p>
+            </div>
+            
+            <div class="comparison-container">
+                <div class="selected-models">
+                    <p data-i18n="models.comparison.selectedModels">Selected Models: <span class="selected-count">0</span></p>
+                    <button class="btn btn-primary compare-btn" disabled data-i18n="models.comparison.compareNow">Compare Now</button>
+                    <button class="btn btn-outline clear-btn" disabled data-i18n="models.comparison.clearAll">Clear All</button>
+                </div>
+                
+                <div class="comparison-preview">
+                    <!-- Empty state -->
+                    <div class="comparison-empty-state">
+                        <i class="fas fa-layer-group empty-icon"></i>
+                        <p data-i18n="models.comparison.emptyState">Add models to compare by clicking the "Add to Comparison" button on model cards</p>
+                    </div>
+                    
+                    <!-- Comparison cards will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 data-i18n="newsletter.title">Stay Updated on AI Model Trends</h2>
+                <p data-i18n="newsletter.description">Subscribe to our newsletter to receive weekly updates on new models, performance benchmarks, and industry insights.</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required data-i18n="newsletter.emailPlaceholder">
+                        <button type="submit" class="btn btn-primary" data-i18n="newsletter.subscribe">Subscribe</button>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy-consent" required>
+                        <label for="privacy-consent" data-i18n="newsletter.privacyConsent">I agree to receive emails and accept the <a href="privacy.html">Privacy Policy</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Model Guru</a>
+                    <p data-i18n="footer.tagline">Your AI Model Discovery & Analytics Hub</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3 data-i18n="footer.explore">Explore</h3>
+                        <ul>
+                            <li><a href="models.html" data-i18n="footer.allModels">All Models</a></li>
+                            <li><a href="platforms.html" data-i18n="footer.platforms">Platforms</a></li>
+                            <li><a href="reports.html" data-i18n="footer.reports">Reports</a></li>
+                            <li><a href="blog.html" data-i18n="footer.blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3 data-i18n="footer.company">Company</h3>
+                        <ul>
+                            <li><a href="about.html" data-i18n="footer.about">About Us</a></li>
+                            <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+                            <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3 data-i18n="footer.legal">Legal</h3>
+                        <ul>
+                            <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                            <li><a href="#" data-i18n="footer.cookies">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2023 Model Guru. All rights reserved.</p>
+                <div class="language-selector">
+                    <select id="language-select">
+                        <option value="en" data-i18n="footer.languages.english">English</option>
+                        <option value="zh" data-i18n="footer.languages.chinese">中文</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

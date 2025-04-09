@@ -1,0 +1,226 @@
+{
+  "categories": [
+    {
+      "id": "video-generation",
+      "title": "Make videos with Wan2.1",
+      "description": "Generate videos with Wan2.1, the fastest and highest quality open-source video generation model.",
+      "icon": "fas fa-video",
+      "models": [
+        {
+          "id": "wan-2.1-t2v-480p",
+          "name": "wavespeedai/wan-2.1-t2v-480p",
+          "description": "Text to video generation at 480p resolution",
+          "metrics": {
+            "runs": 15000,
+            "likes": 1200
+          }
+        },
+        {
+          "id": "wan-2.1-vid2vid",
+          "name": "lucataco/wan-2.1-1.3b-vid2vid",
+          "description": "Video to video generation with 1.3B parameters",
+          "metrics": {
+            "runs": 8000,
+            "likes": 900
+          }
+        },
+        {
+          "id": "wan-2.1-i2v-720p",
+          "name": "wavespeedai/wan-2.1-i2v-720p",
+          "description": "Image to video generation at 720p resolution",
+          "metrics": {
+            "runs": 12000,
+            "likes": 1100
+          }
+        }
+      ],
+      "totalModels": 8,
+      "link": "https://replicate.com/collections/wan-video"
+    },
+    {
+      "id": "text-to-image",
+      "title": "Generate images",
+      "description": "Models that generate images from text prompts",
+      "icon": "fas fa-image",
+      "models": [
+        {
+          "id": "sdxl-lightning",
+          "name": "bytedance/sdxl-lightning-4step",
+          "description": "Fast 4-step SDXL image generation",
+          "metrics": {
+            "runs": 25000,
+            "likes": 2000
+          }
+        },
+        {
+          "id": "ideogram-v2a",
+          "name": "ideogram-ai/ideogram-v2a-turbo",
+          "description": "Turbo version of Ideogram V2A",
+          "metrics": {
+            "runs": 18000,
+            "likes": 1500
+          }
+        },
+        {
+          "id": "flux-schnell",
+          "name": "black-forest-labs/flux-schnell",
+          "description": "Fast image generation with Flux",
+          "metrics": {
+            "runs": 15000,
+            "likes": 1300
+          }
+        }
+      ],
+      "totalModels": 50,
+      "link": "https://replicate.com/collections/text-to-image"
+    },
+    {
+      "id": "text-to-video",
+      "title": "Generate videos",
+      "description": "Models that create and edit videos",
+      "icon": "fas fa-film",
+      "models": [
+        {
+          "id": "wan-2.1-t2v",
+          "name": "wavespeedai/wan-2.1-t2v-480p",
+          "description": "Text to video generation at 480p",
+          "metrics": {
+            "runs": 15000,
+            "likes": 1200
+          }
+        },
+        {
+          "id": "wan-2.1-i2v",
+          "name": "wavespeedai/wan-2.1-i2v-720p",
+          "description": "Image to video generation at 720p",
+          "metrics": {
+            "runs": 12000,
+            "likes": 1100
+          }
+        },
+        {
+          "id": "wan-2.1-1.3b",
+          "name": "wan-video/wan-2.1-1.3b",
+          "description": "1.3B parameter video generation",
+          "metrics": {
+            "runs": 10000,
+            "likes": 900
+          }
+        }
+      ],
+      "totalModels": 51,
+      "link": "https://replicate.com/collections/text-to-video"
+    },
+    {
+      "id": "image-to-text",
+      "title": "Caption images",
+      "description": "Models that generate text from images",
+      "icon": "fas fa-comment-alt",
+      "models": [
+        {
+          "id": "llava-13b",
+          "name": "yorickvp/llava-13b",
+          "description": "13B parameter vision-language model",
+          "metrics": {
+            "runs": 20000,
+            "likes": 1800
+          }
+        },
+        {
+          "id": "moondream2",
+          "name": "lucataco/moondream2",
+          "description": "Advanced image understanding model",
+          "metrics": {
+            "runs": 15000,
+            "likes": 1300
+          }
+        },
+        {
+          "id": "blip",
+          "name": "salesforce/blip",
+          "description": "Bootstrapping Language-Image Pre-training",
+          "metrics": {
+            "runs": 18000,
+            "likes": 1600
+          }
+        }
+      ],
+      "totalModels": 17,
+      "link": "https://replicate.com/collections/image-to-text"
+    },
+    {
+      "id": "speech-to-text",
+      "title": "Transcribe speech",
+      "description": "Models that convert speech to text",
+      "icon": "fas fa-microphone",
+      "models": [
+        {
+          "id": "fast-whisper",
+          "name": "vaibhavs10/incredibly-fast-whisper",
+          "description": "High-speed speech transcription",
+          "metrics": {
+            "runs": 30000,
+            "likes": 2500
+          }
+        },
+        {
+          "id": "seamless",
+          "name": "cjwbw/seamless_communication",
+          "description": "Seamless speech translation",
+          "metrics": {
+            "runs": 12000,
+            "likes": 1000
+          }
+        },
+        {
+          "id": "whisperx",
+          "name": "victor-upmeet/whisperx",
+          "description": "Enhanced Whisper transcription",
+          "metrics": {
+            "runs": 15000,
+            "likes": 1200
+          }
+        }
+      ],
+      "totalModels": 10,
+      "link": "https://replicate.com/collections/speech-to-text"
+    },
+    {
+      "id": "language-models",
+      "title": "Generate text",
+      "description": "Models that can understand and generate text",
+      "icon": "fas fa-language",
+      "models": [
+        {
+          "id": "deepseek-r1",
+          "name": "deepseek-ai/deepseek-r1",
+          "description": "Advanced language understanding",
+          "metrics": {
+            "runs": 25000,
+            "likes": 2000
+          }
+        },
+        {
+          "id": "claude-3.5",
+          "name": "anthropic/claude-3.5-haiku",
+          "description": "Fast and efficient language model",
+          "metrics": {
+            "runs": 30000,
+            "likes": 2500
+          }
+        },
+        {
+          "id": "claude-3.7",
+          "name": "anthropic/claude-3.7-sonnet",
+          "description": "Advanced language generation",
+          "metrics": {
+            "runs": 28000,
+            "likes": 2300
+          }
+        }
+      ],
+      "totalModels": 36,
+      "link": "https://replicate.com/collections/language-models"
+    }
+  ]
+} 

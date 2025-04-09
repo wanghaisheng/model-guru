@@ -1,0 +1,184 @@
+/* PC Layout - Multi-column design for sections */
+@media (min-width: 1025px) {
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .pain-points-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .how-it-works,
+  .platforms-section,
+  .pain-points {
+    padding: 8rem 0;
+  }
+  
+  .step-card,
+  .platform-card,
+  .pain-point-card {
+    padding: 2.5rem;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .model-filters {
+    flex-direction: column;
+  }
+  
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-visual {
+    display: none;
+  }
+  
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+  
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pain-points-grid,
+  .steps-grid,
+  .platforms-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .floating-element {
+    display: none;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  /* Section specific mobile styles */
+  .how-it-works,
+  .platforms-section,
+  .pain-points {
+    padding: 4rem 0;
+  }
+  
+  .step-card,
+  .platform-card,
+  .pain-point-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .search-container {
+    margin: 1.5rem auto 2rem;
+  }
+  
+  .feature-card,
+  .model-card,
+  .pain-point-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet layout for sections */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .feature-card {
+    padding: 2rem;
+  }
+  
+  .steps-grid,
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .pain-points-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .how-it-works,
+  .platforms-section,
+  .pain-points {
+    padding: 6rem 0;
+  }
+  
+  .step-card,
+  .platform-card,
+  .pain-point-card {
+    padding: 2rem;
+    min-height: 300px;
+  }
+  
+
+}

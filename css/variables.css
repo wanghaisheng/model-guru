@@ -1,0 +1,25 @@
+:root {
+  --primary: #ff00ff;
+  --primary-dark: #cc00cc;
+  --secondary: #00ffff;
+  --accent: #ffff00;
+  --background: #0a0a0a;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --border: #333333;
+  --success: #00ff00;
+  --error: #ff0000;
+  --neon-glow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.3);
+  --neon-glow-blue: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
+  --neon-glow-yellow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
+  --primary-color: #00ffff;
+  --accent-color: #ff00ff;
+  --bg-color: #0a0a0a;
+  --card-bg: rgba(20, 20, 20, 0.8);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --border-color: rgba(0, 255, 255, 0.2);
+  --gradient-primary: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+  --primary-rgb: 0, 255, 255;
+  --accent-rgb: 255, 0, 255;
+}

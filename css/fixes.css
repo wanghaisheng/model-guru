@@ -1,0 +1,41 @@
+/**
+ * Model Guru - CSS Fixes
+ * This file contains fixes for specific styling issues
+ */
+
+/* Fix for search container and CTA overlap issue */
+.hero .search-container {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .search-results {
+    z-index: 11;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure hero content has proper spacing */
+.hero-content {
+    position: relative;
+    z-index: 5;
+    padding-bottom: 2rem;
+}
+
+/* Ensure CTA section doesn't overlap with hero content */
+.cta {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+/* Ensure proper button spacing in hero section */
+.hero .btn {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 5;
+}

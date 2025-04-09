@@ -1,0 +1,262 @@
+/**
+ * Model Guru - Main CSS File
+ * This file imports all modular CSS components
+ */
+
+/* Import all CSS modules */
+@import 'reset.css';
+@import 'variables.css';
+@import 'typography.css';
+@import 'layout.css';
+@import 'navigation.css';
+@import 'hero.css';
+@import 'features.css';
+@import 'models.css';
+@import 'comparison.css';
+@import 'forms.css';
+@import 'buttons.css';
+@import 'animations.css';
+@import 'footer.css';
+@import 'sections.css';
+@import 'pain-points.css';
+@import 'cta.css';
+@import 'hero-search.css'; /* Import hero search styles */
+@import 'testimonials.css'; /* Import testimonials styles */
+@import 'faq.css'; /* Import FAQ styles */
+@import 'blog.css'; /* Import blog/resource center styles */
+@import 'team.css'; /* Import team/about us styles */
+@import 'auth.css'; /* Import auth (signup/login) styles */
+@import 'model-comparison.css'; /* Import model comparison tool styles */
+@import 'reports-hero.css';
+@import 'reports-grid.css';
+@import 'reports-card.css';
+@import 'reports-preview.css'; /* Import reports section styles */
+@import 'responsive.css';
+@import 'fixes.css'; /* Import fixes for specific styling issues */
+
+.team-section {
+    padding: 6rem 0;  /* 增加上下内边距 */
+    margin-bottom: 6rem;  /* 增加底部外边距 */
+}
+
+.blog-section {
+    padding-top: 6rem;  /* 增加顶部内边距 */
+}
+
+/* CTA Newsletter Section */
+.cta-newsletter-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(13, 12, 34, 0.98), rgba(13, 12, 34, 0.99));
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-newsletter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(128, 0, 255, 0.08), transparent 70%);
+    z-index: 1;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-content {
+    padding: 2rem;
+    background: rgba(20, 20, 20, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(128, 0, 255, 0.2);
+}
+
+.cta-text h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-text p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.premium-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.premium-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(20, 20, 20, 0.4);
+    border-radius: 8px;
+    border: 1px solid rgba(128, 0, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.premium-feature:hover {
+    transform: translateY(-2px);
+    border-color: rgba(128, 0, 255, 0.3);
+    background: rgba(20, 20, 20, 0.5);
+}
+
+.premium-feature svg {
+    flex-shrink: 0;
+}
+
+.premium-feature span {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.pricing-option {
+    padding: 1.5rem;
+    background: rgba(20, 20, 20, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(128, 0, 255, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.pricing-option.featured {
+    background: rgba(128, 0, 255, 0.1);
+    border-color: rgba(128, 0, 255, 0.4);
+}
+
+.best-value {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8b5cf6;
+    color: #ffffff;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pricing-option h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b0b0b0;
+}
+
+.savings {
+    color: #8b5cf6;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-content {
+    padding: 2rem;
+    background: rgba(20, 20, 20, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(128, 0, 255, 0.2);
+    text-align: center;
+}
+
+.newsletter-icon {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-content h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-content p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.8rem 1rem;
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(128, 0, 255, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+.privacy-note {
+    color: #b0b0b0;
+    font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .section-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .premium-features {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-newsletter-section {
+        padding: 3rem 1rem;
+    }
+
+    .cta-text h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter-content h2 {
+        font-size: 1.8rem;
+    }
+}

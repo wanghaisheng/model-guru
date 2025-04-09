@@ -1,132 +1,1273 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="keywords" content="mobile, simulator, mobile design, mobile app">
-  <meta name="author" content="Your Name or Company">
-  <meta http-equiv="Content-Language" content="en">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/pc-simulator" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PC Simulator">
-  <meta property="og:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta property="og:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta property="og:url" content="https://www.yourwebsite.com/pc-simulator">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PC Simulator">
-  <meta name="twitter:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta name="twitter:creator" content="@yourtwitterhandle">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.yourwebsite.com/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y) {
-      window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
-      clarity('set', 'anonymizeIP', true);
-      i=l.createElement('script');i.async=1;i.src=r;i.type='text/javascript';
-      t=l.getElementsByTagName('script')[0];t.parentNode.insertBefore(i,t);
-    })(document,window,'script','https://www.clarity.ms/tag/XXXXXX');
-  </script>
-
-  <title>PC Simulator</title>
-
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .mobile-container {
-      width: 360px;
-      height: 640px;
-      border: 16px solid black;
-      border-radius: 16px;
-      background-color: #fff;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* Adjustments for PC */
-    @media (min-width: 768px) {
-      .mobile-container {
-        width: 600px;
-        height: 1000px;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .mobile-container {
-        width: 800px;
-        height: 1400px;
-      }
-
-      .content {
-        font-size: 1.8rem;
-      }
-    }
-
-    /* Additional responsiveness for larger screens */
-    @media (min-width: 1200px) {
-      body {
-        justify-content: flex-start;
-      }
-
-      .mobile-container {
-        margin-top: 50px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">Model Guru - Discover & Track AI Models</title>
+    <meta name="description" data-i18n="meta.description" content="Your central hub for discovering and tracking AI/ML models across platforms. Find trending models, track usage metrics, and make informed decisions.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="mobile-container">
-    <div class="content">
-      <p>Mobile Simulator Screen</p>
-      <p>PC Version: Adjusted for larger screens.</p>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
     </div>
-  </div>
-</body>
 
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Model Guru</a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn btn-outline" data-i18n="nav.login">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Track AI Models Across Platforms</h1>
+                <p data-i18n="hero.subtitle">Your AI Model Discovery & Analytics Hub</p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for AI models..." data-i18n="playground.searchPlaceholder">
+                    <i class="fas fa-search search-icon"></i>
+                    <div class="search-results">
+                        <!-- Search results will be dynamically added here -->
+                    </div>
+                </div>
+                <a href="models.html" class="btn btn-primary" data-i18n="hero.cta">Explore Models</a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element element-1"></div>
+                    <div class="floating-element element-2"></div>
+                    <div class="floating-element element-3"></div>
+                    <div class="floating-element element-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <!-- New Models -->
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 data-i18n="features.newModels.title">Newly Added</h3>
+                    <p data-i18n="features.newModels.description">Stay updated with the latest models added across platforms</p>
+                    <a href="/models/new" class="btn btn-secondary" data-i18n="features.newModels.viewAll">View All New Models</a>
+                </div>
+
+                <!-- Trending Models -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3 data-i18n="features.trending.title">Trending This Week</h3>
+                    <p data-i18n="features.trending.description">See which models are gaining traction based on runs and likes</p>
+                    <a href="/models/trending" class="btn btn-secondary" data-i18n="features.trending.viewAll">View All Trending</a>
+                </div>
+
+                <!-- Popular Models -->
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3 data-i18n="features.popular.title">Most Popular This Month</h3>
+                    <p data-i18n="features.popular.description">Discover the most-used and highest-rated models</p>
+                    <a href="/models/popular" class="btn btn-secondary" data-i18n="features.popular.viewAll">View All Popular</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Exploration Section -->
+    <section class="model-exploration-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Models</h2>
+                <p>Discover and compare AI models for your specific needs</p>
+            </div>
+
+            <div class="model-categories">
+                <!-- Categories will be dynamically populated from models.json -->
+                <template id="category-template">
+                    <div class="model-category">
+                        <div class="category-header">
+                            <i class="fas fa-icon"></i>
+                            <h3>Category Title</h3>
+                        </div>
+                        <p class="category-description">Category description goes here</p>
+                        
+                        <div class="model-list">
+                            <!-- Models will be dynamically populated -->
+                            <template id="model-template">
+                                <div class="model-card">
+                                    <div class="model-header">
+                                        <h4>Model Name</h4>
+                                        <div class="model-metrics">
+                                            <span class="metric">
+                                                <i class="fas fa-play"></i>
+                                                <span class="runs">0</span>
+                                            </span>
+                                            <span class="metric">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="likes">0</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="model-description">Model description goes here</p>
+                                    <button class="add-to-comparison-btn">
+                                        <i class="fas fa-plus"></i>
+                                        Add to Comparison
+                                    </button>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div class="category-footer">
+                            <a href="#" class="view-all-btn">
+                                View all <span class="total-models">0</span> models
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="model-selection-area">
+                <div class="model-selection-header">
+                    <h3>筛选模型</h3>
+                    <div class="model-count">已选择 <span class="selected-count">0</span> 个模型</div>
+                </div>
+                
+                <div class="model-selection-controls">
+                    <div class="model-search">
+                        <select class="form-control" id="purpose-filter">
+                            <option value="">选择用途</option>
+                            <option value="video">制作视频</option>
+                            <option value="image">生成图片</option>
+                            <option value="transcribe">语音转文字</option>
+                            <option value="text">文本生成</option>
+                        </select>
+                        
+                        <select class="form-control" id="platform-filter">
+                            <option value="">选择平台</option>
+                            <option value="replicate">Replicate</option>
+                            <option value="openai">OpenAI</option>
+                            <option value="stability">Stability AI</option>
+                        </select>
+                        
+                        <select class="form-control" id="sort-filter">
+                            <option value="a-z">按名称 A-Z</option>
+                            <option value="popular">最受欢迎</option>
+                            <option value="newest">最新发布</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="model-cards-grid">
+                    <!-- 模型卡片示例 -->
+                    <div class="model-card">
+                        <div class="model-card-header">
+                            <img src="img/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                            <span class="model-date">2024-02-20</span>
+                        </div>
+                        <h4 class="model-title">Stable Diffusion XL</h4>
+                        <p class="model-description">最新的图像生成模型，支持高分辨率输出和精确控制。</p>
+                        <div class="model-metrics">
+                            <div class="metric">
+                                <i class="fas fa-play"></i>
+                                <span>1.2M 运行</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-heart"></i>
+                                <span>45K 点赞</span>
+                            </div>
+                        </div>
+                        <div class="model-tags">
+                            <span class="tag">图像生成</span>
+                            <span class="tag">高分辨率</span>
+                        </div>
+                        <button class="add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            添加到对比
+                        </button>
+                    </div>
+
+                    <!-- 更多模型卡片 -->
+                    <div class="model-card">
+                        <div class="model-card-header">
+                            <img src="img/openai-logo.svg" alt="OpenAI" class="platform-logo">
+                            <span class="model-date">2024-02-15</span>
+                        </div>
+                        <h4 class="model-title">GPT-4 Turbo</h4>
+                        <p class="model-description">OpenAI 最强大的语言模型，支持多模态输入和更长上下文。</p>
+                        <div class="model-metrics">
+                            <div class="metric">
+                                <i class="fas fa-play"></i>
+                                <span>2.5M 运行</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-heart"></i>
+                                <span>98K 点赞</span>
+                            </div>
+                        </div>
+                        <div class="model-tags">
+                            <span class="tag">文本生成</span>
+                            <span class="tag">对话</span>
+                        </div>
+                        <button class="add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            添加到对比
+                        </button>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-card-header">
+                            <img src="img/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                            <span class="model-date">2024-02-10</span>
+                        </div>
+                        <h4 class="model-title">Wan2.1</h4>
+                        <p class="model-description">专业的视频生成模型，支持多种风格和场景转换。</p>
+                        <div class="model-metrics">
+                            <div class="metric">
+                                <i class="fas fa-play"></i>
+                                <span>800K 运行</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-heart"></i>
+                                <span>32K 点赞</span>
+                            </div>
+                        </div>
+                        <div class="model-tags">
+                            <span class="tag">视频生成</span>
+                            <span class="tag">动画</span>
+                        </div>
+                        <button class="add-to-comparison-btn">
+                            <i class="fas fa-plus"></i>
+                            添加到对比
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="container">
+            <h2 data-i18n="comparison.title">Why Choose Model Guru</h2>
+            <div class="comparison-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th data-i18n="comparison.huggingface">Hugging Face</th>
+                            <th data-i18n="comparison.replicate">Replicate</th>
+                            <th data-i18n="comparison.modelGuru">Model Guru</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="comparison.features.discovery">Cross-Platform Discovery</td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon highlight">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="comparison.features.metrics">Unified Usage Metrics</td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon highlight">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="comparison.features.trends">Trend Analysis</td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon">❌</span></td>
+                            <td><span class="check-icon highlight">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="comparison.features.tracking">Model Performance Tracking</td>
+                            <td><span class="check-icon warning">⚠️</span></td>
+                            <td><span class="check-icon warning">⚠️</span></td>
+                            <td><span class="check-icon highlight">✅</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Model Guru Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 data-i18n="howItWorks.title">How Model Guru Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 data-i18n="howItWorks.step1.title">Data Collection</h3>
+                    <p data-i18n="howItWorks.step1.description">We continuously monitor and collect data from major AI platforms, tracking model releases, updates, and usage metrics.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 data-i18n="howItWorks.step2.title">Analysis & Processing</h3>
+                    <p data-i18n="howItWorks.step2.description">Our system analyzes model performance, user engagement, and trends to identify the most relevant and impactful models.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 data-i18n="howItWorks.step3.title">Insights & Discovery</h3>
+                    <p data-i18n="howItWorks.step3.description">We present curated lists and insights to help you discover the right models for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms We Track Section -->
+    <section class="platforms-section">
+        <div class="container">
+            <h2 data-i18n="platforms.title">Platforms We Track</h2>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <img src="img/svg/huggingface-logo.svg" alt="Hugging Face" class="platform-logo">
+                    <h3 class="platform-name">Hugging Face</h3>
+                    <p class="platform-description">Leading platform for open-source AI models and datasets</p>
+                    <div class="platform-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10K+</span>
+                            <span class="metric-label">Models</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1M+</span>
+                            <span class="metric-label">Users</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <img src="img/svg/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                    <h3 class="platform-name">Replicate</h3>
+                    <p class="platform-description">Cloud platform for running machine learning models</p>
+                    <div class="platform-metrics">
+                        <div class="metric">
+                            <span class="metric-value">5K+</span>
+                            <span class="metric-label">Models</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">500K+</span>
+                            <span class="metric-label">Users</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <img src="img/svg/stability-logo.svg" alt="Stability AI" class="platform-logo">
+                    <h3 class="platform-name">Stability AI</h3>
+                    <p class="platform-description">Pioneer in open-source AI models and APIs</p>
+                    <div class="platform-metrics">
+                        <div class="metric">
+                            <span class="metric-value">50+</span>
+                            <span class="metric-label">Models</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1M+</span>
+                            <span class="metric-label">Users</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="pain-points">
+        <div class="container">
+            <h2 data-i18n="painPoints.title">Common Challenges We Solve</h2>
+            <div class="pain-points-grid">
+                <div class="pain-point-card">
+                    <div class="pain-point-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 data-i18n="painPoints.fragmented.title">Fragmented Discovery</h3>
+                    <p data-i18n="painPoints.fragmented.description">Models are scattered across multiple platforms, making it hard to find the right one.</p>
+                    <div class="solution">
+                        <h4 data-i18n="painPoints.fragmented.solution">Our Solution</h4>
+                        <p data-i18n="painPoints.fragmented.solutionDescription">Centralized platform with comprehensive model listings and advanced search capabilities.</p>
+                    </div>
+                </div>
+                <div class="pain-point-card">
+                    <div class="pain-point-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="painPoints.metrics.title">Lack of Standardized Metrics</h3>
+                    <p data-i18n="painPoints.metrics.description">Different platforms use different metrics, making comparisons difficult.</p>
+                    <div class="solution">
+                        <h4 data-i18n="painPoints.metrics.solution">Our Solution</h4>
+                        <p data-i18n="painPoints.metrics.solutionDescription">Unified metrics system with clear performance indicators and trend analysis.</p>
+                    </div>
+                </div>
+                <div class="pain-point-card">
+                    <div class="pain-point-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-i18n="painPoints.time.title">Time-Consuming Research</h3>
+                    <p data-i18n="painPoints.time.description">Keeping up with new models and updates requires constant monitoring.</p>
+                    <div class="solution">
+                        <h4 data-i18n="painPoints.time.solution">Our Solution</h4>
+                        <p data-i18n="painPoints.time.solutionDescription">Automated tracking and curated lists of new and trending models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-i18n="testimonials.title">How Users Are Using Model Guru</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200" alt="Emma Wilson - Design Studio Lead">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Model Guru helped me find the perfect image generation model for my project in minutes, saving me days of research."</p>
+                        <div class="testimonial-author">
+                            <h4>Emma Wilson</h4>
+                            <p>Design Studio Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200" alt="James Lee - Education Researcher">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"As a designer, I need to keep up with the latest AI image generation tech. Model Guru's trend analysis lets me easily see which models are rising and worth my time."</p>
+                        <div class="testimonial-author">
+                            <h4>James Lee</h4>
+                            <p>Education Researcher</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200" alt="Michael Chen - AI Researcher">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The cross-platform comparison feature is incredibly useful. When choosing a language model, I can compare performance and user reviews side by side, making my decision process straightforward."</p>
+                        <div class="testimonial-author">
+                            <h4>Michael Chen</h4>
+                            <p>AI Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="testimonials.html" class="btn btn-secondary" data-i18n="testimonials.viewAll">View All Testimonials</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q1">How does Model Guru collect model data?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a1">We collect data through publicly available APIs and information provided by platforms. We update our data regularly to ensure accuracy and timeliness. For more details, check our <a href="methodology.html">methodology page</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q2">Does Model Guru provide API access?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a2">Currently, we don't offer API access, but it's on our roadmap. If you're particularly interested in this feature, please <a href="contact.html">contact us</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q3">How often is the data updated?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a3">We update our data daily to ensure you have access to the most current information about AI models across all platforms.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q4">Can I suggest a platform to be added?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a4">Absolutely! We're always looking to expand our coverage. Please <a href="contact.html">contact us</a> with your suggestions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="faq.html" class="btn btn-secondary">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 data-i18n="blog.title">AI Model Insights & Tutorials</h2>
+            <p class="section-subtitle" data-i18n="blog.subtitle">Latest AI model trends, tutorials, and best practices</p>
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/svg/blog-placeholder.svg" alt="Stable Diffusion Guide">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">April 15, 2024</span>
+                        <h3 class="blog-title">Complete Guide to Stable Diffusion XL: Parameter Optimization & Prompting</h3>
+                        <p class="blog-excerpt">Learn how to get the most out of Stable Diffusion XL's powerful capabilities, including key parameter settings and prompt engineering best practices...</p>
+                        <a href="/blog/stable-diffusion-guide" class="btn btn-text">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/svg/blog-placeholder.svg" alt="LLM Trends 2024">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">April 10, 2024</span>
+                        <h3 class="blog-title">LLM Trends in 2024: From Mixtral to Claude 3</h3>
+                        <p class="blog-excerpt">Explore the latest developments in the large language model space in 2024, including the rise of open-source models and new directions in commercial applications...</p>
+                        <a href="/blog/llm-trends-2024" class="btn btn-text">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/svg/blog-placeholder.svg" alt="Model Comparison">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">April 5, 2024</span>
+                        <h3 class="blog-title">Comparing Top 5 Multimodal Models: Performance & Use Cases</h3>
+                        <p class="blog-excerpt">A detailed comparison of the top multimodal AI models, analyzing their performance across different tasks and identifying ideal use cases for each...</p>
+                        <a href="/blog/multimodal-comparison" class="btn btn-text">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="blog.html" class="btn btn-secondary" data-i18n="blog.viewAll">View All Articles</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 data-i18n="team.title">Meet Our Team</h2>
+            <p class="section-subtitle" data-i18n="team.subtitle">A team of AI and machine learning experts dedicated to simplifying AI model discovery</p>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=300&w=300" alt="Sarah Chen - Lead Developer" class="team-member-photo">
+                    </div>
+                    <h3 class="team-name">Sarah Chen</h3>
+                    <p class="team-role">Lead Developer</p>
+                    <p class="team-bio">Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation.</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=300&w=300" alt="Michael Wang - AI Research Lead" class="team-member-photo">
+                    </div>
+                    <h3 class="team-name">Michael Wang</h3>
+                    <p class="team-role">AI Research Lead</p>
+                    <p class="team-bio">Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation.</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=300&w=300" alt="David Zhang - Product Manager" class="team-member-photo">
+                    </div>
+                    <h3 class="team-name">David Zhang</h3>
+                    <p class="team-role">Product Manager</p>
+                    <p class="team-bio">Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation.</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Model Comparison Tool Section -->
+    <section class="model-comparison-section">
+        <div class="container">
+            <div class="model-comparison-content">
+                <h2 data-i18n="modelComparison.title">Model Comparison Tool</h2>
+                <p data-i18n="modelComparison.description">Compare different AI models side by side to find the one that best fits your needs</p>
+                
+                <div class="purpose-navigation">
+                    <h3>What do you want to do?</h3>
+                    <div class="purpose-grid">
+                        <a href="/compare/video-generation" class="purpose-card">
+                            <i class="fas fa-video"></i>
+                            <h4>Make videos</h4>
+                            <p>Compare video generation models</p>
+                        </a>
+                        <a href="/compare/image-generation" class="purpose-card">
+                            <i class="fas fa-image"></i>
+                            <h4>Generate images</h4>
+                            <p>Compare image generation models</p>
+                        </a>
+                        <a href="/compare/text-generation" class="purpose-card">
+                            <i class="fas fa-font"></i>
+                            <h4>Generate text</h4>
+                            <p>Compare language models</p>
+                        </a>
+                        <a href="/compare/audio-processing" class="purpose-card">
+                            <i class="fas fa-music"></i>
+                            <h4>Process audio</h4>
+                            <p>Compare audio models</p>
+                        </a>
+                        <a href="/compare/3d-generation" class="purpose-card">
+                            <i class="fas fa-cube"></i>
+                            <h4>Make 3D content</h4>
+                            <p>Compare 3D generation models</p>
+                        </a>
+                        <a href="/compare/utility-tools" class="purpose-card">
+                            <i class="fas fa-tools"></i>
+                            <h4>Use utility tools</h4>
+                            <p>Compare utility models</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Model Selection Area -->
+                <div class="model-selection-area">
+                    <div class="model-selection-header">
+                        <h3>Select Models to Compare</h3>
+                        <div class="model-count">
+                            <span class="selected-count">0</span>/3 models selected
+                        </div>
+                    </div>
+                    <div class="model-selection-controls">
+                        <div class="model-search">
+                            <input type="text" class="form-control" placeholder="Search models...">
+                            <select class="form-control purpose-filter">
+                                <option value="">I want to...</option>
+                                <option value="make-videos">Make videos with Wan2.1</option>
+                                <option value="generate-images">Generate images</option>
+                                <option value="generate-videos">Generate videos</option>
+                                <option value="caption-images">Caption images</option>
+                                <option value="transcribe-speech">Transcribe speech</option>
+                                <option value="generate-text">Generate text</option>
+                                <option value="face-images">Use a face to make images</option>
+                                <option value="upscale-images">Upscale images</option>
+                                <option value="official-models">Use official models</option>
+                                <option value="restore-images">Restore images</option>
+                                <option value="enhance-videos">Enhance videos</option>
+                                <option value="generate-speech">Generate speech</option>
+                                <option value="caption-videos">Caption videos</option>
+                                <option value="remove-backgrounds">Remove backgrounds</option>
+                                <option value="handy-tools">Use handy tools</option>
+                                <option value="detect-objects">Detect objects</option>
+                                <option value="generate-music">Generate music</option>
+                                <option value="sing-voices">Sing with voices</option>
+                                <option value="make-3d">Make 3D stuff</option>
+                                <option value="chat-images">Chat with images</option>
+                                <option value="extract-text">Extract text from images</option>
+                                <option value="get-embeddings">Get embeddings</option>
+                                <option value="use-flux">Use the FLUX family of models</option>
+                                <option value="use-flux-fine-tunes">Use FLUX fine-tunes</option>
+                                <option value="control-generation">Control image generation</option>
+                                <option value="edit-images">Edit images</option>
+                            </select>
+                            <select class="form-control platform-filter">
+                                <option value="">All Platforms</option>
+                                <option value="huggingface">Hugging Face</option>
+                                <option value="replicate">Replicate</option>
+                                <option value="stability">Stability AI</option>
+                            </select>
+                            <select class="form-control category-filter">
+                                <option value="">A-Z</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                                <option value="e">E</option>
+                                <option value="f">F</option>
+                                <option value="g">G</option>
+                                <option value="h">H</option>
+                                <option value="i">I</option>
+                                <option value="j">J</option>
+                                <option value="k">K</option>
+                                <option value="l">L</option>
+                                <option value="m">M</option>
+                                <option value="n">N</option>
+                                <option value="o">O</option>
+                                <option value="p">P</option>
+                                <option value="q">Q</option>
+                                <option value="r">R</option>
+                                <option value="s">S</option>
+                                <option value="t">T</option>
+                                <option value="u">U</option>
+                                <option value="v">V</option>
+                                <option value="w">W</option>
+                                <option value="x">X</option>
+                                <option value="y">Y</option>
+                                <option value="z">Z</option>
+                            </select>
+                            <select class="form-control sort-select">
+                                <option value="">Sort by</option>
+                                <option value="a-z">A-Z</option>
+                                <option value="z-a">Z-A</option>
+                                <option value="newest">Newest First</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                        <div class="model-cards-grid">
+                            <!-- Model Card 1 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <img src="img/svg/huggingface-logo.svg" alt="Hugging Face" class="platform-logo">
+                                    <span class="model-date">Added 2 days ago</span>
+                                </div>
+                                <h3 class="model-title">SDXL-Turbo</h3>
+                                <p class="model-description">Lightning-fast image generation model with exceptional quality</p>
+                                <div class="model-metrics">
+                                    <span class="metric"><i class="fas fa-bolt"></i> 125K runs</span>
+                                    <span class="metric"><i class="fas fa-star"></i> 4.8K likes</span>
+                                </div>
+                                <div class="model-tags">
+                                    <span class="tag">Image Generation</span>
+                                    <span class="tag">Real-time</span>
+                                </div>
+                                <button class="add-to-comparison-btn">
+                                    <i class="fas fa-plus"></i>
+                                    Add to Comparison
+                                </button>
+                            </div>
+
+                            <!-- Model Card 2 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <img src="img/svg/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                                    <span class="model-date">Added 1 week ago</span>
+                                </div>
+                                <h3 class="model-title">Mixtral-8x7B</h3>
+                                <p class="model-description">Advanced language model with superior reasoning capabilities</p>
+                                <div class="model-metrics">
+                                    <span class="metric"><i class="fas fa-bolt"></i> 89K runs</span>
+                                    <span class="metric"><i class="fas fa-star"></i> 3.2K likes</span>
+                                </div>
+                                <div class="model-tags">
+                                    <span class="tag">Text Generation</span>
+                                    <span class="tag">LLM</span>
+                                </div>
+                                <button class="add-to-comparison-btn">
+                                    <i class="fas fa-plus"></i>
+                                    Add to Comparison
+                                </button>
+                            </div>
+
+                            <!-- Model Card 3 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <img src="img/svg/stability-logo.svg" alt="Stability AI" class="platform-logo">
+                                    <span class="model-date">Added 3 days ago</span>
+                                </div>
+                                <h3 class="model-title">Stable Audio</h3>
+                                <p class="model-description">High-quality music and sound generation model</p>
+                                <div class="model-metrics">
+                                    <span class="metric"><i class="fas fa-bolt"></i> 45K runs</span>
+                                    <span class="metric"><i class="fas fa-star"></i> 2.1K likes</span>
+                                </div>
+                                <div class="model-tags">
+                                    <span class="tag">Audio Generation</span>
+                                    <span class="tag">Music</span>
+                                </div>
+                                <button class="add-to-comparison-btn">
+                                    <i class="fas fa-plus"></i>
+                                    Add to Comparison
+                                </button>
+                            </div>
+                        </div>
+                        <div class="selected-models">
+                            <!-- Selected models will be added here dynamically -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Preview Comparison Results -->
+                <div class="preview-comparison">
+                    <h4>Preview Comparison Results</h4>
+                    <div class="comparison-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Metrics</th>
+                                    <th>SDXL-Turbo</th>
+                                    <th>Mixtral-8x7B</th>
+                                    <th>Stable Audio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Model Name</td>
+                                    <td>SDXL-Turbo</td>
+                                    <td>Mixtral-8x7B</td>
+                                    <td>Stable Audio</td>
+                                </tr>
+                                <tr>
+                                    <td>Release Date</td>
+                                    <td>2024-01-15</td>
+                                    <td>2024-02-01</td>
+                                    <td>2024-01-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Runs</td>
+                                    <td>125K</td>
+                                    <td>89K</td>
+                                    <td>45K</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Likes</td>
+                                    <td>4.8K</td>
+                                    <td>3.2K</td>
+                                    <td>2.1K</td>
+                                </tr>
+                                <tr class="premium-row">
+                                    <td>
+                                        <span class="premium-badge">Premium</span>
+                                        Weekly Growth
+                                    </td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                </tr>
+                                <tr class="premium-row">
+                                    <td>
+                                        <span class="premium-badge">Premium</span>
+                                        User Rating
+                                    </td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                </tr>
+                                <tr class="premium-row">
+                                    <td>
+                                        <span class="premium-badge">Premium</span>
+                                        Similar Models
+                                    </td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                </tr>
+                                <tr class="premium-row">
+                                    <td>
+                                        <span class="premium-badge">Premium</span>
+                                        Performance Trends
+                                    </td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                    <td class="locked">🔒</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="premium-features">
+                        <div class="premium-feature">
+                            <i class="fas fa-chart-line"></i>
+                            <h5>Weekly Growth</h5>
+                            <p>Track model performance trends over time</p>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-star"></i>
+                            <h5>User Ratings</h5>
+                            <p>Access detailed user feedback and ratings</p>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <h5>Smart Recommendations</h5>
+                            <p>Get personalized model suggestions</p>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-bolt"></i>
+                            <h5>Performance Trends</h5>
+                            <p>Analyze model performance patterns</p>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-code"></i>
+                            <h5>API Integration</h5>
+                            <p>Detailed API documentation and examples</p>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-shopping-bag"></i>
+                            <h5>Product Opportunities</h5>
+                            <p>Discover potential products you can build</p>
+                        </div>
+                    </div>
+                    <div class="comparison-cta">
+                        <a href="model-comparison-full.html" class="btn btn-primary">
+                            <i class="fas fa-crown"></i>
+                            Unlock Full Comparison
+                        </a>
+                        <p class="premium-note">Upgrade to Premium to compare up to 10 models and access all metrics</p>
+                    </div>
+                </div>
+                
+                <!-- Product Opportunities Section -->
+                <div class="product-opportunities">
+                    <div class="section-header">
+                        <h4>Product Opportunities</h4>
+                        <p class="premium-badge">Premium Feature</p>
+                    </div>
+                    <div class="product-categories">
+                        <div class="product-category">
+                            <div class="category-header">
+                                <i class="fas fa-image"></i>
+                                <h5>Image Generation</h5>
+                            </div>
+                            <div class="product-list">
+                                <div class="product-item">
+                                    <div class="product-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6>AI Art Generator</h6>
+                                        <p>Create custom artwork from text prompts</p>
+                                        <div class="product-metrics">
+                                            <span class="metric"><i class="fas fa-dollar-sign"></i> $50K/mo</span>
+                                            <span class="metric"><i class="fas fa-users"></i> 100K+ users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-icon">
+                                        <i class="fas fa-portrait"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6>Portrait Generator</h6>
+                                        <p>Generate professional headshots</p>
+                                        <div class="product-metrics">
+                                            <span class="metric"><i class="fas fa-dollar-sign"></i> $30K/mo</span>
+                                            <span class="metric"><i class="fas fa-users"></i> 50K+ users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-category">
+                            <div class="category-header">
+                                <i class="fas fa-video"></i>
+                                <h5>Video Generation</h5>
+                            </div>
+                            <div class="product-list">
+                                <div class="product-item">
+                                    <div class="product-icon">
+                                        <i class="fas fa-film"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6>Short Video Creator</h6>
+                                        <p>Generate viral social media content</p>
+                                        <div class="product-metrics">
+                                            <span class="metric"><i class="fas fa-dollar-sign"></i> $80K/mo</span>
+                                            <span class="metric"><i class="fas fa-users"></i> 200K+ users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-icon">
+                                        <i class="fas fa-ad"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6>Ad Generator</h6>
+                                        <p>Create engaging marketing videos</p>
+                                        <div class="product-metrics">
+                                            <span class="metric"><i class="fas fa-dollar-sign"></i> $40K/mo</span>
+                                            <span class="metric"><i class="fas fa-users"></i> 30K+ users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 合并后的 CTA 和 Newsletter Section -->
+    <section class="cta-newsletter-section">
+        <div class="container">
+            <div class="section-grid">
+                <!-- Premium CTA -->
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Premium Reports</h2>
+                        <p>Unlock the full potential of AI model analytics</p>
+                        
+                        <div class="premium-features">
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M15 5v20M5 15h20" stroke="#8b5cf6" stroke-width="2"/>
+                                    <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                </svg>
+                                <span>Complete, unfiltered data access</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <rect x="5" y="5" width="20" height="20" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                    <path d="M10 15l4 4 8-8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span>Custom report generation</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M5 20l5-5 5 5 10-10" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                    <circle cx="5" cy="20" r="2" fill="#8b5cf6"/>
+                                    <circle cx="10" cy="15" r="2" fill="#8b5cf6"/>
+                                    <circle cx="15" cy="20" r="2" fill="#8b5cf6"/>
+                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                                </svg>
+                                <span>API usage recommendations</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M5 25l7-7 6 6 7-14" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                    <circle cx="5" cy="25" r="2" fill="#8b5cf6"/>
+                                    <circle cx="12" cy="18" r="2" fill="#8b5cf6"/>
+                                    <circle cx="18" cy="24" r="2" fill="#8b5cf6"/>
+                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                                </svg>
+                                <span>Early access to emerging trends</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-options">
+                            <div class="pricing-option">
+                                <h3>Monthly</h3>
+                                <div class="price">$49<span>/month</span></div>
+                                <a href="#" class="btn btn-primary">Subscribe</a>
+                            </div>
+                            <div class="pricing-option featured">
+                                <div class="best-value">Best Value</div>
+                                <h3>Annual</h3>
+                                <div class="price">$39<span>/month</span></div>
+                                <div class="savings">Save $120/year</div>
+                                <a href="#" class="btn btn-primary">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Model Guru</h3>
+                    <p>Your AI Model Discovery & Analytics Hub</p>
+                    <select id="languageSwitcher" class="language-switcher">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <div class="footer-links-container">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
+                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
+                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+    <script>
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 80,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: ['#ff00ff', '#00ffff', '#ffff00']
+                    },
+                    shape: {
+                        type: 'circle',
+                        stroke: {
+                            width: 0,
+                            color: '#000000'
+                        },
+                        polygon: {
+                            nb_sides: 5
+                        }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 2,
+                            size_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#ff00ff',
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: 'repulse'
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+        });
+    </script>
+</body>
 </html>

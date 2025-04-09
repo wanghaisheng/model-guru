@@ -1,0 +1,147 @@
+/* Hero Section */
+.hero {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, rgba(255, 0, 255, 0.1) 0%, transparent 70%),
+    linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,0,255,0.1)" stroke-width="0.5"/></svg>');
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.floating-elements {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  box-shadow: var(--neon-glow);
+  animation: float-animation 10s infinite ease-in-out;
+}
+
+.element-1 {
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  right: 10%;
+  animation-delay: 0s;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.element-2 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  right: 30%;
+  animation-delay: 2s;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+}
+
+.element-3 {
+  width: 80px;
+  height: 80px;
+  top: 70%;
+  right: 20%;
+  animation-delay: 4s;
+  background: linear-gradient(45deg, var(--accent), var(--primary));
+}
+
+.element-4 {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: 50%;
+  animation-delay: 6s;
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+}
+
+@keyframes float-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">Model Guru - AI Model Reports & Analytics</title>
+    <meta name="description" data-i18n="meta.description" content="Get comprehensive AI model reports and analytics to discover profitable opportunities across different model types and APIs.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8b5cf6"/>
+                            <stop offset="100%" style="stop-color:#6d28d9"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#logo-gradient)" d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z"/>
+                    <path fill="url(#logo-gradient)" d="M20 8c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S26.627 8 20 8zm0 22c-5.514 0-10-4.486-10-10S14.486 10 20 10s10 4.486 10 10-4.486 10-10 10z"/>
+                </svg>
+                Model Guru
+            </a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="reports.html" class="nav-link active" data-i18n="nav.reports">Reports</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="reports.title">AI Model Reports & Analytics</h1>
+                <p data-i18n="reports.subtitle">Discover profitable opportunities with comprehensive AI model reports</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logo-gradient)" stroke-width="2"/>
+                            <text x="20" y="25" text-anchor="middle" fill="#8b5cf6" font-size="14">24h</text>
+                        </svg>
+                        <div class="stat-info">
+                            <h4>Daily Updates</h4>
+                            <p>Fresh insights every day</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <rect x="5" y="5" width="30" height="30" rx="4" fill="none" stroke="url(#logo-gradient)" stroke-width="2"/>
+                            <path d="M10 20l8 8 12-16" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                        </svg>
+                        <div class="stat-info">
+                            <h4>Verified Data</h4>
+                            <p>100% accurate metrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg width="400" height="300" viewBox="0 0 400 300">
+                    <defs>
+                        <linearGradient id="chart-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.2"/>
+                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M0 250 C100 200 200 300 300 150 L300 250 L0 250" fill="url(#chart-gradient)"/>
+                    <path d="M0 250 C100 200 200 300 300 150" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+                    <circle cx="300" cy="150" r="6" fill="#8b5cf6"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports-section">
+        <div class="container">
+            <div class="reports-grid">
+                <!-- Daily Report -->
+                <div class="report-card">
+                    <div class="report-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M20 10v10l7 7" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="report-title">Daily Insights</h3>
+                    <p class="report-description">Track day-to-day changes in model popularity and usage metrics</p>
+                    
+                    <div class="report-features">
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.daily.features.0">24-hour trending models across platforms</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.daily.features.1">New model releases and updates</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.daily.features.2">Daily usage spikes and patterns</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.daily.features.3">Emerging use cases and applications</span>
+                        </div>
+                    </div>
+                    
+                    <div class="report-preview">
+                        <div class="report-preview-content">
+                            <div class="preview-header">
+                                <h5>Top Trending (Last 24h)</h5>
+                                <div class="user-testimonial">
+                                    <img src="img/avatars/user1.svg" alt="User" class="user-avatar">
+                                    <div class="testimonial-content">
+                                        <p>"These daily insights helped me identify emerging trends early."</p>
+                                        <span class="user-name">Sarah Chen</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>1. SDXL-Turbo - 15.2K runs (+42%)</p>
+                            <p>2. Mistral-7B - 8.7K runs (+28%)</p>
+                            <p>3. Stable Audio - 6.3K runs (+35%)</p>
+                            <div class="blur-overlay">
+                                <a href="#premium" class="btn" data-i18n="reports.premium.cta">Upgrade to Premium</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-cta">
+                        <a href="#sample-daily" class="btn btn-secondary" data-i18n="reports.daily.cta">View Sample Daily Report</a>
+                    </div>
+                </div>
+
+                <!-- Weekly Report -->
+                <div class="report-card">
+                    <div class="report-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <rect x="5" y="5" width="30" height="30" rx="4" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M10 20l8 8 12-16" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="report-title">Weekly Analysis</h3>
+                    <p class="report-description">Identify medium-term trends and monetization opportunities</p>
+                    
+                    <div class="report-features">
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.weekly.features.0">Week-over-week growth analysis</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.weekly.features.1">Competitive landscape changes</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.weekly.features.2">Underserved market segments</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.weekly.features.3">Profitable API integration opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="report-preview">
+                        <div class="report-preview-content">
+                            <div class="preview-header">
+                                <h5>Growth Leaders This Week</h5>
+                                <div class="user-testimonial">
+                                    <img src="img/avatars/user2.svg" alt="User" class="user-avatar">
+                                    <div class="testimonial-content">
+                                        <p>"Weekly reports are crucial for our strategic planning."</p>
+                                        <span class="user-name">Michael Torres</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>1. Audio Generation (+68% WoW)</p>
+                            <p>2. Multi-modal Models (+42% WoW)</p>
+                            <p>3. Fine-tuning Services (+37% WoW)</p>
+                            <div class="blur-overlay">
+                                <a href="#premium" class="btn" data-i18n="reports.premium.cta">Upgrade to Premium</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-cta">
+                        <a href="#sample-weekly" class="btn btn-secondary" data-i18n="reports.weekly.cta">View Sample Weekly Report</a>
+                    </div>
+                </div>
+
+                <!-- Monthly Report -->
+                <div class="report-card">
+                    <div class="report-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <path d="M5 10h30v25H5z" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M10 5v10M30 5v10" stroke="#8b5cf6" stroke-width="2"/>
+                            <circle cx="20" cy="25" r="8" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M20 21v4l3 3" stroke="#8b5cf6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="report-title">Monthly Strategy Report</h3>
+                    <p class="report-description">Comprehensive analysis for long-term strategic planning</p>
+                    
+                    <div class="report-features">
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.monthly.features.0">In-depth market analysis and forecasting</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.monthly.features.1">Revenue potential by model category</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.monthly.features.2">Developer ecosystem opportunities</span>
+                        </div>
+                        <div class="report-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="reports.monthly.features.3">Strategic partnership recommendations</span>
+                        </div>
+                    </div>
+                    
+                    <div class="report-preview">
+                        <div class="report-preview-content">
+                            <div class="preview-header">
+                                <h5>Monthly Market Insights</h5>
+                                <div class="user-testimonial">
+                                    <img src="img/avatars/user3.svg" alt="User" class="user-avatar">
+                                    <div class="testimonial-content">
+                                        <p>"The ROI predictions are incredibly accurate."</p>
+                                        <span class="user-name">Emily Johnson</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>• API Monetization Potential: $12.4M</p>
+                            <p>• Highest ROI Category: Specialized LLMs</p>
+                            <p>• Emerging Opportunity: Multi-modal APIs</p>
+                            <div class="blur-overlay">
+                                <a href="#premium" class="btn" data-i18n="reports.premium.cta">Upgrade to Premium</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-cta">
+                        <a href="#sample-monthly" class="btn btn-secondary" data-i18n="reports.monthly.cta">View Sample Monthly Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Reports Section -->
+    <section class="premium-reports-section" id="premium">
+        <div class="container">
+            <div class="premium-content">
+                <h2>Premium Reports</h2>
+                <p>Unlock the full potential of AI model analytics</p>
+                
+                <div class="premium-features">
+                    <div class="premium-feature">
+                        <svg width="30" height="30" viewBox="0 0 30 30">
+                            <path d="M15 5v20M5 15h20" stroke="#8b5cf6" stroke-width="2"/>
+                            <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                        </svg>
+                        <span>Complete, unfiltered data access</span>
+                    </div>
+                    <div class="premium-feature">
+                        <svg width="30" height="30" viewBox="0 0 30 30">
+                            <rect x="5" y="5" width="20" height="20" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M10 15l4 4 8-8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span>Custom report generation</span>
+                    </div>
+                    <div class="premium-feature">
+                        <svg width="30" height="30" viewBox="0 0 30 30">
+                            <path d="M5 20l5-5 5 5 10-10" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                            <circle cx="5" cy="20" r="2" fill="#8b5cf6"/>
+                            <circle cx="10" cy="15" r="2" fill="#8b5cf6"/>
+                            <circle cx="15" cy="20" r="2" fill="#8b5cf6"/>
+                            <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                        </svg>
+                        <span>API usage recommendations</span>
+                    </div>
+                    <div class="premium-feature">
+                        <svg width="30" height="30" viewBox="0 0 30 30">
+                            <path d="M5 25l7-7 6 6 7-14" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                            <circle cx="5" cy="25" r="2" fill="#8b5cf6"/>
+                            <circle cx="12" cy="18" r="2" fill="#8b5cf6"/>
+                            <circle cx="18" cy="24" r="2" fill="#8b5cf6"/>
+                            <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                        </svg>
+                        <span>Early access to emerging trends</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-options">
+                    <div class="pricing-option">
+                        <h3>Monthly</h3>
+                        <div class="price">$49<span>/month</span></div>
+                        <a href="#" class="btn btn-primary">Subscribe</a>
+                    </div>
+                    <div class="pricing-option featured">
+                        <div class="best-value">Best Value</div>
+                        <h3>Annual</h3>
+                        <div class="price">$39<span>/month</span></div>
+                        <div class="savings">Save $120/year</div>
+                        <a href="#" class="btn btn-primary">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=4" alt="User" class="user-avatar">
+                    <div class="testimonial-content">
+                        <p>"The insights from Model Guru's reports have been invaluable for our AI development strategy."</p>
+                        <div class="user-info">
+                            <strong>David Kim</strong>
+                            <span>AI Research Lead</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=5" alt="User" class="user-avatar">
+                    <div class="testimonial-content">
+                        <p>"We've saved countless hours in model selection thanks to these comprehensive reports."</p>
+                        <div class="user-info">
+                            <strong>Lisa Wang</strong>
+                            <span>Tech Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Model Guru</h3>
+                    <p>Your AI Model Discovery & Analytics Hub</p>
+                    <select id="languageSwitcher" class="language-switcher">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <div class="footer-links-container">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
+                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
+                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/i18n.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize particles.js
+            const particlesContainer = document.getElementById('particles-js');
+            if (particlesContainer) {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: {
+                            value: 80,
+                            density: {
+                                enable: true,
+                                value_area: 800
+                            }
+                        },
+                        color: {
+                            value: '#ff00ff'
+                        },
+                        shape: {
+                            type: 'circle',
+                            stroke: {
+                                width: 0,
+                                color: '#000000'
+                            },
+                            polygon: {
+                                nb_sides: 5
+                            }
+                        },
+                        opacity: {
+                            value: 0.5,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 1,
+                                opacity_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        size: {
+                            value: 3,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 2,
+                                size_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#ff00ff',
+                            opacity: 0.4,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: true,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false,
+                            attract: {
+                                enable: false,
+                                rotateX: 600,
+                                rotateY: 1200
+                            }
+                        }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: 'repulse'
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: 'push'
+                            },
+                            resize: true
+                        },
+                        modes: {
+                            grab: {
+                                distance: 400,
+                                line_linked: {
+                                    opacity: 1
+                                }
+                            },
+                            bubble: {
+                                distance: 400,
+                                size: 40,
+                                duration: 2,
+                                opacity: 8,
+                                speed: 3
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4
+                            },
+                            push: {
+                                particles_nb: 4
+                            },
+                            remove: {
+                                particles_nb: 2
+                            }
+                        }
+                    },
+                    retina_detect: true
+                });
+            }
+        });
+    </script>
+</body>
+</html>

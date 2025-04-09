@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Model Guru - 发现和追踪 AI 模型",
+    "description": "您的 AI/ML 模型发现和追踪中心。找到趋势模型，追踪使用指标，做出明智决策。"
+  },
+  "nav": {
+    "home": "首页",
+    "models": "所有模型",
+    "platforms": "平台",
+    "reports": "报告",
+    "about": "关于",
+    "testimonials": "用户评价",
+    "faq": "常见问题",
+    "blog": "博客"
+  },
+  "hero": {
+    "title": "跨平台追踪 AI 模型",
+    "subtitle": "您的 AI 模型发现与分析中心",
+    "cta": "探索模型"
+  },
+  "playground": {
+    "title": "体验模型搜索",
+    "subtitle": "体验我们强大的模型搜索和追踪功能",
+    "searchPlaceholder": "搜索AI模型...",
+    "filterLabel": "按平台筛选：",
+    "sortLabel": "排序方式：",
+    "noResults": "未找到模型。请尝试其他搜索词。"
+  },
+  "features": {
+    "newModels": {
+      "title": "最新添加",
+      "description": "及时了解各平台新增的最新模型",
+      "viewAll": "查看所有新模型"
+    },
+    "trending": {
+      "title": "本周趋势",
+      "description": "查看基于运行次数和点赞的热门模型",
+      "viewAll": "查看所有趋势"
+    },
+    "popular": {
+      "title": "本月最受欢迎",
+      "description": "发现使用最多和评分最高的模型",
+      "viewAll": "查看所有热门"
+    }
+  },
+  "modelList": {
+    "title": "探索模型",
+    "filterPlatform": "按平台筛选",
+    "filterCategory": "按类别筛选",
+    "sortBy": "排序方式",
+    "sortOptions": {
+      "newest": "添加日期（最新）",
+      "oldest": "添加日期（最早）",
+      "mostLikes": "最受欢迎（点赞）",
+      "mostRuns": "最受欢迎（运行次数）",
+      "trending": "趋势评分",
+      "alphabetical": "字母顺序（A-Z）"
+    }
+  },
+  "comparison": {
+    "title": "为什么选择 Model Guru",
+    "huggingface": "Hugging Face",
+    "replicate": "Replicate",
+    "modelGuru": "Model Guru",
+    "features": {
+      "discovery": "跨平台AI模型趋势追踪",
+      "metrics": "全面的模型数据分析与组织",
+      "trends": "独立开发者专业报告",
+      "tracking": "API创建产品赚钱机会"
+    }
+  },
+  "painPoints": {
+    "title": "解决常见挑战",
+    "fragmentation": {
+      "problem": "模型生态碎片化",
+      "solution": "统一仪表盘满足所有模型发现需求"
+    },
+    "discovery": {
+      "problem": "难以追踪模型性能",
+      "solution": "跨平台实时指标和趋势分析"
+    },
+    "metrics": {
+      "problem": "缺乏统一视图",
+      "solution": "全面的跨平台分析和洞察"
+    }
+  },
+  "testimonials": {
+    "title": "用户如何使用 Model Guru",
+    "viewAll": "查看所有用户评价"
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "Model Guru 如何收集模型数据？",
+    "a1": "我们通过各平台提供的公开 API 和公开可用信息收集数据。我们定期更新数据以确保信息的准确性和时效性。详细信息请查看我们的<a href=\"methodology.html\">方法论页面</a>。",
+    "q2": "Model Guru 是否提供 API 访问？",
+    "a2": "目前我们不提供 API 访问，但这是我们未来计划中的功能。如果您对此特别感兴趣，请<a href=\"contact.html\">联系我们</a>。",
+    "q3": "数据多久更新一次？",
+    "a3": "我们每天更新数据，确保您能够获取所有平台上 AI 模型的最新信息。",
+    "q4": "我可以建议添加新的平台吗？",
+    "a4": "当然可以！我们一直在寻求扩大覆盖范围。请<a href=\"contact.html\">联系我们</a>提出您的建议。"
+  },
+  "blog": {
+    "title": "AI 模型洞察与教程",
+    "subtitle": "最新的 AI 模型趋势、教程和最佳实践",
+    "viewAll": "查看所有文章"
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "由 AI 和机器学习专家组成的团队，致力于简化 AI 模型发现",
+    "mission": {
+      "title": "我们的使命",
+      "description": "Model Guru 的使命是通过提供统一、透明的 AI 模型发现平台，简化 AI 技术的采用过程。我们相信，通过消除发现和评估 AI 模型的障碍，我们可以加速创新并使更多人能够利用 AI 的力量。"
+    }
+  },
+  "auth": {
+    "title": "创建免费账户",
+    "description": "注册 Model Guru 以保存您喜爱的模型、接收个性化推荐和趋势更新。",
+    "signup": "注册",
+    "or": "或",
+    "github": "使用 GitHub 登录",
+    "google": "使用 Google 登录",
+    "haveAccount": "已有账户？",
+    "login": "登录",
+    "benefits": {
+      "title": "账户特权",
+      "save": "保存喜爱的模型",
+      "alerts": "接收新模型和趋势提醒",
+      "dashboard": "访问个性化仪表板",
+      "history": "查看浏览历史"
+    }
+  },
+  "modelComparison": {
+    "title": "模型对比工具",
+    "description": "并排比较不同的 AI 模型，找出最适合您需求的模型",
+    "compare": "比较模型",
+    "fullTool": "使用完整对比工具"
+  },
+  "reports": {
+    "title": "AI模型报告与分析",
+    "subtitle": "通过全面的AI模型报告发现盈利机会",
+    "description": "付费用户可以获取完整版的日报、周报和月报，揭示不同类型模型和API的潜在赚钱机会。",
+    "daily": {
+      "title": "每日洞察",
+      "description": "追踪模型流行度和使用指标的日常变化",
+      "features": [
+        "24小时内跨平台趋势模型",
+        "新模型发布和更新",
+        "日常使用高峰和模式",
+        "新兴用例和应用"
+      ],
+      "cta": "查看每日报告样本"
+    },
+    "weekly": {
+      "title": "每周分析",
+      "description": "识别中期趋势和变现机会",
+      "features": [
+        "周环比增长分析",
+        "竞争格局变化",
+        "服务不足的市场细分",
+        "有利可图的API集成机会"
+      ],
+      "cta": "查看每周报告样本"
+    },
+    "monthly": {
+      "title": "月度战略报告",
+      "description": "为长期战略规划提供全面分析",
+      "features": [
+        "深入的市场分析和预测",
+        "按模型类别划分的收入潜力",
+        "开发者生态系统机会",
+        "战略合作伙伴建议"
+      ],
+      "cta": "查看月度报告样本"
+    },
+    "premium": {
+      "title": "高级报告",
+      "description": "释放AI模型分析的全部潜力",
+      "features": [
+        "完整、无过滤的数据访问",
+        "自定义报告生成",
+        "API使用建议",
+        "提前获取新兴趋势"
+      ],
+      "cta": "升级到高级版"
+    }
+  },
+  "newsletter": {
+    "title": "订阅 AI 模型更新",
+    "description": "每周接收最新的 AI 模型、趋势和教程直接发送到您的收件箱",
+    "subscribe": "订阅",
+    "privacy": "我们尊重您的隐私，绝不会分享您的电子邮件。您可以随时取消订阅。"
+  },
+  "footer": {
+    "language": "语言",
+    "about": "关于我们",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "contact": "联系我们",
+    "methodology": "我们的方法"
+  }
+}

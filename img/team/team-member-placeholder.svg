@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="98" fill="#2A2A2A" stroke="currentColor" stroke-width="2"/>
+    
+    <!-- Abstract User Icon -->
+    <path d="M100 60C88.9543 60 80 68.9543 80 80C80 91.0457 88.9543 100 100 100C111.046 100 120 91.0457 120 80C120 68.9543 111.046 60 100 60Z" fill="currentColor"/>
+    <path d="M140 140C140 129.333 133.333 120 120 120H80C66.6667 120 60 129.333 60 140" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Decorative Elements -->
+    <circle cx="100" cy="100" r="94" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Text -->
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="14" fill="currentColor" text-anchor="middle">Team Member</text>
+</svg> 

@@ -1,0 +1,116 @@
+/* Comparison Section */
+.comparison {
+  padding: 8rem 0;
+  background: rgba(10, 10, 10, 0.95);
+  position: relative;
+  perspective: 1000px;
+}
+
+.comparison::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, rgba(255, 0, 255, 0.1) 0%, transparent 70%),
+    linear-gradient(225deg, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+  z-index: -1;
+  animation: comparison-bg 10s ease-in-out infinite;
+}
+
+@keyframes comparison-bg {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+
+.comparison-wrapper {
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 3rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 30px rgba(255, 0, 255, 0.4),
+    0 0 60px rgba(0, 255, 255, 0.2);
+  transform: translateZ(0);
+  transition: all 0.4s ease;
+}
+
+.comparison-table:hover {
+  transform: translateZ(50px);
+  box-shadow: 
+    0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 80px rgba(0, 255, 255, 0.3);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 2px solid rgba(255, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.comparison-table th {
+  background: linear-gradient(45deg, 
+    rgba(255, 0, 255, 0.2),
+    rgba(0, 255, 255, 0.2));
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-shadow: var(--neon-glow);
+  position: relative;
+  overflow: hidden;
+}
+
+.comparison-table th::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20%, 100% {
+    left: 100%;
+  }
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tr:hover td {
+  background: rgba(255, 0, 255, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.comparison-table td:first-child {
+  font-weight: 500;
+  color: var(--secondary);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}

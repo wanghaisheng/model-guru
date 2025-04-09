@@ -1,0 +1,156 @@
+/* Combined CTA and Newsletter Section */
+.cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, rgba(13, 12, 34, 0.95), rgba(13, 12, 34, 0.85));
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(128, 0, 255, 0.15), transparent 70%);
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.cta-text {
+    color: #fff;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #8b5cf6, #6d28d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+}
+
+.cta-form {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid rgba(128, 0, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.cta-form h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.cta-form p {
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(128, 0, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .cta-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .cta-text h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 4rem 0;
+    }
+
+    .cta-text h2 {
+        font-size: 2rem;
+    }
+
+    .cta-form {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-section {
+        padding: 3rem 0;
+    }
+
+    .cta-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-form {
+        padding: 1.5rem;
+    }
+}
