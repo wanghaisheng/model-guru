@@ -1,158 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Model Guru - Your AI Model Discovery Hub</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title data-i18n="meta.title">Model Guru - About Us</title>
+    <meta name="description" data-i18n="meta.description" content="Learn about Model Guru's mission to democratize AI model discovery and comparison.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <a href="index.html">
-                    <img src="img/logo.svg" alt="Model Guru Logo" class="logo">
-                </a>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="methodology.html">Methodology</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
 
-    <main class="about-page">
-        <section class="about-hero">
-            <div class="container">
-                <h1>About Model Guru</h1>
-                <p class="subtitle">Building the Future of AI Model Discovery</p>
-            </div>
-        </section>
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
 
-        <section class="mission-section">
-            <div class="container">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Model Guru</a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="about.title">About Model Guru</h1>
+                <p data-i18n="about.subtitle">Empowering developers and businesses to make informed decisions about AI models</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
                 <h2>Our Mission</h2>
-                <div class="mission-content">
-                    <p>At Model Guru, we're on a mission to transform how developers, researchers, and AI enthusiasts discover and track AI models. We believe that the rapid evolution of AI should be accessible and manageable for everyone.</p>
-                    <p>Our platform serves as a central hub, aggregating and analyzing models from leading platforms like Hugging Face, Replicate, and Stability AI. We track key metrics such as usage patterns, community engagement, and model performance to help you make informed decisions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="team-section">
-            <div class="container">
-                <h2>Our Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="img/team/team1.jpg" alt="Sarah Chen - Lead Developer">
-                        <h3>Sarah Chen</h3>
-                        <p class="role">Lead Developer</p>
-                        <p class="bio">Former ML engineer at Google, specializing in model deployment and API development. Passionate about making AI accessible.</p>
+                <p>To democratize access to AI models by providing comprehensive, unbiased information and tools for model discovery, comparison, and implementation.</p>
+                <div class="mission-stats">
+                    <div class="stat">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-label">Models Tracked</span>
                     </div>
-                    <div class="team-member">
-                        <img src="img/team/team2.jpg" alt="Michael Wang - AI Research Lead">
-                        <h3>Michael Wang</h3>
-                        <p class="role">AI Research Lead</p>
-                        <p class="bio">PhD in Machine Learning, previously worked on model evaluation and benchmarking at OpenAI.</p>
+                    <div class="stat">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">Platforms Integrated</span>
                     </div>
-                    <div class="team-member">
-                        <img src="img/team/team3.jpg" alt="David Zhang - Product Manager">
-                        <h3>David Zhang</h3>
-                        <p class="role">Product Manager</p>
-                        <p class="bio">Product leader with experience in AI platforms and developer tools. Focused on user experience and community building.</p>
+                    <div class="stat">
+                        <span class="stat-value">50K+</span>
+                        <span class="stat-label">Monthly Users</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="values-section">
-            <div class="container">
-                <h2>Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Transparency</h3>
-                        <p>We believe in open and honest communication about our data sources and methodology.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-users"></i>
-                        <h3>Community</h3>
-                        <p>Building a strong community of AI practitioners who share knowledge and insights.</p>
-                    </div>
-                    <div class="value-card">
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
                         <i class="fas fa-lightbulb"></i>
-                        <h3>Innovation</h3>
-                        <p>Continuously improving our platform to better serve the AI community's needs.</p>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Continuously evolving our platform to meet the changing needs of the AI community.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transparency</h3>
+                    <p>Providing clear, accurate, and unbiased information about AI models and platforms.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Building a collaborative environment where AI practitioners can share knowledge and insights.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth</h3>
+                    <p>Supporting the growth and development of AI applications across industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Team Member" class="member-photo">
+                    <h3>Sarah Chen</h3>
+                    <p class="member-role">Founder & CEO</p>
+                    <p class="member-bio">Former AI researcher with 10+ years of experience in machine learning and model development.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Team Member" class="member-photo">
+                    <h3>Michael Torres</h3>
+                    <p class="member-role">CTO</p>
+                    <p class="member-bio">Expert in scalable systems and AI infrastructure with a focus on performance optimization.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Team Member" class="member-photo">
+                    <h3>Emily Johnson</h3>
+                    <p class="member-role">Head of Product</p>
+                    <p class="member-bio">Product leader with a passion for creating intuitive user experiences in AI applications.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="timeline-section">
-            <div class="container">
-                <h2>Our Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2023</div>
-                        <div class="timeline-content">
-                            <h3>Project Inception</h3>
-                            <p>Recognized the need for a centralized AI model discovery platform while working on various ML projects.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content">
-                            <h3>Platform Launch</h3>
-                            <p>Launched Model Guru with support for major AI platforms and comprehensive model tracking.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2025</div>
-                        <div class="timeline-content">
-                            <h3>Community Growth</h3>
-                            <p>Expanded our platform features based on community feedback and growing user base.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Join our newsletter for the latest updates and insights about AI models</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p class="privacy-note">We respect your privacy and will never share your email.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cta-section">
-            <div class="container">
-                <h2>Join Our Mission</h2>
-                <p>Be part of the future of AI model discovery. Whether you're a developer, researcher, or AI enthusiast, we'd love to have you on board.</p>
-                <div class="cta-buttons">
-                    <a href="index.html" class="btn btn-primary">Explore Models</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>Model Guru</h3>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Model Guru</a>
                     <p>Your AI Model Discovery & Analytics Hub</p>
-                    <select id="languageSwitcher" class="language-switcher">
-                        <option value="en">English</option>
-                        <option value="zh">中文</option>
-                    </select>
                 </div>
-                <div class="footer-links-container">
-                    <h4>Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
-                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
-                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
-                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
-                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="models.html" data-i18n="nav.models">All Models</a></li>
+                            <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+                            <li><a href="reports.html" data-i18n="nav.reports">Reports</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+                            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
+                            <li><a href="terms.html" data-i18n="footer.terms">Terms</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -161,6 +210,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

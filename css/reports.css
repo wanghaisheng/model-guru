@@ -1,0 +1,127 @@
+/* Reports Section Styles */
+.reports-section {
+    padding: 4rem 0;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.report-card {
+    background: rgba(20, 20, 20, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(128, 0, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+}
+
+.report-icon {
+    margin-bottom: 1.5rem;
+}
+
+.report-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.report-description {
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.report-features {
+    margin-bottom: 1.5rem;
+}
+
+.report-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+.report-feature i {
+    color: #8b5cf6;
+}
+
+.report-preview {
+    background: rgba(20, 20, 20, 0.4);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-content {
+    font-size: 0.9rem;
+}
+
+.user-name {
+    color: #8b5cf6;
+    font-size: 0.8rem;
+}
+
+.blur-overlay {
+    position: relative;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(128, 0, 255, 0.2);
+}
+
+.blur-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(20, 20, 20, 0.8));
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.blur-overlay .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.report-cta {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .report-card {
+        padding: 1.5rem;
+    }
+} 

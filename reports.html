@@ -21,9 +21,6 @@
         <i class="fas fa-moon"></i>
     </button>
 
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
@@ -142,7 +139,7 @@
                             <div class="preview-header">
                                 <h5>Top Trending (Last 24h)</h5>
                                 <div class="user-testimonial">
-                                    <img src="img/avatars/user1.svg" alt="User" class="user-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=1" alt="User" class="user-avatar">
                                     <div class="testimonial-content">
                                         <p>"These daily insights helped me identify emerging trends early."</p>
                                         <span class="user-name">Sarah Chen</span>
@@ -198,7 +195,7 @@
                             <div class="preview-header">
                                 <h5>Growth Leaders This Week</h5>
                                 <div class="user-testimonial">
-                                    <img src="img/avatars/user2.svg" alt="User" class="user-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=2" alt="User" class="user-avatar">
                                     <div class="testimonial-content">
                                         <p>"Weekly reports are crucial for our strategic planning."</p>
                                         <span class="user-name">Michael Torres</span>
@@ -256,7 +253,7 @@
                             <div class="preview-header">
                                 <h5>Monthly Market Insights</h5>
                                 <div class="user-testimonial">
-                                    <img src="img/avatars/user3.svg" alt="User" class="user-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=3" alt="User" class="user-avatar">
                                     <div class="testimonial-content">
                                         <p>"The ROI predictions are incredibly accurate."</p>
                                         <span class="user-name">Emily Johnson</span>
@@ -280,81 +277,84 @@
         </div>
     </section>
 
-    <!-- Premium Reports Section -->
-    <section class="premium-reports-section" id="premium">
+    <!-- 合并后的 CTA 和 Newsletter Section -->
+    <section class="cta-newsletter-section">
         <div class="container">
-            <div class="premium-content">
-                <h2>Premium Reports</h2>
-                <p>Unlock the full potential of AI model analytics</p>
-                
-                <div class="premium-features">
-                    <div class="premium-feature">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path d="M15 5v20M5 15h20" stroke="#8b5cf6" stroke-width="2"/>
-                            <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
-                        </svg>
-                        <span>Complete, unfiltered data access</span>
-                    </div>
-                    <div class="premium-feature">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <rect x="5" y="5" width="20" height="20" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
-                            <path d="M10 15l4 4 8-8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                        </svg>
-                        <span>Custom report generation</span>
-                    </div>
-                    <div class="premium-feature">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path d="M5 20l5-5 5 5 10-10" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                            <circle cx="5" cy="20" r="2" fill="#8b5cf6"/>
-                            <circle cx="10" cy="15" r="2" fill="#8b5cf6"/>
-                            <circle cx="15" cy="20" r="2" fill="#8b5cf6"/>
-                            <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
-                        </svg>
-                        <span>API usage recommendations</span>
-                    </div>
-                    <div class="premium-feature">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path d="M5 25l7-7 6 6 7-14" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                            <circle cx="5" cy="25" r="2" fill="#8b5cf6"/>
-                            <circle cx="12" cy="18" r="2" fill="#8b5cf6"/>
-                            <circle cx="18" cy="24" r="2" fill="#8b5cf6"/>
-                            <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
-                        </svg>
-                        <span>Early access to emerging trends</span>
+            <div class="section-grid">
+                <!-- Premium CTA -->
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Premium Reports</h2>
+                        <p>Unlock the full potential of AI model analytics</p>
+                        
+                        <div class="premium-features">
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M15 5v20M5 15h20" stroke="#8b5cf6" stroke-width="2"/>
+                                    <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                </svg>
+                                <span>Complete, unfiltered data access</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <rect x="5" y="5" width="20" height="20" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                    <path d="M10 15l4 4 8-8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span>Custom report generation</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M5 20l5-5 5 5 10-10" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                    <circle cx="5" cy="20" r="2" fill="#8b5cf6"/>
+                                    <circle cx="10" cy="15" r="2" fill="#8b5cf6"/>
+                                    <circle cx="15" cy="20" r="2" fill="#8b5cf6"/>
+                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                                </svg>
+                                <span>API usage recommendations</span>
+                            </div>
+                            <div class="premium-feature">
+                                <svg width="30" height="30" viewBox="0 0 30 30">
+                                    <path d="M5 25l7-7 6 6 7-14" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                    <circle cx="5" cy="25" r="2" fill="#8b5cf6"/>
+                                    <circle cx="12" cy="18" r="2" fill="#8b5cf6"/>
+                                    <circle cx="18" cy="24" r="2" fill="#8b5cf6"/>
+                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
+                                </svg>
+                                <span>Early access to emerging trends</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-options">
+                            <div class="pricing-option">
+                                <h3>Monthly</h3>
+                                <div class="price">$49<span>/month</span></div>
+                                <a href="#" class="btn btn-primary">Subscribe</a>
+                            </div>
+                            <div class="pricing-option featured">
+                                <div class="best-value">Best Value</div>
+                                <h3>Annual</h3>
+                                <div class="price">$39<span>/month</span></div>
+                                <div class="savings">Save $120/year</div>
+                                <a href="#" class="btn btn-primary">Subscribe</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="pricing-options">
-                    <div class="pricing-option">
-                        <h3>Monthly</h3>
-                        <div class="price">$49<span>/month</span></div>
-                        <a href="#" class="btn btn-primary">Subscribe</a>
-                    </div>
-                    <div class="pricing-option featured">
-                        <div class="best-value">Best Value</div>
-                        <h3>Annual</h3>
-                        <div class="price">$39<span>/month</span></div>
-                        <div class="savings">Save $120/year</div>
-                        <a href="#" class="btn btn-primary">Subscribe</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
-                <form id="newsletter-form">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <button type="submit" class="submit-btn">Subscribe Now</button>
-                </form>
+                <!-- Newsletter -->
+                <div class="newsletter-content">
+                    <svg width="60" height="60" viewBox="0 0 60 60" class="newsletter-icon">
+                        <rect x="5" y="15" width="50" height="30" rx="4" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                        <path d="M5 15l25 20 25-20" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                    </svg>
+                    <h2>Stay Updated</h2>
+                    <p>Get weekly insights and updates about AI models</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="privacy-note">We respect your privacy and will never share your email.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -389,32 +389,62 @@
     </section>
 
     <!-- Footer -->
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>Model Guru</h3>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Model Guru</a>
                     <p>Your AI Model Discovery & Analytics Hub</p>
-                    <select id="languageSwitcher" class="language-switcher">
-                        <option value="en">English</option>
-                        <option value="zh">中文</option>
-                    </select>
                 </div>
-                <div class="footer-links-container">
-                    <h4>Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
-                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
-                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
-                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
-                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="models.html" data-i18n="nav.models">All Models</a></li>
+                            <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+                            <li><a href="reports.html" data-i18n="nav.reports">Reports</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+                            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
+                            <li><a href="terms.html" data-i18n="footer.terms">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+                            <li><a href="#" data-i18n="footer.methodology">Our Methodology</a></li>
+                        </ul>
+                        <div class="language-switcher">
+                            <label for="language-select" data-i18n="footer.language">Language</label>
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="zh">中文</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+                <p>&copy; 2023 Model Guru. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
@@ -425,114 +455,111 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize particles.js
-            const particlesContainer = document.getElementById('particles-js');
-            if (particlesContainer) {
-                particlesJS('particles-js', {
-                    particles: {
-                        number: {
-                            value: 80,
-                            density: {
-                                enable: true,
-                                value_area: 800
-                            }
-                        },
-                        color: {
-                            value: '#ff00ff'
-                        },
-                        shape: {
-                            type: 'circle',
-                            stroke: {
-                                width: 0,
-                                color: '#000000'
-                            },
-                            polygon: {
-                                nb_sides: 5
-                            }
-                        },
-                        opacity: {
-                            value: 0.5,
-                            random: true,
-                            anim: {
-                                enable: true,
-                                speed: 1,
-                                opacity_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        size: {
-                            value: 3,
-                            random: true,
-                            anim: {
-                                enable: true,
-                                speed: 2,
-                                size_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        line_linked: {
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 80,
+                        density: {
                             enable: true,
-                            distance: 150,
-                            color: '#ff00ff',
-                            opacity: 0.4,
-                            width: 1
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#ff00ff'
+                    },
+                    shape: {
+                        type: 'circle',
+                        stroke: {
+                            width: 0,
+                            color: '#000000'
                         },
-                        move: {
+                        polygon: {
+                            nb_sides: 5
+                        }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: {
                             enable: true,
                             speed: 2,
-                            direction: 'none',
-                            random: true,
-                            straight: false,
-                            out_mode: 'out',
-                            bounce: false,
-                            attract: {
-                                enable: false,
-                                rotateX: 600,
-                                rotateY: 1200
-                            }
+                            size_min: 0.1,
+                            sync: false
                         }
                     },
-                    interactivity: {
-                        detect_on: 'canvas',
-                        events: {
-                            onhover: {
-                                enable: true,
-                                mode: 'repulse'
-                            },
-                            onclick: {
-                                enable: true,
-                                mode: 'push'
-                            },
-                            resize: true
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#ff00ff',
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: 'repulse'
                         },
-                        modes: {
-                            grab: {
-                                distance: 400,
-                                line_linked: {
-                                    opacity: 1
-                                }
-                            },
-                            bubble: {
-                                distance: 400,
-                                size: 40,
-                                duration: 2,
-                                opacity: 8,
-                                speed: 3
-                            },
-                            repulse: {
-                                distance: 200,
-                                duration: 0.4
-                            },
-                            push: {
-                                particles_nb: 4
-                            },
-                            remove: {
-                                particles_nb: 2
-                            }
-                        }
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        },
+                        resize: true
                     },
-                    retina_detect: true
-                });
-            }
+                    modes: {
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
+                },
+                retina_detect: true
+            });
         });
     </script>
 </body>

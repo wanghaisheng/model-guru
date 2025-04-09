@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title">Model Guru - Discover & Track AI Models</title>
     <meta name="description" data-i18n="meta.description" content="Your central hub for discovering and tracking AI/ML models across platforms. Find trending models, track usage metrics, and make informed decisions.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -39,6 +40,8 @@
                 <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
                 <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
                 <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
                 <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
                 <li class="nav-auth">
                     <a href="login.html" class="btn btn-outline" data-i18n="nav.login">Log In</a>
@@ -172,33 +175,33 @@
                             <option value="image">生成图片</option>
                             <option value="transcribe">语音转文字</option>
                             <option value="text">文本生成</option>
-                        </select>
+                </select>
                         
                         <select class="form-control" id="platform-filter">
                             <option value="">选择平台</option>
-                            <option value="replicate">Replicate</option>
+                    <option value="replicate">Replicate</option>
                             <option value="openai">OpenAI</option>
-                            <option value="stability">Stability AI</option>
-                        </select>
+                    <option value="stability">Stability AI</option>
+                </select>
                         
                         <select class="form-control" id="sort-filter">
                             <option value="a-z">按名称 A-Z</option>
                             <option value="popular">最受欢迎</option>
                             <option value="newest">最新发布</option>
-                        </select>
-                    </div>
+                </select>
+            </div>
                 </div>
 
                 <div class="model-cards-grid">
                     <!-- 模型卡片示例 -->
-                    <div class="model-card">
-                        <div class="model-card-header">
-                            <img src="img/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                <div class="model-card">
+                    <div class="model-card-header">
+                            <img src="assets/replicate-logo.png" alt="Replicate" class="platform-logo">
                             <span class="model-date">2024-02-20</span>
-                        </div>
+                    </div>
                         <h4 class="model-title">Stable Diffusion XL</h4>
                         <p class="model-description">最新的图像生成模型，支持高分辨率输出和精确控制。</p>
-                        <div class="model-metrics">
+                    <div class="model-metrics">
                             <div class="metric">
                                 <i class="fas fa-play"></i>
                                 <span>1.2M 运行</span>
@@ -207,26 +210,26 @@
                                 <i class="fas fa-heart"></i>
                                 <span>45K 点赞</span>
                             </div>
-                        </div>
-                        <div class="model-tags">
+                    </div>
+                    <div class="model-tags">
                             <span class="tag">图像生成</span>
                             <span class="tag">高分辨率</span>
-                        </div>
+                    </div>
                         <button class="add-to-comparison-btn">
                             <i class="fas fa-plus"></i>
                             添加到对比
                         </button>
-                    </div>
+                </div>
 
                     <!-- 更多模型卡片 -->
-                    <div class="model-card">
-                        <div class="model-card-header">
-                            <img src="img/openai-logo.svg" alt="OpenAI" class="platform-logo">
+                <div class="model-card">
+                    <div class="model-card-header">
+                            <img src="assets/openai-logo.png" alt="OpenAI" class="platform-logo">
                             <span class="model-date">2024-02-15</span>
-                        </div>
+                    </div>
                         <h4 class="model-title">GPT-4 Turbo</h4>
                         <p class="model-description">OpenAI 最强大的语言模型，支持多模态输入和更长上下文。</p>
-                        <div class="model-metrics">
+                    <div class="model-metrics">
                             <div class="metric">
                                 <i class="fas fa-play"></i>
                                 <span>2.5M 运行</span>
@@ -235,25 +238,25 @@
                                 <i class="fas fa-heart"></i>
                                 <span>98K 点赞</span>
                             </div>
-                        </div>
-                        <div class="model-tags">
+                    </div>
+                    <div class="model-tags">
                             <span class="tag">文本生成</span>
                             <span class="tag">对话</span>
-                        </div>
+                    </div>
                         <button class="add-to-comparison-btn">
                             <i class="fas fa-plus"></i>
                             添加到对比
                         </button>
-                    </div>
+                </div>
 
-                    <div class="model-card">
-                        <div class="model-card-header">
-                            <img src="img/replicate-logo.svg" alt="Replicate" class="platform-logo">
+                <div class="model-card">
+                    <div class="model-card-header">
+                            <img src="assets/replicate-logo.png" alt="Replicate" class="platform-logo">
                             <span class="model-date">2024-02-10</span>
-                        </div>
+                    </div>
                         <h4 class="model-title">Wan2.1</h4>
                         <p class="model-description">专业的视频生成模型，支持多种风格和场景转换。</p>
-                        <div class="model-metrics">
+                    <div class="model-metrics">
                             <div class="metric">
                                 <i class="fas fa-play"></i>
                                 <span>800K 运行</span>
@@ -262,8 +265,8 @@
                                 <i class="fas fa-heart"></i>
                                 <span>32K 点赞</span>
                             </div>
-                        </div>
-                        <div class="model-tags">
+                    </div>
+                    <div class="model-tags">
                             <span class="tag">视频生成</span>
                             <span class="tag">动画</span>
                         </div>
@@ -515,7 +518,7 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p data-i18n="faq.a2">Currently, we don't offer API access, but it's on our roadmap. If you're particularly interested in this feature, please <a href="contact.html">contact us</a>.</p>
+                        <p data-i18n="faq.a2">Currently, we don't offer API access, but it's on our roadmap. If you're particularly interested in this feature, please <a href="mailto:support@modelguru.deepseek.diy">contact us</a>.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -533,7 +536,7 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p data-i18n="faq.a4">Absolutely! We're always looking to expand our coverage. Please <a href="contact.html">contact us</a> with your suggestions.</p>
+                        <p data-i18n="faq.a4">Absolutely! We're always looking to expand our coverage. Please <a href="mailto:support@modelguru.deepseek.diy">contact us</a> with your suggestions.</p>
                     </div>
                 </div>
             </div>
@@ -699,8 +702,8 @@
                         <h3>Select Models to Compare</h3>
                         <div class="model-count">
                             <span class="selected-count">0</span>/3 models selected
-                        </div>
-                    </div>
+                </div>
+            </div>
                     <div class="model-selection-controls">
                         <div class="model-search">
                             <input type="text" class="form-control" placeholder="Search models...">
@@ -775,14 +778,14 @@
                                 <option value="newest">Newest First</option>
                                 <option value="popular">Most Popular</option>
                             </select>
-                        </div>
+            </div>
                         <div class="model-cards-grid">
                             <!-- Model Card 1 -->
                             <div class="model-card">
                                 <div class="model-card-header">
                                     <img src="img/svg/huggingface-logo.svg" alt="Hugging Face" class="platform-logo">
                                     <span class="model-date">Added 2 days ago</span>
-                                </div>
+        </div>
                                 <h3 class="model-title">SDXL-Turbo</h3>
                                 <p class="model-description">Lightning-fast image generation model with exceptional quality</p>
                                 <div class="model-metrics">
@@ -804,7 +807,7 @@
                                 <div class="model-card-header">
                                     <img src="img/svg/replicate-logo.svg" alt="Replicate" class="platform-logo">
                                     <span class="model-date">Added 1 week ago</span>
-                                </div>
+                    </div>
                                 <h3 class="model-title">Mixtral-8x7B</h3>
                                 <p class="model-description">Advanced language model with superior reasoning capabilities</p>
                                 <div class="model-metrics">
@@ -1047,83 +1050,24 @@
             </div>
         </div>
     </section>
-    
-    <!-- 合并后的 CTA 和 Newsletter Section -->
-    <section class="cta-newsletter-section">
-        <div class="container">
-            <div class="section-grid">
-                <!-- Premium CTA -->
-                <div class="cta-content">
-                    <div class="cta-text">
-                        <h2>Premium Reports</h2>
-                        <p>Unlock the full potential of AI model analytics</p>
-                        
-                        <div class="premium-features">
-                            <div class="premium-feature">
-                                <svg width="30" height="30" viewBox="0 0 30 30">
-                                    <path d="M15 5v20M5 15h20" stroke="#8b5cf6" stroke-width="2"/>
-                                    <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
-                                </svg>
-                                <span>Complete, unfiltered data access</span>
-                            </div>
-                            <div class="premium-feature">
-                                <svg width="30" height="30" viewBox="0 0 30 30">
-                                    <rect x="5" y="5" width="20" height="20" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
-                                    <path d="M10 15l4 4 8-8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                                </svg>
-                                <span>Custom report generation</span>
-                            </div>
-                            <div class="premium-feature">
-                                <svg width="30" height="30" viewBox="0 0 30 30">
-                                    <path d="M5 20l5-5 5 5 10-10" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                                    <circle cx="5" cy="20" r="2" fill="#8b5cf6"/>
-                                    <circle cx="10" cy="15" r="2" fill="#8b5cf6"/>
-                                    <circle cx="15" cy="20" r="2" fill="#8b5cf6"/>
-                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
-                                </svg>
-                                <span>API usage recommendations</span>
-                            </div>
-                            <div class="premium-feature">
-                                <svg width="30" height="30" viewBox="0 0 30 30">
-                                    <path d="M5 25l7-7 6 6 7-14" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                                    <circle cx="5" cy="25" r="2" fill="#8b5cf6"/>
-                                    <circle cx="12" cy="18" r="2" fill="#8b5cf6"/>
-                                    <circle cx="18" cy="24" r="2" fill="#8b5cf6"/>
-                                    <circle cx="25" cy="10" r="2" fill="#8b5cf6"/>
-                                </svg>
-                                <span>Early access to emerging trends</span>
-                            </div>
-                        </div>
-                        
-                        <div class="pricing-options">
-                            <div class="pricing-option">
-                                <h3>Monthly</h3>
-                                <div class="price">$49<span>/month</span></div>
-                                <a href="#" class="btn btn-primary">Subscribe</a>
-                            </div>
-                            <div class="pricing-option featured">
-                                <div class="best-value">Best Value</div>
-                                <h3>Annual</h3>
-                                <div class="price">$39<span>/month</span></div>
-                                <div class="savings">Save $120/year</div>
-                                <a href="#" class="btn btn-primary">Subscribe</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Newsletter -->
-                <div class="newsletter-content">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
-                    <form id="newsletter-form">
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
-                        <button type="submit" class="submit-btn">Subscribe Now</button>
-                    </form>
+    <!-- 合并后的 CTA 和 Newsletter Section -->
+    <section class="cta-section">
+            <div class="cta-content">
+            <div class="cta-text">
+                <h2>Ready to Transform Your AI Experience?</h2>
+                <p>Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
                 </div>
+            <div class="cta-form">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Subscribe Now</button>
+                </form>
             </div>
         </div>
     </section>
@@ -1146,7 +1090,7 @@
                         <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
                         <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
                         <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
                         <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
                         <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
                     </ul>
@@ -1158,115 +1102,121 @@
         </div>
     </footer>
 
-    <script src="js/main.js" type="module"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/i18n.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script>
-        // Initialize particles.js
-        document.addEventListener('DOMContentLoaded', function() {
-            particlesJS('particles-js', {
-                particles: {
-                    number: {
-                        value: 80,
-                        density: {
-                            enable: true,
-                            value_area: 800
-                        }
-                    },
-                    color: {
-                        value: ['#ff00ff', '#00ffff', '#ffff00']
-                    },
-                    shape: {
-                        type: 'circle',
-                        stroke: {
-                            width: 0,
-                            color: '#000000'
-                        },
-                        polygon: {
-                            nb_sides: 5
-                        }
-                    },
-                    opacity: {
-                        value: 0.5,
-                        random: true,
-                        anim: {
-                            enable: true,
-                            speed: 1,
-                            opacity_min: 0.1,
-                            sync: false
-                        }
-                    },
-                    size: {
-                        value: 3,
-                        random: true,
-                        anim: {
-                            enable: true,
-                            speed: 2,
-                            size_min: 0.1,
-                            sync: false
-                        }
-                    },
-                    line_linked: {
-                        enable: true,
-                        distance: 150,
-                        color: '#ff00ff',
-                        opacity: 0.4,
-                        width: 1
-                    },
-                    move: {
-                        enable: true,
-                        speed: 2,
-                        direction: 'none',
-                        random: true,
-                        straight: false,
-                        out_mode: 'out',
-                        bounce: false,
-                        attract: {
-                            enable: false,
-                            rotateX: 600,
-                            rotateY: 1200
-                        }
-                    }
-                },
-                interactivity: {
-                    detect_on: 'canvas',
-                    events: {
-                        onhover: {
-                            enable: true,
-                            mode: 'repulse'
-                        },
-                        onclick: {
-                            enable: true,
-                            mode: 'push'
-                        },
-                        resize: true
-                    },
-                    modes: {
-                        grab: {
-                            distance: 400,
-                            line_linked: {
-                                opacity: 1
+        // Wait for both DOM and particles.js to be fully loaded
+        window.addEventListener('load', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: {
+                            value: 80,
+                            density: {
+                                enable: true,
+                                value_area: 800
                             }
                         },
-                        bubble: {
-                            distance: 400,
-                            size: 40,
-                            duration: 2,
-                            opacity: 8,
-                            speed: 3
+                        color: {
+                            value: '#ff00ff'
                         },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4
+                        shape: {
+                            type: 'circle',
+                            stroke: {
+                                width: 0,
+                                color: '#000000'
+                            },
+                            polygon: {
+                                nb_sides: 5
+                            }
                         },
-                        push: {
-                            particles_nb: 4
+                        opacity: {
+                            value: 0.5,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 1,
+                                opacity_min: 0.1,
+                                sync: false
+                            }
                         },
-                        remove: {
-                            particles_nb: 2
+                        size: {
+                            value: 3,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 2,
+                                size_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#ff00ff',
+                            opacity: 0.4,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: true,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false,
+                            attract: {
+                                enable: false,
+                                rotateX: 600,
+                                rotateY: 1200
+                            }
                         }
-                    }
-                },
-                retina_detect: true
-            });
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: 'repulse'
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: 'push'
+                            },
+                            resize: true
+                        },
+                        modes: {
+                            grab: {
+                                distance: 400,
+                                line_linked: {
+                                    opacity: 1
+                                }
+                            },
+                            bubble: {
+                                distance: 400,
+                                size: 40,
+                                duration: 2,
+                                opacity: 8,
+                                speed: 3
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4
+                            },
+                            push: {
+                                particles_nb: 4
+                            },
+                            remove: {
+                                particles_nb: 2
+                            }
+                        }
+                    },
+                    retina_detect: true
+                });
+            } else {
+                console.warn('particles.js not loaded');
+            }
         });
     </script>
 </body>

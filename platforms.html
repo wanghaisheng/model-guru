@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.platformsTitle">Model Guru - AI Platforms Comparison</title>
-    <meta name="description" data-i18n="meta.platformsDescription" content="Compare and analyze all major AI model platforms. Get insights on features, pricing, and available models across different AI platforms.">
+    <title data-i18n="meta.title">Model Guru - AI Platforms</title>
+    <meta name="description" data-i18n="meta.description" content="Explore and compare different AI platforms and their model offerings. Find the best platform for your AI needs.">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -21,9 +21,6 @@
         <i class="fas fa-moon"></i>
     </button>
 
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
@@ -39,10 +36,9 @@
                 <li><a href="platforms.html" class="nav-link active" data-i18n="nav.platforms">Platforms</a></li>
                 <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
                 <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
                 <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
-                <li class="nav-auth">
-                    <a href="login.html" class="btn btn-outline" data-i18n="nav.login">Log In</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -51,330 +47,228 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 data-i18n="platforms.hero.title">AI Model Platforms Comparison</h1>
-                <p data-i18n="platforms.hero.subtitle">Compare features, pricing, and available models across major AI platforms</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Platforms Overview Section -->
-    <section class="platforms-overview-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="platforms.overview.title">Platforms We Track</h2>
-                <p data-i18n="platforms.overview.subtitle">Comprehensive data from the leading AI model providers</p>
-            </div>
-            
-            <div class="platforms-grid">
-                <!-- OpenAI Platform Card -->
-                <div class="platform-card">
-                    <img src="img/svg/openai-logo.svg" alt="OpenAI" class="platform-logo">
-                    <h3 class="platform-name">OpenAI</h3>
-                    <p class="platform-description" data-i18n="platforms.openai.description">Creator of GPT models and DALL-E, offering powerful language and image generation capabilities</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">25+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">10M+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
+                <h1 data-i18n="platforms.title">AI Platforms</h1>
+                <p data-i18n="platforms.subtitle">Compare and discover the best AI platforms for your needs</p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search platforms..." data-i18n="platforms.searchPlaceholder">
+                    <i class="fas fa-search search-icon"></i>
+                    <div class="search-results">
+                        <!-- Search results will be dynamically added here -->
                     </div>
-                    <a href="#openai" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
-                </div>
-                
-                <!-- Replicate Platform Card -->
-                <div class="platform-card">
-                    <img src="img/svg/replicate-logo.svg" alt="Replicate" class="platform-logo">
-                    <h3 class="platform-name">Replicate</h3>
-                    <p class="platform-description" data-i18n="platforms.replicate.description">Cloud platform for running machine learning models with a simple API</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">5K+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">500K+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
-                    </div>
-                    <a href="#replicate" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
-                </div>
-                
-                <!-- Hugging Face Platform Card -->
-                <div class="platform-card">
-                    <img src="img/svg/huggingface-logo.svg" alt="Hugging Face" class="platform-logo">
-                    <h3 class="platform-name">Hugging Face</h3>
-                    <p class="platform-description" data-i18n="platforms.huggingface.description">Leading platform for open-source AI models and datasets</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">120K+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">15M+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
-                    </div>
-                    <a href="#huggingface" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
-                </div>
-                
-                <!-- Stability AI Platform Card -->
-                <div class="platform-card">
-                    <img src="img/svg/stability-logo.svg" alt="Stability AI" class="platform-logo">
-                    <h3 class="platform-name">Stability AI</h3>
-                    <p class="platform-description" data-i18n="platforms.stability.description">Pioneer in open-source generative AI models and APIs</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">50+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">2M+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
-                    </div>
-                    <a href="#stability" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
-                </div>
-                
-                <!-- Anthropic Platform Card -->
-                <div class="platform-card">
-                    <img src="img/anthropic-logo.svg" alt="Anthropic" class="platform-logo">
-                    <h3 class="platform-name">Anthropic</h3>
-                    <p class="platform-description" data-i18n="platforms.anthropic.description">AI safety company focused on developing reliable, interpretable AI systems</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">10+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">1M+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
-                    </div>
-                    <a href="#anthropic" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
-                </div>
-                
-                <!-- Cohere Platform Card -->
-                <div class="platform-card">
-                    <img src="img/cohere-logo.svg" alt="Cohere" class="platform-logo">
-                    <h3 class="platform-name">Cohere</h3>
-                    <p class="platform-description" data-i18n="platforms.cohere.description">Specialized in NLP models for enterprise applications</p>
-                    <div class="platform-metrics">
-                        <div class="metric">
-                            <span class="metric-value">15+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.models">Models</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">500K+</span>
-                            <span class="metric-label" data-i18n="platforms.metrics.users">Users</span>
-                        </div>
-                    </div>
-                    <a href="#cohere" class="btn btn-primary platform-details-btn" data-i18n="platforms.viewDetails">View Details</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Comparison Section -->
-    <section class="platform-comparison-section">
+    <!-- Platform Categories -->
+    <section class="platform-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Model Hosting</h3>
+                    <p>Platforms that host and serve AI models</p>
+                    <ul class="category-platforms">
+                        <li><a href="#replicate">Replicate</a></li>
+                        <li><a href="#huggingface">Hugging Face</a></li>
+                        <li><a href="#stability">Stability AI</a></li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development Tools</h3>
+                    <p>Tools for AI model development and deployment</p>
+                    <ul class="category-platforms">
+                        <li><a href="#openai">OpenAI</a></li>
+                        <li><a href="#anthropic">Anthropic</a></li>
+                        <li><a href="#cohere">Cohere</a></li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Cloud providers with AI capabilities</p>
+                    <ul class="category-platforms">
+                        <li><a href="#aws">AWS</a></li>
+                        <li><a href="#gcp">Google Cloud</a></li>
+                        <li><a href="#azure">Azure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Comparison -->
+    <section class="platform-comparison">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="platforms.comparison.title">Platform Comparison</h2>
-                <p data-i18n="platforms.comparison.subtitle">Compare features, pricing, and capabilities across platforms</p>
+                <h2>Platform Comparison</h2>
+                <p>Compare key features across different AI platforms</p>
             </div>
-            
-            <div class="comparison-table-wrapper">
-                <table class="comparison-table">
+            <div class="comparison-table">
+                <table>
                     <thead>
                         <tr>
-                            <th>Features</th>
-                            <th>OpenAI</th>
+                            <th>Feature</th>
                             <th>Replicate</th>
                             <th>Hugging Face</th>
                             <th>Stability AI</th>
-                            <th>Anthropic</th>
+                            <th>OpenAI</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-i18n="platforms.comparison.features.textGeneration">Text Generation</td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
+                            <td>Model Types</td>
+                            <td>Multiple</td>
+                            <td>Multiple</td>
+                            <td>Image/Video</td>
+                            <td>Text/Image</td>
                         </tr>
                         <tr>
-                            <td data-i18n="platforms.comparison.features.imageGeneration">Image Generation</td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon">❌</span></td>
+                            <td>API Access</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
                         </tr>
                         <tr>
-                            <td data-i18n="platforms.comparison.features.videoGeneration">Video Generation</td>
-                            <td><span class="check-icon">❌</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                            <td><span class="check-icon">❌</span></td>
+                            <td>Pricing Model</td>
+                            <td>Pay-per-use</td>
+                            <td>Free/Paid</td>
+                            <td>Subscription</td>
+                            <td>Pay-per-use</td>
                         </tr>
                         <tr>
-                            <td data-i18n="platforms.comparison.features.audioGeneration">Audio Generation</td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="platforms.comparison.features.finetuning">Fine-tuning</td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon warning">⚠️</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon warning">⚠️</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="platforms.comparison.features.openSource">Open Source Models</td>
-                            <td><span class="check-icon">❌</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon">❌</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="platforms.comparison.features.freeTier">Free Tier</td>
-                            <td><span class="check-icon warning">⚠️</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon highlight">✅</span></td>
-                            <td><span class="check-icon warning">⚠️</span></td>
-                            <td><span class="check-icon warning">⚠️</span></td>
+                            <td>Custom Models</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Limited</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            
-            <div class="comparison-legend">
-                <div class="legend-item">
-                    <span class="check-icon highlight">✅</span>
-                    <span data-i18n="platforms.comparison.legend.available">Available</span>
-                </div>
-                <div class="legend-item">
-                    <span class="check-icon warning">⚠️</span>
-                    <span data-i18n="platforms.comparison.legend.limited">Limited/Partial</span>
-                </div>
-                <div class="legend-item">
-                    <span class="check-icon">❌</span>
-                    <span data-i18n="platforms.comparison.legend.unavailable">Not Available</span>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Platform Details Sections -->
-    <section id="openai" class="platform-detail-section">
+    <!-- Platform Details -->
+    <section class="platform-details">
         <div class="container">
-            <div class="platform-detail-header">
-                <img src="img/svg/openai-logo.svg" alt="OpenAI" class="platform-logo">
-                <h2>OpenAI</h2>
-            </div>
-            
-            <div class="platform-detail-content">
-                <div class="platform-info">
-                    <h3 data-i18n="platforms.details.overview">Overview</h3>
-                    <p data-i18n="platforms.openai.overview">OpenAI is a leading AI research laboratory consisting of both for-profit and non-profit arms. Founded in 2015, OpenAI's mission is to ensure that artificial general intelligence (AGI) benefits all of humanity. The company is known for its GPT (Generative Pre-trained Transformer) series of language models and DALL-E image generation models.</p>
-                    
-                    <h3 data-i18n="platforms.details.keyModels">Key Models</h3>
-                    <ul class="model-list">
-                        <li>
-                            <strong>GPT-4 Turbo</strong> - Advanced language model with improved reasoning and instruction following
-                        </li>
-                        <li>
-                            <strong>GPT-3.5 Turbo</strong> - Efficient language model optimized for chat applications
-                        </li>
-                        <li>
-                            <strong>DALL-E 3</strong> - State-of-the-art text-to-image generation model
-                        </li>
-                        <li>
-                            <strong>Whisper</strong> - Multilingual speech recognition model
-                        </li>
-                    </ul>
-                    
-                    <h3 data-i18n="platforms.details.pricing">Pricing</h3>
-                    <div class="pricing-info">
-                        <p data-i18n="platforms.openai.pricing">OpenAI offers a tiered pricing structure based on model and usage. GPT-3.5 Turbo starts at $0.0015 per 1K tokens, while GPT-4 Turbo starts at $0.01 per 1K tokens. DALL-E 3 pricing starts at $0.04 per image generation. Free tier available with usage limits.</p>
+            <div class="platform-cards">
+                <!-- Replicate -->
+                <div class="platform-card" id="replicate">
+                    <div class="platform-header">
+                        <img src="assets/images/platforms/replicate-logo.png" alt="Replicate Logo" class="platform-logo">
+                        <div class="platform-info">
+                            <h3>Replicate</h3>
+                            <div class="platform-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <h3 data-i18n="platforms.details.strengths">Strengths</h3>
-                    <ul class="strengths-list">
-                        <li data-i18n="platforms.openai.strengths.1">Industry-leading model performance and capabilities</li>
-                        <li data-i18n="platforms.openai.strengths.2">Robust API with high reliability and uptime</li>
-                        <li data-i18n="platforms.openai.strengths.3">Continuous model improvements and updates</li>
-                        <li data-i18n="platforms.openai.strengths.4">Strong safety measures and content filtering</li>
-                    </ul>
-                    
-                    <h3 data-i18n="platforms.details.limitations">Limitations</h3>
-                    <ul class="limitations-list">
-                        <li data-i18n="platforms.openai.limitations.1">Higher pricing compared to some competitors</li>
-                        <li data-i18n="platforms.openai.limitations.2">Closed-source models with limited customization</li>
-                        <li data-i18n="platforms.openai.limitations.3">Usage restrictions and content policies</li>
-                    </ul>
-                </div>
-                
-                <div class="platform-stats">
-                    <div class="stat-card">
-                        <h4 data-i18n="platforms.stats.modelCount">Total Models</h4>
-                        <div class="stat-value">25+</div>
+                    <p class="platform-description">Replicate makes it easy to run machine learning models in the cloud. Deploy models with a few lines of code, and scale automatically.</p>
+                    <div class="platform-metrics">
+                        <div class="metric">
+                            <span class="metric-value">500+</span>
+                            <span class="metric-label">Models</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">10M+</span>
+                            <span class="metric-label">Runs</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">50K+</span>
+                            <span class="metric-label">Users</span>
+                        </div>
                     </div>
-                    
-                    <div class="stat-card">
-                        <h4 data-i18n="platforms.stats.apiCalls">Monthly API Calls</h4>
-                        <div class="stat-value">500M+</div>
+                    <div class="platform-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Easy model deployment</li>
+                            <li><i class="fas fa-check"></i> Automatic scaling</li>
+                            <li><i class="fas fa-check"></i> Pay-per-use pricing</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                        </ul>
                     </div>
-                    
-                    <div class="stat-card">
-                        <h4 data-i18n="platforms.stats.developers">Active Developers</h4>
-                        <div class="stat-value">2M+</div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <h4 data-i18n="platforms.stats.founded">Founded</h4>
-                        <div class="stat-value">2015</div>
+                    <div class="platform-cta">
+                        <a href="https://replicate.com" class="btn btn-primary" target="_blank">Visit Platform</a>
+                        <a href="models.html?platform=replicate" class="btn btn-secondary">View Models</a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="platform-actions">
-                <a href="https://openai.com" target="_blank" class="btn btn-primary" data-i18n="platforms.visitWebsite">Visit Website</a>
-                <a href="#" class="btn btn-outline" data-i18n="platforms.viewModels">View All OpenAI Models</a>
+
+                <!-- Hugging Face -->
+                <div class="platform-card" id="huggingface">
+                    <div class="platform-header">
+                        <img src="assets/images/platforms/huggingface-logo.png" alt="Hugging Face Logo" class="platform-logo">
+                        <div class="platform-info">
+                            <h3>Hugging Face</h3>
+                            <div class="platform-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="platform-description">Hugging Face is the AI community building the future. Build, train and deploy state of the art models powered by the reference open source in machine learning.</p>
+                    <div class="platform-metrics">
+                        <div class="metric">
+                            <span class="metric-value">100K+</span>
+                            <span class="metric-label">Models</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1M+</span>
+                            <span class="metric-label">Datasets</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">500K+</span>
+                            <span class="metric-label">Users</span>
+                        </div>
+                    </div>
+                    <div class="platform-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Open source models</li>
+                            <li><i class="fas fa-check"></i> Model hub</li>
+                            <li><i class="fas fa-check"></i> Inference API</li>
+                            <li><i class="fas fa-check"></i> Spaces for demos</li>
+                        </ul>
+                    </div>
+                    <div class="platform-cta">
+                        <a href="https://huggingface.co" class="btn btn-primary" target="_blank">Visit Platform</a>
+                        <a href="models.html?platform=huggingface" class="btn btn-secondary">View Models</a>
+                    </div>
+                </div>
+
+                <!-- Add more platform cards as needed -->
             </div>
         </div>
     </section>
-
-    <!-- Additional platform detail sections would follow the same pattern -->
-    <!-- Replicate, Hugging Face, Stability AI, Anthropic, etc. -->
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-content">
-                <h2 data-i18n="newsletter.title">Stay Updated on AI Platforms</h2>
-                <p data-i18n="newsletter.description">Subscribe to our newsletter to receive updates on new platform features, pricing changes, and industry insights.</p>
-                
+                <h2>Stay Updated</h2>
+                <p>Get weekly insights about new platforms and features</p>
                 <form class="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" placeholder="Enter your email address" required data-i18n="newsletter.emailPlaceholder">
-                        <button type="submit" class="btn btn-primary" data-i18n="newsletter.subscribe">Subscribe</button>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" id="privacy-consent" required>
-                        <label for="privacy-consent" data-i18n="newsletter.privacyConsent">I agree to receive emails and accept the <a href="privacy.html">Privacy Policy</a></label>
-                    </div>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
+                <p class="privacy-note">We respect your privacy and will never share your email.</p>
             </div>
         </div>
     </section>
@@ -382,67 +276,45 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">Model Guru</a>
-                    <p data-i18n="footer.tagline">Your AI Model Discovery & Analytics Hub</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Model Guru</a>
+                    <p>Your AI Model Discovery & Analytics Hub</p>
                 </div>
-                
                 <div class="footer-links">
                     <div class="footer-links-column">
-                        <h3 data-i18n="footer.explore">Explore</h3>
+                        <h3>Navigation</h3>
                         <ul>
-                            <li><a href="models.html" data-i18n="footer.allModels">All Models</a></li>
-                            <li><a href="platforms.html" data-i18n="footer.platforms">Platforms</a></li>
-                            <li><a href="reports.html" data-i18n="footer.reports">Reports</a></li>
-                            <li><a href="blog.html" data-i18n="footer.blog">Blog</a></li>
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="models.html" data-i18n="nav.models">All Models</a></li>
+                            <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+                            <li><a href="reports.html" data-i18n="nav.reports">Reports</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About</a></li>
                         </ul>
                     </div>
-                    
                     <div class="footer-links-column">
-                        <h3 data-i18n="footer.company">Company</h3>
+                        <h3>Resources</h3>
                         <ul>
-                            <li><a href="about.html" data-i18n="footer.about">About Us</a></li>
-                            <li><a href="#" data-i18n="footer.careers">Careers</a></li>
-                            <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+                            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+                            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
                         </ul>
                     </div>
-                    
                     <div class="footer-links-column">
-                        <h3 data-i18n="footer.legal">Legal</h3>
+                        <h3>Legal</h3>
                         <ul>
-                            <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
-                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
-                            <li><a href="#" data-i18n="footer.cookies">Cookie Policy</a></li>
+                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
+                            <li><a href="terms.html" data-i18n="footer.terms">Terms</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">&copy; 2023 Model Guru. All rights reserved.</p>
-                <div class="language-selector">
-                    <select id="language-select">
-                        <option value="en" data-i18n="footer.languages.english">English</option>
-                        <option value="zh" data-i18n="footer.languages.chinese">中文</option>
-                    </select>
-                </div>
+                <p>&copy; 2024 Model Guru. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js" type="module"></script>
 </body>
 </html>

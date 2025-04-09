@@ -27,10 +27,8 @@
 @import 'team.css'; /* Import team/about us styles */
 @import 'auth.css'; /* Import auth (signup/login) styles */
 @import 'model-comparison.css'; /* Import model comparison tool styles */
-@import 'reports-hero.css';
-@import 'reports-grid.css';
-@import 'reports-card.css';
-@import 'reports-preview.css'; /* Import reports section styles */
+@import 'newsletter.css'; /* Import newsletter styles */
+@import 'reports.css'; /* Import reports section styles */
 @import 'responsive.css';
 @import 'fixes.css'; /* Import fixes for specific styling issues */
 

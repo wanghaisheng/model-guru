@@ -5,6 +5,7 @@
 
 import i18n from './i18n.js';
 import LanguageSwitcher from './components/LanguageSwitcher.js';
+import { currentLanguage, translations, switchLanguage } from './i18n.js';
 
 // ===== DOM Elements =====
 const header = document.querySelector('.header');
@@ -456,9 +457,11 @@ const handleLanguageChange = (lang) => {
 
 // ===== Initialize Everything =====
 document.addEventListener('DOMContentLoaded', () => {
+    initThemeSwitcher();
+    initMobileMenu();
+    initLoadingOverlay();
     initLanguageSwitcher();
     initHeaderScroll();
-    initMobileMenu();
     initSmoothScroll();
     initHeroAnimations();
     initFeatureCards();
@@ -466,9 +469,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initParticleBackground();
     initScrollAnimations();
     initModelFilters();
-    initThemeSwitcher();
-    initLoadingAnimation();
     initSearch();
+    initializeModelSelection();
 });
 
 /**
@@ -538,15 +540,15 @@ function initHeaderScroll() {
  * Initialize mobile menu
  */
 function initMobileMenu() {
-    const menuButton = document.querySelector('.mobile-menu-button');
-    const nav = document.querySelector('.nav-links');
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const navLinks = document.querySelector('.nav-links');
     
-    if (!menuButton) return;
-
-    menuButton.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        menuButton.classList.toggle('active');
-    });
+    if (mobileMenuButton && navLinks) {
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuButton.classList.toggle('active');
+        });
+    }
 }
 
 /**
@@ -620,62 +622,56 @@ function initPricingCards() {
  * Initialize particle background effect
  */
 function initParticleBackground() {
-    // Wait for DOM to be fully loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        const particlesContainer = document.getElementById('particles-js');
-        if (!particlesContainer) return;
-        
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: ['#ff00ff', '#00ffff', '#ffff00'] },
-                shape: {
-                    type: 'circle',
-                    stroke: { width: 0, color: '#000000' },
-                    polygon: { nb_sides: 5 }
-                },
-                opacity: {
-                    value: 0.5,
-                    random: true,
-                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
-                },
-                size: {
-                    value: 3,
-                    random: true,
-                    anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#ff00ff',
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: 'none',
-                    random: true,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false,
-                    attract: { enable: false, rotateX: 600, rotateY: 1200 }
-                }
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: ['#ff00ff', '#00ffff', '#ffff00'] },
+            shape: {
+                type: 'circle',
+                stroke: { width: 0, color: '#000000' },
+                polygon: { nb_sides: 5 }
             },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: { enable: true, mode: 'repulse' },
-                    onclick: { enable: true, mode: 'push' },
-                    resize: true
-                },
-                modes: {
-                    repulse: { distance: 200, duration: 0.4 },
-                    push: { particles_nb: 4 }
-                }
+            opacity: {
+                value: 0.5,
+                random: true,
+                anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
             },
-            retina_detect: true
-        });
+            size: {
+                value: 3,
+                random: true,
+                anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: '#ff00ff',
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: 'none',
+                random: true,
+                straight: false,
+                out_mode: 'out',
+                bounce: false,
+                attract: { enable: false, rotateX: 600, rotateY: 1200 }
+            }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: {
+                onhover: { enable: true, mode: 'repulse' },
+                onclick: { enable: true, mode: 'push' },
+                resize: true
+            },
+            modes: {
+                repulse: { distance: 200, duration: 0.4 },
+                push: { particles_nb: 4 }
+            }
+        },
+        retina_detect: true
     });
 }
 
@@ -719,47 +715,6 @@ function showNotification(message, type = 'info') {
             notification.remove();
         }, 300);
     }, 3000);
-}
-
-// Language handling
-let currentLang = localStorage.getItem('lang') || 'en';
-let translations = {};
-
-async function loadTranslations(lang) {
-  try {
-    const response = await fetch(`/locale/${lang}.json`);
-    translations = await response.json();
-    return translations;
-  } catch (error) {
-    console.error('Error loading translations:', error);
-    return null;
-  }
-}
-
-function updateContent() {
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const keys = element.getAttribute('data-i18n').split('.');
-    let value = translations;
-    for (const key of keys) {
-      value = value[key];
-    }
-    if (value) {
-      if (element.tagName === 'INPUT' && element.getAttribute('placeholder')) {
-        element.placeholder = value;
-      } else {
-        element.textContent = value;
-      }
-    }
-  });
-}
-
-async function switchLanguage(lang) {
-  const translations = await loadTranslations(lang);
-  if (translations) {
-    currentLang = lang;
-    localStorage.setItem('lang', lang);
-    updateContent();
-  }
 }
 
 // Model list handling
@@ -863,79 +818,18 @@ const trackNewAsset = (asset) => {
     }
 };
 
-// Loading Animation with Timeout
-function initLoadingAnimation() {
+// Loading Animation
+function initLoadingOverlay() {
     const loadingOverlay = document.querySelector('.loading-overlay');
-    if (!loadingOverlay) return;
-
-    // Set a timeout to hide loading overlay after 10 seconds
-    const loadingTimeout = setTimeout(() => {
-        if (loadingOverlay.style.display !== 'none') {
-            console.warn('Loading timeout reached, forcing overlay hide');
-            hideLoadingOverlay();
-        }
-    }, 10000); // 10 seconds timeout
-
-    // Track all types of assets
-    const images = document.querySelectorAll('img');
-    const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
-    const scripts = document.querySelectorAll('script[src]');
-    const fonts = document.querySelectorAll('link[rel="preload"][as="font"]');
-    
-    // Count total assets
-    totalAssets = images.length + stylesheets.length + scripts.length + fonts.length;
-    
-    // If no assets, hide loading overlay after page load
-    if (totalAssets === 0) {
-        window.addEventListener('load', hideLoadingOverlay);
-    } else {
-        // Track images
-        images.forEach(img => {
-            if (img.complete) {
-                handleAssetLoad();
-            } else {
-                img.addEventListener('load', handleAssetLoad);
-                img.addEventListener('error', () => handleAssetError(img));
-            }
-        });
-        
-        // Track stylesheets
-        stylesheets.forEach(link => {
-            if (link.sheet) {
-                handleAssetLoad();
-            } else {
-                link.addEventListener('load', handleAssetLoad);
-                link.addEventListener('error', () => handleAssetError(link));
-            }
-        });
-        
-        // Track scripts
-        scripts.forEach(script => {
-            if (script.readyState === 'complete' || script.readyState === 'loaded') {
-                handleAssetLoad();
-            } else {
-                script.addEventListener('load', handleAssetLoad);
-                script.addEventListener('error', () => handleAssetError(script));
-            }
-        });
-        
-        // Track fonts
-        fonts.forEach(font => {
-            if (font.readyState === 'complete' || font.readyState === 'loaded') {
-                handleAssetLoad();
-            } else {
-                font.addEventListener('load', handleAssetLoad);
-                font.addEventListener('error', () => handleAssetError(font));
-            }
+    if (loadingOverlay) {
+        // Hide loading overlay when all assets are loaded
+        window.addEventListener('load', () => {
+            loadingOverlay.style.opacity = '0';
+            setTimeout(() => {
+                loadingOverlay.style.display = 'none';
+            }, 500);
         });
     }
-
-    // Fallback: Hide loading overlay after 5 seconds
-    setTimeout(() => {
-        if (loadingOverlay.style.display !== 'none') {
-            hideLoadingOverlay();
-        }
-    }, 5000);
 }
 
 // Update the updateModelList function to track new assets
@@ -1088,12 +982,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 function initThemeSwitcher() {
     const themeSwitcher = document.querySelector('.theme-switcher');
     const html = document.documentElement;
-    const icon = themeSwitcher.querySelector('i');
     
-    // 从 localStorage 获取保存的主题
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    html.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(icon, savedTheme);
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(themeSwitcher.querySelector('i'), savedTheme);
+    }
     
     themeSwitcher.addEventListener('click', () => {
         const currentTheme = html.getAttribute('data-theme');
@@ -1101,18 +996,14 @@ function initThemeSwitcher() {
         
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        updateThemeIcon(icon, newTheme);
-        
-        // 添加切换动画
-        document.body.style.transition = 'background-color 0.3s ease';
-        setTimeout(() => {
-            document.body.style.transition = '';
-        }, 300);
+        updateThemeIcon(themeSwitcher.querySelector('i'), newTheme);
     });
 }
 
 function updateThemeIcon(icon, theme) {
-    icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    if (icon) {
+        icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    }
 }
 
 // Search Functionality
@@ -1174,40 +1065,110 @@ async function performSearch(query) {
 }
 
 function initializeModelSelection() {
-    const purposeFilter = document.getElementById('purpose-filter');
-    const platformFilter = document.getElementById('platform-filter');
-    const sortFilter = document.getElementById('sort-filter');
+    const modelSearch = document.querySelector('.model-search .form-control');
+    const addModelBtn = document.querySelector('.add-model-btn');
+    const selectedModels = document.querySelector('.selected-models');
+    const selectedCount = document.querySelector('.selected-count');
+    const compareBtn = document.querySelector('.comparison-cta .btn-primary');
     
-    if (purposeFilter && platformFilter && sortFilter) {
-        purposeFilter.addEventListener('change', updateModelList);
-        platformFilter.addEventListener('change', updateModelList);
-        sortFilter.addEventListener('change', updateModelList);
+    let selectedModelsList = [];
+    const maxFreeModels = 3;
+    
+    // Example model data (replace with actual API call)
+    const availableModels = [
+        { id: 'sdxl-turbo', name: 'SDXL-Turbo' },
+        { id: 'mixtral-8x7b', name: 'Mixtral-8x7B' },
+        { id: 'stable-audio', name: 'Stable Audio' },
+        { id: 'dall-e-3', name: 'DALL-E 3' },
+        { id: 'gpt-4', name: 'GPT-4' }
+    ];
+    
+    function updateSelectedCount() {
+        selectedCount.textContent = selectedModelsList.length;
+        compareBtn.disabled = selectedModelsList.length < 2;
     }
-}
-
-function updateModelList() {
-    const purpose = document.getElementById('purpose-filter').value;
-    const platform = document.getElementById('platform-filter').value;
-    const sort = document.getElementById('sort-filter').value;
     
-    // Update model cards based on selected filters
-    const modelCards = document.querySelectorAll('.model-card');
-    
-    modelCards.forEach(card => {
-        const matchesPurpose = !purpose || card.dataset.purpose === purpose;
-        const matchesPlatform = !platform || card.dataset.platform === platform;
+    function addModel(model) {
+        if (selectedModelsList.length >= maxFreeModels) {
+            showUpgradePrompt();
+            return;
+        }
         
-        if (matchesPurpose && matchesPlatform) {
-            card.style.display = 'block';
-        } else {
-            card.style.display = 'none';
+        if (!selectedModelsList.includes(model)) {
+            selectedModelsList.push(model);
+            renderSelectedModels();
+            updateSelectedCount();
+            updatePreview();
+        }
+    }
+    
+    function removeModel(modelId) {
+        selectedModelsList = selectedModelsList.filter(m => m.id !== modelId);
+        renderSelectedModels();
+        updateSelectedCount();
+        updatePreview();
+    }
+    
+    function renderSelectedModels() {
+        selectedModels.innerHTML = selectedModelsList.map(model => `
+            <div class="model-tag" data-model-id="${model.id}">
+                <span>${model.name}</span>
+                <span class="remove-model">×</span>
+            </div>
+        `).join('');
+        
+        // Add click handlers for remove buttons
+        document.querySelectorAll('.remove-model').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const modelId = e.target.closest('.model-tag').dataset.modelId;
+                removeModel(modelId);
+            });
+        });
+    }
+    
+    function updatePreview() {
+        // Update preview with selected models' data
+        // This would be replaced with actual API calls
+        const previewFields = document.querySelectorAll('.preview-field');
+        previewFields.forEach(field => {
+            const fieldName = field.querySelector('h5').textContent;
+            if (fieldName === 'Model Name' && selectedModelsList.length > 0) {
+                field.querySelector('.value').textContent = selectedModelsList[0].name;
+            }
+            // Add more field updates as needed
+        });
+    }
+    
+    function showUpgradePrompt() {
+        // Show upgrade modal or redirect to pricing page
+        const upgradeModal = document.createElement('div');
+        upgradeModal.className = 'upgrade-modal';
+        upgradeModal.innerHTML = `
+            <div class="upgrade-content">
+                <h3>Upgrade to Premium</h3>
+                <p>Free users can compare up to 3 models. Upgrade to compare unlimited models and access advanced features.</p>
+                <div class="upgrade-actions">
+                    <button class="btn btn-secondary" onclick="this.closest('.upgrade-modal').remove()">Not Now</button>
+                    <a href="/pricing" class="btn btn-primary">Upgrade Now</a>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(upgradeModal);
+    }
+    
+    // Add model button click handler
+    addModelBtn.addEventListener('click', () => {
+        const searchTerm = modelSearch.value.toLowerCase();
+        const matchingModel = availableModels.find(m => 
+            m.name.toLowerCase().includes(searchTerm)
+        );
+        
+        if (matchingModel) {
+            addModel(matchingModel);
+            modelSearch.value = '';
         }
     });
     
-    // Update selected count
-    const selectedCount = document.querySelector('.selected-count');
-    if (selectedCount) {
-        const visibleCards = document.querySelectorAll('.model-card[style="display: block"]').length;
-        selectedCount.textContent = visibleCards;
-    }
-}
+    // Initialize
+    updateSelectedCount();
+} 
