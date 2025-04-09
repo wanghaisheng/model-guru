@@ -92,16 +92,39 @@ Model Guru provides:
 - **CTA Section**: Premium subscription and newsletter
 
 ### 4.3 Model Pages
-- **Model Listings**: Grid/List view with filters
-- **Model Details**: Comprehensive model information
-- **Comparison Tool**: Side-by-side model comparison
-- **User Reviews**: Community feedback and ratings
+- **Main Models Page (`models.html`)**:
+    - Hero section with title, subtitle, and potentially search.
+    - Curated Sections: Displays initial subsets of models categorized as "Newly Added", "Trending This Week", and "Most Popular This Month". Each section includes:
+        - A title and description.
+        - A preview grid/list of relevant model cards.
+        - A "View All [Category]" link/button leading to a filtered view (e.g., `/models/trending`).
+    - Filter Controls: Advanced filters (Purpose, Platform, Sort By) to refine model discovery, applicable to curated sections or the full list.
+    - Optional Full List: May display a paginated grid/list of all models below the curated sections or be accessed via a specific "All Models" link/filter.
+- **Model Listings (Filtered Views, e.g., `/models/trending`, `/models/category/image-generation`)**: Grid/List view displaying models based on the applied filter/category, utilizing the same filter controls.
+- **Model Details**: Comprehensive model information page accessed by clicking a model card. Includes description, metrics, platform details, usage examples, and potentially user reviews/ratings.
+- **Comparison Tool**: Interface for side-by-side model comparison, accessible from model cards or listings.
 
 ### 4.4 Reports Section
 - **Report Types**: Daily, Weekly, Monthly
 - **Report Cards**: Visual data presentation
 - **Premium Features**: Advanced analytics and insights
 - **Export Options**: PDF, CSV formats
+
+### 4.5 Platform Pages
+- **Main Platforms Page (`platforms.html`)**:
+    - Hero section with title, subtitle, and platform search functionality.
+    - Platform Categories: Visual organization of platforms by type (e.g., General AI, Image Generation, Text Generation).
+    - Platform Comparison: Side-by-side comparison of key platforms and their features.
+    - Platform Details: Grid/list of platforms with metrics, descriptions, and links.
+    - Submit Platform Form: A dedicated section allowing third-party AI platform owners to submit their platforms for inclusion. Features include:
+        - Basic submission form with platform details (name, URL, description, category).
+        - Platform metrics input (models hosted, user base size, API availability).
+        - Screenshot/logo upload capabilities.
+        - Submission review process explanation.
+        - Terms and conditions for platform listing.
+    - Benefits Explanation: Clear outline of advantages for platforms being listed (increased visibility, user traffic, integration opportunities).
+- **Platform Details Pages**: Dedicated pages for each platform with comprehensive information, metrics, featured models, and integration options.
+- **Platform Comparison Tool**: Interactive tool for comparing multiple platforms' features, pricing, and capabilities.
 
 ## 5. Content Strategy
 

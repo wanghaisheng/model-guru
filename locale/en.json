@@ -11,12 +11,89 @@
     "about": "About",
     "testimonials": "Testimonials",
     "faq": "FAQ",
-    "blog": "Blog"
+    "blog": "Blog",
+    "login": "Log In"
   },
   "hero": {
     "title": "Track AI Models Across Platforms",
     "subtitle": "Your AI Model Discovery & Analytics Hub",
     "cta": "Explore Models"
+  },
+  "models": {
+    "title": "All AI Models",
+    "subtitle": "Browse and compare models across platforms",
+    "searchPlaceholder": "Search models..."
+  },
+  "platforms": {
+    "title": "AI Platforms",
+    "subtitle": "Compare and discover the best AI platforms for your needs",
+    "searchPlaceholder": "Search platforms..."
+  },
+  "reports": {
+    "title": "AI Model Reports & Analytics",
+    "subtitle": "Discover profitable opportunities with comprehensive AI model reports",
+    "description": "Premium users gain access to complete daily, weekly, and monthly reports that reveal potential monetization opportunities across different model types and APIs.",
+    "daily": {
+      "title": "Daily Insights",
+      "description": "Track day-to-day changes in model popularity and usage metrics",
+      "features": [
+        "24-hour trending models across platforms",
+        "New model releases and updates",
+        "Daily usage spikes and patterns",
+        "Emerging use cases and applications"
+      ],
+      "cta": "View Sample Daily Report"
+    },
+    "weekly": {
+      "title": "Weekly Analysis",
+      "description": "Identify medium-term trends and monetization opportunities",
+      "features": [
+        "Week-over-week growth analysis",
+        "Competitive landscape changes",
+        "Underserved market segments",
+        "Profitable API integration opportunities"
+      ],
+      "cta": "View Sample Weekly Report"
+    },
+    "monthly": {
+      "title": "Monthly Strategy Report",
+      "description": "Comprehensive analysis for long-term strategic planning",
+      "features": [
+        "In-depth market analysis and forecasting",
+        "Revenue potential by model category",
+        "Developer ecosystem opportunities",
+        "Strategic partnership recommendations"
+      ],
+      "cta": "View Sample Monthly Report"
+    },
+    "premium": {
+      "title": "Premium Reports",
+      "description": "Unlock the full potential of AI model analytics",
+      "features": [
+        "Complete, unfiltered data access",
+        "Custom report generation",
+        "API usage recommendations",
+        "Early access to emerging trends"
+      ],
+      "cta": "Upgrade to Premium"
+    }
+  },
+  "about": {
+    "title": "About Model Guru",
+    "subtitle": "Empowering developers and businesses to make informed decisions about AI models"
+  },
+  "blog": {
+    "pageTitle": "AI Model Insights & Tutorials - Model Guru",
+    "pageDescription": "Explore the latest AI model trends, tutorials, and best practices to help you better understand and use AI models.",
+    "title": "AI Model Insights & Tutorials",
+    "subtitle": "Latest AI model trends, tutorials, and best practices",
+    "viewAll": "View All Articles"
+  },
+  "newsletter": {
+    "title": "Subscribe to AI Model Updates",
+    "description": "Receive the latest AI models, trends, and tutorials delivered straight to your inbox weekly",
+    "subscribe": "Subscribe",
+    "privacy": "We respect your privacy and will never share your email. You can unsubscribe at any time."
   },
   "playground": {
     "title": "Try Model Search",
@@ -69,40 +146,74 @@
       "tracking": "Monetization Opportunities Through API Creation"
     }
   },
-  "painPoints": {
-    "title": "Common Challenges Solved",
-    "fragmentation": {
-      "problem": "Fragmented Model Landscape",
-      "solution": "Single dashboard for all your model discovery needs"
+  "howItWorks": {
+    "title": "How Model Guru Works",
+    "step1": {
+      "title": "Data Collection",
+      "description": "We continuously monitor and collect data from major AI platforms, tracking model releases, updates, and usage metrics."
     },
-    "discovery": {
-      "problem": "Hard to Track Model Performance",
-      "solution": "Real-time metrics and trend analysis across platforms"
+    "step2": {
+      "title": "Analysis & Processing",
+      "description": "Our system analyzes model performance, user engagement, and trends to identify the most relevant and impactful models."
+    },
+    "step3": {
+      "title": "Insights & Discovery",
+      "description": "We present curated lists and insights to help you discover the right models for your needs."
+    }
+  },
+  "painPoints": {
+    "title": "Common Challenges We Solve",
+    "fragmented": {
+      "title": "Fragmented Discovery",
+      "description": "Models are scattered across multiple platforms, making it hard to find the right one.",
+      "solution": "Our Solution",
+      "solutionDescription": "Centralized platform with comprehensive model listings and advanced search capabilities."
     },
     "metrics": {
-      "problem": "No Unified View",
-      "solution": "Comprehensive cross-platform analytics and insights"
+      "title": "Lack of Standardized Metrics",
+      "description": "Different platforms use different metrics, making comparisons difficult.",
+      "solution": "Our Solution",
+      "solutionDescription": "Unified metrics system with clear performance indicators and trend analysis."
+    },
+    "time": {
+      "title": "Time-Consuming Research",
+      "description": "Keeping up with new models and updates requires constant monitoring.",
+      "solution": "Our Solution",
+      "solutionDescription": "Automated tracking and curated lists of new and trending models."
     }
   },
   "testimonials": {
     "title": "How Users Are Using Model Guru",
-    "viewAll": "View All Testimonials"
+    "viewAll": "View All Testimonials",
+    "subtitle": "Discover how Model Guru is helping developers and businesses make better AI decisions"
   },
   "faq": {
     "title": "Frequently Asked Questions",
+    "heroTitle": "Frequently Asked Questions",
+    "heroSubtitle": "Find answers to common questions about Model Guru.",
+    "categoryGeneral": "General Questions",
+    "categoryFeatures": "Features & Usage",
+    "categoryPremium": "Premium & API",
     "q1": "How does Model Guru collect model data?",
     "a1": "We collect data through publicly available APIs and information provided by platforms. We update our data regularly to ensure accuracy and timeliness. For more details, check our <a href=\"methodology.html\">methodology page</a>.",
     "q2": "Does Model Guru provide API access?",
-    "a2": "Currently, we don't offer API access, but it's on our roadmap. If you're particularly interested in this feature, please <a href=\"contact.html\">contact us</a>.",
+    "a2": "Currently, we don't offer API access, but it's on our roadmap. Premium users get access to detailed reports which offer significant insights. If you're particularly interested in API access, please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a>.",
     "q3": "How often is the data updated?",
     "a3": "We update our data daily to ensure you have access to the most current information about AI models across all platforms.",
     "q4": "Can I suggest a platform to be added?",
-    "a4": "Absolutely! We're always looking to expand our coverage. Please <a href=\"contact.html\">contact us</a> with your suggestions."
-  },
-  "blog": {
-    "title": "AI Model Insights & Tutorials",
-    "subtitle": "Latest AI model trends, tutorials, and best practices",
-    "viewAll": "View All Articles"
+    "a4": "Absolutely! We're always looking to expand our coverage. Please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> with your suggestions.",
+    "q5": "What is Model Guru?",
+    "a5": "Model Guru is a centralized platform for discovering, tracking, and analyzing AI/ML models across various providers like Hugging Face, Replicate, and more. We aim to simplify model discovery and provide insights for developers and businesses.",
+    "q6": "How is Model Guru different from platforms like Hugging Face or Replicate?",
+    "a6": "While platforms like Hugging Face host models and Replicate provides APIs to run them, Model Guru focuses on *discovery and analytics across* these platforms. We provide unified tracking, comparison tools, and trend reports that span the entire ecosystem.",
+    "q7": "How do I use the platform?",
+    "a7": "You can browse models, filter by platform or category, view detailed model pages with metrics, compare models, and explore our reports (premium feature). Sign up for an account to save favorites and receive personalized updates.",
+    "q8": "What are the benefits of a premium account?",
+    "a8": "Premium users get access to comprehensive daily, weekly, and monthly reports detailing model trends, usage patterns, and potential monetization opportunities. This includes unfiltered data and deeper analytics not available to free users.",
+    "q9": "Is my data secure?",
+    "a9": "We take data security seriously. User account information is protected using industry-standard practices. We do not store sensitive personal data beyond what's necessary for account management. Please refer to our <a href=\"privacy.html\">Privacy Policy</a> for more details.",
+    "q10": "How can I contribute or provide feedback?",
+    "a10": "We welcome feedback and suggestions! Please use the <a href=\"mailto:support@modelguru.deepseek.diy\">contact link</a> in the footer to share your thoughts or report any issues."
   },
   "team": {
     "title": "Meet Our Team",
@@ -134,61 +245,6 @@
     "description": "Compare different AI models side by side to find the one that best fits your needs",
     "compare": "Compare Models",
     "fullTool": "Use Full Comparison Tool"
-  },
-  "reports": {
-    "title": "AI Model Reports & Analytics",
-    "subtitle": "Discover profitable opportunities with comprehensive AI model reports",
-    "description": "Premium users gain access to complete daily, weekly, and monthly reports that reveal potential monetization opportunities across different model types and APIs.",
-    "daily": {
-      "title": "Daily Insights",
-      "description": "Track day-to-day changes in model popularity and usage metrics",
-      "features": [
-        "24-hour trending models across platforms",
-        "New model releases and updates",
-        "Daily usage spikes and patterns",
-        "Emerging use cases and applications"
-      ],
-      "cta": "View Sample Daily Report"
-    },
-    "weekly": {
-      "title": "Weekly Analysis",
-      "description": "Identify medium-term trends and monetization opportunities",
-      "features": [
-        "Week-over-week growth analysis",
-        "Competitive landscape changes",
-        "Underserved market segments",
-        "Profitable API integration opportunities"
-      ],
-      "cta": "View Sample Weekly Report"
-    },
-    "monthly": {
-      "title": "Monthly Strategy Report",
-      "description": "Comprehensive analysis for long-term strategic planning",
-      "features": [
-        "In-depth market analysis and forecasting",
-        "Revenue potential by model category",
-        "Developer ecosystem opportunities",
-        "Strategic partnership recommendations"
-      ],
-      "cta": "View Sample Monthly Report"
-    },
-    "premium": {
-      "title": "Premium Reports",
-      "description": "Unlock the full potential of AI model analytics",
-      "features": [
-        "Complete, unfiltered data access",
-        "Custom report generation",
-        "API usage recommendations",
-        "Early access to emerging trends"
-      ],
-      "cta": "Upgrade to Premium"
-    }
-  },
-  "newsletter": {
-    "title": "Subscribe to AI Model Updates",
-    "description": "Receive the latest AI models, trends, and tutorials delivered straight to your inbox weekly",
-    "subscribe": "Subscribe",
-    "privacy": "We respect your privacy and will never share your email. You can unsubscribe at any time."
   },
   "footer": {
     "language": "Language",

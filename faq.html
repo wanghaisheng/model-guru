@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="faq.pageTitle">FAQ - Model Guru</title>
+    <meta name="description" data-i18n="faq.pageDescription" content="Find answers to frequently asked questions about Model Guru, AI model discovery, comparison, and analytics.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <button class="theme-switcher" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Model Guru</a>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav.models">All Models</a></li>
+                <li><a href="platforms.html" class="nav-link" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="reports.html" class="nav-link" data-i18n="nav.reports">Reports</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link active" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="faq.title">Frequently Asked Questions</h1>
+                <p data-i18n="faq.subtitle">Find answers to common questions about Model Guru</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-grid"> 
+                <!-- FAQ Category: General -->
+                <div class="faq-category">
+                    <h2 data-i18n="faq.category.general">General Questions</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q1">How does Model Guru collect model data?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a1">We collect data through publicly available APIs and information provided by platforms. We update our data regularly to ensure accuracy and timeliness. For more details, check our <a href="methodology.html">methodology page</a>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q3">How often is the data updated?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a3">We update our data daily to ensure you have access to the most current information about AI models across all platforms.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q4">Can I suggest a platform to be added?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a4">Absolutely! We're always looking to expand our coverage. Please <a href="mailto:support@modelguru.deepseek.diy">contact us</a> with your suggestions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q8">How do I switch between dark and light mode?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a8">Use the theme switcher button (usually a moon or sun icon) located in the top-right corner of the page to toggle between dark and light themes. Your preference is saved locally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Category: Features -->
+                <div class="faq-category">
+                    <h2 data-i18n="faq.category.features">Features & Usage</h2>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q6">How does the model comparison tool work?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a6">You can select models from the "All Models" page or the comparison tool section on the homepage. Add models using the 'Add to Comparison' button. Compare selected models side-by-side based on metrics like performance, cost (if available), and features. Premium users can compare more models and access deeper insights.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q7">What kind of reports does Model Guru offer?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a7">We offer Daily Insights, Weekly Analysis, and Monthly Strategy Reports. Daily reports track short-term trends, weekly reports analyze medium-term growth and opportunities, and monthly reports provide comprehensive market analysis for long-term planning. Access to full reports is a Premium feature.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q9">Where can I find documentation or tutorials?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a9">Check our Blog section for tutorials, guides, and AI model insights. API documentation and detailed user guides will be available soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Category: Premium & API -->
+                <div class="faq-category">
+                    <h2 data-i18n="faq.category.premium">Premium & API</h2>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q5">What are the Premium features and how do I get them?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a5">Premium features include advanced analytics (detailed metrics, trends), custom report generation, API access, and priority support. You can upgrade to Premium via the "Upgrade" button or links found on comparison/report previews.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.q2">Does Model Guru provide API access?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a2">Currently, we don't offer API access, but it's on our roadmap. Premium subscribers will be the first to get access when it launches. If you're particularly interested in this feature, please <a href="mailto:support@modelguru.deepseek.diy">contact us</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Model Guru</h3>
+                    <p>Your AI Model Discovery & Analytics Hub</p>
+                    <select id="languageSwitcher" class="language-switcher">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <div class="footer-links-container">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
+                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/i18n.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // Particles.js initialization (copy from index.html if needed)
+        window.addEventListener('load', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: { value: 80, density: { enable: true, value_area: 800 } },
+                        color: { value: '#ff00ff' },
+                        shape: { type: 'circle' },
+                        opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1 } },
+                        size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 0.1 } },
+                        line_linked: { enable: true, distance: 150, color: '#ff00ff', opacity: 0.4, width: 1 },
+                        move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                        modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+                    },
+                    retina_detect: true
+                });
+            } else {
+                console.warn('particles.js not loaded');
+            }
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const toggle = item.querySelector('.faq-toggle');
+
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.toggle('active');
+                if (isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    toggle.textContent = '–';
+                } else {
+                    answer.style.maxHeight = '0';
+                    toggle.textContent = '+';
+                }
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                        otherItem.querySelector('.faq-toggle').textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

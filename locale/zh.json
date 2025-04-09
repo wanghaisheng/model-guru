@@ -11,12 +11,89 @@
     "about": "关于",
     "testimonials": "用户评价",
     "faq": "常见问题",
-    "blog": "博客"
+    "blog": "博客",
+    "login": "登录"
   },
   "hero": {
     "title": "跨平台追踪 AI 模型",
     "subtitle": "您的 AI 模型发现与分析中心",
     "cta": "探索模型"
+  },
+  "models": {
+    "title": "所有 AI 模型",
+    "subtitle": "浏览和比较跨平台的模型",
+    "searchPlaceholder": "搜索模型..."
+  },
+  "platforms": {
+    "title": "AI 平台",
+    "subtitle": "比较和发现最适合您需求的 AI 平台",
+    "searchPlaceholder": "搜索平台..."
+  },
+  "reports": {
+    "title": "AI模型报告与分析",
+    "subtitle": "通过全面的AI模型报告发现盈利机会",
+    "description": "付费用户可以获取完整版的日报、周报和月报，揭示不同类型模型和API的潜在赚钱机会。",
+    "daily": {
+      "title": "每日洞察",
+      "description": "追踪模型流行度和使用指标的日常变化",
+      "features": [
+        "24小时内跨平台趋势模型",
+        "新模型发布和更新",
+        "日常使用高峰和模式",
+        "新兴用例和应用"
+      ],
+      "cta": "查看每日报告样本"
+    },
+    "weekly": {
+      "title": "每周分析",
+      "description": "识别中期趋势和变现机会",
+      "features": [
+        "周环比增长分析",
+        "竞争格局变化",
+        "服务不足的市场细分",
+        "有利可图的API集成机会"
+      ],
+      "cta": "查看每周报告样本"
+    },
+    "monthly": {
+      "title": "月度战略报告",
+      "description": "为长期战略规划提供全面分析",
+      "features": [
+        "深入的市场分析和预测",
+        "按模型类别划分的收入潜力",
+        "开发者生态系统机会",
+        "战略合作伙伴建议"
+      ],
+      "cta": "查看月度报告样本"
+    },
+    "premium": {
+      "title": "高级报告",
+      "description": "释放AI模型分析的全部潜力",
+      "features": [
+        "完整、无过滤的数据访问",
+        "自定义报告生成",
+        "API使用建议",
+        "提前获取新兴趋势"
+      ],
+      "cta": "升级到高级版"
+    }
+  },
+  "about": {
+    "title": "关于 Model Guru",
+    "subtitle": "助力开发者和企业就 AI 模型做出明智决策"
+  },
+  "blog": {
+    "pageTitle": "AI模型洞察与教程 - Model Guru",
+    "pageDescription": "探索最新的AI模型趋势、教程和最佳实践，帮助您更好地理解和使用AI模型。",
+    "title": "AI 模型洞察与教程",
+    "subtitle": "最新的 AI 模型趋势、教程和最佳实践",
+    "viewAll": "查看所有文章"
+  },
+  "newsletter": {
+    "title": "订阅 AI 模型更新",
+    "description": "每周接收最新的 AI 模型、趋势和教程直接发送到您的收件箱",
+    "subscribe": "订阅",
+    "privacy": "我们尊重您的隐私，绝不会分享您的电子邮件。您可以随时取消订阅。"
   },
   "playground": {
     "title": "体验模型搜索",
@@ -69,40 +146,57 @@
       "tracking": "API创建产品赚钱机会"
     }
   },
+  "howItWorks": {
+    "title": "Model Guru 如何工作",
+    "step1": {
+      "title": "数据收集",
+      "description": "我们持续监控并收集来自主要 AI 平台的数据，追踪模型发布、更新和使用指标。"
+    },
+    "step2": {
+      "title": "分析与处理",
+      "description": "我们的系统分析模型性能、用户参与度和趋势，以识别最相关和最具影响力的模型。"
+    },
+    "step3": {
+      "title": "洞察与发现",
+      "description": "我们提供精选列表和洞察，帮助您发现满足需求的正确模型。"
+    }
+  },
   "painPoints": {
     "title": "解决常见挑战",
-    "fragmentation": {
-      "problem": "模型生态碎片化",
-      "solution": "统一仪表盘满足所有模型发现需求"
-    },
-    "discovery": {
-      "problem": "难以追踪模型性能",
-      "solution": "跨平台实时指标和趋势分析"
+    "fragmented": {
+      "title": "发现碎片化",
+      "description": "模型分散在多个平台，难以找到合适的模型。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "提供全面模型列表和高级搜索功能的集中式平台。"
     },
     "metrics": {
-      "problem": "缺乏统一视图",
-      "solution": "全面的跨平台分析和洞察"
+      "title": "缺乏标准化指标",
+      "description": "不同平台使用不同指标，难以比较。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "具有清晰性能指标和趋势分析的统一指标系统。"
+    },
+    "time": {
+      "title": "耗时的研究",
+      "description": "跟上新模型和更新需要持续监控。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "自动追踪和精选新模型及趋势模型列表。"
     }
   },
   "testimonials": {
     "title": "用户如何使用 Model Guru",
-    "viewAll": "查看所有用户评价"
+    "viewAll": "查看所有用户评价",
+    "subtitle": "了解 Model Guru 如何帮助开发者和企业做出更好的 AI 决策"
   },
   "faq": {
     "title": "常见问题",
     "q1": "Model Guru 如何收集模型数据？",
     "a1": "我们通过各平台提供的公开 API 和公开可用信息收集数据。我们定期更新数据以确保信息的准确性和时效性。详细信息请查看我们的<a href=\"methodology.html\">方法论页面</a>。",
     "q2": "Model Guru 是否提供 API 访问？",
-    "a2": "目前我们不提供 API 访问，但这是我们未来计划中的功能。如果您对此特别感兴趣，请<a href=\"contact.html\">联系我们</a>。",
+    "a2": "目前我们不提供 API 访问，但这是我们未来计划中的功能。如果您对此特别感兴趣，请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>。",
     "q3": "数据多久更新一次？",
     "a3": "我们每天更新数据，确保您能够获取所有平台上 AI 模型的最新信息。",
     "q4": "我可以建议添加新的平台吗？",
-    "a4": "当然可以！我们一直在寻求扩大覆盖范围。请<a href=\"contact.html\">联系我们</a>提出您的建议。"
-  },
-  "blog": {
-    "title": "AI 模型洞察与教程",
-    "subtitle": "最新的 AI 模型趋势、教程和最佳实践",
-    "viewAll": "查看所有文章"
+    "a4": "当然可以！我们一直在寻求扩大覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。"
   },
   "team": {
     "title": "认识我们的团队",
@@ -134,61 +228,6 @@
     "description": "并排比较不同的 AI 模型，找出最适合您需求的模型",
     "compare": "比较模型",
     "fullTool": "使用完整对比工具"
-  },
-  "reports": {
-    "title": "AI模型报告与分析",
-    "subtitle": "通过全面的AI模型报告发现盈利机会",
-    "description": "付费用户可以获取完整版的日报、周报和月报，揭示不同类型模型和API的潜在赚钱机会。",
-    "daily": {
-      "title": "每日洞察",
-      "description": "追踪模型流行度和使用指标的日常变化",
-      "features": [
-        "24小时内跨平台趋势模型",
-        "新模型发布和更新",
-        "日常使用高峰和模式",
-        "新兴用例和应用"
-      ],
-      "cta": "查看每日报告样本"
-    },
-    "weekly": {
-      "title": "每周分析",
-      "description": "识别中期趋势和变现机会",
-      "features": [
-        "周环比增长分析",
-        "竞争格局变化",
-        "服务不足的市场细分",
-        "有利可图的API集成机会"
-      ],
-      "cta": "查看每周报告样本"
-    },
-    "monthly": {
-      "title": "月度战略报告",
-      "description": "为长期战略规划提供全面分析",
-      "features": [
-        "深入的市场分析和预测",
-        "按模型类别划分的收入潜力",
-        "开发者生态系统机会",
-        "战略合作伙伴建议"
-      ],
-      "cta": "查看月度报告样本"
-    },
-    "premium": {
-      "title": "高级报告",
-      "description": "释放AI模型分析的全部潜力",
-      "features": [
-        "完整、无过滤的数据访问",
-        "自定义报告生成",
-        "API使用建议",
-        "提前获取新兴趋势"
-      ],
-      "cta": "升级到高级版"
-    }
-  },
-  "newsletter": {
-    "title": "订阅 AI 模型更新",
-    "description": "每周接收最新的 AI 模型、趋势和教程直接发送到您的收件箱",
-    "subscribe": "订阅",
-    "privacy": "我们尊重您的隐私，绝不会分享您的电子邮件。您可以随时取消订阅。"
   },
   "footer": {
     "language": "语言",

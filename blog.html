@@ -75,7 +75,7 @@
                 <!-- 博客文章卡片 1 -->
                 <div class="blog-card" data-category="tutorials">
                     <div class="blog-image">
-                        <img src="img/blog/stable-diffusion-guide.jpg" alt="Stable Diffusion Guide">
+                        <img src="img/blog-placeholder.svg" alt="Stable Diffusion Guide">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年4月15日</span>
@@ -88,7 +88,7 @@
                 <!-- 博客文章卡片 2 -->
                 <div class="blog-card" data-category="trends">
                     <div class="blog-image">
-                        <img src="img/blog/llm-trends-2024.jpg" alt="LLM Trends 2024">
+                        <img src="img/blog-placeholder.svg" alt="LLM Trends 2024">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年4月10日</span>
@@ -101,7 +101,7 @@
                 <!-- 博客文章卡片 3 -->
                 <div class="blog-card" data-category="case-studies">
                     <div class="blog-image">
-                        <img src="img/blog/midjourney-case-study.jpg" alt="Midjourney Case Study">
+                        <img src="img/blog-placeholder.svg" alt="Midjourney Case Study">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年4月5日</span>
@@ -114,7 +114,7 @@
                 <!-- 博客文章卡片 4 -->
                 <div class="blog-card" data-category="best-practices">
                     <div class="blog-image">
-                        <img src="img/blog/ai-model-selection.jpg" alt="AI Model Selection">
+                        <img src="img/blog-placeholder.svg" alt="AI Model Selection">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年3月28日</span>
@@ -127,7 +127,7 @@
                 <!-- 博客文章卡片 5 -->
                 <div class="blog-card" data-category="tutorials">
                     <div class="blog-image">
-                        <img src="img/blog/audio-generation-guide.jpg" alt="Audio Generation Guide">
+                        <img src="img/blog-placeholder.svg" alt="Audio Generation Guide">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年3月20日</span>
@@ -140,7 +140,7 @@
                 <!-- 博客文章卡片 6 -->
                 <div class="blog-card" data-category="trends">
                     <div class="blog-image">
-                        <img src="img/blog/multimodal-ai-future.jpg" alt="Multimodal AI Future">
+                        <img src="img/blog-placeholder.svg" alt="Multimodal AI Future">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">2024年3月15日</span>
@@ -196,7 +196,7 @@
                         <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
                         <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
                         <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="contact.html" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
                         <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
                         <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
                     </ul>
@@ -208,9 +208,21 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/i18n.js"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/i18n.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script>
+        // Particles.js initialization (copy from index.html if needed)
+        window.addEventListener('load', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    // Paste particles.js config here
+                });
+            } else {
+                console.warn('particles.js not loaded');
+            }
+        });
+
         // Blog category filtering
         document.addEventListener('DOMContentLoaded', function() {
             const categoryTabs = document.querySelectorAll('.category-tab');

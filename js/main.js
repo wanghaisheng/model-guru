@@ -476,21 +476,20 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Initialize language switcher
  */
-async function initLanguageSwitcher() {
-    const languageSwitcher = document.getElementById('languageSwitcher');
-    if (!languageSwitcher) return;
-
-    // 从 localStorage 获取保存的语言设置，默认为英语
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-    languageSwitcher.value = savedLang;
-
-    // 初始加载语言
-    await switchLanguage(savedLang);
-
-    // 监听语言切换
-    languageSwitcher.addEventListener('change', async (e) => {
-        await switchLanguage(e.target.value);
-    });
+function initLanguageSwitcher() {
+    // Corrected ID selector to match the HTML
+    const languageSelect = document.getElementById('languageSwitcher'); 
+    if (languageSelect) {
+        // Set initial language
+        const savedLanguage = localStorage.getItem('language') || 'en';
+        languageSelect.value = savedLanguage;
+        switchLanguage(savedLanguage); // Apply initial language on load
+        
+        // Handle language change
+        languageSelect.addEventListener('change', (e) => {
+            switchLanguage(e.target.value);
+        });
+    }
 }
 
 /**

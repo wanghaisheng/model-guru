@@ -194,37 +194,25 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="index.html">Model Guru</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Model Guru</h3>
                     <p>Your AI Model Discovery & Analytics Hub</p>
+                    <select id="languageSwitcher" class="language-switcher">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-links-column">
-                        <h3>Navigation</h3>
-                        <ul>
-                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                            <li><a href="models.html" data-i18n="nav.models">All Models</a></li>
-                            <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
-                            <li><a href="reports.html" data-i18n="nav.reports">Reports</a></li>
-                            <li><a href="about.html" data-i18n="nav.about">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-column">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
-                            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-                            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-column">
-                        <h3>Legal</h3>
-                        <ul>
-                            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
-                            <li><a href="terms.html" data-i18n="footer.terms">Terms</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-links-container">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
+                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
+                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -233,6 +221,20 @@
         </div>
     </footer>
 
-    <script src="js/main.js" type="module"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/i18n.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // Particles.js initialization (copy from index.html if needed)
+        window.addEventListener('load', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    // Paste particles.js config here
+                });
+            } else {
+                console.warn('particles.js not loaded');
+            }
+        });
+    </script>
 </body>
 </html> 

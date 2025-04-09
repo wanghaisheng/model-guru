@@ -152,6 +152,7 @@
     <p>If you have any questions regarding these terms, feel free to contact us at support@modelguru.deepseek.diy.</p>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -181,8 +182,21 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <!-- Scripts -->
+  <script type="module" src="js/i18n.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script>
+    // Particles.js initialization (copy from index.html if needed)
+    window.addEventListener('load', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+          // Paste particles.js config here
+        });
+      } else {
+        console.warn('particles.js not loaded');
+      }
+    });
+  </script>
 </body>
 
 </html>
