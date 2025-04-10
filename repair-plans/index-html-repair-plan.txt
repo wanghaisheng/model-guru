@@ -1,0 +1,368 @@
+HTML Repair Plan for index
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 35: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 128: [untranslatedText]
+  Text: "Category Title"
+  Suggested key: category.title
+
+Line 130: [untranslatedText]
+  Text: "Category description goes here"
+  Suggested key: category.description.goes.here
+
+Line 137: [untranslatedText]
+  Text: "Model Name"
+  Suggested key: model.name
+
+Line 149: [untranslatedText]
+  Text: "Model description goes here"
+  Suggested key: model.description.goes.here
+
+Line 255: [untranslatedText]
+  Text: "Added 2 days ago"
+  Suggested key: added.2.days.ago
+
+Line 257: [untranslatedText]
+  Text: "SDXL-Turbo"
+  Suggested key: sdxl.turbo
+
+Line 258: [untranslatedText]
+  Text: "Lightning-fast image generation model with exceptional quality"
+  Suggested key: lightning.fast.image.generation.model.with.exceptional.quality
+
+Line 264: [untranslatedText]
+  Text: "Image Generation"
+  Suggested key: image.generation
+
+Line 265: [untranslatedText]
+  Text: "Real-time"
+  Suggested key: real.time
+
+Line 277: [untranslatedText]
+  Text: "Added 1 week ago"
+  Suggested key: added.1.week.ago
+
+Line 279: [untranslatedText]
+  Text: "Mixtral-8x7B"
+  Suggested key: mixtral.8x7b
+
+Line 280: [untranslatedText]
+  Text: "Advanced language model with superior reasoning capabilities"
+  Suggested key: advanced.language.model.with.superior.reasoning.capabilities
+
+Line 286: [untranslatedText]
+  Text: "Text Generation"
+  Suggested key: text.generation
+
+Line 287: [untranslatedText]
+  Text: "LLM"
+  Suggested key: llm
+
+Line 299: [untranslatedText]
+  Text: "Added 3 days ago"
+  Suggested key: added.3.days.ago
+
+Line 301: [untranslatedText]
+  Text: "Stable Audio"
+  Suggested key: stable.audio
+
+Line 302: [untranslatedText]
+  Text: "High-quality music and sound generation model"
+  Suggested key: high.quality.music.and.sound.generation.model
+
+Line 308: [untranslatedText]
+  Text: "Audio Generation"
+  Suggested key: audio.generation
+
+Line 309: [untranslatedText]
+  Text: "Music"
+  Suggested key: music
+
+Line 333: [untranslatedText]
+  Text: "Features"
+  Suggested key: features
+
+Line 360: [untranslatedText]
+  Text: "⚠️"
+  Suggested key: 
+
+Line 361: [untranslatedText]
+  Text: "⚠️"
+  Suggested key: 
+
+Line 403: [untranslatedText]
+  Text: "500+"
+  Suggested key: 500
+
+Line 407: [untranslatedText]
+  Text: "10+"
+  Suggested key: 10
+
+Line 411: [untranslatedText]
+  Text: "10M+"
+  Suggested key: 10m
+
+Line 415: [untranslatedText]
+  Text: "50K+"
+  Suggested key: 50k
+
+Line 429: [untranslatedText]
+  Text: "Hugging Face"
+  Suggested key: hugging.face
+
+Line 430: [untranslatedText]
+  Text: "Leading platform for open-source AI models and datasets"
+  Suggested key: leading.platform.for.open.source.ai.models.and.datasets
+
+Line 433: [untranslatedText]
+  Text: "10K+"
+  Suggested key: 10k
+
+Line 434: [untranslatedText]
+  Text: "Models"
+  Suggested key: models
+
+Line 437: [untranslatedText]
+  Text: "1M+"
+  Suggested key: 1m
+
+Line 438: [untranslatedText]
+  Text: "Users"
+  Suggested key: users
+
+Line 444: [untranslatedText]
+  Text: "Replicate"
+  Suggested key: replicate
+
+Line 445: [untranslatedText]
+  Text: "Cloud platform for running machine learning models"
+  Suggested key: cloud.platform.for.running.machine.learning.models
+
+Line 448: [untranslatedText]
+  Text: "5K+"
+  Suggested key: 5k
+
+Line 449: [untranslatedText]
+  Text: "Models"
+  Suggested key: models
+
+Line 452: [untranslatedText]
+  Text: "500K+"
+  Suggested key: 500k
+
+Line 453: [untranslatedText]
+  Text: "Users"
+  Suggested key: users
+
+Line 459: [untranslatedText]
+  Text: "Stability AI"
+  Suggested key: stability.ai
+
+Line 460: [untranslatedText]
+  Text: "Pioneer in open-source AI models and APIs"
+  Suggested key: pioneer.in.open.source.ai.models.and.apis
+
+Line 463: [untranslatedText]
+  Text: "50+"
+  Suggested key: 50
+
+Line 464: [untranslatedText]
+  Text: "Models"
+  Suggested key: models
+
+Line 467: [untranslatedText]
+  Text: "1M+"
+  Suggested key: 1m
+
+Line 468: [untranslatedText]
+  Text: "Users"
+  Suggested key: users
+
+Line 583: [untranslatedText]
+  Text: "methodology page"
+  Suggested key: methodology.page
+
+Line 592: [untranslatedText]
+  Text: "contact us"
+  Suggested key: contact.us
+
+Line 610: [untranslatedText]
+  Text: "contact us"
+  Suggested key: contact.us
+
+Line 858: [untranslatedText]
+  Text: "Added 2 days ago"
+  Suggested key: added.2.days.ago
+
+Line 860: [untranslatedText]
+  Text: "SDXL-Turbo"
+  Suggested key: sdxl.turbo
+
+Line 861: [untranslatedText]
+  Text: "Lightning-fast image generation model with exceptional quality"
+  Suggested key: lightning.fast.image.generation.model.with.exceptional.quality
+
+Line 867: [untranslatedText]
+  Text: "Image Generation"
+  Suggested key: image.generation
+
+Line 868: [untranslatedText]
+  Text: "Real-time"
+  Suggested key: real.time
+
+Line 880: [untranslatedText]
+  Text: "Added 1 week ago"
+  Suggested key: added.1.week.ago
+
+Line 882: [untranslatedText]
+  Text: "Mixtral-8x7B"
+  Suggested key: mixtral.8x7b
+
+Line 883: [untranslatedText]
+  Text: "Advanced language model with superior reasoning capabilities"
+  Suggested key: advanced.language.model.with.superior.reasoning.capabilities
+
+Line 889: [untranslatedText]
+  Text: "Text Generation"
+  Suggested key: text.generation
+
+Line 890: [untranslatedText]
+  Text: "LLM"
+  Suggested key: llm
+
+Line 902: [untranslatedText]
+  Text: "Added 3 days ago"
+  Suggested key: added.3.days.ago
+
+Line 904: [untranslatedText]
+  Text: "Stable Audio"
+  Suggested key: stable.audio
+
+Line 905: [untranslatedText]
+  Text: "High-quality music and sound generation model"
+  Suggested key: high.quality.music.and.sound.generation.model
+
+Line 911: [untranslatedText]
+  Text: "Audio Generation"
+  Suggested key: audio.generation
+
+Line 912: [untranslatedText]
+  Text: "Music"
+  Suggested key: music
+
+Line 934: [untranslatedText]
+  Text: "SDXL-Turbo"
+  Suggested key: sdxl.turbo
+
+Line 935: [untranslatedText]
+  Text: "Mixtral-8x7B"
+  Suggested key: mixtral.8x7b
+
+Line 936: [untranslatedText]
+  Text: "Stable Audio"
+  Suggested key: stable.audio
+
+Line 942: [untranslatedText]
+  Text: "SDXL-Turbo"
+  Suggested key: sdxl.turbo
+
+Line 943: [untranslatedText]
+  Text: "Mixtral-8x7B"
+  Suggested key: mixtral.8x7b
+
+Line 944: [untranslatedText]
+  Text: "Stable Audio"
+  Suggested key: stable.audio
+
+Line 948: [untranslatedText]
+  Text: "2024-01-15"
+  Suggested key: 2024.01.15
+
+Line 949: [untranslatedText]
+  Text: "2024-02-01"
+  Suggested key: 2024.02.01
+
+Line 950: [untranslatedText]
+  Text: "2024-01-20"
+  Suggested key: 2024.01.20
+
+Line 954: [untranslatedText]
+  Text: "125K"
+  Suggested key: 125k
+
+Line 955: [untranslatedText]
+  Text: "89K"
+  Suggested key: 89k
+
+Line 956: [untranslatedText]
+  Text: "45K"
+  Suggested key: 45k
+
+Line 960: [untranslatedText]
+  Text: "4.8K"
+  Suggested key: 4.8k
+
+Line 961: [untranslatedText]
+  Text: "3.2K"
+  Suggested key: 3.2k
+
+Line 962: [untranslatedText]
+  Text: "2.1K"
+  Suggested key: 2.1k
+
+Line 969: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 970: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 971: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 978: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 979: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 980: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 987: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 988: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 989: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 996: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 997: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 998: [untranslatedText]
+  Text: "🔒"
+  Suggested key: 
+
+Line 1152: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

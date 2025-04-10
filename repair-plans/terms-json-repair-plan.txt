@@ -1,0 +1,26 @@
+JSON Repair Plan for terms
+================================================================================
+
+No missing keys found.
+
+Unused Keys to Review:
+  • terms.pageTitle
+  • terms.title
+  • terms.lastUpdated
+  • terms.introduction
+  • terms.sections.acceptance.title
+  • terms.sections.acceptance.content
+  • terms.sections.useLicense.title
+  • terms.sections.useLicense.content
+  • terms.sections.disclaimer.title
+  • terms.sections.disclaimer.content
+  • terms.sections.limitations.title
+  • terms.sections.limitations.content
+  • terms.sections.revisions.title
+  • terms.sections.revisions.content
+  • terms.sections.links.title
+  • terms.sections.links.content
+  • terms.sections.modifications.title
+  • terms.sections.modifications.content
+  • terms.sections.governingLaw.title
+  • terms.sections.governingLaw.content

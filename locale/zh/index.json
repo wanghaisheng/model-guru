@@ -49,10 +49,11 @@
     }
   },
   "stats": {
-      "modelsTracked": "追踪模型数",
-      "platformsIntegrated": "集成平台数",
-      "totalRuns": "模型总运行次数",
-      "monthlyUsers": "月活跃用户数"
+    "title": "Model Guru 数据概览",
+    "modelsTracked": "追踪的模型数量",
+    "platformsIntegrated": "集成的平台数量",
+    "totalRuns": "总运行次数",
+    "monthlyUsers": "月活跃用户"
   },
   "platforms": {
     "title": "我们追踪的平台"
@@ -80,8 +81,23 @@
   },
   "testimonials": {
     "title": "用户使用心得",
-    "viewAll": "查看全部用户评价",
-    "subtitle": "了解Model Guru如何帮助开发者和企业做出更明智的AI决策"
+    "subtitle": "了解Model Guru如何帮助开发者和企业做出更明智的AI决策",
+    "card1": {
+      "text": "\"Model Guru在几分钟内就帮我找到了适合项目的完美图像生成模型，节省了我数天的研究时间。\"",
+      "authorName": "艾玛·威尔逊",
+      "authorRole": "设计工作室负责人"
+    },
+    "card2": {
+      "text": "\"作为设计师，我需要紧跟最新的AI图像生成技术。Model Guru的趋势分析让我能轻松看到哪些模型正在崛起，值得我花时间研究。\"",
+      "authorName": "詹姆斯·李",
+      "authorRole": "教育研究员"
+    },
+    "card3": {
+      "text": "\"跨平台比较功能非常有用。在选择语言模型时，我可以并排比较性能和用户评价，使我的决策过程变得简单明了。\"",
+      "authorName": "迈克尔·陈",
+      "authorRole": "AI研究员"
+    },
+    "viewAll": "查看全部用户评价"
   },
   "faq": {
     "title": "常见问题",
@@ -92,22 +108,166 @@
     "q3": "数据更新频率是多久？",
     "a3": "我们每天更新数据，确保您能获取各大平台AI模型的最新信息。",
     "q4": "我可以推荐添加新平台吗？",
-    "a4": "非常欢迎！我们一直在寻求扩大平台覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。"
+    "a4": "非常欢迎！我们一直在寻求扩大平台覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。",
+    "viewAll": "查看所有常见问题"
   },
   "blog": {
     "title": "技术博客",
     "subtitle": "最新AI模型趋势、实用教程和最佳实践",
+    "card1": {
+      "date": "2024年4月15日",
+      "title": "Stable Diffusion XL完全指南：参数优化与提示工程",
+      "excerpt": "了解如何充分利用Stable Diffusion XL的强大功能，包括关键参数设置和提示工程最佳实践..."
+    },
+    "card2": {
+      "date": "2024年4月10日",
+      "title": "2024年LLM趋势：从Mixtral到Claude 3",
+      "excerpt": "探索2024年大型语言模型领域的最新发展，包括开源模型的兴起和商业应用的新方向..."
+    },
+    "card3": {
+      "date": "2024年4月5日",
+      "title": "对比Top 5多模态模型：性能与应用场景",
+      "excerpt": "详细比较顶级多模态AI模型，分析它们在不同任务上的性能，并确定各自的理想应用场景..."
+    },
+    "readMore": "阅读更多",
     "viewAll": "查看全部文章"
   },
   "team": {
     "title": "认识我们的团队",
-    "subtitle": "由AI和机器学习专家组成的团队，致力于简化AI模型发现过程"
+    "subtitle": "由AI和机器学习专家组成的团队，致力于简化AI模型发现过程",
+    "member1": {
+      "name": "莎拉·陈",
+      "role": "首席开发人员",
+      "bio": "前斯坦福大学AI研究员，拥有超过10年的机器学习和模型评估经验。"
+    },
+    "member2": {
+      "name": "迈克尔·王",
+      "role": "AI研究负责人",
+      "bio": "前斯坦福大学AI研究员，拥有超过10年的机器学习和模型评估经验。"
+    },
+    "member3": {
+      "name": "大卫·张",
+      "role": "产品经理",
+      "bio": "前斯坦福大学AI研究员，拥有超过10年的机器学习和模型评估经验。"
+    }
+  },
+  "modelExploration": {
+    "title": "探索模型",
+    "subtitle": "发现并对比满足您特定需求的AI模型",
+    "addToComparisonBtn": "加入对比",
+    "viewAllBtnPrefix": "查看全部",
+    "viewAllBtnSuffix": "个模型"
   },
   "modelComparison": {
     "title": "模型对比工具",
     "description": "并排对比不同AI模型，找到最适合您需求的选择",
-    "compare": "对比模型",
-    "fullTool": "使用完整对比工具"
+    "purposeNavigation": {
+      "title": "您想做什么？",
+      "makeVideos": {
+        "title": "制作视频",
+        "description": "对比视频生成模型"
+      },
+      "generateImages": {
+        "title": "生成图像",
+        "description": "对比图像生成模型"
+      },
+      "generateText": {
+        "title": "生成文本",
+        "description": "对比语言模型"
+      },
+      "processAudio": {
+        "title": "处理音频",
+        "description": "对比音频模型"
+      },
+      "make3d": {
+        "title": "制作3D内容",
+        "description": "对比3D生成模型"
+      },
+      "useUtilities": {
+        "title": "使用实用工具",
+        "description": "对比实用工具模型"
+      }
+    },
+    "selectionArea": {
+      "title": "选择模型进行比较",
+      "maxModels": "3",
+      "modelsSelected": "个已选模型",
+      "purposeFilterDefault": "我想...",
+      "platformFilterDefault": "所有平台",
+      "categoryFilterDefault": "A-Z",
+      "sortFilterDefault": "排序方式",
+      "sortAZ": "A-Z",
+      "sortZA": "Z-A",
+      "sortNewest": "最新优先",
+      "sortPopular": "最受欢迎",
+      "addToComparison": "加入对比"
+    },
+    "preview": {
+      "title": "预览对比结果",
+      "headerMetrics": "指标",
+      "rowModelName": "模型名称",
+      "rowReleaseDate": "发布日期",
+      "rowTotalRuns": "总运行次数",
+      "rowTotalLikes": "总点赞数",
+      "rowWeeklyGrowth": "周增长",
+      "rowUserRating": "用户评分",
+      "rowSimilarModels": "相似模型",
+      "rowPerformanceTrends": "性能趋势"
+    },
+    "premiumBadge": "高级",
+    "premiumFeatures": {
+      "weeklyGrowth": {
+        "title": "周增长",
+        "description": "追踪模型性能随时间的变化趋势"
+      },
+      "userRatings": {
+        "title": "用户评分",
+        "description": "访问详细的用户反馈和评分"
+      },
+      "recommendations": {
+        "title": "智能推荐",
+        "description": "获取个性化的模型建议"
+      },
+      "performanceTrends": {
+        "title": "性能趋势",
+        "description": "分析模型性能模式"
+      },
+      "apiIntegration": {
+        "title": "API集成",
+        "description": "详细的API文档和示例"
+      },
+      "productOpportunities": {
+        "title": "产品机遇",
+        "description": "发现您可以构建的潜在产品"
+      }
+    },
+    "unlockButton": "解锁完整对比",
+    "premiumNote": "升级到高级版以比较多达10个模型并访问所有指标",
+    "productOpportunities": {
+      "title": "产品机遇",
+      "imageGen": {
+        "title": "图像生成",
+        "artGenerator": {
+          "title": "AI艺术生成器",
+          "description": "根据文本提示创建自定义艺术作品"
+        },
+        "portraitGenerator": {
+          "title": "肖像生成器",
+          "description": "生成专业的头像照片"
+        }
+      },
+      "videoGen": {
+        "title": "视频生成",
+        "shortVideo": {
+          "title": "短视频创作者",
+          "description": "生成病毒式社交媒体内容"
+        },
+        "adGenerator": {
+          "title": "广告生成器",
+          "description": "创建引人入胜的营销视频"
+        }
+      }
+    }
   },
   "playground": {
     "title": "模型搜索体验",

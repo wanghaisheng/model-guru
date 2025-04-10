@@ -3,95 +3,91 @@
     "title": "AI Platforms",
     "subtitle": "Compare and discover the best AI platforms for your needs",
     "searchPlaceholder": "Search platforms...",
+    "pageDescription": "Explore AI model platforms tracked by Model Guru, including Replicate, Hugging Face, and Stability AI.",
     "categories": {
       "title": "Explore Platforms by Category",
       "subtitle": "Find platforms based on their primary function or area of expertise.",
       "modelHosting": {
         "title": "Model Hosting",
-        "description": "Platforms for hosting and serving AI models via APIs"
+        "description": "Platforms for hosting and serving AI models via APIs."
       },
       "developmentTools": {
         "title": "Development Tools",
-        "description": "Tools and environments for building and training models"
+        "description": "Tools and environments for building and training models."
       },
       "cloudServices": {
         "title": "Cloud Services",
-        "description": "Cloud providers offering comprehensive ML infrastructure"
+        "description": "Cloud providers offering comprehensive ML infrastructure."
       }
     },
     "comparison": {
       "title": "Platform Comparison",
-      "subtitle": "Compare key features across different AI platforms",
-      "headers": {
-        "feature": "Feature",
-        "replicate": "Replicate",
-        "huggingFace": "Hugging Face",
-        "stabilityAI": "Stability AI",
-        "openAI": "OpenAI"
-      },
-      "rows": {
-        "modelTypes": {
-          "label": "Model Types",
-          "replicate": "Multiple",
-          "huggingFace": "Multiple",
-          "stabilityAI": "Image/Video",
-          "openAI": "Text/Image"
-        },
-        "apiAccess": {
-          "label": "API Access",
-          "replicate": "Yes",
-          "huggingFace": "Yes",
-          "stabilityAI": "Yes",
-          "openAI": "Yes"
-        },
-        "pricingModel": {
-          "label": "Pricing Model",
-          "replicate": "Pay-per-use",
-          "huggingFace": "Free/Paid",
-          "stabilityAI": "Subscription",
-          "openAI": "Pay-per-use"
-        },
-        "customModels": {
-          "label": "Custom Models",
-          "replicate": "Yes",
-          "huggingFace": "Yes",
-          "stabilityAI": "No",
-          "openAI": "Limited"
-        }
-      }
-    },
-    "details": {
+      "subtitle": "Compare key features across different platforms.",
+      "features": "Features",
+      "replicate": "Replicate",
+      "huggingFace": "Hugging Face",
+      "openAI": "OpenAI",
+      "modelTypes": "Model Types",
+      "apiAccess": "API Access",
+      "pricing": "Pricing Model",
+      "customModels": "Custom Models",
       "replicate": {
-        "name": "Replicate",
-        "description": "Replicate makes it easy to run machine learning models in the cloud. Deploy models with a few lines of code, and scale automatically.",
-        "metrics": {
-          "models": "500+",
-          "runs": "10M+",
-          "users": "50K+"
-        },
-        "features": "Key Features",
-        "featuresList": [
-          "Easy model deployment",
-          "Automatic scaling",
-          "Pay-per-use pricing",
-          "API access"
-        ]
+        "modelTypes": "Image, Video, Audio",
+        "apiAccess": "REST API",
+        "pricing": "Pay-per-use",
+        "customModels": "Yes"
       },
       "huggingFace": {
-        "name": "Hugging Face",
-        "description": "Hugging Face is the AI community building the future. Build, train and deploy state of the art models powered by the reference open source in machine learning.",
+        "modelTypes": "All Types",
+        "apiAccess": "REST API, Python SDK",
+        "pricing": "Free + Pay-per-use",
+        "customModels": "Yes"
+      },
+      "openAI": {
+        "modelTypes": "Text, Image",
+        "apiAccess": "REST API",
+        "pricing": "Pay-per-use",
+        "customModels": "No"
+      }
+    },
+    "platformCard": {
+      "metrics": {
+        "models": "Models",
+        "deployments": "Deployments",
+        "datasets": "Datasets"
+      },
+      "features": {
+        "title": "Key Features"
+      },
+      "actions": {
+        "viewDetails": "View Details",
+        "compare": "Compare"
+      },
+      "replicate": {
+        "title": "Replicate",
+        "description": "Deploy and run AI models with a simple API",
         "metrics": {
-          "models": "100K+",
-          "datasets": "1M+",
-          "users": "500K+"
+          "models": "1000+",
+          "deployments": "5000+"
         },
-        "features": "Key Features",
-        "featuresList": [
-          "Open source models",
-          "Model hub",
-          "Inference API",
-          "Spaces for demos"
-        ]
+        "features": {
+          "oneClick": "One-click deployment",
+          "scaling": "Automatic scaling",
+          "monitoring": "Built-in monitoring"
+        }
+      },
+      "huggingFace": {
+        "title": "Hugging Face",
+        "description": "The AI community's home for models, datasets, and applications",
+        "metrics": {
+          "models": "100000+",
+          "datasets": "10000+"
+        },
+        "features": {
+          "modelHub": "Model Hub",
+          "spaces": "Spaces for demos",
+          "inference": "Inference API"
+        }
       }
     },
     "submitPlatform": {
@@ -99,67 +95,83 @@
       "subtitle": "Get your AI platform listed on Model Guru and reach thousands of potential users",
       "benefits": {
         "title": "Benefits of Listing Your Platform",
-        "items": {
-          "visibility": {
-            "title": "Increased Visibility",
-            "description": "Reach thousands of AI engineers, data scientists, and developers actively looking for platforms like yours."
-          },
-          "traffic": {
-            "title": "Qualified Traffic",
-            "description": "Drive highly targeted visitors to your platform who are already interested in AI solutions."
-          },
-          "insights": {
-            "title": "Performance Insights",
-            "description": "Gain access to anonymized data about how users discover and engage with your platform."
-          },
-          "integration": {
-            "title": "Integration Opportunities",
-            "description": "Potential for deeper integration and partnership opportunities with Model Guru."
-          }
+        "visibility": {
+          "title": "Increased Visibility",
+          "description": "Reach thousands of AI engineers, data scientists, and developers actively looking for platforms like yours."
+        },
+        "traffic": {
+          "title": "Qualified Traffic",
+          "description": "Drive highly targeted visitors to your platform who are already interested in AI solutions."
+        },
+        "insights": {
+          "title": "Performance Insights",
+          "description": "Gain access to anonymized data about how users discover and engage with your platform."
+        },
+        "integration": {
+          "title": "Integration Opportunities",
+          "description": "Potential for deeper integration and partnership opportunities with Model Guru."
         }
       },
+      "showFormButton": "Submit Your Platform",
       "form": {
         "title": "Platform Details",
-        "platformName": "Platform Name",
-        "websiteUrl": "Website URL",
-        "urlPlaceholder": "https://your-platform.com",
-        "category": "Category",
-        "categoryOptions": {
-          "select": "Select a category",
-          "modelHosting": "Model Hosting",
-          "developmentTools": "Development Tools",
-          "cloudServices": "Cloud Services",
-          "trainingPlatforms": "Training Platforms",
-          "specializedAI": "Specialized AI Services",
-          "other": "Other (specify)"
+        "metrics": {
+          "title": "Metrics & Features"
         },
-        "description": "Description",
-        "descriptionPlaceholder": "Please describe your platform and its key features (max 500 characters)",
-        "metricsTitle": "Metrics & Features",
-        "modelsCount": "Number of Models",
-        "usersCount": "Number of Users",
-        "keyFeatures": "Key Features (comma separated)",
-        "featuresPlaceholder": "e.g., API access, Custom models, Free tier",
-        "logo": "Platform Logo",
-        "logoNote": "Recommended: Square logo, minimum 200x200px (PNG or SVG preferred)",
-        "contactTitle": "Contact Information",
-        "contactName": "Contact Name",
-        "contactEmail": "Contact Email",
-        "termsAgree": "I agree to the Terms and Conditions for platform listings",
-        "submit": "Submit Platform",
-        "requiredNote": "* Required fields. All submissions will be reviewed before being published. This typically takes 3-5 business days."
+        "contact": {
+          "title": "Contact Information"
+        },
+        "fields": {
+          "name": {
+            "label": "Platform Name"
+          },
+          "url": {
+            "label": "Website URL",
+            "placeholder": "https://your-platform.com"
+          },
+          "category": {
+            "label": "Category",
+            "placeholder": "Select a category",
+            "options": {
+              "modelHosting": "Model Hosting",
+              "developmentTools": "Development Tools",
+              "cloudServices": "Cloud Services",
+              "trainingPlatforms": "Training Platforms",
+              "specializedAI": "Specialized AI Services",
+              "other": "Other (specify)"
+            }
+          },
+          "description": {
+            "label": "Description",
+            "placeholder": "Please describe your platform and its key features (max 500 characters)"
+          },
+          "models": {
+            "label": "Number of Models"
+          },
+          "users": {
+            "label": "Number of Users"
+          },
+          "features": {
+            "label": "Key Features (comma separated)",
+            "placeholder": "e.g., API access, Custom models, Free tier"
+          },
+          "logo": {
+            "label": "Platform Logo",
+            "note": "Recommended: Square logo, minimum 200x200px (PNG or SVG preferred)"
+          },
+          "contactName": {
+            "label": "Contact Name"
+          },
+          "contactEmail": {
+            "label": "Contact Email"
+          },
+          "terms": {
+            "label": "I agree to the Terms and Conditions for platform listings"
+          }
+        },
+        "submitButton": "Submit Platform",
+        "note": "* Required fields. All submissions will be reviewed before being published. This typically takes 3-5 business days."
       }
-    },
-    "newsletter": {
-      "title": "Stay Updated",
-      "description": "Get weekly insights about new platforms and features",
-      "emailPlaceholder": "Your email address",
-      "button": "Subscribe",
-      "privacy": "We respect your privacy and will never share your email."
-    },
-    "cta": {
-      "visitPlatform": "Visit Platform",
-      "viewModels": "View Models"
     }
   }
 } 

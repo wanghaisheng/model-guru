@@ -1,74 +1,80 @@
 {
   "reports": {
-    "title": "AI模型分析报告",
-    "subtitle": "通过专业分析报告发现AI领域的商业机会",
-    "description": "会员用户可获取完整的日报、周报和月报，深入了解不同模型类型和API的潜在商业价值。",
-    "daily": {
-      "title": "每日速递",
-      "description": "追踪模型热度和使用数据的日常变化"
-    },
-    "weekly": {
-      "title": "每周趋势",
-      "description": "分析模型周度表现和新兴趋势"
-    },
-    "monthly": {
-      "title": "月度总结",
-      "description": "获取全面的月度回顾和战略洞察"
-    },
-    "premiumReports": {
-      "title": "高级分析报告",
-      "subtitle": "解锁深度分析与独家见解",
-      "features": {
-        "detailedMetrics": "详细的性能指标与基准对比",
-        "trendAnalysis": "高级趋势分析与未来预测",
-        "monetizationInsights": "API与模型的商业化潜力分析",
-        "customizableDashboards": "可定制仪表盘以追踪特定模型或平台"
+    "title": "AI 模型报告",
+    "subtitle": "深入分析和洞察 AI 模型",
+    "searchPlaceholder": "搜索报告...",
+    "pageDescription": "获取关于 AI 模型的全面报告和分析，包括性能指标、使用案例和行业趋势。",
+    "categories": {
+      "title": "报告分类",
+      "description": "按类别或主题浏览报告",
+      "performance": {
+        "title": "性能分析",
+        "description": "模型性能指标的详细分析"
       },
-      "pricing": {
-        "title": "获取完整权限",
-        "description": "选择适合您需求的套餐，立即获取所有高级报告和功能。",
-        "monthlyPlan": {
-          "name": "月度套餐",
-          "price": "￥349/月",
+      "useCases": {
+        "title": "使用案例",
+        "description": "实际应用和案例研究"
+      },
+      "trends": {
+        "title": "行业趋势",
+        "description": "当前和新兴趋势分析"
+      }
+    },
+    "reportDetails": {
+      "title": "报告详情",
+      "metrics": {
+        "accuracy": "准确率",
+        "speed": "推理速度",
+        "cost": "成本效率",
+        "scalability": "可扩展性"
+      },
+      "sections": {
+        "executiveSummary": "执行摘要",
+        "methodology": "方法论",
+        "findings": "主要发现",
+        "recommendations": "建议",
+        "conclusion": "结论"
+      }
+    },
+    "subscription": {
+      "title": "订阅报告",
+      "description": "获取高级报告和分析的访问权限",
+      "plans": {
+        "basic": {
+          "title": "基础版",
+          "price": "¥9.99/月",
           "features": [
-            "完整访问所有报告",
-            "每日、每周、每月更新",
-            "高级分析工具",
-            "优先邮件支持"
-          ],
-          "cta": "选择月度套餐"
+            "访问标准报告",
+            "每月行业更新",
+            "基础分析"
+          ]
         },
-        "annualPlan": {
-          "name": "年度套餐 (立省20%)",
-          "price": "￥3350/年",
+        "pro": {
+          "title": "专业版",
+          "price": "¥29.99/月",
           "features": [
-            "包含月度套餐所有功能",
-            "年度账单折扣",
-            "优先体验新功能",
-            "专属客户经理"
-          ],
-          "cta": "选择年度套餐"
+            "访问所有报告",
+            "每周行业更新",
+            "高级分析",
+            "自定义报告请求"
+          ]
+        },
+        "enterprise": {
+          "title": "企业版",
+          "price": "定制",
+          "features": [
+            "无限访问所有报告",
+            "每日行业更新",
+            "自定义分析仪表板",
+            "优先支持",
+            "团队协作功能"
+          ]
         }
-      }
-    },
-    "sampleReports": {
-      "title": "报告样本",
-      "subtitle": "一窥我们高级报告中提供的洞察",
-      "report1": {
-        "title": "每周热门模型：图像生成",
-        "description": "本周增长最快的5个图像生成模型分析。",
-        "cta": "下载样本 (PDF)"
       },
-      "report2": {
-        "title": "月度API商业化机遇",
-        "description": "识别文本转语音API的潜在收入来源。",
-        "cta": "下载样本 (PDF)"
+      "cta": {
+        "subscribe": "立即订阅",
+        "contact": "联系销售"
       }
-    },
-    "cta": {
-      "title": "准备好做出数据驱动的AI决策了吗？",
-      "description": "立即升级到高级会员，解锁Model Guru分析和报告功能的全部潜力。",
-      "button": "立即升级"
     }
   }
 } 

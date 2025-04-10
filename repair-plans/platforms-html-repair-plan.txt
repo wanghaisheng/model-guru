@@ -1,0 +1,56 @@
+HTML Repair Plan for platforms
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 31: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 81: [untranslatedText]
+  Text: "Replicate"
+  Suggested key: replicate
+
+Line 82: [untranslatedText]
+  Text: "Hugging Face Inference"
+  Suggested key: hugging.face.inference
+
+Line 83: [untranslatedText]
+  Text: "OpenAI API"
+  Suggested key: openai.api
+
+Line 84: [untranslatedText]
+  Text: "Stability AI API"
+  Suggested key: stability.ai.api
+
+Line 94: [untranslatedText]
+  Text: "Hugging Face Hub"
+  Suggested key: hugging.face.hub
+
+Line 95: [untranslatedText]
+  Text: "Google Colab"
+  Suggested key: google.colab
+
+Line 96: [untranslatedText]
+  Text: "Kaggle"
+  Suggested key: kaggle
+
+Line 106: [untranslatedText]
+  Text: "AWS SageMaker"
+  Suggested key: aws.sagemaker
+
+Line 107: [untranslatedText]
+  Text: "GCP Vertex AI"
+  Suggested key: gcp.vertex.ai
+
+Line 108: [untranslatedText]
+  Text: "Azure Machine Learning"
+  Suggested key: azure.machine.learning
+
+Line 359: [untranslatedText]
+  Text: "Terms and Conditions"
+  Suggested key: terms.and.conditions
+
+Line 400: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

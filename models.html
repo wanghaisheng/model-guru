@@ -78,35 +78,33 @@
                 <div class="filter-group">
                     <label for="purpose-filter" data-i18n="modelList.filterCategory">Purpose</label>
                     <select id="purpose-filter" class="form-control">
-                        <option value="">All Purposes</option>
-                        <option value="video">Video Generation</option>
-                        <option value="image">Image Generation</option>
-                        <option value="text">Text Generation</option>
-                        <option value="audio">Audio Processing</option>
-                        <option value="3d">3D Generation</option>
-                        <!-- Add more categories as needed -->
+                        <option value="" data-i18n="models.modelSelection.purposes.all">All Purposes</option>
+                        <option value="video" data-i18n="models.modelSelection.purposes.video">Video Generation</option>
+                        <option value="image" data-i18n="models.modelSelection.purposes.image">Image Generation</option>
+                        <option value="text" data-i18n="models.modelSelection.purposes.text">Text Generation</option>
+                        <option value="audio" data-i18n="models.modelSelection.purposes.audio">Audio Processing</option>
+                        <option value="3d" data-i18n="models.modelSelection.purposes.3d">3D Generation</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="platform-filter" data-i18n="modelList.filterPlatform">Platform</label>
                     <select id="platform-filter" class="form-control">
-                        <option value="">All Platforms</option>
-                        <option value="replicate">Replicate</option>
-                        <option value="huggingface">Hugging Face</option>
-                        <option value="stability">Stability AI</option>
-                        <option value="openai">OpenAI</option>
-                        <!-- Add other platforms as needed -->
+                        <option value="" data-i18n="models.modelSelection.platforms.all">All Platforms</option>
+                        <option value="replicate" data-i18n="models.modelSelection.platforms.replicate">Replicate</option>
+                        <option value="huggingface" data-i18n="models.modelSelection.platforms.huggingface">Hugging Face</option>
+                        <option value="stability" data-i18n="models.modelSelection.platforms.stability">Stability AI</option>
+                        <option value="openai" data-i18n="models.modelSelection.platforms.openai">OpenAI</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="sort-filter" data-i18n="modelList.sortBy">Sort By</label>
                     <select id="sort-filter" class="form-control">
-                        <option value="newest" data-i18n="modelList.sortOptions.newest">Newest First</option>
-                        <option value="oldest" data-i18n="modelList.sortOptions.oldest">Oldest First</option>
-                        <option value="mostLikes" data-i18n="modelList.sortOptions.mostLikes">Most Popular (Likes)</option>
-                        <option value="mostRuns" data-i18n="modelList.sortOptions.mostRuns">Most Popular (Runs)</option>
-                        <option value="trending" data-i18n="modelList.sortOptions.trending">Trending Score</option>
-                        <option value="alphabetical" data-i18n="modelList.sortOptions.alphabetical">A-Z</option>
+                        <option value="newest" data-i18n="models.modelSelection.sortFilter.newest">Newest First</option>
+                        <option value="oldest" data-i18n="models.modelSelection.sortFilter.oldest">Oldest First</option>
+                        <option value="mostLikes" data-i18n="models.modelSelection.sortFilter.mostLikes">Most Popular (Likes)</option>
+                        <option value="mostRuns" data-i18n="models.modelSelection.sortFilter.mostRuns">Most Popular (Runs)</option>
+                        <option value="trending" data-i18n="models.modelSelection.sortFilter.trending">Trending Score</option>
+                        <option value="alphabetical" data-i18n="models.modelSelection.sortFilter.alphabetical">A-Z</option>
                     </select>
                 </div>
             </div>
@@ -162,21 +160,21 @@
                 <div class="model-card" data-model-id="sdxl-turbo-example">
                     <div class="model-card-header">
                         <img src="img/stability-logo.svg" alt="Stability AI Logo" class="platform-logo">
-                        <span class="model-date">July 15, 2024</span>
+                        <span class="model-date" data-i18n="models.modelCard.date">July 15, 2024</span>
                     </div>
-                    <h3 class="model-title">SDXL Turbo</h3>
-                    <p class="model-description">Lightning-fast image generation with high quality.</p>
+                    <h3 class="model-title" data-i18n="models.modelCard.sdxl.title">SDXL Turbo</h3>
+                    <p class="model-description" data-i18n="models.modelCard.sdxl.description">Lightning-fast image generation with high quality.</p>
                     <div class="model-metrics">
-                        <span class="metric runs"><i class="fas fa-play"></i> <span>125K</span> Runs</span>
-                        <span class="metric likes"><i class="fas fa-heart"></i> <span>4.8K</span> Likes</span>
+                        <span class="metric runs"><i class="fas fa-play"></i> <span data-i18n="models.modelCard.sdxl.runs">125K</span> <span data-i18n="models.modelCard.metrics.runs">Runs</span></span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span data-i18n="models.modelCard.sdxl.likes">4.8K</span> <span data-i18n="models.modelCard.metrics.likes">Likes</span></span>
                     </div>
                     <div class="model-tags">
-                        <span class="tag">Image Generation</span>
-                        <span class="tag">Real-time</span>
+                        <span class="tag" data-i18n="models.modelCard.sdxl.tags.image">Image Generation</span>
+                        <span class="tag" data-i18n="models.modelCard.sdxl.tags.realtime">Real-time</span>
                     </div>
                     <button class="add-to-comparison-btn">
                         <i class="fas fa-plus"></i>
-                        Add to Comparison
+                        <span data-i18n="models.modelCard.actions.addToCompare">Add to Comparison</span>
                     </button>
                 </div>
             </div>
@@ -198,22 +196,22 @@
                 <div class="model-card" data-model-id="mixtral-8x7b-example">
                     <div class="model-card-header">
                         <img src="img/huggingface-logo.svg" alt="Hugging Face Logo" class="platform-logo">
-                        <span class="model-date">June 20, 2024</span>
+                        <span class="model-date" data-i18n="models.modelCard.date">June 20, 2024</span>
                     </div>
-                    <h3 class="model-title">Mixtral 8x7B</h3>
-                    <p class="model-description">Powerful mixture-of-experts language model.</p>
+                    <h3 class="model-title" data-i18n="models.modelCard.mixtral.title">Mixtral 8x7B</h3>
+                    <p class="model-description" data-i18n="models.modelCard.mixtral.description">Powerful mixture-of-experts language model.</p>
                     <div class="model-metrics">
-                        <span class="metric runs"><i class="fas fa-play"></i> <span>89K</span> Runs</span>
-                        <span class="metric likes"><i class="fas fa-heart"></i> <span>3.2K</span> Likes</span>
+                        <span class="metric runs"><i class="fas fa-play"></i> <span data-i18n="models.modelCard.mixtral.runs">89K</span> <span data-i18n="models.modelCard.metrics.runs">Runs</span></span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span data-i18n="models.modelCard.mixtral.likes">3.2K</span> <span data-i18n="models.modelCard.metrics.likes">Likes</span></span>
                     </div>
                     <div class="model-tags">
-                        <span class="tag">Text Generation</span>
-                        <span class="tag">LLM</span>
-                        <span class="tag">MoE</span>
+                        <span class="tag" data-i18n="models.modelCard.mixtral.tags.text">Text Generation</span>
+                        <span class="tag" data-i18n="models.modelCard.mixtral.tags.llm">LLM</span>
+                        <span class="tag" data-i18n="models.modelCard.mixtral.tags.moe">MoE</span>
                     </div>
                     <button class="add-to-comparison-btn">
                         <i class="fas fa-plus"></i>
-                        Add to Comparison
+                        <span data-i18n="models.modelCard.actions.addToCompare">Add to Comparison</span>
                     </button>
                 </div>
             </div>
@@ -235,21 +233,21 @@
                 <div class="model-card" data-model-id="gpt-4o-example">
                     <div class="model-card-header">
                         <img src="img/openai-logo.svg" alt="OpenAI Logo" class="platform-logo">
-                        <span class="model-date">May 13, 2024</span>
+                        <span class="model-date" data-i18n="models.modelCard.date">May 13, 2024</span>
                     </div>
-                    <h3 class="model-title">GPT-4o</h3>
-                    <p class="model-description">OpenAI's flagship multimodal model with text, audio, and vision capabilities.</p>
+                    <h3 class="model-title" data-i18n="models.modelCard.gpt4o.title">GPT-4o</h3>
+                    <p class="model-description" data-i18n="models.modelCard.gpt4o.description">OpenAI's flagship multimodal model with text, audio, and vision capabilities.</p>
                     <div class="model-metrics">
-                        <span class="metric runs"><i class="fas fa-play"></i> <span>2.5M</span> Runs</span>
-                        <span class="metric likes"><i class="fas fa-heart"></i> <span>98K</span> Likes</span>
+                        <span class="metric runs"><i class="fas fa-play"></i> <span data-i18n="models.modelCard.gpt4o.runs">2.5M</span> <span data-i18n="models.modelCard.metrics.runs">Runs</span></span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span data-i18n="models.modelCard.gpt4o.likes">98K</span> <span data-i18n="models.modelCard.metrics.likes">Likes</span></span>
                     </div>
                     <div class="model-tags">
-                        <span class="tag">Text Generation</span>
-                        <span class="tag">Multimodal</span>
+                        <span class="tag" data-i18n="models.modelCard.gpt4o.tags.text">Text Generation</span>
+                        <span class="tag" data-i18n="models.modelCard.gpt4o.tags.multimodal">Multimodal</span>
                     </div>
                     <button class="add-to-comparison-btn">
                         <i class="fas fa-plus"></i>
-                        Add to Comparison
+                        <span data-i18n="models.modelCard.actions.addToCompare">Add to Comparison</span>
                     </button>
                 </div>
             </div>
@@ -263,33 +261,33 @@
     <section class="premium-features">
         <div class="container">
             <div class="section-header">
-                <h2>Premium Features</h2>
-                <p>Unlock advanced model comparison and analytics</p>
+                <h2 data-i18n="models.premiumFeatures.title">Premium Features</h2>
+                <p data-i18n="models.premiumFeatures.subtitle">Unlock advanced model comparison and analytics</p>
             </div>
             <div class="features-grid">
                 <div class="premium-feature">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Advanced Analytics</h3>
-                    <p>Detailed performance metrics and trends</p>
+                    <h3 data-i18n="models.premiumFeatures.features.analytics.title">Advanced Analytics</h3>
+                    <p data-i18n="models.premiumFeatures.features.analytics.description">Detailed performance metrics and trends</p>
                 </div>
                 <div class="premium-feature">
                     <i class="fas fa-file-alt"></i>
-                    <h3>Custom Reports</h3>
-                    <p>Generate tailored model comparison reports</p>
+                    <h3 data-i18n="models.premiumFeatures.features.reports.title">Custom Reports</h3>
+                    <p data-i18n="models.premiumFeatures.features.reports.description">Generate tailored model comparison reports</p>
                 </div>
                 <div class="premium-feature">
                     <i class="fas fa-code"></i>
-                    <h3>API Access</h3>
-                    <p>Programmatic access to model data</p>
+                    <h3 data-i18n="models.premiumFeatures.features.api.title">API Access</h3>
+                    <p data-i18n="models.premiumFeatures.features.api.description">Programmatic access to model data</p>
                 </div>
                 <div class="premium-feature">
                     <i class="fas fa-headset"></i>
-                    <h3>Priority Support</h3>
-                    <p>Dedicated support for premium users</p>
+                    <h3 data-i18n="models.premiumFeatures.features.support.title">Priority Support</h3>
+                    <p data-i18n="models.premiumFeatures.features.support.description">Dedicated support for premium users</p>
                 </div>
             </div>
             <div class="premium-cta">
-                <a href="pricing.html" class="btn btn-primary">Upgrade to Premium</a>
+                <a href="pricing.html" class="btn btn-primary" data-i18n="models.premiumFeatures.cta">Upgrade to Premium</a>
             </div>
         </div>
     </section>
@@ -298,18 +296,18 @@
     <section class="cta-section">
         <div class="cta-content">
             <div class="cta-text">
-                <h2>Ready to Transform Your AI Experience?</h2>
-                <p>Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
+                <h2 data-i18n="models.cta.title">Ready to Transform Your AI Experience?</h2>
+                <p data-i18n="models.cta.description">Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
             </div>
             <div class="cta-form">
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <h3 data-i18n="models.cta.newsletter.title">Stay Updated</h3>
+                <p data-i18n="models.cta.newsletter.description">Subscribe to our newsletter for the latest AI model updates and insights</p>
                 <form id="newsletter-form">
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="email" data-i18n="models.cta.newsletter.emailLabel">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" data-i18n-placeholder="models.cta.newsletter.emailPlaceholder" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="models.cta.newsletter.submitButton">Subscribe Now</button>
                 </form>
             </div>
         </div>
@@ -319,28 +317,72 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>Model Guru</h3>
-                    <p>Your AI Model Discovery & Analytics Hub</p>
-                    <select id="languageSwitcher" class="language-switcher">
+                <!-- Column 1: Brand and Language -->
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo">Model Guru</a>
+                    <p data-i18n="footer.description">Your central hub for discovering, tracking, and analyzing AI models across the evolving landscape.</p>
+                    <select id="languageSwitcher" class="language-switcher" aria-label="Select language">
                         <option value="en">English</option>
                         <option value="zh">中文</option>
                     </select>
                 </div>
-                <div class="footer-links-container">
-                    <h4>Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
-                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
-                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
-                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
-                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+
+                <!-- Column 2: Explore Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.explore.title">Explore</h4>
+                    <ul>
+                        <li><a href="models.html" data-i18n="footer.sections.explore.links.models">All Models</a></li>
+                        <li><a href="platforms.html" data-i18n="footer.sections.explore.links.platforms">Platforms</a></li>
+                        <li><a href="reports.html" data-i18n="footer.sections.explore.links.reports">Premium Reports</a></li>
+                        <li><a href="index.html#model-comparison-section" data-i18n="footer.sections.explore.links.compare">Compare Models</a></li>
                     </ul>
+                </div>
+
+                <!-- Column 3: Company Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.company.title">Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="footer.sections.company.links.about">About Us</a></li>
+                        <li><a href="blog.html" data-i18n="footer.sections.company.links.blog">Blog</a></li>
+                        <li><a href="careers.html" data-i18n="footer.sections.company.links.careers">Careers</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" data-i18n="footer.sections.company.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Resources & Legal Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.resources.title">Resources</h4>
+                    <ul>
+                        <li><a href="faq.html" data-i18n="footer.sections.resources.links.faq">FAQ</a></li>
+                        <li><a href="methodology.html" data-i18n="footer.sections.resources.links.methodology">Methodology</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" data-i18n="footer.sections.resources.links.support">Support</a></li>
+                        <li><a href="#" data-i18n="footer.sections.resources.links.apiDocs">API Docs (Soon)</a></li>
+                    </ul>
+                    <h4 data-i18n="footer.sections.legal.title" class="footer-subtitle">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer.sections.legal.links.privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-i18n="footer.sections.legal.links.terms">Terms of Service</a></li>
+                        <li><a href="#" data-i18n="footer.sections.legal.links.cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h4 data-i18n="footer.newsletter.title">Stay Updated</h4>
+                    <p data-i18n="footer.newsletter.description">Subscribe for the latest AI model news and insights.</p>
+                    <form id="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-i18n="footer.newsletter.placeholder" data-i18n-placeholder required>
+                        <button type="submit" class="btn btn-primary" data-i18n="footer.newsletter.button">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+                <p data-i18n="footer.copyright" data-i18n-param-year="{new Date().getFullYear()}">© {year} Model Guru. All rights reserved.</p>
+                <p>
+                    <span data-i18n="footer.madeWithPrefix">Made with</span>
+                    <i class="fas fa-heart" style="color: #e25555;"></i>
+                    <span data-i18n="footer.madeWithSuffix">by AI enthusiasts.</span>
+                </p>
             </div>
         </div>
     </footer>

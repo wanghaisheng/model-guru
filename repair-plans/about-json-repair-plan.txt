@@ -1,0 +1,64 @@
+JSON Repair Plan for about
+================================================================================
+
+No missing keys found.
+
+Unused Keys to Review:
+  • about.pageDescription
+  • about.mission.title
+  • about.mission.description
+  • about.vision.title
+  • about.vision.description
+  • about.values.title
+  • about.values.innovation.title
+  • about.values.innovation.description
+  • about.values.transparency.title
+  • about.values.transparency.description
+  • about.values.community.title
+  • about.values.community.description
+  • about.values.accessibility.title
+  • about.values.accessibility.description
+  • about.team.title
+  • about.team.description
+  • about.team.roles.founder
+  • about.team.roles.cto
+  • about.team.roles.leadDev
+  • about.team.roles.productManager
+  • about.team.roles.designer
+  • about.team.roles.researcher
+  • about.milestones.title
+  • about.milestones.description
+  • about.milestones.launch
+  • about.milestones.users
+  • about.milestones.models
+  • about.milestones.partners
+  • about.contact.title
+  • about.contact.description
+  • about.contact.email
+  • about.contact.social
+  • about.contact.address
+  • about.contact.phone
+  • about.partners.title
+  • about.partners.description
+  • team.title
+  • team.subtitle
+  • team.members.0.name
+  • team.members.0.role
+  • team.members.0.bio
+  • team.members.0.image
+  • team.members.1.name
+  • team.members.1.role
+  • team.members.1.bio
+  • team.members.1.image
+  • team.members.2.name
+  • team.members.2.role
+  • team.members.2.bio
+  • team.members.2.image
+  • team.members.3.name
+  • team.members.3.role
+  • team.members.3.bio
+  • team.members.3.image
+  • careers.title
+  • careers.subtitle
+  • careers.description
+  • careers.cta

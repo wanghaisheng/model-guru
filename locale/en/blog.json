@@ -1,0 +1,61 @@
+{
+  "blog": {
+    "title": "AI Insights & Updates",
+    "subtitle": "Stay informed with the latest developments in AI models and platforms",
+    "pageDescription": "Explore our collection of articles, tutorials, and insights about AI models, platforms, and industry trends.",
+    "searchPlaceholder": "Search articles...",
+    "categories": {
+      "title": "Categories",
+      "all": "All Articles",
+      "tutorials": "Tutorials",
+      "news": "News & Updates",
+      "guides": "Guides",
+      "caseStudies": "Case Studies"
+    },
+    "recentPosts": {
+      "title": "Recent Posts",
+      "readMore": "Read More"
+    },
+    "popularPosts": {
+      "title": "Popular Posts",
+      "views": "views"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Get the latest AI insights and updates delivered to your inbox",
+      "emailPlaceholder": "Your email address",
+      "button": "Subscribe",
+      "privacy": "We respect your privacy and will never share your email."
+    },
+    "tags": {
+      "title": "Popular Tags",
+      "machineLearning": "Machine Learning",
+      "deepLearning": "Deep Learning",
+      "nlp": "Natural Language Processing",
+      "computerVision": "Computer Vision",
+      "aiEthics": "AI Ethics",
+      "modelDeployment": "Model Deployment"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    },
+    "relatedPosts": {
+      "title": "Related Posts"
+    },
+    "comments": {
+      "title": "Comments",
+      "noComments": "No comments yet. Be the first to comment!",
+      "addComment": "Add a Comment",
+      "name": "Name",
+      "email": "Email",
+      "comment": "Comment",
+      "submit": "Submit Comment",
+      "reply": "Reply",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  }
+} 

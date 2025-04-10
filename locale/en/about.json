@@ -1,35 +1,66 @@
 {
   "about": {
     "title": "About Model Guru",
-    "subtitle": "Simplifying AI Model Discovery and Analysis",
+    "subtitle": "Empowering AI Innovation Through Comprehensive Model Discovery",
+    "pageDescription": "Learn about our mission, vision, and the team behind Model Guru - your trusted platform for AI model discovery and comparison.",
     "mission": {
       "title": "Our Mission",
-      "text": "Our mission is to empower developers, researchers, and businesses by providing a centralized, comprehensive platform for discovering, tracking, and analyzing AI models across the rapidly evolving landscape. We aim to simplify the complex process of finding the right AI tools, enabling innovation and informed decision-making."
+      "description": "To democratize access to AI models by providing a comprehensive, user-friendly platform for discovery, comparison, and implementation."
     },
-    "story": {
-      "title": "Our Story",
-      "text": "Model Guru was founded by a group of AI enthusiasts and engineers who experienced firsthand the challenges of navigating the fragmented world of AI models. Frustrated by the lack of a unified resource for comparing models and tracking trends, we set out to build the platform we wished existed. Today, Model Guru serves thousands of users, helping them save time and make better choices in their AI endeavors."
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become the go-to platform for AI practitioners, researchers, and businesses seeking to leverage the power of AI models."
     },
     "values": {
       "title": "Our Values",
-      "items": {
-        "transparency": {
-          "title": "Transparency",
-          "description": "We believe in open access to information and strive to provide clear, accurate data and methodologies."
-        },
-        "community": {
-          "title": "Community-Driven",
-          "description": "We actively listen to our users and continuously evolve the platform based on feedback and needs."
-        },
-        "innovation": {
-          "title": "Innovation",
-          "description": "We are passionate about AI and committed to staying at the forefront of model discovery and analysis."
-        },
-        "empowerment": {
-          "title": "Empowerment",
-          "description": "Our goal is to equip our users with the insights and tools they need to succeed in the AI space."
-        }
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuously pushing the boundaries of what's possible in AI model discovery and comparison."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Providing clear, accurate, and unbiased information about AI models and platforms."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Building a vibrant community of AI enthusiasts and professionals who share knowledge and experiences."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Making AI model discovery accessible to everyone, regardless of their technical background."
       }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the passionate individuals behind Model Guru",
+      "roles": {
+        "founder": "Founder & CEO",
+        "cto": "Chief Technology Officer",
+        "leadDev": "Lead Developer",
+        "productManager": "Product Manager",
+        "designer": "UI/UX Designer",
+        "researcher": "AI Researcher"
+      }
+    },
+    "milestones": {
+      "title": "Our Journey",
+      "description": "Key milestones in our development",
+      "launch": "Platform Launch",
+      "users": "Active Users",
+      "models": "Models Listed",
+      "partners": "Partnerships"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "We'd love to hear from you",
+      "email": "Email",
+      "social": "Follow Us",
+      "address": "Address",
+      "phone": "Phone"
+    },
+    "partners": {
+      "title": "Our Partners",
+      "description": "Organizations we work with to bring you the best AI model discovery experience"
     }
   },
   "team": {

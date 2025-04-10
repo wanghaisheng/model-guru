@@ -1,0 +1,36 @@
+HTML Repair Plan for blog
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 33: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 171: [untranslatedText]
+  Text: "Ready to Transform Your AI Experience?"
+  Suggested key: ready.to.transform.your.ai.experience
+
+Line 172: [untranslatedText]
+  Text: "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison."
+  Suggested key: join.thousands.of.developers.and.businesses.who.are.already.using.model.guru.to.find.the.perfect.ai.models.for.their.needs.get.started.today.and.discover.the.power.of.ai.model.comparison
+
+Line 175: [untranslatedText]
+  Text: "Stay Updated"
+  Suggested key: stay.updated
+
+Line 176: [untranslatedText]
+  Text: "Subscribe to our newsletter for the latest AI model updates and insights"
+  Suggested key: subscribe.to.our.newsletter.for.the.latest.ai.model.updates.and.insights
+
+Line 179: [untranslatedText]
+  Text: "Email Address"
+  Suggested key: email.address
+
+Line 182: [untranslatedText]
+  Text: "Subscribe Now"
+  Suggested key: subscribe.now
+
+Line 194: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

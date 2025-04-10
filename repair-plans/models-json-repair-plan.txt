@@ -1,0 +1,28 @@
+JSON Repair Plan for models
+================================================================================
+
+Missing Keys to Add:
+  • models.modelSelection.sortFilter.oldest
+  • models.modelSelection.sortFilter.mostLikes
+  • models.modelSelection.sortFilter.mostRuns
+  • models.modelSelection.sortFilter.trending
+  • models.modelSelection.sortFilter.alphabetical
+
+Unused Keys to Review:
+  • models.modelSelection.title
+  • models.modelSelection.compareTitle
+  • models.modelSelection.selected
+  • models.modelSelection.modelsSelected
+  • models.modelSelection.purposeFilter
+  • models.modelSelection.platformFilter
+  • models.modelSelection.sortFilter.title
+  • models.modelSelection.sortFilter.nameAZ
+  • models.modelSelection.sortFilter.popular
+  • models.modelSelection.purposes.transcribe
+  • modelList.title
+  • modelList.sortOptions.newest
+  • modelList.sortOptions.oldest
+  • modelList.sortOptions.mostLikes
+  • modelList.sortOptions.mostRuns
+  • modelList.sortOptions.trending
+  • modelList.sortOptions.alphabetical

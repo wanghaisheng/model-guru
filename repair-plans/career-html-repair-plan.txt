@@ -1,0 +1,196 @@
+HTML Repair Plan for career
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 31: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 54: [untranslatedText]
+  Text: "Join Our Team"
+  Suggested key: join.our.team
+
+Line 55: [untranslatedText]
+  Text: "Help build the future of AI model discovery and analytics"
+  Suggested key: help.build.the.future.of.ai.model.discovery.and.analytics
+
+Line 65: [untranslatedText]
+  Text: "Next.js Full Stack Developer"
+  Suggested key: next.js.full.stack.developer
+
+Line 67: [untranslatedText]
+  Text: "Remote"
+  Suggested key: remote
+
+Line 68: [untranslatedText]
+  Text: "Worldwide"
+  Suggested key: worldwide
+
+Line 69: [untranslatedText]
+  Text: "Engineering"
+  Suggested key: engineering
+
+Line 72: [untranslatedText]
+  Text: "Apply Now"
+  Suggested key: apply.now
+
+Line 77: [untranslatedText]
+  Text: "About the Role"
+  Suggested key: about.the.role
+
+Line 78: [untranslatedText]
+  Text: "We're looking for a skilled Next.js Full Stack Developer to join our growing team. You'll be responsible for developing and maintaining our web platform, working on both frontend and backend components, and helping to shape the future of AI model discovery and analytics."
+  Suggested key: we.re.looking.for.a.skilled.next.js.full.stack.developer.to.join.our.growing.team.you.ll.be.responsible.for.developing.and.maintaining.our.web.platform.working.on.both.frontend.and.backend.components.and.helping.to.shape.the.future.of.ai.model.discovery.and.analytics
+
+Line 82: [untranslatedText]
+  Text: "Key Responsibilities"
+  Suggested key: key.responsibilities
+
+Line 84: [untranslatedText]
+  Text: "Develop and maintain our Next.js-based web application"
+  Suggested key: develop.and.maintain.our.next.js.based.web.application
+
+Line 85: [untranslatedText]
+  Text: "Build and optimize frontend components using React and TypeScript"
+  Suggested key: build.and.optimize.frontend.components.using.react.and.typescript
+
+Line 86: [untranslatedText]
+  Text: "Implement backend APIs and services"
+  Suggested key: implement.backend.apis.and.services
+
+Line 87: [untranslatedText]
+  Text: "Work with our data layer (IndexedDB, SQLite) and sync mechanisms"
+  Suggested key: work.with.our.data.layer.indexeddb.sqlite.and.sync.mechanisms
+
+Line 88: [untranslatedText]
+  Text: "Collaborate with the team to design and implement new features"
+  Suggested key: collaborate.with.the.team.to.design.and.implement.new.features
+
+Line 89: [untranslatedText]
+  Text: "Write clean, maintainable, and well-documented code"
+  Suggested key: write.clean.maintainable.and.well.documented.code
+
+Line 90: [untranslatedText]
+  Text: "Participate in code reviews and contribute to technical discussions"
+  Suggested key: participate.in.code.reviews.and.contribute.to.technical.discussions
+
+Line 95: [untranslatedText]
+  Text: "Requirements"
+  Suggested key: requirements
+
+Line 97: [untranslatedText]
+  Text: "3+ years of experience with Next.js and React"
+  Suggested key: 3.years.of.experience.with.next.js.and.react
+
+Line 98: [untranslatedText]
+  Text: "Strong proficiency in TypeScript"
+  Suggested key: strong.proficiency.in.typescript
+
+Line 99: [untranslatedText]
+  Text: "Experience with modern frontend technologies (TailwindCSS, SWR, etc.)"
+  Suggested key: experience.with.modern.frontend.technologies.tailwindcss.swr.etc
+
+Line 100: [untranslatedText]
+  Text: "Knowledge of backend development and API design"
+  Suggested key: knowledge.of.backend.development.and.api.design
+
+Line 101: [untranslatedText]
+  Text: "Experience with database technologies (IndexedDB, SQLite)"
+  Suggested key: experience.with.database.technologies.indexeddb.sqlite
+
+Line 102: [untranslatedText]
+  Text: "Understanding of web performance optimization"
+  Suggested key: understanding.of.web.performance.optimization
+
+Line 103: [untranslatedText]
+  Text: "Excellent problem-solving skills"
+  Suggested key: excellent.problem.solving.skills
+
+Line 104: [untranslatedText]
+  Text: "Strong communication skills in English"
+  Suggested key: strong.communication.skills.in.english
+
+Line 109: [untranslatedText]
+  Text: "Nice to Have"
+  Suggested key: nice.to.have
+
+Line 111: [untranslatedText]
+  Text: "Experience with AI/ML technologies"
+  Suggested key: experience.with.ai.ml.technologies
+
+Line 112: [untranslatedText]
+  Text: "Knowledge of mobile app development (Capacitor)"
+  Suggested key: knowledge.of.mobile.app.development.capacitor
+
+Line 113: [untranslatedText]
+  Text: "Experience with testing frameworks (Jest, React Testing Library)"
+  Suggested key: experience.with.testing.frameworks.jest.react.testing.library
+
+Line 114: [untranslatedText]
+  Text: "Contributions to open-source projects"
+  Suggested key: contributions.to.open.source.projects
+
+Line 119: [untranslatedText]
+  Text: "What We Offer"
+  Suggested key: what.we.offer
+
+Line 121: [untranslatedText]
+  Text: "Fully remote work environment"
+  Suggested key: fully.remote.work.environment
+
+Line 122: [untranslatedText]
+  Text: "Competitive salary and benefits"
+  Suggested key: competitive.salary.and.benefits
+
+Line 123: [untranslatedText]
+  Text: "Flexible working hours"
+  Suggested key: flexible.working.hours
+
+Line 124: [untranslatedText]
+  Text: "Professional development opportunities"
+  Suggested key: professional.development.opportunities
+
+Line 125: [untranslatedText]
+  Text: "Collaborative and innovative team culture"
+  Suggested key: collaborative.and.innovative.team.culture
+
+Line 126: [untranslatedText]
+  Text: "Opportunity to work with cutting-edge AI technologies"
+  Suggested key: opportunity.to.work.with.cutting.edge.ai.technologies
+
+Line 132: [untranslatedText]
+  Text: "How to Apply"
+  Suggested key: how.to.apply
+
+Line 133: [untranslatedText]
+  Text: "support@modelguru.deepseek.diy"
+  Suggested key: support.modelguru.deepseek.diy
+
+Line 138: [untranslatedText]
+  Text: "Full Name"
+  Suggested key: full.name
+
+Line 142: [untranslatedText]
+  Text: "Email"
+  Suggested key: email
+
+Line 146: [untranslatedText]
+  Text: "Resume/CV"
+  Suggested key: resume.cv
+
+Line 150: [untranslatedText]
+  Text: "Portfolio/GitHub Link"
+  Suggested key: portfolio.github.link
+
+Line 154: [untranslatedText]
+  Text: "Cover Letter"
+  Suggested key: cover.letter
+
+Line 157: [untranslatedText]
+  Text: "Submit Application"
+  Suggested key: submit.application
+
+Line 170: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

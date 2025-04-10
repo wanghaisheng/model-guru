@@ -1,0 +1,26 @@
+JSON Repair Plan for privacy
+================================================================================
+
+No missing keys found.
+
+Unused Keys to Review:
+  • privacy.pageTitle
+  • privacy.title
+  • privacy.lastUpdated
+  • privacy.introduction
+  • privacy.sections.informationWeCollect.title
+  • privacy.sections.informationWeCollect.content
+  • privacy.sections.howWeUseInformation.title
+  • privacy.sections.howWeUseInformation.content
+  • privacy.sections.informationSharing.title
+  • privacy.sections.informationSharing.content
+  • privacy.sections.dataSecurity.title
+  • privacy.sections.dataSecurity.content
+  • privacy.sections.yourRights.title
+  • privacy.sections.yourRights.content
+  • privacy.sections.cookies.title
+  • privacy.sections.cookies.content
+  • privacy.sections.changesToPolicy.title
+  • privacy.sections.changesToPolicy.content
+  • privacy.sections.contactUs.title
+  • privacy.sections.contactUs.content

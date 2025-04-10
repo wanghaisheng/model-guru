@@ -1,0 +1,24 @@
+HTML Repair Plan for faq
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 31: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 73: [untranslatedText]
+  Text: "methodology page"
+  Suggested key: methodology.page
+
+Line 91: [untranslatedText]
+  Text: "contact us"
+  Suggested key: contact.us
+
+Line 155: [untranslatedText]
+  Text: "contact us"
+  Suggested key: contact.us
+
+Line 169: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

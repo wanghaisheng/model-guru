@@ -276,18 +276,8 @@ class I18n {
     }
 }
 
-// Create and export a singleton instance
-const i18n = new I18n();
+// Create a single instance of the I18n class
+const i18nInstance = new I18n();
 
-// Initialize on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    i18n.init();
-});
-
-export default i18n;
-
-// --- Remove old non-class based functions ---
-// export let currentLanguage = 'en';
-// export const translations = {}; // Remove old hardcoded object
-// export function updateContent(lang) { ... }
-// export function switchLanguage(lang) { ... } 
+// Export the instance as the default export
+export default i18nInstance;

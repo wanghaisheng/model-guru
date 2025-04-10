@@ -68,15 +68,15 @@
     <section class="platform-categories">
         <div class="container">
             <div class="section-header">
-                <h2>Explore Platforms by Category</h2>
-                <p>Find platforms based on their primary function or area of expertise.</p>
+                <h2 data-i18n="platforms.categories.title">Explore Platforms by Category</h2>
+                <p data-i18n="platforms.categories.subtitle">Find platforms based on their primary function or area of expertise.</p>
             </div>
             <div class="categories-grid">
                 <!-- Model Hosting -->
                 <div class="category-card" id="model-hosting-category">
                     <div class="category-icon"><i class="fas fa-server"></i></div>
-                    <h3>Model Hosting</h3>
-                    <p>Platforms for hosting and serving AI models via APIs.</p>
+                    <h3 data-i18n="platforms.categories.modelHosting.title">Model Hosting</h3>
+                    <p data-i18n="platforms.categories.modelHosting.description">Platforms for hosting and serving AI models via APIs.</p>
                     <ul class="category-platforms">
                         <li><a href="#replicate">Replicate</a></li>
                         <li><a href="#huggingface-inference">Hugging Face Inference</a></li>
@@ -88,8 +88,8 @@
                 <!-- Development Tools -->
                 <div class="category-card">
                     <div class="category-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Development Tools</h3>
-                    <p>Tools and environments for building and training models.</p>
+                    <h3 data-i18n="platforms.categories.developmentTools.title">Development Tools</h3>
+                    <p data-i18n="platforms.categories.developmentTools.description">Tools and environments for building and training models.</p>
                     <ul class="category-platforms">
                         <li><a href="#huggingface-hub">Hugging Face Hub</a></li>
                         <li><a href="#google-colab">Google Colab</a></li>
@@ -100,8 +100,8 @@
                 <!-- Cloud Services -->
                 <div class="category-card">
                     <div class="category-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Services</h3>
-                    <p>Cloud providers offering comprehensive ML infrastructure.</p>
+                    <h3 data-i18n="platforms.categories.cloudServices.title">Cloud Services</h3>
+                    <p data-i18n="platforms.categories.cloudServices.description">Cloud providers offering comprehensive ML infrastructure.</p>
                     <ul class="category-platforms">
                         <li><a href="#aws-sagemaker">AWS SageMaker</a></li>
                         <li><a href="#gcp-vertex-ai">GCP Vertex AI</a></li>
@@ -116,48 +116,43 @@
     <section class="platform-comparison">
         <div class="container">
             <div class="section-header">
-                <h2>Platform Comparison</h2>
-                <p>Compare key features across different AI platforms</p>
+                <h2 data-i18n="platforms.comparison.title">Platform Comparison</h2>
+                <p data-i18n="platforms.comparison.subtitle">Compare key features across different platforms.</p>
             </div>
             <div class="comparison-table">
                 <table>
                     <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>Replicate</th>
-                            <th>Hugging Face</th>
-                            <th>Stability AI</th>
-                            <th>OpenAI</th>
+                            <th data-i18n="platforms.comparison.features">Features</th>
+                            <th data-i18n="platforms.comparison.replicate">Replicate</th>
+                            <th data-i18n="platforms.comparison.huggingFace">Hugging Face</th>
+                            <th data-i18n="platforms.comparison.openAI">OpenAI</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Feature">Model Types</td>
-                            <td data-label="Replicate">Multiple</td>
-                            <td data-label="Hugging Face">Multiple</td>
-                            <td data-label="Stability AI">Image/Video</td>
-                            <td data-label="OpenAI">Text/Image</td>
+                            <td data-i18n="platforms.comparison.modelTypes">Model Types</td>
+                            <td data-i18n="platforms.comparison.replicate.modelTypes">Image, Video, Audio</td>
+                            <td data-i18n="platforms.comparison.huggingFace.modelTypes">All Types</td>
+                            <td data-i18n="platforms.comparison.openAI.modelTypes">Text, Image</td>
                         </tr>
                         <tr>
-                            <td data-label="Feature">API Access</td>
-                            <td data-label="Replicate">Yes</td>
-                            <td data-label="Hugging Face">Yes</td>
-                            <td data-label="Stability AI">Yes</td>
-                            <td data-label="OpenAI">Yes</td>
+                            <td data-i18n="platforms.comparison.apiAccess">API Access</td>
+                            <td data-i18n="platforms.comparison.replicate.apiAccess">REST API</td>
+                            <td data-i18n="platforms.comparison.huggingFace.apiAccess">REST API, Python SDK</td>
+                            <td data-i18n="platforms.comparison.openAI.apiAccess">REST API</td>
                         </tr>
                         <tr>
-                            <td data-label="Feature">Pricing Model</td>
-                            <td data-label="Replicate">Pay-per-use</td>
-                            <td data-label="Hugging Face">Free/Paid</td>
-                            <td data-label="Stability AI">Subscription</td>
-                            <td data-label="OpenAI">Pay-per-use</td>
+                            <td data-i18n="platforms.comparison.pricing">Pricing Model</td>
+                            <td data-i18n="platforms.comparison.replicate.pricing">Pay-per-use</td>
+                            <td data-i18n="platforms.comparison.huggingFace.pricing">Free + Pay-per-use</td>
+                            <td data-i18n="platforms.comparison.openAI.pricing">Pay-per-use</td>
                         </tr>
                         <tr>
-                            <td data-label="Feature">Custom Models</td>
-                            <td data-label="Replicate">Yes</td>
-                            <td data-label="Hugging Face">Yes</td>
-                            <td data-label="Stability AI">No</td>
-                            <td data-label="OpenAI">Limited</td>
+                            <td data-i18n="platforms.comparison.customModels">Custom Models</td>
+                            <td data-i18n="platforms.comparison.replicate.customModels">Yes</td>
+                            <td data-i18n="platforms.comparison.huggingFace.customModels">Yes</td>
+                            <td data-i18n="platforms.comparison.openAI.customModels">No</td>
                         </tr>
                     </tbody>
                 </table>
@@ -174,7 +169,7 @@
                     <div class="platform-header">
                         <img src="img/replicate-logo.svg" alt="Replicate Logo" class="platform-logo">
                         <div class="platform-info">
-                            <h3>Replicate</h3>
+                            <h3 data-i18n="platforms.platformCard.replicate.title">Replicate</h3>
                             <div class="platform-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -185,33 +180,28 @@
                             </div>
                         </div>
                     </div>
-                    <p class="platform-description">Replicate makes it easy to run machine learning models in the cloud. Deploy models with a few lines of code, and scale automatically.</p>
+                    <p class="platform-description" data-i18n="platforms.platformCard.replicate.description">Deploy and run AI models with a simple API</p>
                     <div class="platform-metrics">
                         <div class="metric">
-                            <span class="metric-value">500+</span>
-                            <span class="metric-label">Models</span>
+                            <span class="metric-value" data-i18n="platforms.platformCard.replicate.metrics.models">1000+</span>
+                            <span class="metric-label" data-i18n="platforms.platformCard.metrics.models">Models</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-value">10M+</span>
-                            <span class="metric-label">Runs</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">50K+</span>
-                            <span class="metric-label">Users</span>
+                            <span class="metric-value" data-i18n="platforms.platformCard.replicate.metrics.deployments">5000+</span>
+                            <span class="metric-label" data-i18n="platforms.platformCard.metrics.deployments">Deployments</span>
                         </div>
                     </div>
                     <div class="platform-features">
-                        <h4>Key Features</h4>
+                        <h4 data-i18n="platforms.platformCard.features.title">Key Features</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Easy model deployment</li>
-                            <li><i class="fas fa-check"></i> Automatic scaling</li>
-                            <li><i class="fas fa-check"></i> Pay-per-use pricing</li>
-                            <li><i class="fas fa-check"></i> API access</li>
+                            <li data-i18n="platforms.platformCard.replicate.features.oneClick">One-click deployment</li>
+                            <li data-i18n="platforms.platformCard.replicate.features.scaling">Automatic scaling</li>
+                            <li data-i18n="platforms.platformCard.replicate.features.monitoring">Built-in monitoring</li>
                         </ul>
                     </div>
                     <div class="platform-cta">
-                        <a href="https://replicate.com" class="btn btn-primary" target="_blank">Visit Platform</a>
-                        <a href="models.html?platform=replicate" class="btn btn-secondary">View Models</a>
+                        <a href="https://replicate.com" class="btn btn-primary" target="_blank" data-i18n="platforms.platformCard.actions.viewDetails">View Details</a>
+                        <a href="models.html?platform=replicate" class="btn btn-secondary" data-i18n="platforms.platformCard.actions.compare">Compare</a>
                     </div>
                 </div>
 
@@ -220,7 +210,7 @@
                     <div class="platform-header">
                         <img src="img/huggingface-logo.svg" alt="Hugging Face Logo" class="platform-logo">
                         <div class="platform-info">
-                            <h3>Hugging Face</h3>
+                            <h3 data-i18n="platforms.platformCard.huggingFace.title">Hugging Face</h3>
                             <div class="platform-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -231,34 +221,29 @@
                             </div>
                         </div>
                     </div>
-                    <p class="platform-description">Hugging Face is the AI community building the future. Build, train and deploy state of the art models powered by the reference open source in machine learning.</p>
+                    <p class="platform-description" data-i18n="platforms.platformCard.huggingFace.description">The AI community's home for models, datasets, and applications</p>
                     <div class="platform-metrics">
                         <div class="metric">
-                            <span class="metric-value">100K+</span>
-                            <span class="metric-label">Models</span>
+                            <span class="metric-value" data-i18n="platforms.platformCard.huggingFace.metrics.models">100000+</span>
+                            <span class="metric-label" data-i18n="platforms.platformCard.metrics.models">Models</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-value">1M+</span>
-                            <span class="metric-label">Datasets</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">500K+</span>
-                            <span class="metric-label">Users</span>
+                            <span class="metric-value" data-i18n="platforms.platformCard.huggingFace.metrics.datasets">10000+</span>
+                            <span class="metric-label" data-i18n="platforms.platformCard.metrics.datasets">Datasets</span>
                         </div>
                     </div>
                     <div class="platform-features">
-                        <h4>Key Features</h4>
+                        <h4 data-i18n="platforms.platformCard.features.title">Key Features</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Open source models</li>
-                            <li><i class="fas fa-check"></i> Model hub</li>
-                            <li><i class="fas fa-check"></i> Inference API</li>
-                            <li><i class="fas fa-check"></i> Spaces for demos</li>
+                            <li data-i18n="platforms.platformCard.huggingFace.features.modelHub">Model Hub</li>
+                            <li data-i18n="platforms.platformCard.huggingFace.features.spaces">Spaces for demos</li>
+                            <li data-i18n="platforms.platformCard.huggingFace.features.inference">Inference API</li>
                         </ul>
                     </div>
                     <div class="platform-cta">
-                        <a href="https://huggingface.co" class="btn btn-primary" target="_blank">Visit Platform</a>
-                        <a href="models.html?platform=huggingface" class="btn btn-secondary">View Models</a>
-                </div>
+                        <a href="https://huggingface.co" class="btn btn-primary" target="_blank" data-i18n="platforms.platformCard.actions.viewDetails">View Details</a>
+                        <a href="models.html?platform=huggingface" class="btn btn-secondary" data-i18n="platforms.platformCard.actions.compare">Compare</a>
+                    </div>
                 </div>
 
                 <!-- Add more platform cards as needed -->
@@ -270,115 +255,115 @@
     <section class="submit-platform-section">
         <div class="container">
             <div class="section-header">
-                <h2>Submit Your Platform</h2>
-                <p>Get your AI platform listed on Model Guru and reach thousands of potential users</p>
+                <h2 data-i18n="platforms.submitPlatform.title">Submit Your Platform</h2>
+                <p data-i18n="platforms.submitPlatform.subtitle">Get your AI platform listed on Model Guru and reach thousands of potential users</p>
             </div>
             <div class="submit-platform-content" id="submit-platform-content">
                 <div class="benefits-column">
-                    <h3>Benefits of Listing Your Platform</h3>
+                    <h3 data-i18n="platforms.submitPlatform.benefits.title">Benefits of Listing Your Platform</h3>
                     <ul class="benefits-list">
                         <li>
                             <i class="fas fa-users"></i>
                             <div>
-                                <h4>Increased Visibility</h4>
-                                <p>Reach thousands of AI engineers, data scientists, and developers actively looking for platforms like yours.</p>
+                                <h4 data-i18n="platforms.submitPlatform.benefits.visibility.title">Increased Visibility</h4>
+                                <p data-i18n="platforms.submitPlatform.benefits.visibility.description">Reach thousands of AI engineers, data scientists, and developers actively looking for platforms like yours.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-exchange-alt"></i>
                             <div>
-                                <h4>Qualified Traffic</h4>
-                                <p>Drive highly targeted visitors to your platform who are already interested in AI solutions.</p>
+                                <h4 data-i18n="platforms.submitPlatform.benefits.traffic.title">Qualified Traffic</h4>
+                                <p data-i18n="platforms.submitPlatform.benefits.traffic.description">Drive highly targeted visitors to your platform who are already interested in AI solutions.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-chart-line"></i>
                             <div>
-                                <h4>Performance Insights</h4>
-                                <p>Gain access to anonymized data about how users discover and engage with your platform.</p>
+                                <h4 data-i18n="platforms.submitPlatform.benefits.insights.title">Performance Insights</h4>
+                                <p data-i18n="platforms.submitPlatform.benefits.insights.description">Gain access to anonymized data about how users discover and engage with your platform.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-handshake"></i>
                             <div>
-                                <h4>Integration Opportunities</h4>
-                                <p>Potential for deeper integration and partnership opportunities with Model Guru.</p>
+                                <h4 data-i18n="platforms.submitPlatform.benefits.integration.title">Integration Opportunities</h4>
+                                <p data-i18n="platforms.submitPlatform.benefits.integration.description">Potential for deeper integration and partnership opportunities with Model Guru.</p>
                             </div>
                         </li>
                     </ul>
-                    <button class="show-form-btn" id="show-form-btn">Submit Your Platform</button>
+                    <button class="show-form-btn" id="show-form-btn" data-i18n="platforms.submitPlatform.showFormButton">Submit Your Platform</button>
                 </div>
                 <div class="form-column">
                     <form id="platform-submission-form" class="platform-form">
-                        <h3>Platform Details</h3>
+                        <h3 data-i18n="platforms.submitPlatform.form.title">Platform Details</h3>
                         <div class="form-group">
-                            <label for="platform-name">Platform Name <span class="required">*</span></label>
+                            <label for="platform-name" data-i18n="platforms.submitPlatform.form.fields.name.label">Platform Name <span class="required">*</span></label>
                             <input type="text" id="platform-name" name="platformName" required>
                         </div>
                         <div class="form-group">
-                            <label for="platform-url">Website URL <span class="required">*</span></label>
-                            <input type="url" id="platform-url" name="platformUrl" required placeholder="https://your-platform.com">
+                            <label for="platform-url" data-i18n="platforms.submitPlatform.form.fields.url.label">Website URL <span class="required">*</span></label>
+                            <input type="url" id="platform-url" name="platformUrl" required placeholder="https://your-platform.com" data-i18n-placeholder="platforms.submitPlatform.form.fields.url.placeholder">
                         </div>
                         <div class="form-group">
-                            <label for="platform-category">Category <span class="required">*</span></label>
+                            <label for="platform-category" data-i18n="platforms.submitPlatform.form.fields.category.label">Category <span class="required">*</span></label>
                             <select id="platform-category" name="platformCategory" required>
-                                <option value="">Select a category</option>
-                                <option value="model-hosting">Model Hosting</option>
-                                <option value="development-tools">Development Tools</option>
-                                <option value="cloud-services">Cloud Services</option>
-                                <option value="training-platforms">Training Platforms</option>
-                                <option value="specialized-ai">Specialized AI Services</option>
-                                <option value="other">Other (specify)</option>
+                                <option value="" data-i18n="platforms.submitPlatform.form.fields.category.placeholder">Select a category</option>
+                                <option value="model-hosting" data-i18n="platforms.submitPlatform.form.fields.category.options.modelHosting">Model Hosting</option>
+                                <option value="development-tools" data-i18n="platforms.submitPlatform.form.fields.category.options.developmentTools">Development Tools</option>
+                                <option value="cloud-services" data-i18n="platforms.submitPlatform.form.fields.category.options.cloudServices">Cloud Services</option>
+                                <option value="training-platforms" data-i18n="platforms.submitPlatform.form.fields.category.options.trainingPlatforms">Training Platforms</option>
+                                <option value="specialized-ai" data-i18n="platforms.submitPlatform.form.fields.category.options.specializedAI">Specialized AI Services</option>
+                                <option value="other" data-i18n="platforms.submitPlatform.form.fields.category.options.other">Other (specify)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="platform-description">Description <span class="required">*</span></label>
-                            <textarea id="platform-description" name="platformDescription" rows="4" required placeholder="Please describe your platform and its key features (max 500 characters)"></textarea>
+                            <label for="platform-description" data-i18n="platforms.submitPlatform.form.fields.description.label">Description <span class="required">*</span></label>
+                            <textarea id="platform-description" name="platformDescription" rows="4" required placeholder="Please describe your platform and its key features (max 500 characters)" data-i18n-placeholder="platforms.submitPlatform.form.fields.description.placeholder"></textarea>
                         </div>
                         
-                        <h3>Metrics & Features</h3>
+                        <h3 data-i18n="platforms.submitPlatform.form.metrics.title">Metrics & Features</h3>
                         <div class="form-row">
                             <div class="form-group half">
-                                <label for="platform-models">Number of Models</label>
+                                <label for="platform-models" data-i18n="platforms.submitPlatform.form.fields.models.label">Number of Models</label>
                                 <input type="number" id="platform-models" name="platformModels" min="0">
                             </div>
                             <div class="form-group half">
-                                <label for="platform-users">Number of Users</label>
+                                <label for="platform-users" data-i18n="platforms.submitPlatform.form.fields.users.label">Number of Users</label>
                                 <input type="number" id="platform-users" name="platformUsers" min="0">
                             </div>
-                    </div>
-                    
-                        <div class="form-group">
-                            <label for="platform-features">Key Features (comma separated)</label>
-                            <input type="text" id="platform-features" name="platformFeatures" placeholder="e.g., API access, Custom models, Free tier">
                         </div>
                         
                         <div class="form-group">
-                            <label for="platform-logo">Platform Logo</label>
-                            <input type="file" id="platform-logo" name="platformLogo" accept="image/*">
-                            <p class="file-note">Recommended: Square logo, minimum 200x200px (PNG or SVG preferred)</p>
-                </div>
-                
-                        <h3>Contact Information</h3>
+                            <label for="platform-features" data-i18n="platforms.submitPlatform.form.fields.features.label">Key Features (comma separated)</label>
+                            <input type="text" id="platform-features" name="platformFeatures" placeholder="e.g., API access, Custom models, Free tier" data-i18n-placeholder="platforms.submitPlatform.form.fields.features.placeholder">
+                        </div>
+                        
                         <div class="form-group">
-                            <label for="contact-name">Contact Name <span class="required">*</span></label>
+                            <label for="platform-logo" data-i18n="platforms.submitPlatform.form.fields.logo.label">Platform Logo</label>
+                            <input type="file" id="platform-logo" name="platformLogo" accept="image/*">
+                            <p class="file-note" data-i18n="platforms.submitPlatform.form.fields.logo.note">Recommended: Square logo, minimum 200x200px (PNG or SVG preferred)</p>
+                        </div>
+                
+                        <h3 data-i18n="platforms.submitPlatform.form.contact.title">Contact Information</h3>
+                        <div class="form-group">
+                            <label for="contact-name" data-i18n="platforms.submitPlatform.form.fields.contactName.label">Contact Name <span class="required">*</span></label>
                             <input type="text" id="contact-name" name="contactName" required>
                         </div>
                         <div class="form-group">
-                            <label for="contact-email">Contact Email <span class="required">*</span></label>
+                            <label for="contact-email" data-i18n="platforms.submitPlatform.form.fields.contactEmail.label">Contact Email <span class="required">*</span></label>
                             <input type="email" id="contact-email" name="contactEmail" required>
-                    </div>
+                        </div>
                     
                         <div class="form-group checkbox-group">
                             <input type="checkbox" id="terms-agree" name="termsAgree" required>
-                            <label for="terms-agree">I agree to the <a href="terms.html">Terms and Conditions</a> for platform listings <span class="required">*</span></label>
-                    </div>
+                            <label for="terms-agree" data-i18n="platforms.submitPlatform.form.fields.terms.label">I agree to the <a href="terms.html">Terms and Conditions</a> for platform listings <span class="required">*</span></label>
+                        </div>
                     
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Submit Platform</button>
-                    </div>
+                            <button type="submit" class="btn btn-primary" data-i18n="platforms.submitPlatform.form.submitButton">Submit Platform</button>
+                        </div>
                     
-                        <p class="form-note">* Required fields. All submissions will be reviewed before being published. This typically takes 3-5 business days.</p>
+                        <p class="form-note" data-i18n="platforms.submitPlatform.form.note">* Required fields. All submissions will be reviewed before being published. This typically takes 3-5 business days.</p>
                     </form>
                 </div>
             </div>
@@ -389,18 +374,18 @@
     <section class="cta-section">
         <div class="cta-content">
             <div class="cta-text">
-                <h2>Ready to Transform Your AI Experience?</h2>
-                <p>Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
+                <h2 data-i18n="models.cta.title">Ready to Transform Your AI Experience?</h2>
+                <p data-i18n="models.cta.description">Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
             </div>
             <div class="cta-form">
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <h3 data-i18n="models.cta.newsletter.title">Stay Updated</h3>
+                <p data-i18n="models.cta.newsletter.description">Subscribe to our newsletter for the latest AI model updates and insights</p>
                 <form id="newsletter-form">
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="email" data-i18n="models.cta.newsletter.emailLabel">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" data-i18n-placeholder="models.cta.newsletter.emailPlaceholder" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="models.cta.newsletter.submitButton">Subscribe Now</button>
                 </form>
             </div>
         </div>
@@ -410,28 +395,72 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>Model Guru</h3>
-                    <p>Your AI Model Discovery & Analytics Hub</p>
-                    <select id="languageSwitcher" class="language-switcher">
+                <!-- Column 1: Brand and Language -->
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo">Model Guru</a>
+                    <p data-i18n="footer.description">Your central hub for discovering, tracking, and analyzing AI models across the evolving landscape.</p>
+                    <select id="languageSwitcher" class="language-switcher" aria-label="Select language">
                         <option value="en">English</option>
                         <option value="zh">中文</option>
                     </select>
                 </div>
-                <div class="footer-links-container">
-                    <h4>Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link" data-i18n="footer.about">About</a></li>
-                        <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
-                        <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                        <li><a href="mailto:support@modelguru.deepseek.diy" class="footer-link" data-i18n="footer.contact">Contact</a></li>
-                        <li><a href="reports.html" class="footer-link" data-i18n="nav.reports">Reports</a></li>
-                        <li><a href="methodology.html" class="footer-link" data-i18n="footer.methodology">Our Methodology</a></li>
+                
+                <!-- Column 2: Explore Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.explore.title">Explore</h4>
+                    <ul>
+                        <li><a href="models.html" data-i18n="footer.sections.explore.links.models">All Models</a></li>
+                        <li><a href="platforms.html" data-i18n="footer.sections.explore.links.platforms">Platforms</a></li>
+                        <li><a href="reports.html" data-i18n="footer.sections.explore.links.reports">Premium Reports</a></li>
+                        <li><a href="index.html#model-comparison-section" data-i18n="footer.sections.explore.links.compare">Compare Models</a></li>
                         </ul>
+                    </div>
+                    
+                <!-- Column 3: Company Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.company.title">Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="footer.sections.company.links.about">About Us</a></li>
+                        <li><a href="blog.html" data-i18n="footer.sections.company.links.blog">Blog</a></li>
+                        <li><a href="careers.html" data-i18n="footer.sections.company.links.careers">Careers</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" data-i18n="footer.sections.company.links.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                <!-- Column 4: Resources & Legal Links -->
+                <div class="footer-column footer-links">
+                    <h4 data-i18n="footer.sections.resources.title">Resources</h4>
+                    <ul>
+                        <li><a href="faq.html" data-i18n="footer.sections.resources.links.faq">FAQ</a></li>
+                        <li><a href="methodology.html" data-i18n="footer.sections.resources.links.methodology">Methodology</a></li>
+                        <li><a href="mailto:support@modelguru.deepseek.diy" data-i18n="footer.sections.resources.links.support">Support</a></li>
+                        <li><a href="#" data-i18n="footer.sections.resources.links.apiDocs">API Docs (Soon)</a></li>
+                    </ul>
+                    <h4 data-i18n="footer.sections.legal.title" class="footer-subtitle">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer.sections.legal.links.privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-i18n="footer.sections.legal.links.terms">Terms of Service</a></li>
+                        <li><a href="#" data-i18n="footer.sections.legal.links.cookies">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+
+                <!-- Column 5: Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h4 data-i18n="footer.newsletter.title">Stay Updated</h4>
+                    <p data-i18n="footer.newsletter.description">Subscribe for the latest AI model news and insights.</p>
+                    <form id="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-i18n="footer.newsletter.placeholder" data-i18n-placeholder required>
+                        <button type="submit" class="btn btn-primary" data-i18n="footer.newsletter.button">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Model Guru. All rights reserved.</p>
+                <p data-i18n="footer.copyright" data-i18n-param-year="{new Date().getFullYear()}">© {year} Model Guru. All rights reserved.</p>
+                <p>
+                    <span data-i18n="footer.madeWithPrefix">Made with</span>
+                    <i class="fas fa-heart" style="color: #e25555;"></i>
+                    <span data-i18n="footer.madeWithSuffix">by AI enthusiasts.</span>
+                </p>
             </div>
         </div>
     </footer>

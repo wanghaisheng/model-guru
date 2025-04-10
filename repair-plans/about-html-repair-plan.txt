@@ -1,0 +1,144 @@
+HTML Repair Plan for about
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 31: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 64: [untranslatedText]
+  Text: "Our Mission"
+  Suggested key: our.mission
+
+Line 67: [untranslatedText]
+  Text: "To democratize access to AI models by providing comprehensive, unbiased information and tools for model discovery, comparison, and implementation."
+  Suggested key: to.democratize.access.to.ai.models.by.providing.comprehensive.unbiased.information.and.tools.for.model.discovery.comparison.and.implementation
+
+Line 70: [untranslatedText]
+  Text: "500+"
+  Suggested key: 500
+
+Line 71: [untranslatedText]
+  Text: "Models Tracked"
+  Suggested key: models.tracked
+
+Line 74: [untranslatedText]
+  Text: "10+"
+  Suggested key: 10
+
+Line 75: [untranslatedText]
+  Text: "Platforms Integrated"
+  Suggested key: platforms.integrated
+
+Line 78: [untranslatedText]
+  Text: "50K+"
+  Suggested key: 50k
+
+Line 79: [untranslatedText]
+  Text: "Monthly Users"
+  Suggested key: monthly.users
+
+Line 90: [untranslatedText]
+  Text: "Our Values"
+  Suggested key: our.values
+
+Line 97: [untranslatedText]
+  Text: "Innovation"
+  Suggested key: innovation
+
+Line 98: [untranslatedText]
+  Text: "Continuously evolving our platform to meet the changing needs of the AI community."
+  Suggested key: continuously.evolving.our.platform.to.meet.the.changing.needs.of.the.ai.community
+
+Line 104: [untranslatedText]
+  Text: "Transparency"
+  Suggested key: transparency
+
+Line 105: [untranslatedText]
+  Text: "Providing clear, accurate, and unbiased information about AI models and platforms."
+  Suggested key: providing.clear.accurate.and.unbiased.information.about.ai.models.and.platforms
+
+Line 111: [untranslatedText]
+  Text: "Community"
+  Suggested key: community
+
+Line 112: [untranslatedText]
+  Text: "Building a collaborative environment where AI practitioners can share knowledge and insights."
+  Suggested key: building.a.collaborative.environment.where.ai.practitioners.can.share.knowledge.and.insights
+
+Line 118: [untranslatedText]
+  Text: "Growth"
+  Suggested key: growth
+
+Line 119: [untranslatedText]
+  Text: "Supporting the growth and development of AI applications across industries."
+  Suggested key: supporting.the.growth.and.development.of.ai.applications.across.industries
+
+Line 129: [untranslatedText]
+  Text: "Our Team"
+  Suggested key: our.team
+
+Line 134: [untranslatedText]
+  Text: "Sarah Chen"
+  Suggested key: sarah.chen
+
+Line 135: [untranslatedText]
+  Text: "Founder & CEO"
+  Suggested key: founder.ceo
+
+Line 136: [untranslatedText]
+  Text: "Former AI researcher with 10+ years of experience in machine learning and model development."
+  Suggested key: former.ai.researcher.with.10.years.of.experience.in.machine.learning.and.model.development
+
+Line 144: [untranslatedText]
+  Text: "Michael Torres"
+  Suggested key: michael.torres
+
+Line 145: [untranslatedText]
+  Text: "CTO"
+  Suggested key: cto
+
+Line 146: [untranslatedText]
+  Text: "Expert in scalable systems and AI infrastructure with a focus on performance optimization."
+  Suggested key: expert.in.scalable.systems.and.ai.infrastructure.with.a.focus.on.performance.optimization
+
+Line 154: [untranslatedText]
+  Text: "Emily Johnson"
+  Suggested key: emily.johnson
+
+Line 155: [untranslatedText]
+  Text: "Head of Product"
+  Suggested key: head.of.product
+
+Line 156: [untranslatedText]
+  Text: "Product leader with a passion for creating intuitive user experiences in AI applications."
+  Suggested key: product.leader.with.a.passion.for.creating.intuitive.user.experiences.in.ai.applications
+
+Line 170: [untranslatedText]
+  Text: "Ready to Transform Your AI Experience?"
+  Suggested key: ready.to.transform.your.ai.experience
+
+Line 171: [untranslatedText]
+  Text: "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison."
+  Suggested key: join.thousands.of.developers.and.businesses.who.are.already.using.model.guru.to.find.the.perfect.ai.models.for.their.needs.get.started.today.and.discover.the.power.of.ai.model.comparison
+
+Line 174: [untranslatedText]
+  Text: "Stay Updated"
+  Suggested key: stay.updated
+
+Line 175: [untranslatedText]
+  Text: "Subscribe to our newsletter for the latest AI model updates and insights"
+  Suggested key: subscribe.to.our.newsletter.for.the.latest.ai.model.updates.and.insights
+
+Line 178: [untranslatedText]
+  Text: "Email Address"
+  Suggested key: email.address
+
+Line 181: [untranslatedText]
+  Text: "Subscribe Now"
+  Suggested key: subscribe.now
+
+Line 193: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

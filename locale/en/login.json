@@ -1,0 +1,18 @@
+{
+  "login": {
+    "pageTitle": "Login - Model Guru",
+    "pageDescription": "Log in to your Model Guru account to access personalized features and premium reports.",
+    "title": "Welcome Back",
+    "subtitle": "Log in to access your account",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Log In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "or": "or",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithGitHub": "Continue with GitHub"
+  }
+} 

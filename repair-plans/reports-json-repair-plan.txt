@@ -1,0 +1,65 @@
+JSON Repair Plan for reports
+================================================================================
+
+Missing Keys to Add:
+  • reports.daily.features.0
+  • reports.daily.features.1
+  • reports.daily.features.2
+  • reports.daily.features.3
+  • reports.premium.cta
+  • reports.daily.cta
+  • reports.weekly.features.0
+  • reports.weekly.features.1
+  • reports.weekly.features.2
+  • reports.weekly.features.3
+  • reports.premium.cta
+  • reports.weekly.cta
+  • reports.monthly.features.0
+  • reports.monthly.features.1
+  • reports.monthly.features.2
+  • reports.monthly.features.3
+  • reports.premium.cta
+  • reports.monthly.cta
+
+Unused Keys to Review:
+  • reports.searchPlaceholder
+  • reports.categories.title
+  • reports.categories.description
+  • reports.categories.performance.title
+  • reports.categories.performance.description
+  • reports.categories.useCases.title
+  • reports.categories.useCases.description
+  • reports.categories.trends.title
+  • reports.categories.trends.description
+  • reports.reportDetails.title
+  • reports.reportDetails.metrics.accuracy
+  • reports.reportDetails.metrics.speed
+  • reports.reportDetails.metrics.cost
+  • reports.reportDetails.metrics.scalability
+  • reports.reportDetails.sections.executiveSummary
+  • reports.reportDetails.sections.methodology
+  • reports.reportDetails.sections.findings
+  • reports.reportDetails.sections.recommendations
+  • reports.reportDetails.sections.conclusion
+  • reports.subscription.title
+  • reports.subscription.description
+  • reports.subscription.plans.basic.title
+  • reports.subscription.plans.basic.price
+  • reports.subscription.plans.basic.features.0
+  • reports.subscription.plans.basic.features.1
+  • reports.subscription.plans.basic.features.2
+  • reports.subscription.plans.pro.title
+  • reports.subscription.plans.pro.price
+  • reports.subscription.plans.pro.features.0
+  • reports.subscription.plans.pro.features.1
+  • reports.subscription.plans.pro.features.2
+  • reports.subscription.plans.pro.features.3
+  • reports.subscription.plans.enterprise.title
+  • reports.subscription.plans.enterprise.price
+  • reports.subscription.plans.enterprise.features.0
+  • reports.subscription.plans.enterprise.features.1
+  • reports.subscription.plans.enterprise.features.2
+  • reports.subscription.plans.enterprise.features.3
+  • reports.subscription.plans.enterprise.features.4
+  • reports.subscription.cta.subscribe
+  • reports.subscription.cta.contact

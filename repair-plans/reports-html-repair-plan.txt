@@ -1,0 +1,212 @@
+HTML Repair Plan for reports
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 75: [untranslatedText]
+  Text: "Daily Updates"
+  Suggested key: daily.updates
+
+Line 76: [untranslatedText]
+  Text: "Fresh insights every day"
+  Suggested key: fresh.insights.every.day
+
+Line 85: [untranslatedText]
+  Text: "Verified Data"
+  Suggested key: verified.data
+
+Line 86: [untranslatedText]
+  Text: "100% accurate metrics"
+  Suggested key: 100.accurate.metrics
+
+Line 119: [untranslatedText]
+  Text: "Daily Insights"
+  Suggested key: daily.insights
+
+Line 120: [untranslatedText]
+  Text: "Track day-to-day changes in model popularity and usage metrics"
+  Suggested key: track.day.to.day.changes.in.model.popularity.and.usage.metrics
+
+Line 144: [untranslatedText]
+  Text: "Top Trending (Last 24h)"
+  Suggested key: top.trending.last.24h
+
+Line 148: [untranslatedText]
+  Text: ""These daily insights helped me identify emerging trends early.""
+  Suggested key: these.daily.insights.helped.me.identify.emerging.trends.early
+
+Line 149: [untranslatedText]
+  Text: "Sarah Chen"
+  Suggested key: sarah.chen
+
+Line 153: [untranslatedText]
+  Text: "1. SDXL-Turbo - 15.2K runs (+42%)"
+  Suggested key: 1.sdxl.turbo.15.2k.runs.42
+
+Line 154: [untranslatedText]
+  Text: "2. Mistral-7B - 8.7K runs (+28%)"
+  Suggested key: 2.mistral.7b.8.7k.runs.28
+
+Line 155: [untranslatedText]
+  Text: "3. Stable Audio - 6.3K runs (+35%)"
+  Suggested key: 3.stable.audio.6.3k.runs.35
+
+Line 175: [untranslatedText]
+  Text: "Weekly Analysis"
+  Suggested key: weekly.analysis
+
+Line 176: [untranslatedText]
+  Text: "Identify medium-term trends and monetization opportunities"
+  Suggested key: identify.medium.term.trends.and.monetization.opportunities
+
+Line 200: [untranslatedText]
+  Text: "Growth Leaders This Week"
+  Suggested key: growth.leaders.this.week
+
+Line 204: [untranslatedText]
+  Text: ""Weekly reports are crucial for our strategic planning.""
+  Suggested key: weekly.reports.are.crucial.for.our.strategic.planning
+
+Line 205: [untranslatedText]
+  Text: "Michael Torres"
+  Suggested key: michael.torres
+
+Line 209: [untranslatedText]
+  Text: "1. Audio Generation (+68% WoW)"
+  Suggested key: 1.audio.generation.68.wow
+
+Line 210: [untranslatedText]
+  Text: "2. Multi-modal Models (+42% WoW)"
+  Suggested key: 2.multi.modal.models.42.wow
+
+Line 211: [untranslatedText]
+  Text: "3. Fine-tuning Services (+37% WoW)"
+  Suggested key: 3.fine.tuning.services.37.wow
+
+Line 233: [untranslatedText]
+  Text: "Monthly Strategy Report"
+  Suggested key: monthly.strategy.report
+
+Line 234: [untranslatedText]
+  Text: "Comprehensive analysis for long-term strategic planning"
+  Suggested key: comprehensive.analysis.for.long.term.strategic.planning
+
+Line 258: [untranslatedText]
+  Text: "Monthly Market Insights"
+  Suggested key: monthly.market.insights
+
+Line 262: [untranslatedText]
+  Text: ""The ROI predictions are incredibly accurate.""
+  Suggested key: the.roi.predictions.are.incredibly.accurate
+
+Line 263: [untranslatedText]
+  Text: "Emily Johnson"
+  Suggested key: emily.johnson
+
+Line 267: [untranslatedText]
+  Text: "• API Monetization Potential: $12.4M"
+  Suggested key: api.monetization.potential.12.4m
+
+Line 268: [untranslatedText]
+  Text: "• Highest ROI Category: Specialized LLMs"
+  Suggested key: highest.roi.category.specialized.llms
+
+Line 269: [untranslatedText]
+  Text: "• Emerging Opportunity: Multi-modal APIs"
+  Suggested key: emerging.opportunity.multi.modal.apis
+
+Line 288: [untranslatedText]
+  Text: "Premium Reports"
+  Suggested key: premium.reports
+
+Line 289: [untranslatedText]
+  Text: "Unlock the full potential of AI model analytics"
+  Suggested key: unlock.the.full.potential.of.ai.model.analytics
+
+Line 298: [untranslatedText]
+  Text: "Complete, unfiltered data access"
+  Suggested key: complete.unfiltered.data.access
+
+Line 305: [untranslatedText]
+  Text: "Custom report generation"
+  Suggested key: custom.report.generation
+
+Line 315: [untranslatedText]
+  Text: "API usage recommendations"
+  Suggested key: api.usage.recommendations
+
+Line 325: [untranslatedText]
+  Text: "Early access to emerging trends"
+  Suggested key: early.access.to.emerging.trends
+
+Line 331: [untranslatedText]
+  Text: "Monthly"
+  Suggested key: monthly
+
+Line 332: [untranslatedText]
+  Text: "/month"
+  Suggested key: month
+
+Line 333: [untranslatedText]
+  Text: "Subscribe"
+  Suggested key: subscribe
+
+Line 337: [untranslatedText]
+  Text: "Annual"
+  Suggested key: annual
+
+Line 338: [untranslatedText]
+  Text: "/month"
+  Suggested key: month
+
+Line 340: [untranslatedText]
+  Text: "Subscribe"
+  Suggested key: subscribe
+
+Line 351: [untranslatedText]
+  Text: "Ready to Transform Your AI Experience?"
+  Suggested key: ready.to.transform.your.ai.experience
+
+Line 352: [untranslatedText]
+  Text: "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison."
+  Suggested key: join.thousands.of.developers.and.businesses.who.are.already.using.model.guru.to.find.the.perfect.ai.models.for.their.needs.get.started.today.and.discover.the.power.of.ai.model.comparison
+
+Line 355: [untranslatedText]
+  Text: "Stay Updated"
+  Suggested key: stay.updated
+
+Line 356: [untranslatedText]
+  Text: "Subscribe to our newsletter for the latest AI model updates and insights"
+  Suggested key: subscribe.to.our.newsletter.for.the.latest.ai.model.updates.and.insights
+
+Line 359: [untranslatedText]
+  Text: "Email Address"
+  Suggested key: email.address
+
+Line 362: [untranslatedText]
+  Text: "Subscribe Now"
+  Suggested key: subscribe.now
+
+Line 371: [untranslatedText]
+  Text: "What Our Users Say"
+  Suggested key: what.our.users.say
+
+Line 376: [untranslatedText]
+  Text: ""The insights from Model Guru's reports have been invaluable for our AI development strategy.""
+  Suggested key: the.insights.from.model.guru.s.reports.have.been.invaluable.for.our.ai.development.strategy
+
+Line 379: [untranslatedText]
+  Text: "AI Research Lead"
+  Suggested key: ai.research.lead
+
+Line 386: [untranslatedText]
+  Text: ""We've saved countless hours in model selection thanks to these comprehensive reports.""
+  Suggested key: we.ve.saved.countless.hours.in.model.selection.thanks.to.these.comprehensive.reports
+
+Line 389: [untranslatedText]
+  Text: "Tech Director"
+  Suggested key: tech.director
+
+Line 403: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

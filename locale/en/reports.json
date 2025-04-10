@@ -1,74 +1,80 @@
 {
   "reports": {
-    "title": "AI Model Reports & Analytics",
-    "subtitle": "Discover profitable opportunities with comprehensive AI model reports",
-    "description": "Premium users gain access to complete daily, weekly, and monthly reports that reveal potential monetization opportunities across different model types and APIs.",
-    "daily": {
-      "title": "Daily Insights",
-      "description": "Track day-to-day changes in model popularity and usage metrics"
-    },
-    "weekly": {
-      "title": "Weekly Trends",
-      "description": "Analyze weekly model performance and emerging trends"
-    },
-    "monthly": {
-      "title": "Monthly Summaries",
-      "description": "Get comprehensive monthly overviews and strategic insights"
-    },
-    "premiumReports": {
-      "title": "Premium Reports",
-      "subtitle": "Unlock in-depth analysis and exclusive insights",
-      "features": {
-        "detailedMetrics": "Detailed performance metrics and benchmarking",
-        "trendAnalysis": "Advanced trend analysis and future projections",
-        "monetizationInsights": "Monetization potential analysis for APIs and models",
-        "customizableDashboards": "Customizable dashboards to track specific models or platforms"
+    "title": "AI Model Reports",
+    "subtitle": "In-depth analysis and insights on AI models",
+    "searchPlaceholder": "Search reports...",
+    "pageDescription": "Access comprehensive reports and analysis on AI models, including performance metrics, use cases, and industry trends.",
+    "categories": {
+      "title": "Report Categories",
+      "description": "Browse reports by category or topic",
+      "performance": {
+        "title": "Performance Analysis",
+        "description": "Detailed analysis of model performance metrics"
       },
-      "pricing": {
-        "title": "Get Full Access",
-        "description": "Choose a plan that fits your needs and gain immediate access to all premium reports and features.",
-        "monthlyPlan": {
-          "name": "Monthly",
-          "price": "$49/mo",
+      "useCases": {
+        "title": "Use Cases",
+        "description": "Real-world applications and case studies"
+      },
+      "trends": {
+        "title": "Industry Trends",
+        "description": "Analysis of current and emerging trends"
+      }
+    },
+    "reportDetails": {
+      "title": "Report Details",
+      "metrics": {
+        "accuracy": "Accuracy",
+        "speed": "Inference Speed",
+        "cost": "Cost Efficiency",
+        "scalability": "Scalability"
+      },
+      "sections": {
+        "executiveSummary": "Executive Summary",
+        "methodology": "Methodology",
+        "findings": "Key Findings",
+        "recommendations": "Recommendations",
+        "conclusion": "Conclusion"
+      }
+    },
+    "subscription": {
+      "title": "Subscribe to Reports",
+      "description": "Get access to premium reports and analysis",
+      "plans": {
+        "basic": {
+          "title": "Basic",
+          "price": "$9.99/month",
           "features": [
-            "Full access to all reports",
-            "Daily, weekly, monthly updates",
-            "Advanced analytics tools",
-            "Priority email support"
-          ],
-          "cta": "Choose Monthly"
+            "Access to standard reports",
+            "Monthly industry updates",
+            "Basic analytics"
+          ]
         },
-        "annualPlan": {
-          "name": "Annual (Save 20%)",
-          "price": "$470/yr",
+        "pro": {
+          "title": "Professional",
+          "price": "$29.99/month",
           "features": [
-            "Everything in Monthly",
-            "Annual billing discount",
-            "Early access to new features",
-            "Dedicated account manager"
-          ],
-          "cta": "Choose Annual"
+            "Access to all reports",
+            "Weekly industry updates",
+            "Advanced analytics",
+            "Custom report requests"
+          ]
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "Unlimited access to all reports",
+            "Daily industry updates",
+            "Custom analytics dashboard",
+            "Priority support",
+            "Team collaboration features"
+          ]
         }
-      }
-    },
-    "sampleReports": {
-      "title": "Sample Reports",
-      "subtitle": "Get a glimpse of the insights available in our premium reports",
-      "report1": {
-        "title": "Weekly Trending Models: Image Generation",
-        "description": "Analysis of the top 5 fastest-growing image generation models this week.",
-        "cta": "Download Sample (PDF)"
       },
-      "report2": {
-        "title": "Monthly API Monetization Opportunities",
-        "description": "Identifying potential revenue streams from text-to-speech APIs.",
-        "cta": "Download Sample (PDF)"
+      "cta": {
+        "subscribe": "Subscribe Now",
+        "contact": "Contact Sales"
       }
-    },
-    "cta": {
-      "title": "Ready to make data-driven AI decisions?",
-      "description": "Upgrade to Premium today and unlock the full potential of Model Guru's analytics and reporting features.",
-      "button": "Upgrade Now"
     }
   }
 } 

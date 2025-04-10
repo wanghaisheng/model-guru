@@ -60,7 +60,8 @@
       "button": "订阅"
     },
     "copyright": "© {year} Model Guru。保留所有权利。",
-    "madeWith": "由AI爱好者{heart}制作。"
+    "madeWithPrefix": "由AI爱好者",
+    "madeWithSuffix": "制作。"
   },
   "newsletter": {
     "title": "订阅AI模型动态",

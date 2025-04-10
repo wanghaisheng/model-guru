@@ -1,0 +1,35 @@
+JSON Repair Plan for testimonials
+================================================================================
+
+No missing keys found.
+
+Unused Keys to Review:
+  • testimonials.searchPlaceholder
+  • testimonials.filter.title
+  • testimonials.filter.all
+  • testimonials.filter.developers
+  • testimonials.filter.researchers
+  • testimonials.filter.business
+  • testimonials.filter.students
+  • testimonials.sort.title
+  • testimonials.sort.recent
+  • testimonials.sort.popular
+  • testimonials.sort.rating
+  • testimonials.testimonial.readMore
+  • testimonials.testimonial.share
+  • testimonials.testimonial.report
+  • testimonials.testimonial.verified
+  • testimonials.testimonial.date
+  • testimonials.submit.title
+  • testimonials.submit.description
+  • testimonials.submit.name
+  • testimonials.submit.email
+  • testimonials.submit.role
+  • testimonials.submit.testimonial
+  • testimonials.submit.rating
+  • testimonials.submit.submit
+  • testimonials.submit.privacy
+  • testimonials.pagination.previous
+  • testimonials.pagination.next
+  • testimonials.pagination.page
+  • testimonials.pagination.of

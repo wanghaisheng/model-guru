@@ -1,0 +1,88 @@
+HTML Repair Plan for login
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 17: [untranslatedText]
+  Text: "Sign In"
+  Suggested key: sign.in
+
+Line 18: [untranslatedText]
+  Text: "Register"
+  Suggested key: register
+
+Line 22: [untranslatedText]
+  Text: "Welcome Back"
+  Suggested key: welcome.back
+
+Line 23: [untranslatedText]
+  Text: "Sign in to access your Model Guru account"
+  Suggested key: sign.in.to.access.your.model.guru.account
+
+Line 27: [untranslatedText]
+  Text: "Email"
+  Suggested key: email
+
+Line 32: [untranslatedText]
+  Text: "Password"
+  Suggested key: password
+
+Line 39: [untranslatedText]
+  Text: "Remember me"
+  Suggested key: remember.me
+
+Line 41: [untranslatedText]
+  Text: "Forgot password?"
+  Suggested key: forgot.password
+
+Line 44: [untranslatedText]
+  Text: "Sign In"
+  Suggested key: sign.in
+
+Line 47: [untranslatedText]
+  Text: "Or sign in with"
+  Suggested key: or.sign.in.with
+
+Line 63: [untranslatedText]
+  Text: "Create Account"
+  Suggested key: create.account
+
+Line 64: [untranslatedText]
+  Text: "Join Model Guru to discover and track AI models"
+  Suggested key: join.model.guru.to.discover.and.track.ai.models
+
+Line 68: [untranslatedText]
+  Text: "Full Name"
+  Suggested key: full.name
+
+Line 73: [untranslatedText]
+  Text: "Email"
+  Suggested key: email
+
+Line 78: [untranslatedText]
+  Text: "Password"
+  Suggested key: password
+
+Line 83: [untranslatedText]
+  Text: "Confirm Password"
+  Suggested key: confirm.password
+
+Line 90: [untranslatedText]
+  Text: "Terms of Service"
+  Suggested key: terms.of.service
+
+Line 90: [untranslatedText]
+  Text: "Privacy Policy"
+  Suggested key: privacy.policy
+
+Line 94: [untranslatedText]
+  Text: "Create Account"
+  Suggested key: create.account
+
+Line 97: [untranslatedText]
+  Text: "Or register with"
+  Suggested key: or.register.with
+
+Line 120: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

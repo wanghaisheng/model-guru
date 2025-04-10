@@ -1,0 +1,75 @@
+{
+  "career": {
+    "pageTitle": "Careers - Model Guru",
+    "pageDescription": "We're looking for passionate individuals to join our team and help build the best platform for AI model discovery and comparison.",
+    "title": "Join Our Team",
+    "subtitle": "Help shape the future of AI model discovery and comparison",
+    "currentOpenings": "Current Openings",
+    "noOpenings": "No current openings. Please check back later.",
+    "applyNow": "Apply Now",
+    "jobDescription": "Job Description",
+    "requirements": "Requirements",
+    "benefits": {
+      "title": "Why Join Us",
+      "competitive": "Competitive Salary",
+      "flexible": "Flexible Work Hours",
+      "remote": "Remote Work Options",
+      "learning": "Learning & Development",
+      "health": "Health & Wellness",
+      "team": "Team Building Activities"
+    },
+    "location": "Location",
+    "type": "Type",
+    "applyButton": "Apply for this position",
+    "contactUs": "Contact Us",
+    "contactDescription": "If you don't see a position that matches your skills but believe you'd be a great fit for our team, please reach out to us at careers@modelguru.deepseek.diy",
+    "searchPlaceholder": "Search jobs...",
+    "filter": {
+      "title": "Filter by",
+      "all": "All Positions",
+      "engineering": "Engineering",
+      "design": "Design",
+      "product": "Product",
+      "marketing": "Marketing",
+      "data": "Data Science",
+      "research": "Research"
+    },
+    "sort": {
+      "title": "Sort by",
+      "recent": "Most Recent",
+      "location": "Location",
+      "department": "Department"
+    },
+    "job": {
+      "apply": "Apply Now",
+      "share": "Share",
+      "location": "Location",
+      "type": "Employment Type",
+      "experience": "Experience Level",
+      "posted": "Posted",
+      "fullTime": "Full-time",
+      "partTime": "Part-time",
+      "contract": "Contract",
+      "internship": "Internship",
+      "remote": "Remote",
+      "hybrid": "Hybrid",
+      "onsite": "On-site"
+    },
+    "application": {
+      "title": "Apply for Position",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "resume": "Upload Resume",
+      "coverLetter": "Cover Letter",
+      "submit": "Submit Application",
+      "privacy": "Your information will be kept private and only used for recruitment purposes."
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    }
+  }
+} 

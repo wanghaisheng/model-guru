@@ -1,0 +1,108 @@
+HTML Repair Plan for privacy
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 79: [untranslatedText]
+  Text: "IMPULSE – BRAIN TRAINING GAMES"
+  Suggested key: impulse.brain.training.games
+
+Line 80: [untranslatedText]
+  Text: "Privacy Policy"
+  Suggested key: privacy.policy
+
+Line 84: [untranslatedText]
+  Text: "This Privacy Policy explains what personal data is collected when you use the Impulse – Brain Training Games mobile app (the "App") and the services provided through it (together with the App, the "Service"), how such personal data will be used, and shared."
+  Suggested key: this.privacy.policy.explains.what.personal.data.is.collected.when.you.use.the.impulse.brain.training.games.mobile.app.the.app.and.the.services.provided.through.it.together.with.the.app.the.service.how.such.personal.data.will.be.used.and.shared
+
+Line 85: [untranslatedText]
+  Text: "BY USING THE SERVICE, YOU PROMISE US THAT (I) YOU HAVE READ, UNDERSTAND AND AGREE TO THIS PRIVACY POLICY, AND (II) YOU ARE OVER 16 YEARS OF AGE (OR HAVE HAD YOUR PARENT OR GUARDIAN READ AND AGREE TO THIS PRIVACY POLICY FOR YOU). If you do not agree, or are unable to make this promise, you must not use the Service."
+  Suggested key: by.using.the.service.you.promise.us.that.i.you.have.read.understand.and.agree.to.this.privacy.policy.and.ii.you.are.over.16.years.of.age.or.have.had.your.parent.or.guardian.read.and.agree.to.this.privacy.policy.for.you.if.you.do.not.agree.or.are.unable.to.make.this.promise.you.must.not.use.the.service
+
+Line 89: [untranslatedText]
+  Text: "1. Personal Data Controller"
+  Suggested key: 1.personal.data.controller
+
+Line 90: [untranslatedText]
+  Text: "The personal data provided to us will be processed by:"
+  Suggested key: the.personal.data.provided.to.us.will.be.processed.by
+
+Line 93: [untranslatedText]
+  Text: "Email: support@impulsegames.com"
+  Suggested key: email.support.impulsegames.com
+
+Line 94: [untranslatedText]
+  Text: "Website: www.impulsegames.com"
+  Suggested key: website.www.impulsegames.com
+
+Line 99: [untranslatedText]
+  Text: "2. Information We Collect"
+  Suggested key: 2.information.we.collect
+
+Line 100: [untranslatedText]
+  Text: "When you use the Service, we may collect the following types of data:"
+  Suggested key: when.you.use.the.service.we.may.collect.the.following.types.of.data
+
+Line 109: [untranslatedText]
+  Text: "3. How We Use Your Data"
+  Suggested key: 3.how.we.use.your.data
+
+Line 110: [untranslatedText]
+  Text: "We use the collected data for the following purposes:"
+  Suggested key: we.use.the.collected.data.for.the.following.purposes
+
+Line 112: [untranslatedText]
+  Text: "To provide, operate, and maintain the Service"
+  Suggested key: to.provide.operate.and.maintain.the.service
+
+Line 113: [untranslatedText]
+  Text: "To improve, personalize, and expand the Service"
+  Suggested key: to.improve.personalize.and.expand.the.service
+
+Line 114: [untranslatedText]
+  Text: "To communicate with you, including sending updates and promotional material (if you opt in)"
+  Suggested key: to.communicate.with.you.including.sending.updates.and.promotional.material.if.you.opt.in
+
+Line 115: [untranslatedText]
+  Text: "To monitor usage and prevent abuse of the Service"
+  Suggested key: to.monitor.usage.and.prevent.abuse.of.the.service
+
+Line 120: [untranslatedText]
+  Text: "4. Data Sharing"
+  Suggested key: 4.data.sharing
+
+Line 121: [untranslatedText]
+  Text: "We do not sell, rent, or trade your personal information. However, we may share your data in the following cases:"
+  Suggested key: we.do.not.sell.rent.or.trade.your.personal.information.however.we.may.share.your.data.in.the.following.cases
+
+Line 123: [untranslatedText]
+  Text: "With third-party service providers who assist in the operation of the Service"
+  Suggested key: with.third.party.service.providers.who.assist.in.the.operation.of.the.service
+
+Line 124: [untranslatedText]
+  Text: "If required by law, or if we believe it is necessary to protect the rights, property, or safety of Impulse Games, our users, or others."
+  Suggested key: if.required.by.law.or.if.we.believe.it.is.necessary.to.protect.the.rights.property.or.safety.of.impulse.games.our.users.or.others
+
+Line 129: [untranslatedText]
+  Text: "5. Your Rights"
+  Suggested key: 5.your.rights
+
+Line 130: [untranslatedText]
+  Text: "You have the right to:"
+  Suggested key: you.have.the.right.to
+
+Line 132: [untranslatedText]
+  Text: "Access your personal data"
+  Suggested key: access.your.personal.data
+
+Line 133: [untranslatedText]
+  Text: "Request the correction or deletion of your data"
+  Suggested key: request.the.correction.or.deletion.of.your.data
+
+Line 134: [untranslatedText]
+  Text: "Withdraw consent for data processing at any time"
+  Suggested key: withdraw.consent.for.data.processing.at.any.time
+
+Line 144: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

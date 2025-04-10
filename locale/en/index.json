@@ -49,6 +49,7 @@
     }
   },
   "stats": {
+    "title": "Model Guru by the Numbers",
     "modelsTracked": "Models Tracked",
     "platformsIntegrated": "Platforms Integrated",
     "totalRuns": "Total Model Runs",
@@ -80,8 +81,23 @@
   },
   "testimonials": {
     "title": "What Our Users Say",
-    "viewAll": "View All Testimonials",
-    "subtitle": "Hear how Model Guru helps developers and businesses make smarter AI decisions"
+    "subtitle": "Hear how Model Guru helps developers and businesses make smarter AI decisions",
+    "card1": {
+      "text": "\"Model Guru helped me find the perfect image generation model for my project in minutes, saving me days of research.\"",
+      "authorName": "Emma Wilson",
+      "authorRole": "Design Studio Lead"
+    },
+    "card2": {
+      "text": "\"As a designer, I need to keep up with the latest AI image generation tech. Model Guru's trend analysis lets me easily see which models are rising and worth my time.\"",
+      "authorName": "James Lee",
+      "authorRole": "Education Researcher"
+    },
+    "card3": {
+      "text": "\"The cross-platform comparison feature is incredibly useful. When choosing a language model, I can compare performance and user reviews side by side, making my decision process straightforward.\"",
+      "authorName": "Michael Chen",
+      "authorRole": "AI Researcher"
+    },
+    "viewAll": "View All Testimonials"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -92,22 +108,167 @@
     "q3": "How often is the data updated?",
     "a3": "We update our data daily to provide the latest information on AI models across platforms.",
     "q4": "Can I suggest a new platform to track?",
-    "a4": "Absolutely! We are always looking to expand our coverage. Please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> with your suggestions."
+    "a4": "Absolutely! We are always looking to expand our coverage. Please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> with your suggestions.",
+    "viewAll": "View All FAQs"
   },
   "blog": {
     "title": "From Our Blog",
     "subtitle": "Latest AI model trends, tutorials, and best practices",
+    "card1": {
+      "date": "April 15, 2024",
+      "title": "Complete Guide to Stable Diffusion XL: Parameter Optimization & Prompting",
+      "excerpt": "Learn how to get the most out of Stable Diffusion XL's powerful capabilities, including key parameter settings and prompt engineering best practices..."
+    },
+    "card2": {
+      "date": "April 10, 2024",
+      "title": "LLM Trends in 2024: From Mixtral to Claude 3",
+      "excerpt": "Explore the latest developments in the large language model space in 2024, including the rise of open-source models and new directions in commercial applications..."
+    },
+    "card3": {
+      "date": "April 5, 2024",
+      "title": "Comparing Top 5 Multimodal Models: Performance & Use Cases",
+      "excerpt": "A detailed comparison of the top multimodal AI models, analyzing their performance across different tasks and identifying ideal use cases for each..."
+    },
+    "readMore": "Read More",
     "viewAll": "View All Posts"
   },
   "team": {
     "title": "Meet Our Team",
-    "subtitle": "A passionate group of AI and ML experts dedicated to simplifying model discovery"
+    "subtitle": "A passionate group of AI and ML experts dedicated to simplifying model discovery",
+    "member1": {
+      "name": "Sarah Chen",
+      "role": "Lead Developer",
+      "bio": "Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation."
+    },
+    "member2": {
+      "name": "Michael Wang",
+      "role": "AI Research Lead",
+      "bio": "Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation."
+    },
+    "member3": {
+      "name": "David Zhang",
+      "role": "Product Manager",
+      "bio": "Former AI researcher at Stanford with 10+ years of experience in machine learning and model evaluation."
+    }
+  },
+  "modelExploration": {
+    "title": "Explore Models",
+    "subtitle": "Discover and compare AI models for your specific needs",
+    "addToComparisonBtn": "Add to Comparison",
+    "viewAllBtnPrefix": "View all",
+    "viewAllBtnSuffix": "models"
   },
   "modelComparison": {
     "title": "Model Comparison Tool",
     "description": "Compare different AI models side-by-side to find the perfect fit for your needs",
-    "compare": "Compare Models",
-    "fullTool": "Use Full Comparison Tool"
+    "purposeNavigation": {
+      "title": "What do you want to do?",
+      "makeVideos": {
+        "title": "Make videos",
+        "description": "Compare video generation models"
+      },
+      "generateImages": {
+        "title": "Generate images",
+        "description": "Compare image generation models"
+      },
+      "generateText": {
+        "title": "Generate text",
+        "description": "Compare language models"
+      },
+      "processAudio": {
+        "title": "Process audio",
+        "description": "Compare audio models"
+      },
+      "make3d": {
+        "title": "Make 3D content",
+        "description": "Compare 3D generation models"
+      },
+      "useUtilities": {
+        "title": "Use utility tools",
+        "description": "Compare utility models"
+      }
+    },
+    "selectionArea": {
+      "title": "Select Models to Compare",
+      "maxModels": "3",
+      "modelsSelected": "models selected",
+      "purposeFilterDefault": "I want to...",
+      "platformFilterDefault": "All Platforms",
+      "categoryFilterDefault": "A-Z",
+      "sortFilterDefault": "Sort by",
+      "sortAZ": "A-Z",
+      "sortZA": "Z-A",
+      "sortNewest": "Newest First",
+      "sortPopular": "Most Popular",
+      "addToComparison": "Add to Comparison",
+      "searchPlaceholder": "Search models..."
+    },
+    "preview": {
+      "title": "Preview Comparison Results",
+      "headerMetrics": "Metrics",
+      "rowModelName": "Model Name",
+      "rowReleaseDate": "Release Date",
+      "rowTotalRuns": "Total Runs",
+      "rowTotalLikes": "Total Likes",
+      "rowWeeklyGrowth": "Weekly Growth",
+      "rowUserRating": "User Rating",
+      "rowSimilarModels": "Similar Models",
+      "rowPerformanceTrends": "Performance Trends"
+    },
+    "premiumBadge": "Premium",
+    "premiumFeatures": {
+        "weeklyGrowth": {
+            "title": "Weekly Growth",
+            "description": "Track model performance trends over time"
+        },
+        "userRatings": {
+            "title": "User Ratings",
+            "description": "Access detailed user feedback and ratings"
+        },
+        "recommendations": {
+            "title": "Smart Recommendations",
+            "description": "Get personalized model suggestions"
+        },
+        "performanceTrends": {
+            "title": "Performance Trends",
+            "description": "Analyze model performance patterns"
+        },
+        "apiIntegration": {
+            "title": "API Integration",
+            "description": "Detailed API documentation and examples"
+        },
+        "productOpportunities": {
+            "title": "Product Opportunities",
+            "description": "Discover potential products you can build"
+        }
+    },
+    "unlockButton": "Unlock Full Comparison",
+    "premiumNote": "Upgrade to Premium to compare up to 10 models and access all metrics",
+    "productOpportunities": {
+        "title": "Product Opportunities",
+        "imageGen": {
+            "title": "Image Generation",
+            "artGenerator": {
+                "title": "AI Art Generator",
+                "description": "Create custom artwork from text prompts"
+            },
+            "portraitGenerator": {
+                "title": "Portrait Generator",
+                "description": "Generate professional headshots"
+            }
+        },
+        "videoGen": {
+            "title": "Video Generation",
+            "shortVideo": {
+                "title": "Short Video Creator",
+                "description": "Generate viral social media content"
+            },
+            "adGenerator": {
+                "title": "Ad Generator",
+                "description": "Create engaging marketing videos"
+            }
+        }
+    }
   },
   "playground": {
     "title": "Model Discovery Playground",

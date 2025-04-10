@@ -1,0 +1,43 @@
+{
+  "terms": {
+    "pageTitle": "服务条款 - Model Guru",
+    "pageDescription": "阅读我们的服务条款，了解使用我们平台的规则和指南。",
+    "title": "服务条款",
+    "lastUpdated": "最后更新：",
+    "introduction": "欢迎使用 Model Guru。通过访问或使用我们的网站，您同意受这些服务条款的约束。",
+    "sections": {
+      "acceptance": {
+        "title": "条款接受",
+        "content": "通过访问或使用 Model Guru，您同意受这些服务条款和所有适用法律法规的约束。"
+      },
+      "useLicense": {
+        "title": "使用许可",
+        "content": "仅允许临时访问和使用 Model Guru 进行个人、非商业性的临时浏览。"
+      },
+      "disclaimer": {
+        "title": "免责声明",
+        "content": "Model Guru 上的材料按\"原样\"提供。我们不提供任何明示或暗示的保证，并在此否认所有其他保证。"
+      },
+      "limitations": {
+        "title": "责任限制",
+        "content": "在任何情况下，Model Guru 或其供应商均不对因使用或无法使用我们网站上的材料而造成的任何损害负责。"
+      },
+      "revisions": {
+        "title": "修订和勘误",
+        "content": "Model Guru 上出现的材料可能包含技术、排版或摄影错误。我们不保证任何材料的准确性、完整性或时效性。"
+      },
+      "links": {
+        "title": "链接",
+        "content": "Model Guru 尚未审查所有链接到其网站的站点，不对任何此类链接站点的内容负责。"
+      },
+      "modifications": {
+        "title": "修改",
+        "content": "Model Guru 可随时修改这些服务条款，恕不另行通知。通过使用本网站，您同意受这些条款的当前版本约束。"
+      },
+      "governingLaw": {
+        "title": "适用法律",
+        "content": "这些条款和条件受 Model Guru 运营所在司法管辖区的法律管辖并按其解释。"
+      }
+    }
+  }
+} 

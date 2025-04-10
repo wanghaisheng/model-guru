@@ -1,0 +1,61 @@
+{
+  "blog": {
+    "title": "AI 洞察与更新",
+    "subtitle": "了解 AI 模型和平台的最新发展",
+    "pageDescription": "探索我们关于 AI 模型、平台和行业趋势的文章、教程和见解。",
+    "searchPlaceholder": "搜索文章...",
+    "categories": {
+      "title": "分类",
+      "all": "所有文章",
+      "tutorials": "教程",
+      "news": "新闻与更新",
+      "guides": "指南",
+      "caseStudies": "案例分析"
+    },
+    "recentPosts": {
+      "title": "最新文章",
+      "readMore": "阅读更多"
+    },
+    "popularPosts": {
+      "title": "热门文章",
+      "views": "次浏览"
+    },
+    "newsletter": {
+      "title": "订阅我们的新闻通讯",
+      "description": "获取最新的 AI 洞察和更新，直接发送到您的收件箱",
+      "emailPlaceholder": "您的电子邮箱",
+      "button": "订阅",
+      "privacy": "我们尊重您的隐私，绝不会分享您的邮箱。"
+    },
+    "tags": {
+      "title": "热门标签",
+      "machineLearning": "机器学习",
+      "deepLearning": "深度学习",
+      "nlp": "自然语言处理",
+      "computerVision": "计算机视觉",
+      "aiEthics": "AI 伦理",
+      "modelDeployment": "模型部署"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "第",
+      "of": "页，共"
+    },
+    "relatedPosts": {
+      "title": "相关文章"
+    },
+    "comments": {
+      "title": "评论",
+      "noComments": "暂无评论。成为第一个评论者！",
+      "addComment": "添加评论",
+      "name": "姓名",
+      "email": "电子邮箱",
+      "comment": "评论内容",
+      "submit": "提交评论",
+      "reply": "回复",
+      "edit": "编辑",
+      "delete": "删除"
+    }
+  }
+} 

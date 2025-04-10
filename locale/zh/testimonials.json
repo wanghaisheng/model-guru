@@ -1,0 +1,46 @@
+{
+  "testimonials": {
+    "title": "用户评价",
+    "subtitle": "了解 Model Guru 如何帮助 AI 爱好者和专业人士",
+    "pageDescription": "阅读来自我们社区的真实故事，了解 Model Guru 如何帮助他们探索 AI 模型和平台的世界。",
+    "searchPlaceholder": "搜索评价...",
+    "filter": {
+      "title": "筛选",
+      "all": "所有评价",
+      "developers": "开发者",
+      "researchers": "研究人员",
+      "business": "商业用户",
+      "students": "学生"
+    },
+    "sort": {
+      "title": "排序",
+      "recent": "最新发布",
+      "popular": "最受欢迎",
+      "rating": "评分最高"
+    },
+    "testimonial": {
+      "readMore": "阅读完整故事",
+      "share": "分享",
+      "report": "举报",
+      "verified": "已验证用户",
+      "date": "发布于"
+    },
+    "submit": {
+      "title": "分享您的体验",
+      "description": "通过分享 Model Guru 如何帮助您的 AI 之旅来帮助他人",
+      "name": "您的姓名",
+      "email": "您的邮箱",
+      "role": "您的角色",
+      "testimonial": "您的体验",
+      "rating": "评分",
+      "submit": "提交评价",
+      "privacy": "您的信息将被保密，仅用于验证目的。"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "第",
+      "of": "页，共"
+    }
+  }
+} 

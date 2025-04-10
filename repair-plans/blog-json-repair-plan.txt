@@ -1,0 +1,68 @@
+JSON Repair Plan for blog
+================================================================================
+
+Missing Keys to Add:
+  • blog.pageTitle
+  • blog.categories.trends
+  • blog.categories.bestPractices
+  • blog.blogCards.card1.date
+  • blog.blogCards.card1.title
+  • blog.blogCards.card1.excerpt
+  • blog.readMoreButton
+  • blog.blogCards.card2.date
+  • blog.blogCards.card2.title
+  • blog.blogCards.card2.excerpt
+  • blog.readMoreButton
+  • blog.blogCards.card3.date
+  • blog.blogCards.card3.title
+  • blog.blogCards.card3.excerpt
+  • blog.readMoreButton
+  • blog.blogCards.card4.date
+  • blog.blogCards.card4.title
+  • blog.blogCards.card4.excerpt
+  • blog.readMoreButton
+  • blog.blogCards.card5.date
+  • blog.blogCards.card5.title
+  • blog.blogCards.card5.excerpt
+  • blog.readMoreButton
+  • blog.blogCards.card6.date
+  • blog.blogCards.card6.title
+  • blog.blogCards.card6.excerpt
+  • blog.readMoreButton
+
+Unused Keys to Review:
+  • blog.searchPlaceholder
+  • blog.categories.title
+  • blog.categories.news
+  • blog.categories.guides
+  • blog.recentPosts.title
+  • blog.recentPosts.readMore
+  • blog.popularPosts.title
+  • blog.popularPosts.views
+  • blog.newsletter.title
+  • blog.newsletter.description
+  • blog.newsletter.emailPlaceholder
+  • blog.newsletter.button
+  • blog.newsletter.privacy
+  • blog.tags.title
+  • blog.tags.machineLearning
+  • blog.tags.deepLearning
+  • blog.tags.nlp
+  • blog.tags.computerVision
+  • blog.tags.aiEthics
+  • blog.tags.modelDeployment
+  • blog.pagination.previous
+  • blog.pagination.next
+  • blog.pagination.page
+  • blog.pagination.of
+  • blog.relatedPosts.title
+  • blog.comments.title
+  • blog.comments.noComments
+  • blog.comments.addComment
+  • blog.comments.name
+  • blog.comments.email
+  • blog.comments.comment
+  • blog.comments.submit
+  • blog.comments.reply
+  • blog.comments.edit
+  • blog.comments.delete

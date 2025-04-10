@@ -1,0 +1,43 @@
+{
+  "privacy": {
+    "pageTitle": "Privacy Policy - Model Guru",
+    "pageDescription": "Read our privacy policy to understand how we collect, use, and protect your data.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated:",
+    "introduction": "At Model Guru, we take your privacy seriously. This policy describes how we collect, use, and protect your personal information.",
+    "sections": {
+      "informationWeCollect": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us, such as when you create an account, subscribe to our newsletter, or contact us for support."
+      },
+      "howWeUseInformation": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide and improve our services, communicate with you, and ensure the security of our platform."
+      },
+      "informationSharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell your personal information. We may share your information with service providers who assist us in operating our website and providing our services."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information. You can also opt out of receiving marketing communications from us."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "We use cookies and similar technologies to enhance your experience on our website and to analyze how our services are used."
+      },
+      "changesToPolicy": {
+        "title": "Changes to This Policy",
+        "content": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page."
+      },
+      "contactUs": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this privacy policy, please contact us at privacy@modelguru.com."
+      }
+    }
+  }
+} 

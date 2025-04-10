@@ -1,35 +1,66 @@
 {
   "about": {
     "title": "关于 Model Guru",
-    "subtitle": "简化AI模型发现与分析",
+    "subtitle": "通过全面的模型发现推动 AI 创新",
+    "pageDescription": "了解我们的使命、愿景以及 Model Guru 背后的团队 - 您值得信赖的 AI 模型发现和比较平台。",
     "mission": {
       "title": "我们的使命",
-      "text": "我们的使命是通过提供一个集中、全面的平台，用于发现、追踪和分析快速发展的AI模型领域，从而赋能开发者、研究人员和企业。我们旨在简化寻找合适AI工具的复杂过程，推动创新并支持明智决策。"
+      "description": "通过提供全面、用户友好的平台，实现 AI 模型的民主化访问，支持发现、比较和实施。"
     },
-    "story": {
-      "title": "我们的故事",
-      "text": "Model Guru由一群AI爱好者和工程师创立，他们亲身经历了在碎片化的AI模型世界中导航的挑战。由于缺乏用于比较模型和追踪趋势的统一资源而感到沮丧，我们着手构建我们希望存在的平台。如今，Model Guru服务于成千上万的用户，帮助他们在AI探索中节省时间并做出更好的选择。"
+    "vision": {
+      "title": "我们的愿景",
+      "description": "成为 AI 从业者、研究人员和企业寻求利用 AI 模型力量的首选平台。"
     },
     "values": {
       "title": "我们的价值观",
-      "items": {
-        "transparency": {
-          "title": "透明度",
-          "description": "我们相信信息的开放获取，并努力提供清晰、准确的数据和方法论。"
-        },
-        "community": {
-          "title": "社区驱动",
-          "description": "我们积极听取用户意见，并根据反馈和需求不断改进平台。"
-        },
-        "innovation": {
-          "title": "创新",
-          "description": "我们对AI充满热情，并致力于保持在模型发现和分析领域的前沿。"
-        },
-        "empowerment": {
-          "title": "赋能",
-          "description": "我们的目标是为用户提供在AI领域取得成功所需的洞察和工具。"
-        }
+      "innovation": {
+        "title": "创新",
+        "description": "不断突破 AI 模型发现和比较的可能性边界。"
+      },
+      "transparency": {
+        "title": "透明",
+        "description": "提供关于 AI 模型和平台的清晰、准确、无偏见的信息。"
+      },
+      "community": {
+        "title": "社区",
+        "description": "建立一个充满活力的 AI 爱好者和专业人士社区，分享知识和经验。"
+      },
+      "accessibility": {
+        "title": "可访问性",
+        "description": "让每个人都能访问 AI 模型发现，无论其技术背景如何。"
       }
+    },
+    "team": {
+      "title": "我们的团队",
+      "description": "认识 Model Guru 背后的热情团队",
+      "roles": {
+        "founder": "创始人兼首席执行官",
+        "cto": "首席技术官",
+        "leadDev": "首席开发工程师",
+        "productManager": "产品经理",
+        "designer": "UI/UX 设计师",
+        "researcher": "AI 研究员"
+      }
+    },
+    "milestones": {
+      "title": "发展历程",
+      "description": "我们发展过程中的重要里程碑",
+      "launch": "平台发布",
+      "users": "活跃用户",
+      "models": "收录模型",
+      "partners": "合作伙伴"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "我们期待听到您的声音",
+      "email": "电子邮箱",
+      "social": "关注我们",
+      "address": "地址",
+      "phone": "电话"
+    },
+    "partners": {
+      "title": "合作伙伴",
+      "description": "与我们合作的组织，为您带来最佳的 AI 模型发现体验"
     }
   },
   "team": {

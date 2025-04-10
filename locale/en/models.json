@@ -17,10 +17,20 @@
         "newest": "Newest"
       },
       "purposes": {
-        "video": "Make videos",
-        "image": "Generate images",
+        "all": "All Purposes",
+        "video": "Video Generation",
+        "image": "Image Generation",
         "transcribe": "Transcribe speech",
-        "text": "Generate text"
+        "text": "Text Generation",
+        "audio": "Audio Processing",
+        "3d": "3D Generation"
+      },
+      "platforms": {
+        "all": "All Platforms",
+        "replicate": "Replicate",
+        "huggingface": "Hugging Face",
+        "stability": "Stability AI",
+        "openai": "OpenAI"
       }
     },
     "premiumFeatures": {
@@ -45,6 +55,58 @@
         }
       },
       "cta": "Upgrade to Premium"
+    },
+    "cta": {
+      "title": "Ready to Transform Your AI Experience?",
+      "description": "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.",
+      "newsletter": {
+        "title": "Stay Updated",
+        "description": "Subscribe to our newsletter for the latest AI model updates and insights",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "submitButton": "Subscribe Now"
+      }
+    },
+    "modelCard": {
+      "date": "Date",
+      "metrics": {
+        "runs": "Runs",
+        "likes": "Likes"
+      },
+      "actions": {
+        "addToCompare": "Add to Comparison"
+      },
+      "sdxl": {
+        "title": "SDXL Turbo",
+        "description": "Lightning-fast image generation with high quality.",
+        "runs": "125K",
+        "likes": "4.8K",
+        "tags": {
+          "image": "Image Generation",
+          "realtime": "Real-time"
+        }
+      },
+      "mixtral": {
+        "title": "Mixtral 8x7B",
+        "description": "Powerful mixture-of-experts language model.",
+        "runs": "89K",
+        "likes": "3.2K",
+        "tags": {
+          "text": "Text Generation",
+          "llm": "LLM",
+          "moe": "MoE"
+        }
+      },
+      "gpt4o": {
+        "title": "GPT-4o",
+        "description": "OpenAI's flagship multimodal model with text, audio, and vision capabilities.",
+        "runs": "2.5M",
+        "likes": "98K",
+        "tags": {
+          "text": "Text Generation",
+          "multimodal": "Multimodal"
+        }
+      }
     }
   },
   "modelList": {
@@ -59,6 +121,25 @@
       "mostRuns": "Most Popular (Runs)",
       "trending": "Trending Score",
       "alphabetical": "Alphabetical (A-Z)"
+    },
+    "filteredResultsTitle": "Filtered Results",
+    "filteredResultsDesc": "Models matching your selected criteria"
+  },
+  "features": {
+    "newModels": {
+      "title": "Newly Added",
+      "description": "Stay updated with the latest models added across platforms",
+      "viewAll": "View All New Models"
+    },
+    "trending": {
+      "title": "Trending This Week",
+      "description": "See which models are gaining traction based on runs and likes",
+      "viewAll": "View All Trending"
+    },
+    "popular": {
+      "title": "Most Popular This Month",
+      "description": "Discover the most-used and highest-rated models",
+      "viewAll": "View All Popular"
     }
   }
 } 

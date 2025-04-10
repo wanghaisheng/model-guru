@@ -1,0 +1,16 @@
+HTML Repair Plan for models
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 35: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 147: [untranslatedText]
+  Text: "No models found matching your criteria."
+  Suggested key: no.models.found.matching.your.criteria
+
+Line 322: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

@@ -1,1 +1,84 @@
- 
+{
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "查找关于 Model Guru 的常见问题答案",
+    "pageDescription": "浏览我们的常见问题解答部分，了解关于我们平台、服务和功能的最常见问题。",
+    "searchPlaceholder": "搜索常见问题...",
+    "categories": {
+      "title": "分类",
+      "general": "一般问题",
+      "account": "账户与访问",
+      "models": "AI 模型",
+      "platforms": "平台",
+      "reports": "报告与分析",
+      "technical": "技术支持"
+    },
+    "questions": {
+      "general": {
+        "whatIsModelGuru": {
+          "question": "什么是 Model Guru？",
+          "answer": "Model Guru 是一个用于发现、比较和实施 AI 模型的综合平台。我们提供各种 AI 模型的详细信息、功能以及如何有效使用它们。"
+        },
+        "whoIsItFor": {
+          "question": "Model Guru 适合谁使用？",
+          "answer": "Model Guru 专为 AI 爱好者、开发者、研究人员和希望利用 AI 模型的企业设计。无论您是初学者还是专家，我们的平台都能提供有价值的见解和资源。"
+        }
+      },
+      "account": {
+        "createAccount": {
+          "question": "如何创建账户？",
+          "answer": "您可以点击右上角的"注册"按钮创建账户。您需要提供电子邮箱地址并创建密码。"
+        },
+        "resetPassword": {
+          "question": "如何重置密码？",
+          "answer": "在登录页面点击"忘记密码"，输入您的电子邮箱地址，然后按照发送到您邮箱的说明操作。"
+        }
+      },
+      "models": {
+        "findModels": {
+          "question": "如何查找特定的 AI 模型？",
+          "answer": "您可以使用我们的搜索功能、按类别浏览或使用筛选器来查找特定模型。每个模型都有关于其功能和用例的详细信息。"
+        },
+        "compareModels": {
+          "question": "我可以比较不同的 AI 模型吗？",
+          "answer": "是的，您可以使用我们的比较工具一次比较最多 3 个模型。这有助于您做出明智的决定，选择最适合您需求的模型。"
+        }
+      },
+      "platforms": {
+        "platformInfo": {
+          "question": "关于 AI 平台有哪些信息？",
+          "answer": "我们提供各种 AI 平台的全面信息，包括定价、功能、支持的模型和用户评价。"
+        },
+        "platformComparison": {
+          "question": "如何比较不同的 AI 平台？",
+          "answer": "使用我们的平台比较工具，根据功能、定价和用户评分评估不同的平台。"
+        }
+      },
+      "reports": {
+        "accessReports": {
+          "question": "如何访问分析报告？",
+          "answer": "分析报告对注册用户开放。您可以通过仪表板的报告部分访问它们。"
+        },
+        "reportUpdates": {
+          "question": "报告多久更新一次？",
+          "answer": "报告每月更新一次，以反映 AI 模型领域的最新发展。"
+        }
+      },
+      "technical": {
+        "browserSupport": {
+          "question": "支持哪些浏览器？",
+          "answer": "Model Guru 支持所有现代浏览器，包括 Chrome、Firefox、Safari 和 Edge。我们建议使用最新版本以获得最佳体验。"
+        },
+        "mobileAccess": {
+          "question": "我可以在移动设备上访问 Model Guru 吗？",
+          "answer": "是的，我们的平台完全响应式，可在所有移动设备上使用。我们还为 iOS 和 Android 提供移动应用。"
+        }
+      }
+    },
+    "contact": {
+      "title": "还有其他问题？",
+      "description": "找不到您想要的答案？请联系我们的支持团队获取帮助。",
+      "button": "联系支持"
+    }
+  }
+} 

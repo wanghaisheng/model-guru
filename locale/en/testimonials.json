@@ -1,0 +1,46 @@
+{
+  "testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Discover how Model Guru is helping AI enthusiasts and professionals",
+    "pageDescription": "Read real stories from our community about how Model Guru has helped them navigate the world of AI models and platforms.",
+    "searchPlaceholder": "Search testimonials...",
+    "filter": {
+      "title": "Filter by",
+      "all": "All Testimonials",
+      "developers": "Developers",
+      "researchers": "Researchers",
+      "business": "Business Users",
+      "students": "Students"
+    },
+    "sort": {
+      "title": "Sort by",
+      "recent": "Most Recent",
+      "popular": "Most Popular",
+      "rating": "Highest Rated"
+    },
+    "testimonial": {
+      "readMore": "Read Full Story",
+      "share": "Share",
+      "report": "Report",
+      "verified": "Verified User",
+      "date": "Posted on"
+    },
+    "submit": {
+      "title": "Share Your Experience",
+      "description": "Help others by sharing how Model Guru has helped you in your AI journey",
+      "name": "Your Name",
+      "email": "Your Email",
+      "role": "Your Role",
+      "testimonial": "Your Experience",
+      "rating": "Rating",
+      "submit": "Submit Testimonial",
+      "privacy": "Your information will be kept private and only used for verification purposes."
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    }
+  }
+} 

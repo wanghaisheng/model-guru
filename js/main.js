@@ -5,7 +5,6 @@
 
 import i18n from './i18n.js';
 import LanguageSwitcher from './components/LanguageSwitcher.js';
-import { currentLanguage, translations, switchLanguage } from './i18n.js';
 
 // ===== DOM Elements =====
 const header = document.querySelector('.header');
@@ -442,17 +441,15 @@ const initializeNewsletterForm = () => {
 
 // ===== Language Change Handler =====
 const handleLanguageChange = (lang) => {
-    // Re-initialize animations after language change
-    setTimeout(() => {
-        animateHeroTitle();
-        animateFeatureCards();
-        initHeroAnimations();
-        initFeatureCards();
-        initPricingCards();
-        
-        // Update any dynamic content that depends on language
-        updateDynamicContent(lang);
-    }, 500);
+    console.log(`Language change requested: ${lang}`);
+    // Use the imported i18n instance
+    i18n.switchLanguage(lang).then(() => {
+        console.log("Language switched successfully in main.js");
+        // Add any language-specific UI updates here if needed
+        // e.g., re-initialize certain components that depend on language
+    }).catch(error => {
+        console.error("Error switching language from main.js:", error);
+    });
 };
 
 // ===== Initialize Everything =====
@@ -483,11 +480,11 @@ function initLanguageSwitcher() {
         // Set initial language
         const savedLanguage = localStorage.getItem('language') || 'en';
         languageSelect.value = savedLanguage;
-        switchLanguage(savedLanguage); // Apply initial language on load
+        handleLanguageChange(savedLanguage); // Apply initial language on load
         
         // Handle language change
         languageSelect.addEventListener('change', (e) => {
-            switchLanguage(e.target.value);
+            handleLanguageChange(e.target.value);
         });
     }
 }
@@ -938,7 +935,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const langSwitcher = document.querySelector('#languageSwitcher');
   if (langSwitcher) {
     langSwitcher.value = currentLang;
-    langSwitcher.addEventListener('change', (e) => switchLanguage(e.target.value));
+    langSwitcher.addEventListener('change', (e) => handleLanguageChange(e.target.value));
   }
   
   // Set up model list filters

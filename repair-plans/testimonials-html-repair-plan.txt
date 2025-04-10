@@ -1,0 +1,180 @@
+HTML Repair Plan for testimonials
+================================================================================
+
+Missing data-i18n attributes:
+
+Line 31: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru
+
+Line 63: [untranslatedText]
+  Text: "Featured Stories"
+  Suggested key: featured.stories
+
+Line 69: [untranslatedText]
+  Text: "Sarah Chen"
+  Suggested key: sarah.chen
+
+Line 70: [untranslatedText]
+  Text: "AI Research Lead"
+  Suggested key: ai.research.lead
+
+Line 73: [untranslatedText]
+  Text: "TechCorp AI"
+  Suggested key: techcorp.ai
+
+Line 78: [untranslatedText]
+  Text: ""Model Guru has transformed how we discover and evaluate AI models. The comprehensive comparison tools and real-time analytics have saved us countless hours in research and development.""
+  Suggested key: model.guru.has.transformed.how.we.discover.and.evaluate.ai.models.the.comprehensive.comparison.tools.and.real.time.analytics.have.saved.us.countless.hours.in.research.and.development
+
+Line 81: [untranslatedText]
+  Text: "75%"
+  Suggested key: 75
+
+Line 82: [untranslatedText]
+  Text: "Time Saved"
+  Suggested key: time.saved
+
+Line 85: [untranslatedText]
+  Text: "3x"
+  Suggested key: 3x
+
+Line 86: [untranslatedText]
+  Text: "Faster Deployment"
+  Suggested key: faster.deployment
+
+Line 96: [untranslatedText]
+  Text: "Michael Torres"
+  Suggested key: michael.torres
+
+Line 97: [untranslatedText]
+  Text: "CTO"
+  Suggested key: cto
+
+Line 100: [untranslatedText]
+  Text: "InnovateAI"
+  Suggested key: innovateai
+
+Line 105: [untranslatedText]
+  Text: ""The platform's ability to track model performance across different platforms has been invaluable. We've been able to identify emerging trends and make data-driven decisions about which models to integrate.""
+  Suggested key: the.platform.s.ability.to.track.model.performance.across.different.platforms.has.been.invaluable.we.ve.been.able.to.identify.emerging.trends.and.make.data.driven.decisions.about.which.models.to.integrate
+
+Line 108: [untranslatedText]
+  Text: "40%"
+  Suggested key: 40
+
+Line 109: [untranslatedText]
+  Text: "Cost Reduction"
+  Suggested key: cost.reduction
+
+Line 112: [untranslatedText]
+  Text: "2.5x"
+  Suggested key: 2.5x
+
+Line 113: [untranslatedText]
+  Text: "Performance Gain"
+  Suggested key: performance.gain
+
+Line 125: [untranslatedText]
+  Text: "Success Stories"
+  Suggested key: success.stories
+
+Line 131: [untranslatedText]
+  Text: "Emily Johnson"
+  Suggested key: emily.johnson
+
+Line 132: [untranslatedText]
+  Text: "Product Manager"
+  Suggested key: product.manager
+
+Line 136: [untranslatedText]
+  Text: "Streamlining Model Selection"
+  Suggested key: streamlining.model.selection
+
+Line 137: [untranslatedText]
+  Text: ""We were struggling to keep up with the rapidly evolving AI model landscape. Model Guru's platform helped us identify the perfect models for our use cases, reducing our selection time by 60%.""
+  Suggested key: we.were.struggling.to.keep.up.with.the.rapidly.evolving.ai.model.landscape.model.guru.s.platform.helped.us.identify.the.perfect.models.for.our.use.cases.reducing.our.selection.time.by.60
+
+Line 139: [untranslatedText]
+  Text: "Outcome:"
+  Suggested key: outcome
+
+Line 140: [untranslatedText]
+  Text: "Reduced model selection time by 60%"
+  Suggested key: reduced.model.selection.time.by.60
+
+Line 149: [untranslatedText]
+  Text: "David Kim"
+  Suggested key: david.kim
+
+Line 150: [untranslatedText]
+  Text: "AI Developer"
+  Suggested key: ai.developer
+
+Line 154: [untranslatedText]
+  Text: "Optimizing Model Performance"
+  Suggested key: optimizing.model.performance
+
+Line 155: [untranslatedText]
+  Text: ""The detailed performance metrics and comparison tools helped us optimize our model selection, resulting in a 35% improvement in inference speed and a 25% reduction in costs.""
+  Suggested key: the.detailed.performance.metrics.and.comparison.tools.helped.us.optimize.our.model.selection.resulting.in.a.35.improvement.in.inference.speed.and.a.25.reduction.in.costs
+
+Line 157: [untranslatedText]
+  Text: "Outcome:"
+  Suggested key: outcome
+
+Line 158: [untranslatedText]
+  Text: "35% faster inference, 25% cost reduction"
+  Suggested key: 35.faster.inference.25.cost.reduction
+
+Line 167: [untranslatedText]
+  Text: "Lisa Wang"
+  Suggested key: lisa.wang
+
+Line 168: [untranslatedText]
+  Text: "Tech Director"
+  Suggested key: tech.director
+
+Line 172: [untranslatedText]
+  Text: "Scaling AI Solutions"
+  Suggested key: scaling.ai.solutions
+
+Line 173: [untranslatedText]
+  Text: ""Model Guru's insights helped us scale our AI solutions effectively. We've been able to identify the most cost-effective models for our growing user base while maintaining performance.""
+  Suggested key: model.guru.s.insights.helped.us.scale.our.ai.solutions.effectively.we.ve.been.able.to.identify.the.most.cost.effective.models.for.our.growing.user.base.while.maintaining.performance
+
+Line 175: [untranslatedText]
+  Text: "Outcome:"
+  Suggested key: outcome
+
+Line 176: [untranslatedText]
+  Text: "Scaled to 1M+ users with optimized costs"
+  Suggested key: scaled.to.1m.users.with.optimized.costs
+
+Line 188: [untranslatedText]
+  Text: "Ready to Transform Your AI Experience?"
+  Suggested key: ready.to.transform.your.ai.experience
+
+Line 189: [untranslatedText]
+  Text: "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison."
+  Suggested key: join.thousands.of.developers.and.businesses.who.are.already.using.model.guru.to.find.the.perfect.ai.models.for.their.needs.get.started.today.and.discover.the.power.of.ai.model.comparison
+
+Line 192: [untranslatedText]
+  Text: "Stay Updated"
+  Suggested key: stay.updated
+
+Line 193: [untranslatedText]
+  Text: "Subscribe to our newsletter for the latest AI model updates and insights"
+  Suggested key: subscribe.to.our.newsletter.for.the.latest.ai.model.updates.and.insights
+
+Line 196: [untranslatedText]
+  Text: "Email Address"
+  Suggested key: email.address
+
+Line 199: [untranslatedText]
+  Text: "Subscribe Now"
+  Suggested key: subscribe.now
+
+Line 211: [untranslatedText]
+  Text: "Model Guru"
+  Suggested key: model.guru

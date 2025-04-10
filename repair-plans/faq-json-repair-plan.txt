@@ -1,0 +1,63 @@
+JSON Repair Plan for faq
+================================================================================
+
+Missing Keys to Add:
+  • faq.pageTitle
+  • faq.category.general
+  • faq.q1
+  • faq.a1
+  • faq.q3
+  • faq.a3
+  • faq.q4
+  • faq.a4
+  • faq.q8
+  • faq.a8
+  • faq.category.features
+  • faq.q6
+  • faq.a6
+  • faq.q7
+  • faq.a7
+  • faq.q9
+  • faq.a9
+  • faq.category.premium
+  • faq.q5
+  • faq.a5
+  • faq.q2
+  • faq.a2
+
+Unused Keys to Review:
+  • faq.searchPlaceholder
+  • faq.categories.title
+  • faq.categories.general
+  • faq.categories.account
+  • faq.categories.models
+  • faq.categories.platforms
+  • faq.categories.reports
+  • faq.categories.technical
+  • faq.questions.general.whatIsModelGuru.question
+  • faq.questions.general.whatIsModelGuru.answer
+  • faq.questions.general.whoIsItFor.question
+  • faq.questions.general.whoIsItFor.answer
+  • faq.questions.account.createAccount.question
+  • faq.questions.account.createAccount.answer
+  • faq.questions.account.resetPassword.question
+  • faq.questions.account.resetPassword.answer
+  • faq.questions.models.findModels.question
+  • faq.questions.models.findModels.answer
+  • faq.questions.models.compareModels.question
+  • faq.questions.models.compareModels.answer
+  • faq.questions.platforms.platformInfo.question
+  • faq.questions.platforms.platformInfo.answer
+  • faq.questions.platforms.platformComparison.question
+  • faq.questions.platforms.platformComparison.answer
+  • faq.questions.reports.accessReports.question
+  • faq.questions.reports.accessReports.answer
+  • faq.questions.reports.reportUpdates.question
+  • faq.questions.reports.reportUpdates.answer
+  • faq.questions.technical.browserSupport.question
+  • faq.questions.technical.browserSupport.answer
+  • faq.questions.technical.mobileAccess.question
+  • faq.questions.technical.mobileAccess.answer
+  • faq.contact.title
+  • faq.contact.description
+  • faq.contact.button

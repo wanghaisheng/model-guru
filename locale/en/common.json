@@ -60,7 +60,8 @@
       "button": "Subscribe"
     },
     "copyright": "© {year} Model Guru. All rights reserved.",
-    "madeWith": "Made with {heart} by AI enthusiasts."
+    "madeWithPrefix": "Made with",
+    "madeWithSuffix": "by AI enthusiasts."
   },
   "newsletter": {
     "title": "Subscribe to AI Model Updates",

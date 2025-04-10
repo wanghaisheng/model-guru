@@ -1,0 +1,64 @@
+{
+  "career": {
+    "title": "加入我们",
+    "subtitle": "帮助塑造 AI 模型发现和比较的未来",
+    "pageDescription": "我们正在寻找充满激情的个人加入我们的团队，帮助构建最好的 AI 模型发现和比较平台。",
+    "searchPlaceholder": "搜索职位...",
+    "filter": {
+      "title": "筛选",
+      "all": "所有职位",
+      "engineering": "工程",
+      "design": "设计",
+      "product": "产品",
+      "marketing": "市场营销",
+      "data": "数据科学",
+      "research": "研究"
+    },
+    "sort": {
+      "title": "排序",
+      "recent": "最新发布",
+      "location": "工作地点",
+      "department": "部门"
+    },
+    "job": {
+      "apply": "立即申请",
+      "share": "分享",
+      "location": "工作地点",
+      "type": "工作类型",
+      "experience": "经验要求",
+      "posted": "发布时间",
+      "fullTime": "全职",
+      "partTime": "兼职",
+      "contract": "合同工",
+      "internship": "实习",
+      "remote": "远程",
+      "hybrid": "混合办公",
+      "onsite": "现场办公"
+    },
+    "benefits": {
+      "title": "为什么加入我们",
+      "competitive": "有竞争力的薪资",
+      "flexible": "灵活的工作时间",
+      "remote": "远程工作选择",
+      "learning": "学习与发展",
+      "health": "健康与福利",
+      "team": "团队建设活动"
+    },
+    "application": {
+      "title": "申请职位",
+      "name": "姓名",
+      "email": "邮箱",
+      "phone": "电话",
+      "resume": "上传简历",
+      "coverLetter": "求职信",
+      "submit": "提交申请",
+      "privacy": "您的信息将被保密，仅用于招聘目的。"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "第",
+      "of": "页，共"
+    }
+  }
+} 

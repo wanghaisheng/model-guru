@@ -1,0 +1,13 @@
+JSON Repair Plan for platforms
+================================================================================
+
+Missing Keys to Add:
+  • models.cta.title
+  • models.cta.description
+  • models.cta.newsletter.title
+  • models.cta.newsletter.description
+  • models.cta.newsletter.emailLabel
+  • models.cta.newsletter.submitButton
+  • models.cta.newsletter.emailPlaceholder
+
+No unused keys found.

@@ -1,0 +1,43 @@
+{
+  "terms": {
+    "pageTitle": "Terms of Service - Model Guru",
+    "pageDescription": "Read our terms of service to understand the rules and guidelines for using our platform.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated:",
+    "introduction": "Welcome to Model Guru. By accessing or using our website, you agree to be bound by these Terms of Service.",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using Model Guru, you agree to be bound by these Terms of Service and all applicable laws and regulations."
+      },
+      "useLicense": {
+        "title": "Use License",
+        "content": "Permission is granted to temporarily access and use Model Guru for personal, non-commercial transitory viewing only."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "The materials on Model Guru are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim all other warranties."
+      },
+      "limitations": {
+        "title": "Limitations",
+        "content": "In no event shall Model Guru or its suppliers be liable for any damages arising out of the use or inability to use the materials on our website."
+      },
+      "revisions": {
+        "title": "Revisions and Errata",
+        "content": "The materials appearing on Model Guru could include technical, typographical, or photographic errors. We do not warrant that any of the materials are accurate, complete, or current."
+      },
+      "links": {
+        "title": "Links",
+        "content": "Model Guru has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "Model Guru may revise these terms of service at any time without notice. By using this website, you agree to be bound by the current version of these terms."
+      },
+      "governingLaw": {
+        "title": "Governing Law",
+        "content": "These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which Model Guru operates."
+      }
+    }
+  }
+} 

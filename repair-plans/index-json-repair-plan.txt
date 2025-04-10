@@ -1,0 +1,27 @@
+JSON Repair Plan for index
+================================================================================
+
+Missing Keys to Add:
+  • comparisonTool.selectionArea.title
+  • comparisonTool.selectionArea.maxModels
+  • comparisonTool.selectionArea.modelsSelected
+  • comparisonTool.selectionArea.searchPlaceholder
+  • comparisonTool.selectionArea.purposeFilterDefault
+  • comparisonTool.selectionArea.platformFilterDefault
+  • comparisonTool.selectionArea.categoryFilterDefault
+  • comparisonTool.selectionArea.sortFilterDefault
+  • comparisonTool.selectionArea.sortAZ
+  • comparisonTool.selectionArea.sortZA
+  • comparisonTool.selectionArea.sortNewest
+  • comparisonTool.selectionArea.sortPopular
+  • comparisonTool.selectionArea.addToComparison
+  • comparisonTool.selectionArea.addToComparison
+  • comparisonTool.selectionArea.addToComparison
+
+Unused Keys to Review:
+  • modelComparison.selectionArea.searchPlaceholder
+  • playground.title
+  • playground.subtitle
+  • playground.filterLabel
+  • playground.sortLabel
+  • playground.noResults
