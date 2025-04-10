@@ -1,20 +1,9 @@
 /* Layout */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  position: relative;
-}
-
-.container::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  border: 1px solid rgba(255, 0, 255, 0.3);
-  border-radius: 10px;
-  pointer-events: none;
-  z-index: -1;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  width: 100%; /* Ensure it takes full width up to max-width */
 }

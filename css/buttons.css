@@ -1,77 +1,104 @@
-/* Buttons */
-.btn {
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--text-primary);
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  z-index: 1;
-}
+/* === Buttons === */
 
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, 
-    rgba(var(--primary-rgb), 0.2),
-    rgba(var(--accent-rgb), 0.2));
-  transition: width 0.3s ease;
-  z-index: -1;
-}
-
-.btn:hover::before {
-  width: 100%;
+.btn,
+button {
+  /* Base styles - Apply to .btn and <button> elements for consistency */
+  display: inline-block;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  color: var(--text-color); /* Default text color */
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: var(--spacing-small) var(--spacing-large); /* Use spacing variables */
+  font-size: var(--font-size-base);
+  border-radius: var(--border-radius-medium); /* Use radius variable */
+  transition: var(--transition-base);
+  font-family: inherit; /* Inherit font */
 }
 
 .btn:hover {
+  text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+  box-shadow: var(--shadow-sm);
 }
 
-/* Theme Switcher */
-.theme-switcher {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  border: none;
-  color: var(--text);
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.3s ease;
+.btn:focus,
+button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-rgb), 0.25); /* Consistent focus */
 }
 
-.theme-switcher:hover {
-  transform: rotate(30deg) scale(1.2);
-  color: var(--primary);
-  text-shadow: var(--neon-glow);
+.btn:disabled,
+button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
 }
 
-/* Mobile Menu Button */
-.mobile-menu-button {
-  display: none;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
+/* === Button Variations === */
+
+/* Primary Button (Cyan background) */
+.btn-primary {
+  color: var(--background-color); /* Dark text on light button */
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-sm);
 }
 
-@media (max-width: 768px) {
-  .mobile-menu-button {
-    display: block;
-  }
-  
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
+.btn-primary:hover {
+  color: var(--background-color);
+  background-color: #00e6e6; /* Slightly lighter cyan */
+  border-color: #00d1d1;
+  box-shadow: var(--shadow-md), var(--neon-glow-primary); /* Add subtle glow */
 }
+
+/* Secondary Button (Magenta background) */
+.btn-secondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  color: var(--text-color);
+  background-color: #e600e6; /* Slightly lighter magenta */
+  border-color: #d100d1;
+  box-shadow: var(--shadow-md), var(--neon-glow-accent); /* Add subtle glow */
+}
+
+/* Outline Button (Primary color border) */
+.btn-outline {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md), var(--neon-glow-primary);
+}
+
+/* Text Button (Link-like) */
+.btn-text {
+    color: var(--link-color);
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: var(--spacing-x-small);
+    padding-right: var(--spacing-x-small);
+}
+
+.btn-text:hover {
+    color: var(--link-hover-color);
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    text-decoration: underline;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Remove Theme Switcher and Mobile Menu Button styles from here */

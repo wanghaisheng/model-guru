@@ -80,7 +80,7 @@
                         <li><a href="#stabilityai">Stability AI API</a></li>
                     </ul>
                 </div>
-
+                
                 <!-- Development Tools -->
                 <div class="category-card">
                     <div class="category-icon"><i class="fas fa-tools"></i></div>
@@ -92,7 +92,7 @@
                         <li><a href="#kaggle">Kaggle</a></li>
                     </ul>
                 </div>
-
+                
                 <!-- Cloud Services -->
                 <div class="category-card">
                     <div class="category-icon"><i class="fas fa-cloud"></i></div>
@@ -128,32 +128,32 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Model Types</td>
-                            <td>Multiple</td>
-                            <td>Multiple</td>
-                            <td>Image/Video</td>
-                            <td>Text/Image</td>
+                            <td data-label="Feature">Model Types</td>
+                            <td data-label="Replicate">Multiple</td>
+                            <td data-label="Hugging Face">Multiple</td>
+                            <td data-label="Stability AI">Image/Video</td>
+                            <td data-label="OpenAI">Text/Image</td>
                         </tr>
                         <tr>
-                            <td>API Access</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
+                            <td data-label="Feature">API Access</td>
+                            <td data-label="Replicate">Yes</td>
+                            <td data-label="Hugging Face">Yes</td>
+                            <td data-label="Stability AI">Yes</td>
+                            <td data-label="OpenAI">Yes</td>
                         </tr>
                         <tr>
-                            <td>Pricing Model</td>
-                            <td>Pay-per-use</td>
-                            <td>Free/Paid</td>
-                            <td>Subscription</td>
-                            <td>Pay-per-use</td>
+                            <td data-label="Feature">Pricing Model</td>
+                            <td data-label="Replicate">Pay-per-use</td>
+                            <td data-label="Hugging Face">Free/Paid</td>
+                            <td data-label="Stability AI">Subscription</td>
+                            <td data-label="OpenAI">Pay-per-use</td>
                         </tr>
                         <tr>
-                            <td>Custom Models</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Limited</td>
+                            <td data-label="Feature">Custom Models</td>
+                            <td data-label="Replicate">Yes</td>
+                            <td data-label="Hugging Face">Yes</td>
+                            <td data-label="Stability AI">No</td>
+                            <td data-label="OpenAI">Limited</td>
                         </tr>
                     </tbody>
                 </table>
@@ -168,7 +168,7 @@
                 <!-- Replicate -->
                 <div class="platform-card" id="replicate">
                     <div class="platform-header">
-                        <img src="assets/images/platforms/replicate-logo.png" alt="Replicate Logo" class="platform-logo">
+                        <img src="img/replicate-logo.svg" alt="Replicate Logo" class="platform-logo">
                         <div class="platform-info">
                             <h3>Replicate</h3>
                             <div class="platform-rating">
@@ -214,7 +214,7 @@
                 <!-- Hugging Face -->
                 <div class="platform-card" id="huggingface">
                     <div class="platform-header">
-                        <img src="assets/images/platforms/huggingface-logo.png" alt="Hugging Face Logo" class="platform-logo">
+                        <img src="img/huggingface-logo.svg" alt="Hugging Face Logo" class="platform-logo">
                         <div class="platform-info">
                             <h3>Hugging Face</h3>
                             <div class="platform-rating">
@@ -269,7 +269,7 @@
                 <h2>Submit Your Platform</h2>
                 <p>Get your AI platform listed on Model Guru and reach thousands of potential users</p>
             </div>
-            <div class="submit-platform-content">
+            <div class="submit-platform-content" id="submit-platform-content">
                 <div class="benefits-column">
                     <h3>Benefits of Listing Your Platform</h3>
                     <ul class="benefits-list">
@@ -302,6 +302,7 @@
                             </div>
                         </li>
                     </ul>
+                    <button class="show-form-btn" id="show-form-btn">Submit Your Platform</button>
                 </div>
                 <div class="form-column">
                     <form id="platform-submission-form" class="platform-form">
@@ -380,17 +381,23 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Get weekly insights about new platforms and features</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+    <!-- Combined CTA and Newsletter Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2>Ready to Transform Your AI Experience?</h2>
+                <p>Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
+            </div>
+            <div class="cta-form">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
                 </form>
-                <p class="privacy-note">We respect your privacy and will never share your email.</p>
             </div>
         </div>
     </section>
@@ -433,10 +440,138 @@
         window.addEventListener('load', function() {
             if (typeof particlesJS !== 'undefined') {
                 particlesJS('particles-js', {
-                    // Paste particles.js config here
+                    particles: {
+                        number: {
+                            value: 80,
+                            density: {
+                                enable: true,
+                                value_area: 800
+                            }
+                        },
+                        color: {
+                            value: '#ff00ff'
+                        },
+                        shape: {
+                            type: 'circle',
+                            stroke: {
+                                width: 0,
+                                color: '#000000'
+                            },
+                            polygon: {
+                                nb_sides: 5
+                            }
+                        },
+                        opacity: {
+                            value: 0.5,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 1,
+                                opacity_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        size: {
+                            value: 3,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 2,
+                                size_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#ff00ff',
+                            opacity: 0.4,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: true,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false,
+                            attract: {
+                                enable: false,
+                                rotateX: 600,
+                                rotateY: 1200
+                            }
+                        }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: 'repulse'
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: 'push'
+                            },
+                            resize: true
+                        },
+                        modes: {
+                            grab: {
+                                distance: 400,
+                                line_linked: {
+                                    opacity: 1
+                                }
+                            },
+                            bubble: {
+                                distance: 400,
+                                size: 40,
+                                duration: 2,
+                                opacity: 8,
+                                speed: 3
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4
+                            },
+                            push: {
+                                particles_nb: 4
+                            },
+                            remove: {
+                                particles_nb: 2
+                            }
+                        }
+                    },
+                    retina_detect: true
                 });
             } else {
                 console.warn('particles.js not loaded');
+            }
+
+            // Platform Submission Form Toggle Logic
+            const showFormButton = document.getElementById('show-form-btn');
+            const formColumn = document.querySelector('.submit-platform-section .form-column');
+            const submitSectionContent = document.getElementById('submit-platform-content');
+
+            if (showFormButton && formColumn && submitSectionContent) {
+                showFormButton.addEventListener('click', () => {
+                    formColumn.classList.add('visible');
+                    showFormButton.style.display = 'none'; // Hide the button after clicking
+                    // Optional: Scroll to the form
+                    formColumn.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+
+            // Optional: Handle form submission (prevent default for now)
+            const platformForm = document.getElementById('platform-submission-form');
+            if(platformForm) {
+                platformForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    console.log('Platform submission form submitted (preventDefault)');
+                    // Add actual submission logic here (e.g., send data to backend)
+                    alert('Platform submission received (demo).');
+                    // Optionally hide form and show thank you message
+                });
             }
         });
     </script>

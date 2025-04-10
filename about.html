@@ -56,8 +56,10 @@
     <!-- Mission Section -->
     <section class="mission-section">
         <div class="container">
-            <div class="mission-content">
+            <div class="section-header">
                 <h2>Our Mission</h2>
+            </div>
+            <div class="mission-content">
                 <p>To democratize access to AI models by providing comprehensive, unbiased information and tools for model discovery, comparison, and implementation.</p>
                 <div class="mission-stats">
                     <div class="stat">
@@ -80,7 +82,9 @@
     <!-- Values Section -->
     <section class="values-section">
         <div class="container">
-            <h2>Our Values</h2>
+            <div class="section-header">
+                <h2>Our Values</h2>
+            </div>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">
@@ -117,7 +121,9 @@
     <!-- Team Section -->
     <section class="team-section">
         <div class="container">
-            <h2>Our Team</h2>
+            <div class="section-header">
+                <h2>Our Team</h2>
+            </div>
             <div class="team-grid">
                 <div class="team-member">
                     <img src="https://i.pravatar.cc/150?img=1" alt="Team Member" class="member-photo">
@@ -153,17 +159,23 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Join our newsletter for the latest updates and insights about AI models</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+    <!-- Combined CTA and Newsletter Section -->
+    <section class="cta-section">
+            <div class="cta-content">
+            <div class="cta-text">
+                <h2>Ready to Transform Your AI Experience?</h2>
+                <p>Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.</p>
+                </div>
+            <div class="cta-form">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI model updates and insights</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
                 </form>
-                <p class="privacy-note">We respect your privacy and will never share your email.</p>
             </div>
         </div>
     </section>

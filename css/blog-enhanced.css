@@ -1,0 +1,154 @@
+/**
+ * Enhanced Blog Styles
+ * Optimizing category tabs and pagination to match global site style
+ */
+
+/* Add styles moved from main.css */
+.blog-section {
+    padding-top: 6rem;  /* 增加顶部内边距 */
+}
+
+/* === Enhanced Blog Section Styles === */
+/* Category Tabs Styling */
+.blog-categories {
+    margin-bottom: 2rem;
+}
+
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.category-tab {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--text-primary);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.category-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      rgba(var(--primary-rgb), 0.2),
+      rgba(var(--accent-rgb), 0.2));
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.category-tab:hover::before {
+    width: 100%;
+}
+
+.category-tab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.category-tab.active {
+    background: linear-gradient(90deg, 
+      rgba(var(--primary-rgb), 0.8),
+      rgba(var(--accent-rgb), 0.8));
+    color: var(--bg-color);
+    border-color: transparent;
+    box-shadow: var(--neon-glow);
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 3rem 0;
+}
+
+.pagination-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.pagination-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      rgba(var(--primary-rgb), 0.2),
+      rgba(var(--accent-rgb), 0.2));
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.pagination-btn:hover::before {
+    width: 100%;
+}
+
+.pagination-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.pagination-btn.active {
+    background: linear-gradient(90deg, 
+      rgba(var(--primary-rgb), 0.8),
+      rgba(var(--accent-rgb), 0.8));
+    color: var(--bg-color);
+    border-color: transparent;
+    box-shadow: var(--neon-glow);
+}
+
+.pagination-next {
+    width: auto;
+    padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-tabs {
+        gap: 0.5rem;
+    }
+    
+    .category-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .pagination {
+        gap: 0.5rem;
+    }
+    
+    .pagination-btn {
+        width: 36px;
+        height: 36px;
+    }
+}

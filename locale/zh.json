@@ -1,232 +1,577 @@
 {
   "meta": {
-    "title": "Model Guru - 发现和追踪 AI 模型",
-    "description": "您的 AI/ML 模型发现和追踪中心。找到趋势模型，追踪使用指标，做出明智决策。"
+    "title": "Model Guru - AI模型探索与分析平台",
+    "description": "您的一站式AI模型发现与分析中心，跨平台追踪热门模型，掌握使用数据，助您做出明智决策。"
   },
   "nav": {
     "home": "首页",
-    "models": "所有模型",
+    "models": "模型库",
     "platforms": "平台",
-    "reports": "报告",
-    "about": "关于",
-    "testimonials": "用户评价",
+    "reports": "分析报告",
+    "about": "关于我们",
+    "testimonials": "用户心声",
     "faq": "常见问题",
-    "blog": "博客",
+    "blog": "技术博客",
     "login": "登录"
   },
   "hero": {
-    "title": "跨平台追踪 AI 模型",
-    "subtitle": "您的 AI 模型发现与分析中心",
-    "cta": "探索模型"
+    "title": "一站掌握全球AI模型动态",
+    "subtitle": "您的AI模型探索与分析智囊团",
+    "cta": "立即探索"
   },
   "models": {
-    "title": "所有 AI 模型",
-    "subtitle": "浏览和比较跨平台的模型",
-    "searchPlaceholder": "搜索模型..."
+    "title": "AI模型全库",
+    "subtitle": "浏览并对比各大平台的优质模型",
+    "searchPlaceholder": "搜索模型...",
+    "modelSelection": {
+      "title": "筛选模型",
+      "compareTitle": "选择模型进行比较",
+      "selected": "已选择",
+      "modelsSelected": "个模型",
+      "purposeFilter": "选择用途",
+      "platformFilter": "选择平台",
+      "sortFilter": {
+        "title": "排序方式",
+        "nameAZ": "按名称 A-Z",
+        "popular": "最受欢迎",
+        "newest": "最新发布"
+      },
+      "purposes": {
+        "video": "制作视频",
+        "image": "生成图片",
+        "transcribe": "语音转文字",
+        "text": "文本生成"
+      }
+    },
+    "premiumFeatures": {
+      "title": "会员专享",
+      "subtitle": "解锁高级模型对比与深度分析功能",
+      "features": {
+        "analytics": {
+          "title": "深度分析",
+          "description": "全面的性能指标与趋势洞察"
+        },
+        "reports": {
+          "title": "定制报告",
+          "description": "生成专属模型对比分析报告"
+        },
+        "api": {
+          "title": "API接口",
+          "description": "以编程方式获取模型数据"
+        },
+        "support": {
+          "title": "专属支持",
+          "description": "会员用户专享的技术支持服务"
+        }
+      },
+      "cta": "升级会员"
+    },
+    "cta": {
+      "title": "准备好提升您的AI应用体验？",
+      "description": "加入数千名开发者和企业的行列，利用Model Guru找到最适合您需求的AI模型。今天就开始，探索AI模型对比的强大功能。",
+      "newsletter": {
+        "title": "获取最新资讯",
+        "description": "订阅我们的周刊，获取最新AI模型动态和专业见解",
+        "emailLabel": "邮箱地址",
+        "emailPlaceholder": "请输入您的邮箱",
+        "button": "立即订阅"
+      }
+    }
   },
   "platforms": {
-    "title": "AI 平台",
-    "subtitle": "比较和发现最适合您需求的 AI 平台",
-    "searchPlaceholder": "搜索平台..."
+    "title": "AI模型平台",
+    "subtitle": "对比并发现最适合您需求的AI平台",
+    "searchPlaceholder": "搜索平台...",
+    "categories": {
+      "title": "按类别浏览平台",
+      "subtitle": "根据平台的主要功能或专长领域查找合适的平台",
+      "modelHosting": {
+        "title": "模型托管",
+        "description": "提供AI模型API服务的专业平台"
+      },
+      "developmentTools": {
+        "title": "开发工具",
+        "description": "用于构建和训练模型的专业工具和环境"
+      },
+      "cloudServices": {
+        "title": "云服务",
+        "description": "提供全面机器学习基础设施的云服务商"
+      }
+    },
+    "comparison": {
+      "title": "平台对比",
+      "subtitle": "对比各大AI平台的核心功能",
+      "headers": {
+        "feature": "功能",
+        "replicate": "Replicate",
+        "huggingFace": "Hugging Face",
+        "stabilityAI": "Stability AI",
+        "openAI": "OpenAI"
+      },
+      "rows": {
+        "modelTypes": {
+          "label": "模型类型",
+          "replicate": "多种类型",
+          "huggingFace": "多种类型",
+          "stabilityAI": "图像/视频",
+          "openAI": "文本/图像"
+        },
+        "apiAccess": {
+          "label": "API访问",
+          "replicate": "支持",
+          "huggingFace": "支持",
+          "stabilityAI": "支持",
+          "openAI": "支持"
+        },
+        "pricingModel": {
+          "label": "计费模式",
+          "replicate": "按量付费",
+          "huggingFace": "免费/付费",
+          "stabilityAI": "订阅制",
+          "openAI": "按量付费"
+        },
+        "customModels": {
+          "label": "自定义模型",
+          "replicate": "支持",
+          "huggingFace": "支持",
+          "stabilityAI": "不支持",
+          "openAI": "有限支持"
+        }
+      }
+    },
+    "details": {
+      "replicate": {
+        "name": "Replicate",
+        "description": "Replicate让云端运行机器学习模型变得简单高效。只需几行代码即可部署模型，并实现自动扩展。",
+        "metrics": {
+          "models": "500+",
+          "runs": "1000万+",
+          "users": "5万+"
+        },
+        "features": "核心优势",
+        "featuresList": [
+          "便捷的模型部署",
+          "自动扩展能力",
+          "按量计费模式",
+          "完整API支持"
+        ]
+      },
+      "huggingFace": {
+        "name": "Hugging Face",
+        "description": "Hugging Face是构建AI未来的开源社区。支持构建、训练和部署由开源机器学习技术驱动的前沿模型。",
+        "metrics": {
+          "models": "10万+",
+          "datasets": "100万+",
+          "users": "50万+"
+        },
+        "features": "核心优势",
+        "featuresList": [
+          "丰富的开源模型",
+          "完善的模型中心",
+          "高效的推理API",
+          "便捷的演示空间"
+        ]
+      }
+    },
+    "submitPlatform": {
+      "title": "提交您的平台",
+      "subtitle": "在Model Guru上展示您的AI平台，接触成千上万的潜在用户",
+      "benefits": {
+        "title": "平台展示的优势",
+        "items": {
+          "visibility": {
+            "title": "提升曝光度",
+            "description": "接触成千上万正在寻找AI解决方案的工程师、数据科学家和开发者。"
+          },
+          "traffic": {
+            "title": "精准流量",
+            "description": "吸引对AI技术有明确需求的高质量访问者。"
+          },
+          "insights": {
+            "title": "数据洞察",
+            "description": "获取用户如何发现和使用您平台的匿名分析数据。"
+          },
+          "integration": {
+            "title": "合作机会",
+            "description": "探索与Model Guru深度整合和战略合作的可能性。"
+          }
+        }
+      },
+      "form": {
+        "title": "平台信息",
+        "platformName": "平台名称",
+        "websiteUrl": "网站地址",
+        "urlPlaceholder": "https://your-platform.com",
+        "category": "类别",
+        "categoryOptions": {
+          "select": "请选择类别",
+          "modelHosting": "模型托管",
+          "developmentTools": "开发工具",
+          "cloudServices": "云服务",
+          "trainingPlatforms": "训练平台",
+          "specializedAI": "专业AI服务",
+          "other": "其他(请说明)"
+        },
+        "description": "平台描述",
+        "descriptionPlaceholder": "请描述您的平台及其主要特点(最多500字)",
+        "metricsTitle": "数据与功能",
+        "modelsCount": "模型数量",
+        "usersCount": "用户数量",
+        "keyFeatures": "核心功能(逗号分隔)",
+        "featuresPlaceholder": "例如：API接口、自定义模型、免费版本",
+        "logo": "平台标志",
+        "logoNote": "建议：方形标志，最小200x200像素(推荐PNG或SVG格式)",
+        "contactTitle": "联系方式",
+        "contactName": "联系人",
+        "contactEmail": "联系邮箱",
+        "termsAgree": "我同意平台展示的条款和条件",
+        "submit": "提交平台",
+        "requiredNote": "* 必填项。所有提交内容将经过审核后发布，通常需要3-5个工作日。"
+      }
+    },
+    "newsletter": {
+      "title": "获取最新资讯",
+      "description": "订阅每周精选的平台动态和功能更新",
+      "emailPlaceholder": "您的邮箱地址",
+      "button": "订阅",
+      "privacy": "我们尊重您的隐私，绝不会分享您的邮箱信息。"
+    },
+    "cta": {
+      "visitPlatform": "访问平台",
+      "viewModels": "查看模型"
+    }
   },
   "reports": {
-    "title": "AI模型报告与分析",
-    "subtitle": "通过全面的AI模型报告发现盈利机会",
-    "description": "付费用户可以获取完整版的日报、周报和月报，揭示不同类型模型和API的潜在赚钱机会。",
+    "title": "AI模型分析报告",
+    "subtitle": "通过专业分析报告发现AI领域的商业机会",
+    "description": "会员用户可获取完整的日报、周报和月报，深入了解不同模型类型和API的潜在商业价值。",
     "daily": {
-      "title": "每日洞察",
-      "description": "追踪模型流行度和使用指标的日常变化",
+      "title": "每日速递",
+      "description": "追踪模型热度和使用数据的日常变化",
       "features": [
-        "24小时内跨平台趋势模型",
-        "新模型发布和更新",
-        "日常使用高峰和模式",
-        "新兴用例和应用"
+        "24小时内各平台热门模型",
+        "新模型发布与更新动态",
+        "日常使用高峰与模式分析",
+        "新兴应用场景与案例"
       ],
-      "cta": "查看每日报告样本"
+      "cta": "查看日报样例"
     },
     "weekly": {
-      "title": "每周分析",
-      "description": "识别中期趋势和变现机会",
+      "title": "周度分析",
+      "description": "发现中期趋势和商业变现机会",
       "features": [
-        "周环比增长分析",
-        "竞争格局变化",
-        "服务不足的市场细分",
-        "有利可图的API集成机会"
+        "周环比增长趋势分析",
+        "竞争格局变化追踪",
+        "未充分开发的市场细分",
+        "高价值API集成机会"
       ],
-      "cta": "查看每周报告样本"
+      "cta": "查看周报样例"
     },
     "monthly": {
       "title": "月度战略报告",
-      "description": "为长期战略规划提供全面分析",
+      "description": "为长期战略规划提供全面市场洞察",
       "features": [
-        "深入的市场分析和预测",
-        "按模型类别划分的收入潜力",
+        "深度市场分析与预测",
+        "各类模型的商业潜力评估",
         "开发者生态系统机会",
-        "战略合作伙伴建议"
+        "战略合作伙伴推荐"
       ],
-      "cta": "查看月度报告样本"
+      "cta": "查看月报样例"
     },
     "premium": {
-      "title": "高级报告",
+      "title": "高级分析报告",
       "description": "释放AI模型分析的全部潜力",
       "features": [
         "完整、无过滤的数据访问",
-        "自定义报告生成",
-        "API使用建议",
-        "提前获取新兴趋势"
+        "定制化报告生成",
+        "API使用优化建议",
+        "抢先获取新兴趋势"
       ],
-      "cta": "升级到高级版"
+      "cta": "升级会员"
     }
   },
   "about": {
-    "title": "关于 Model Guru",
-    "subtitle": "助力开发者和企业就 AI 模型做出明智决策"
+    "title": "关于Model Guru",
+    "subtitle": "助力开发者和企业做出明智的AI模型决策",
+    "mission": {
+      "title": "我们的使命",
+      "description": "通过提供全面、客观的信息和工具，让AI模型的发现、对比和应用变得简单高效，实现AI技术的普惠化。",
+      "stats": {
+        "modelsTracked": "追踪模型数",
+        "platformsIntegrated": "集成平台数",
+        "monthlyUsers": "月活用户数"
+      }
+    },
+    "values": {
+      "title": "我们的价值观",
+      "innovation": {
+        "title": "创新",
+        "description": "不断迭代我们的平台，满足AI社区不断变化的需求。"
+      },
+      "transparency": {
+        "title": "透明",
+        "description": "提供关于AI模型和平台的清晰、准确和客观的信息。"
+      },
+      "community": {
+        "title": "社区",
+        "description": "打造一个开放协作的环境，让AI从业者能够分享知识和见解。"
+      },
+      "growth": {
+        "title": "成长",
+        "description": "支持各行各业AI应用的发展与创新。"
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "members": {
+        "sarahChen": {
+          "name": "陈思睿",
+          "role": "创始人 & CEO",
+          "bio": "前AI研究员，拥有10年以上机器学习和模型开发经验。"
+        },
+        "michaelTorres": {
+          "name": "Michael Torres",
+          "role": "CTO",
+          "bio": "可扩展系统和AI基础设施专家，专注于性能优化。"
+        },
+        "emilyJohnson": {
+          "name": "Emily Johnson",
+          "role": "产品负责人",
+          "bio": "产品设计专家，致力于打造直观易用的AI应用体验。"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "获取最新资讯",
+      "description": "订阅我们的周刊，获取AI模型领域的最新动态和专业见解",
+      "placeholder": "您的邮箱地址",
+      "button": "订阅",
+      "privacy": "我们尊重您的隐私，绝不会分享您的邮箱信息。"
+    },
+    "stats": {
+      "modelsTrackedValue": "500+",
+      "platformsIntegratedValue": "10+",
+      "monthlyUsersValue": "5万+"
+    },
+    "teamMembers": {
+      "socialLinks": {
+        "linkedin": "领英",
+        "twitter": "推特",
+        "github": "GitHub"
+      }
+    }
   },
   "blog": {
     "pageTitle": "AI模型洞察与教程 - Model Guru",
-    "pageDescription": "探索最新的AI模型趋势、教程和最佳实践，帮助您更好地理解和使用AI模型。",
-    "title": "AI 模型洞察与教程",
-    "subtitle": "最新的 AI 模型趋势、教程和最佳实践",
-    "viewAll": "查看所有文章"
+    "pageDescription": "探索最新的AI模型趋势、实用教程和最佳实践，帮助您更好地理解和应用AI模型。",
+    "title": "AI模型洞察与教程",
+    "subtitle": "最新AI模型趋势、实用教程和最佳实践",
+    "viewAll": "查看全部文章",
+    "categories": {
+      "all": "全部",
+      "tutorials": "教程",
+      "trends": "趋势分析",
+      "caseStudies": "案例研究",
+      "bestPractices": "最佳实践"
+    },
+    "readMore": "阅读全文",
+    "pagination": {
+      "next": "下一页"
+    },
+    "blogCards": {
+      "card1": {
+        "date": "2024年4月15日",
+        "title": "Stable Diffusion XL完全指南：参数优化与提示词技巧",
+        "excerpt": "学习如何充分发挥Stable Diffusion XL的强大功能，掌握关键参数设置和提示词工程的最佳实践..."
+      },
+      "card2": {
+        "date": "2024年4月10日",
+        "title": "2024年大语言模型发展趋势：从Mixtral到Claude 3",
+        "excerpt": "深入解析2024年大语言模型领域的最新发展，包括开源模型的崛起和商业应用的新方向..."
+      },
+      "card3": {
+        "date": "2024年4月5日",
+        "title": "案例分析：设计工作室如何利用Midjourney提升创意效率",
+        "excerpt": "深度剖析一家设计工作室如何将Midjourney整合到工作流程中，显著提升创意产出效率..."
+      },
+      "card4": {
+        "date": "2024年3月28日",
+        "title": "如何为项目选择最合适的AI模型：决策框架",
+        "excerpt": "提供实用的决策框架，帮助开发者和创意人员为特定项目选择最合适的AI模型..."
+      },
+      "card5": {
+        "date": "2024年3月20日",
+        "title": "AI音频生成技术入门：从Stable Audio到AudioCraft",
+        "excerpt": "探索当前最先进的AI音频生成模型，学习如何创建高质量的音乐、音效和语音内容..."
+      },
+      "card6": {
+        "date": "2024年3月15日",
+        "title": "多模态AI的未来：GPT-4V、Claude 3与Gemini对比",
+        "excerpt": "分析当前领先的多模态AI模型，探讨它们的能力差异和未来发展方向..."
+      }
+    },
+    "emailPlaceholder": "您的邮箱地址"
   },
   "newsletter": {
-    "title": "订阅 AI 模型更新",
-    "description": "每周接收最新的 AI 模型、趋势和教程直接发送到您的收件箱",
+    "title": "订阅AI模型动态",
+    "description": "每周获取最新的AI模型、趋势和教程资讯",
     "subscribe": "订阅",
-    "privacy": "我们尊重您的隐私，绝不会分享您的电子邮件。您可以随时取消订阅。"
+    "privacy": "我们尊重您的隐私，绝不会分享您的邮箱信息。您可以随时取消订阅。"
   },
   "playground": {
-    "title": "体验模型搜索",
+    "title": "模型搜索体验",
     "subtitle": "体验我们强大的模型搜索和追踪功能",
     "searchPlaceholder": "搜索AI模型...",
     "filterLabel": "按平台筛选：",
     "sortLabel": "排序方式：",
-    "noResults": "未找到模型。请尝试其他搜索词。"
+    "noResults": "未找到相关模型，请尝试其他关键词。"
   },
   "features": {
     "newModels": {
-      "title": "最新添加",
+      "title": "最新上线",
       "description": "及时了解各平台新增的最新模型",
-      "viewAll": "查看所有新模型"
+      "viewAll": "查看全部新模型"
     },
     "trending": {
-      "title": "本周趋势",
-      "description": "查看基于运行次数和点赞的热门模型",
-      "viewAll": "查看所有趋势"
+      "title": "本周热门",
+      "description": "发现基于使用量和点赞数快速增长的模型",
+      "viewAll": "查看全部热门模型"
     },
     "popular": {
       "title": "本月最受欢迎",
-      "description": "发现使用最多和评分最高的模型",
-      "viewAll": "查看所有热门"
+      "description": "探索使用最广泛、评价最高的模型",
+      "viewAll": "查看全部流行模型"
     }
   },
   "modelList": {
-    "title": "探索模型",
+    "title": "模型探索",
     "filterPlatform": "按平台筛选",
     "filterCategory": "按类别筛选",
     "sortBy": "排序方式",
     "sortOptions": {
-      "newest": "添加日期（最新）",
-      "oldest": "添加日期（最早）",
-      "mostLikes": "最受欢迎（点赞）",
-      "mostRuns": "最受欢迎（运行次数）",
-      "trending": "趋势评分",
-      "alphabetical": "字母顺序（A-Z）"
+      "newest": "最新添加",
+      "oldest": "最早添加",
+      "mostLikes": "最多点赞",
+      "mostRuns": "最多使用",
+      "trending": "热度指数",
+      "alphabetical": "字母顺序"
     }
   },
   "comparison": {
-    "title": "为什么选择 Model Guru",
+    "title": "为什么选择Model Guru",
     "huggingface": "Hugging Face",
     "replicate": "Replicate",
     "modelGuru": "Model Guru",
     "features": {
       "discovery": "跨平台AI模型趋势追踪",
-      "metrics": "全面的模型数据分析与组织",
-      "trends": "独立开发者专业报告",
-      "tracking": "API创建产品赚钱机会"
+      "metrics": "全面的模型数据分析与整理",
+      "trends": "为独立开发者提供专业报告",
+      "tracking": "通过API创建发现商业机会"
     }
   },
   "howItWorks": {
-    "title": "Model Guru 如何工作",
+    "title": "Model Guru如何工作",
     "step1": {
-      "title": "数据收集",
-      "description": "我们持续监控并收集来自主要 AI 平台的数据，追踪模型发布、更新和使用指标。"
+      "title": "数据采集",
+      "description": "我们持续监控并收集主要AI平台的数据，追踪模型发布、更新和使用指标。"
     },
     "step2": {
-      "title": "分析与处理",
-      "description": "我们的系统分析模型性能、用户参与度和趋势，以识别最相关和最具影响力的模型。"
+      "title": "分析处理",
+      "description": "我们的系统分析模型性能、用户互动和趋势，识别最相关和最有影响力的模型。"
     },
     "step3": {
-      "title": "洞察与发现",
-      "description": "我们提供精选列表和洞察，帮助您发现满足需求的正确模型。"
+      "title": "洞察发现",
+      "description": "我们提供精选列表和深度洞察，帮助您发现最适合需求的模型。"
     }
   },
   "painPoints": {
-    "title": "解决常见挑战",
+    "title": "我们解决的常见痛点",
     "fragmented": {
-      "title": "发现碎片化",
-      "description": "模型分散在多个平台，难以找到合适的模型。",
+      "title": "模型发现碎片化",
+      "description": "AI模型分散在多个平台，难以找到最合适的选择。",
       "solution": "我们的解决方案",
-      "solutionDescription": "提供全面模型列表和高级搜索功能的集中式平台。"
+      "solutionDescription": "提供全面模型库和高级搜索功能的一站式平台。"
     },
     "metrics": {
-      "title": "缺乏标准化指标",
-      "description": "不同平台使用不同指标，难以比较。",
+      "title": "缺乏统一评估标准",
+      "description": "不同平台使用不同指标，难以进行有效比较。",
       "solution": "我们的解决方案",
-      "solutionDescription": "具有清晰性能指标和趋势分析的统一指标系统。"
+      "solutionDescription": "统一的评估体系，提供清晰的性能指标和趋势分析。"
     },
     "time": {
-      "title": "耗时的研究",
-      "description": "跟上新模型和更新需要持续监控。",
+      "title": "研究耗时费力",
+      "description": "跟踪新模型和更新需要持续不断的监控。",
       "solution": "我们的解决方案",
-      "solutionDescription": "自动追踪和精选新模型及趋势模型列表。"
+      "solutionDescription": "自动追踪并精选新模型和热门趋势，节省您的宝贵时间。"
     }
   },
   "testimonials": {
-    "title": "用户如何使用 Model Guru",
-    "viewAll": "查看所有用户评价",
-    "subtitle": "了解 Model Guru 如何帮助开发者和企业做出更好的 AI 决策"
+    "title": "用户使用心得",
+    "viewAll": "查看全部用户评价",
+    "subtitle": "了解Model Guru如何帮助开发者和企业做出更明智的AI决策"
   },
   "faq": {
     "title": "常见问题",
-    "q1": "Model Guru 如何收集模型数据？",
-    "a1": "我们通过各平台提供的公开 API 和公开可用信息收集数据。我们定期更新数据以确保信息的准确性和时效性。详细信息请查看我们的<a href=\"methodology.html\">方法论页面</a>。",
-    "q2": "Model Guru 是否提供 API 访问？",
-    "a2": "目前我们不提供 API 访问，但这是我们未来计划中的功能。如果您对此特别感兴趣，请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>。",
-    "q3": "数据多久更新一次？",
-    "a3": "我们每天更新数据，确保您能够获取所有平台上 AI 模型的最新信息。",
-    "q4": "我可以建议添加新的平台吗？",
-    "a4": "当然可以！我们一直在寻求扩大覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。"
-  },
-  "team": {
-    "title": "认识我们的团队",
-    "subtitle": "由 AI 和机器学习专家组成的团队，致力于简化 AI 模型发现",
-    "mission": {
-      "title": "我们的使命",
-      "description": "Model Guru 的使命是通过提供统一、透明的 AI 模型发现平台，简化 AI 技术的采用过程。我们相信，通过消除发现和评估 AI 模型的障碍，我们可以加速创新并使更多人能够利用 AI 的力量。"
-    }
+    "heroTitle": "常见问题解答",
+    "heroSubtitle": "查找关于Model Guru的常见问题答案",
+    "category": {
+      "general": "基本问题",
+      "features": "功能与使用",
+      "premium": "会员与API"
+    },
+    "questions": {
+      "q1": "Model Guru如何收集模型数据？",
+      "a1": "我们通过各平台提供的公开API和可获取信息收集数据。我们定期更新数据以确保信息的准确性和时效性。详细信息请查看我们的<a href=\"methodology.html\">数据方法论</a>。",
+      "q2": "Model Guru是否提供API访问？",
+      "a2": "目前我们尚未提供API访问，但这是我们未来计划中的功能。会员用户将在功能推出时优先获得访问权限。如果您对此特别感兴趣，请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>。",
+      "q3": "数据更新频率是多久？",
+      "a3": "我们每天更新数据，确保您能获取各大平台AI模型的最新信息。",
+      "q4": "我可以推荐添加新平台吗？",
+      "a4": "非常欢迎！我们一直在寻求扩大平台覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。",
+      "q5": "会员功能包括哪些内容？如何升级？",
+      "a5": "会员功能包括深度分析（详细指标与趋势）、定制报告生成、API访问和专属支持。您可以通过点击'升级'按钮或在对比/报告预览页面中的相关链接进行升级。",
+      "q6": "模型对比工具如何使用？",
+      "a6": "您可以在’模型库‘页面或首页的对比工具部分选择模型。使用'添加到对比'按钮添加模型。然后可以基于性能、成本（如有）和功能等指标进行并排对比。会员用户可以对比更多模型并获取更深入的分析。",
+      "q7": "Model Guru提供哪些类型的报告？",
+      "a7": "我们提供每日速递、周度分析和月度战略报告。每日报告追踪短期趋势，周报分析中期增长和机会，月报为长期规划提供全面市场分析。完整报告访问是会员专享功能。",
+      "q8": "如何切换深色和浅色模式？",
+      "a8": "使用页面右上角的主题切换按钮（通常是月亮或太阳图标）在深色和浅色主题之间切换。您的偏好设置会被本地保存。",
+      "q9": "在哪里可以找到文档或教程？",
+      "a9": "请查看我们的博客部分，获取教程、指南和AI模型洞察。API文档和详细用户指南将很快推出。",
+      "q10": "Model Guru是什么？",
+      "a10": "Model Guru是一个集中式平台，用于发现、追踪和分析来自Hugging Face、Replicate等各种提供商的AI/ML模型。我们旨在简化模型发现过程，为开发者和企业提供洞察。",
+      "q11": "Model Guru与Hugging Face或Replicate等平台有何不同？",
+      "a11": "虽然Hugging Face托管模型，Replicate提供运行模型的API，但Model Guru专注于跨平台的发现和分析。我们提供统一的追踪、对比工具和覆盖整个生态系统的趋势报告。",
+      "q12": "如何使用该平台？",
+      "a12": "您可以浏览模型，按平台或类别筛选，查看带有指标的详细模型页面，对比模型，并探索我们的报告（会员功能）。注册账户可以保存收藏并接收个性化更新。",
+      "q13": "会员账户有哪些好处？",
+      "a13": "会员用户可以访问全面的日报、周报和月报，详细说明模型趋势、使用模式和潜在的商业机会。这包括免费用户无法获取的未经过滤的数据和更深入的分析。",
+      "q14": "我的数据安全吗？",
+      "a14": "我们非常重视数据安全。用户账户信息使用行业标准实践进行保护。除了账户管理所必需的信息外，我们不存储敏感个人数据。详情请参阅我们的<a href=\"privacy.html\">隐私政策</a>。",
+      "q15": "如何提供反馈或建议？",
+      "a15": "我们欢迎反馈和建议！请使用页脚中的<a href=\"mailto:support@modelguru.deepseek.diy\">联系链接</a>分享您的想法或报告任何问题。"
   },
   "auth": {
     "title": "创建免费账户",
-    "description": "注册 Model Guru 以保存您喜爱的模型、接收个性化推荐和趋势更新。",
+    "description": "注册Model Guru，保存您喜爱的模型，获取个性化推荐和趋势更新。",
     "signup": "注册",
     "or": "或",
-    "github": "使用 GitHub 登录",
-    "google": "使用 Google 登录",
+    "github": "使用GitHub登录",
+    "google": "使用Google登录",
     "haveAccount": "已有账户？",
     "login": "登录",
     "benefits": {
-      "title": "账户特权",
+      "title": "账户权益",
       "save": "保存喜爱的模型",
       "alerts": "接收新模型和趋势提醒",
-      "dashboard": "访问个性化仪表板",
+      "dashboard": "访问个性化仪表盘",
       "history": "查看浏览历史"
     }
   },
   "modelComparison": {
     "title": "模型对比工具",
-    "description": "并排比较不同的 AI 模型，找出最适合您需求的模型",
-    "compare": "比较模型",
+    "description": "并排对比不同AI模型，找到最适合您需求的选择",
+    "compare": "对比模型",
     "fullTool": "使用完整对比工具"
   },
   "footer": {
@@ -235,6 +580,82 @@
     "privacy": "隐私政策",
     "terms": "使用条款",
     "contact": "联系我们",
-    "methodology": "我们的方法"
+    "methodology": "我们的方法论"
+  },
+  "career": {
+    "title": "加入我们",
+    "subtitle": "帮助构建AI模型发现与分析的未来",
+    "jobTitle": "Next.js全栈开发工程师",
+    "jobMeta": {
+      "type": "远程",
+      "location": "全球",
+      "department": "工程部"
+    },
+    "applyNow": "立即申请",
+    "contactEmail": "support@modelguru.deepseek.diy",
+    "sections": {
+      "aboutRole": {
+        "title": "职位描述",
+        "description": "我们正在寻找一位技术精湛的Next.js全栈开发工程师加入我们不断壮大的团队。您将负责开发和维护我们的网络平台，处理前端和后端组件，并帮助塑造AI模型发现和分析的未来。"
+      },
+      "responsibilities": {
+        "title": "主要职责",
+        "items": [
+          "开发和维护我们基于Next.js的Web应用",
+          "使用React和TypeScript构建和优化前端组件",
+          "实现后端API和服务",
+          "处理我们的数据层(IndexedDB, SQLite)和同步机制",
+          "与团队合作设计和实现新功能",
+          "编写干净、可维护且文档完善的代码",
+          "参与代码审查并为技术讨论做出贡献"
+        ]
+      },
+      "requirements": {
+        "title": "要求",
+        "items": [
+          "3年以上Next.js和React经验",
+          "精通TypeScript",
+          "熟悉现代前端技术(TailwindCSS, SWR等)",
+          "具备后端开发和API设计经验",
+          "熟悉数据库技术(IndexedDB, SQLite)",
+          "了解Web性能优化",
+          "出色的问题解决能力",
+          "良好的英语沟通能力"
+        ]
+      },
+      "niceToHave": {
+        "title": "加分项",
+        "items": [
+          "AI/ML技术经验",
+          "移动应用开发知识(Capacitor)",
+          "测试框架经验(Jest, React Testing Library)",
+          "开源项目贡献"
+        ]
+      },
+      "weOffer": {
+        "title": "我们提供",
+        "items": [
+          "完全远程工作环境",
+          "有竞争力的薪资和福利",
+          "灵活的工作时间",
+          "专业发展机会",
+          "协作创新的团队文化",
+          "使用前沿AI技术的机会"
+        ]
+      },
+      "howToApply": {
+        "title": "如何申请",
+        "description": "要申请此职位，请将您的简历和求职信发送至support@modelguru.deepseek.diy。请附上您的GitHub个人资料链接以及任何相关项目或贡献。"
+      },
+      "applicationForm": {
+        "fullName": "姓名",
+        "email": "邮箱",
+        "resume": "简历/CV",
+        "portfolio": "作品集/GitHub链接",
+        "coverLetter": "求职信",
+        "submit": "提交申请"
+      }
+    }
+  }
   }
 }

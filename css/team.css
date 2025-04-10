@@ -2,6 +2,11 @@
  * Team/About Us Section Styles
  */
 
+/* Add styles moved from main.css */
+.team-section {
+    padding: var(--spacing-xx-large) 0; /* Use standard padding variable */
+}
+
 .team {
     padding: 5rem 0;
     background: var(--bg-gradient-primary);
@@ -28,102 +33,79 @@
     margin-bottom: 3rem;
 }
 
-.team-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    padding: 2rem;
+/* Styles for .team-member cards */
+.team-member { /* Renamed from .team-card to match HTML */
+    background-color: var(--card-bg-color); /* Use standard variable */
+    border-radius: var(--border-radius-medium); /* Use standard variable */
+    padding: var(--spacing-large); /* Use standard variable */
     text-align: center;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color); /* Add standard border */
+    box-shadow: var(--shadow-sm); /* Use standard shadow */
+    transition: var(--transition-base); /* Use standard transition */
 }
 
-.team-card:hover {
+.team-member:hover { /* Renamed from .team-card:hover */
     transform: translateY(-5px);
-    box-shadow: var(--card-shadow-hover);
+    box-shadow: var(--shadow-medium); /* Use standard medium shadow */
+    border-color: var(--primary-color); /* Highlight border on hover */
 }
 
-.team-avatar {
+.member-photo { /* Renamed from .team-avatar */
     width: 120px;
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 1.5rem;
-    border: 3px solid var(--accent-color);
+    margin: 0 auto var(--spacing-large); /* Use variable */
+    border: 3px solid var(--primary-color); /* Use primary color for border */
 }
 
-.team-avatar img {
+.member-photo img { /* Renamed from .team-avatar img */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.team-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+.member-name { /* Renamed from .team-name */
+    font-family: var(--font-heading);
+    font-size: var(--h3-font-size); /* Align with H3 size */
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-x-small); /* Adjust spacing */
+    color: var(--text-color);
 }
 
-.team-role {
-    font-size: 0.9rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-    font-weight: 500;
+.member-role { /* Renamed from .team-role */
+    font-size: var(--font-size-small);
+    color: var(--primary-color); /* Use primary color */
+    margin-bottom: var(--spacing-medium); /* Adjust spacing */
+    font-weight: var(--font-weight-medium);
 }
 
-.team-bio {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.member-bio { /* Renamed from .team-bio */
+    font-size: var(--font-size-small);
+    color: var(--text-secondary-color);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-medium);
 }
 
-.team-social {
+.member-social { /* Renamed from .team-social */
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--spacing-medium);
 }
 
-.social-link {
-    color: var(--text-secondary);
+.member-social a { /* Target links directly */
+    color: var(--text-muted-color); /* Use muted color */
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
 }
 
-.social-link:hover {
-    color: var(--accent-color);
-}
-
-.mission-statement {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
-    background: var(--card-bg);
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-}
-
-.mission-statement h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.mission-statement p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: 0;
+.member-social a:hover { /* Target links directly */
+    color: var(--primary-color); /* Use primary color */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
     .team-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-    
-    .mission-statement {
-        padding: 1.5rem;
     }
 }

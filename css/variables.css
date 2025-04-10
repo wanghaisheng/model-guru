@@ -1,25 +1,96 @@
 :root {
-  --primary: #ff00ff;
-  --primary-dark: #cc00cc;
-  --secondary: #00ffff;
-  --accent: #ffff00;
-  --background: #0a0a0a;
-  --text: #ffffff;
-  --text-light: #cccccc;
-  --border: #333333;
-  --success: #00ff00;
-  --error: #ff0000;
-  --neon-glow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.3);
-  --neon-glow-blue: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
-  --neon-glow-yellow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
-  --primary-color: #00ffff;
-  --accent-color: #ff00ff;
-  --bg-color: #0a0a0a;
-  --card-bg: rgba(20, 20, 20, 0.8);
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(0, 255, 255, 0.2);
-  --gradient-primary: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
-  --primary-rgb: 0, 255, 255;
-  --accent-rgb: 255, 0, 255;
+  /* === Colors === */
+  /* Primary & Accent */
+  --primary-color: #00ffff; /* Cyan */
+  --accent-color: #ff00ff;  /* Magenta */
+  --primary-color-rgb: 0, 255, 255;
+  --accent-color-rgb: 255, 0, 255;
+
+  /* Text */
+  --text-color: #ffffff;
+  --text-color-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted-color: rgba(255, 255, 255, 0.5);
+  --heading-color: #ffffff;
+  --link-color: var(--primary-color);
+  --link-hover-color: #ffffff;
+
+  /* Backgrounds */
+  --background-color: #0a0a0a;
+  --background-dark-rgb: 10, 10, 10;
+  --background-rgb: 10, 10, 10; /* Keep consistent for now */
+  --section-bg-light: rgba(255, 255, 255, 0.03);
+  --section-bg-dark: rgba(10, 10, 10, 0.9);
+  --card-bg-color: rgba(20, 20, 20, 0.8);
+  --card-bg-rgb: 20, 20, 20;
+  --input-bg-color: rgba(30, 30, 30, 0.8);
+  --input-focus-bg-color: rgba(35, 35, 35, 0.9);
+  --tag-bg-color: rgba(var(--primary-color-rgb), 0.1);
+  --tag-text-color: var(--primary-color);
+  --background-muted-color: rgba(40, 40, 40, 0.7);
+
+  /* Borders */
+  --border-color: rgba(var(--primary-color-rgb), 0.2);
+  --border-color-rgb: var(--primary-color-rgb);
+
+  /* Status */
+  --success-color: #00ff7f; /* Spring Green */
+  --warning-color: #ffdd00; /* Vivid Yellow */
+  --danger-color: #ff4d4d;  /* Light Red */
+
+  /* === Typography === */
+  --font-primary: 'Rajdhani', sans-serif;
+  --font-heading: 'Orbitron', sans-serif;
+  --font-size-base: 1rem; /* ~16px */
+  --font-size-small: 0.875rem; /* ~14px */
+  --font-size-x-small: 0.75rem; /* ~12px */
+  --font-size-large: 1.125rem; /* ~18px */
+  --font-size-xl: 1.25rem; /* ~20px */
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.25rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-base: 1.6;
+
+  /* === Spacing === */
+  --spacing-xx-small: 0.25rem; /* 4px */
+  --spacing-x-small: 0.5rem;  /* 8px */
+  --spacing-small: 0.75rem; /* 12px */
+  --spacing-medium: 1rem;   /* 16px */
+  --spacing-large: 1.5rem;  /* 24px */
+  --spacing-x-large: 2.5rem; /* 40px */
+  --spacing-xx-large: 4rem;  /* 64px */
+
+  /* === Borders & Radius === */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+  --border-radius-pill: 50rem;
+
+  /* === Shadows & Glows === */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --neon-glow-primary: 0 0 8px rgba(var(--primary-color-rgb), 0.6), 0 0 15px rgba(var(--primary-color-rgb), 0.4), 0 0 25px rgba(var(--primary-color-rgb), 0.2);
+  --neon-glow-accent: 0 0 8px rgba(var(--accent-color-rgb), 0.6), 0 0 15px rgba(var(--accent-color-rgb), 0.4), 0 0 25px rgba(var(--accent-color-rgb), 0.2);
+
+  /* === Transitions === */
+  --transition-base: all 0.3s ease;
+
+  /* === Layout === */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-large);
+  --nav-height: 70px; /* Example */
+
+   /* === Z-Indexes === */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
 }

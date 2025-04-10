@@ -1,62 +1,59 @@
-/* Forms */
+/* === Generic Form Styles === */
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary-color);
+}
+
+/* Single, Consolidated .form-control Style */
 .form-control {
-  padding: 0.8rem 1.2rem;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
-  background: rgba(10, 10, 10, 0.7);
-  color: var(--text);
-  font-family: 'Orbitron', sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+  display: block; /* Ensure it takes full width by default in its container */
+  width: 100%; /* Make it take container width */
+  padding: var(--spacing-small) var(--spacing-medium); /* Consistent padding */
+  font-size: var(--font-size-base);
+  font-family: inherit; /* Inherit font from body/parent */
+  color: var(--text-color);
+  background-color: var(--input-bg-color); /* Use variable */
+  background-clip: padding-box;
+  border: 1px solid var(--border-color); /* Use variable */
+  appearance: none; /* Remove default system appearance */
+  border-radius: var(--border-radius-small); /* Consistent radius */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  backdrop-filter: blur(5px); /* Optional: keep subtle blur */
 }
 
-.form-control:hover, .form-control:focus {
-  border-color: var(--secondary);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-  outline: none;
+/* Select specific styling for dropdown arrow */
+select.form-control {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23cccccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); /* Use neutral color */
+    background-repeat: no-repeat;
+    background-position: right var(--spacing-medium) center;
+    background-size: 16px 12px;
+    padding-right: calc(var(--spacing-medium) * 2.5); /* Ensure space for arrow */
 }
 
-/* Form Controls Enhancement */
-.form-control {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.5rem;
-  color: var(--text-primary);
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  width: 200px;
+select.form-control:disabled {
+    background-color: var(--background-muted-color);
 }
 
-.form-control:hover, .form-control:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
-  outline: none;
+.form-control:focus {
+  color: var(--text-color);
+  background-color: var(--input-focus-bg-color); /* Use variable */
+  border-color: var(--primary-color); /* Use variable */
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-rgb), 0.25); /* Consistent focus shadow */
 }
 
-.model-filters {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+.form-control::placeholder {
+  color: var(--text-muted-color);
+  opacity: 1;
 }
 
-.form-control {
-  padding: 1rem 1.5rem;
-  border: 2px solid var(--primary);
-  border-radius: 8px;
-  background: rgba(10, 10, 10, 0.8);
-  color: var(--text);
-  font-family: 'Orbitron', sans-serif;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
-  transform: translateZ(0);
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: var(--background-muted-color);
+  opacity: 1;
 }
 
-.form-control:hover, .form-control:focus {
-  border-color: var(--secondary);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
-  outline: none;
-  transform: translateZ(20px) scale(1.05);
-}
+/* Remove the layout rule for .model-filters from here */

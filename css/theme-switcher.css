@@ -1,0 +1,21 @@
+/* Theme Switcher Styles (Moved from buttons.css) */
+.theme-switcher {
+  position: fixed;
+  top: var(--spacing-large); /* Use variable */
+  right: var(--spacing-large); /* Use variable */
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: var(--z-index-popover); /* Use z-index variable */
+  transition: var(--transition-base);
+  padding: 0; /* Remove default button padding */
+  line-height: 1; /* Ensure icon aligns well */
+}
+
+.theme-switcher:hover {
+  transform: rotate(30deg) scale(1.2);
+  color: var(--primary-color);
+  text-shadow: var(--neon-glow-primary); /* Use consistent glow */
+} 

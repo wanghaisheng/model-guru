@@ -7,7 +7,6 @@
     <meta name="description" data-i18n="models.subtitle" content="Browse and compare AI models across platforms">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/models.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -133,6 +132,20 @@
         </div>
     </template>
 
+    <!-- Filtered Models Results Container -->
+    <section id="filtered-models-section" class="model-category-section" style="display: none;"> <!-- Hidden initially -->
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="modelList.filteredResultsTitle">Filtered Results</h2>
+                <p data-i18n="modelList.filteredResultsDesc">Models matching your selected criteria</p>
+            </div>
+            <div id="filtered-models-container" class="models-preview-container">
+                <!-- Filtered models will be dynamically added here -->
+            </div>
+             <p id="no-results-message" style="display: none; text-align: center; padding: 2rem 0; color: var(--text-muted-color);">No models found matching your criteria.</p>
+        </div>
+    </section>
+
     <!-- Newly Added Models Section -->
     <section class="model-category-section" id="new-models">
         <div class="container">
@@ -141,7 +154,27 @@
                 <p data-i18n="features.newModels.description">Stay updated with the latest models added across platforms</p>
             </div>
             <div class="models-preview-container">
-                <!-- JS will populate this using the template -->
+                <!-- Static Example Card (will be replaced by JS) -->
+                <div class="model-card" data-model-id="sdxl-turbo-example">
+                    <div class="model-card-header">
+                        <img src="img/stability-logo.svg" alt="Stability AI Logo" class="platform-logo">
+                        <span class="model-date">July 15, 2024</span>
+                    </div>
+                    <h3 class="model-title">SDXL Turbo</h3>
+                    <p class="model-description">Lightning-fast image generation with high quality.</p>
+                    <div class="model-metrics">
+                        <span class="metric runs"><i class="fas fa-play"></i> <span>125K</span> Runs</span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span>4.8K</span> Likes</span>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Image Generation</span>
+                        <span class="tag">Real-time</span>
+                    </div>
+                    <button class="add-to-comparison-btn">
+                        <i class="fas fa-plus"></i>
+                        Add to Comparison
+                    </button>
+                </div>
             </div>
             <div class="view-all-container">
                 <a href="/models/new" class="btn btn-secondary" data-i18n="features.newModels.viewAll">View All New Models</a>
@@ -157,7 +190,28 @@
                 <p data-i18n="features.trending.description">See which models are gaining traction based on runs and likes</p>
             </div>
             <div class="models-preview-container">
-                <!-- JS will populate this using the template -->
+                <!-- Static Example Card (will be replaced by JS) -->
+                <div class="model-card" data-model-id="mixtral-8x7b-example">
+                    <div class="model-card-header">
+                        <img src="img/huggingface-logo.svg" alt="Hugging Face Logo" class="platform-logo">
+                        <span class="model-date">June 20, 2024</span>
+                    </div>
+                    <h3 class="model-title">Mixtral 8x7B</h3>
+                    <p class="model-description">Powerful mixture-of-experts language model.</p>
+                    <div class="model-metrics">
+                        <span class="metric runs"><i class="fas fa-play"></i> <span>89K</span> Runs</span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span>3.2K</span> Likes</span>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Text Generation</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">MoE</span>
+                    </div>
+                    <button class="add-to-comparison-btn">
+                        <i class="fas fa-plus"></i>
+                        Add to Comparison
+                    </button>
+                </div>
             </div>
             <div class="view-all-container">
                 <a href="/models/trending" class="btn btn-secondary" data-i18n="features.trending.viewAll">View All Trending</a>
@@ -173,7 +227,27 @@
                 <p data-i18n="features.popular.description">Discover the most-used and highest-rated models</p>
             </div>
             <div class="models-preview-container">
-                <!-- JS will populate this using the template -->
+                <!-- Static Example Card (will be replaced by JS) -->
+                <div class="model-card" data-model-id="gpt-4o-example">
+                    <div class="model-card-header">
+                        <img src="img/openai-logo.svg" alt="OpenAI Logo" class="platform-logo">
+                        <span class="model-date">May 13, 2024</span>
+                    </div>
+                    <h3 class="model-title">GPT-4o</h3>
+                    <p class="model-description">OpenAI's flagship multimodal model with text, audio, and vision capabilities.</p>
+                    <div class="model-metrics">
+                        <span class="metric runs"><i class="fas fa-play"></i> <span>2.5M</span> Runs</span>
+                        <span class="metric likes"><i class="fas fa-heart"></i> <span>98K</span> Likes</span>
+                    </div>
+                    <div class="model-tags">
+                        <span class="tag">Text Generation</span>
+                        <span class="tag">Multimodal</span>
+                    </div>
+                    <button class="add-to-comparison-btn">
+                        <i class="fas fa-plus"></i>
+                        Add to Comparison
+                    </button>
+                </div>
             </div>
             <div class="view-all-container">
                 <a href="/models/popular" class="btn btn-secondary" data-i18n="features.popular.viewAll">View All Popular</a>
@@ -231,7 +305,7 @@
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
-                    <button type="submit" class="submit-btn">Subscribe Now</button>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
                 </form>
             </div>
         </div>

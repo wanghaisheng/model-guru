@@ -1,46 +1,57 @@
 /* Typography */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color); /* Ensure body background is set */
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium); /* Consistent bottom margin */
+  color: var(--heading-color);
 }
 
 h1 {
-  font-size: 3.5rem;
-  background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: var(--neon-glow);
-  animation: glow 2s ease-in-out infinite alternate;
+  font-size: var(--h1-font-size);
+  /* Optional: Keep subtle primary glow if desired */
+  /* text-shadow: var(--neon-glow-primary); */
 }
 
 h2 {
-  font-size: 2.5rem;
-  color: var(--secondary);
-  text-shadow: var(--neon-glow-blue);
+  font-size: var(--h2-font-size);
+   /* Optional: Add subtle accent glow */
+  /* color: var(--accent-color); */
+  /* text-shadow: var(--neon-glow-accent); */
 }
 
 h3 {
-  font-size: 1.8rem;
-  color: var(--accent);
-  text-shadow: var(--neon-glow-yellow);
+  font-size: var(--h3-font-size);
 }
 
-@keyframes glow {
-  0% { 
-    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.8),
-                 0 0 20px rgba(var(--primary-rgb), 0.4);
-  }
-  50% { 
-    text-shadow: 0 0 20px rgba(var(--primary-rgb), 1),
-                 0 0 30px rgba(var(--primary-rgb), 0.6),
-                 0 0 40px rgba(var(--accent-rgb), 0.4);
-  }
-  100% { 
-    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.8),
-                 0 0 20px rgba(var(--primary-rgb), 0.4);
-  }
+h4 {
+  font-size: var(--h4-font-size);
 }
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Remove excessive glow animation */
+/* @keyframes glow { ... } */

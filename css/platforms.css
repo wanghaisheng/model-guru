@@ -9,23 +9,17 @@
     overflow: hidden; /* Ensure contained elements */
 }
 
-/* Add subtle background gradients for separation */
+/* Use standard section backgrounds */
 .platform-categories {
-    padding: 6rem 0; /* Maintain existing padding */
-    position: relative;
-    overflow: hidden;
-    /* Use a similar background pattern/gradient as other sections like features */
-    background: linear-gradient(180deg, rgba(var(--background-rgb), 0.97) 0%, rgba(var(--background-dark-rgb), 1) 100%),
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='%23cccccc' fill-opacity='0.02'%3E%3Cpath d='M0 0h20v20H0z'/%3E%3Cpath d='M10 0v20M0 10h20' stroke-width='1' stroke='%23aaaaaa' stroke-opacity='0.04' /%3E%3C/g%3E%3C/svg%3E");
-    background-size: auto, 30px 30px; /* Adjust pattern size if needed */
+    background-color: var(--section-bg-light);
 }
 
 .platform-comparison {
-    background: linear-gradient(180deg, rgba(var(--background-dark-rgb), 0.98) 0%, rgba(var(--background-rgb), 0.95) 100%);
+    background-color: var(--section-bg-dark); /* Or light, adjust as needed */
 }
 
 .platform-details {
-     background: linear-gradient(180deg, rgba(var(--background-rgb), 0.95) 0%, rgba(var(--background-dark-rgb), 0.98) 100%);
+     background-color: var(--section-bg-light);
 }
 
 /* Consistent Section Headers */
@@ -49,49 +43,48 @@
 /* Platform Categories */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; /* Consistent gap */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+    gap: var(--spacing-large);
 }
 
 .category-card {
-    background: rgba(var(--card-bg-rgb), 0.6); /* Slightly adjusted transparency */
-    border: 1px solid rgba(var(--primary-color-rgb), 0.15); /* Slightly stronger border */
-    border-radius: var(--border-radius-lg); /* Consistent border radius */
-    padding: 2rem 1.5rem; /* Adjusted padding */
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    padding: var(--spacing-large);
     text-align: center;
-    backdrop-filter: blur(6px); /* Slightly adjusted blur */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: var(--transition-base);
+    display: flex; /* Use flex for alignment */
+    flex-direction: column;
 }
 
 .category-card:hover {
-    transform: translateY(-6px); /* Consistent hover transform */
-    box-shadow: var(--shadow-md); /* Consistent hover shadow */
-    border-color: rgba(var(--primary-color-rgb), 0.3);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
 }
 
 .category-icon {
-    font-size: 2.2rem; /* Slightly adjusted size */
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-medium);
     color: var(--primary-color);
-    margin-bottom: 1.2rem;
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary-color-light), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Remove pulse animation */
 }
 
 .category-card h3 {
-    font-size: 1.4rem; /* Adjusted size */
+    font-size: var(--font-size-xl); /* Use variable */
     color: var(--heading-color);
-    margin-bottom: 0.75rem;
-    font-family: var(--font-rajdhani);
-    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-medium);
 }
 
 .category-card p {
     color: var(--text-color-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-medium);
+    line-height: var(--line-height-base);
+    flex-grow: 1; /* Keep description pushing list down */
 }
 
 .category-platforms {
@@ -101,19 +94,21 @@
 }
 
 .category-platforms li {
-    margin-bottom: 0.6rem;
+    margin-bottom: var(--spacing-small);
 }
 
 .category-platforms a {
-    color: var(--text-color);
+    color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 0.9rem;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    display: inline-block;
+    padding: 2px 0;
+    border-bottom: 1px solid transparent;
 }
 
 .category-platforms a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
+    color: var(--link-hover-color);
+    border-bottom-color: rgba(var(--primary-color-rgb), 0.4);
 }
 
 /* Platform Comparison Table */
@@ -321,7 +316,8 @@
 .submit-platform-section {
     padding: 6rem 0;
     position: relative;
-    background: linear-gradient(180deg, rgba(var(--background-dark-rgb), 0.98) 0%, rgba(var(--background-rgb), 0.95) 100%);
+    /* Keep its slightly enhanced gradient if desired, or use standard dark */
+     background: linear-gradient(180deg, rgba(var(--background-dark-rgb), 1) 0%, rgba(var(--background-rgb), 0.97) 100%);
     overflow: hidden;
 }
 
@@ -332,13 +328,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top right, rgba(var(--primary-color-rgb), 0.12), transparent 70%);
+    background: radial-gradient(circle at top right, rgba(var(--primary-color-rgb), 0.15), transparent 75%); /* Slightly stronger gradient */
     z-index: 1;
 }
 
 .submit-platform-section .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem; /* Increased spacing */
     position: relative;
     z-index: 2;
 }
@@ -358,7 +354,7 @@
 
 .submit-platform-content {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr; /* Adjust column ratio if needed */
     gap: 3rem;
     position: relative;
     z-index: 2;
@@ -366,20 +362,20 @@
 
 /* Benefits Column */
 .benefits-column {
-    background: rgba(var(--card-bg-rgb), 0.6);
-    border: 1px solid rgba(var(--primary-color-rgb), 0.1);
-    border-radius: 16px;
-    padding: 2rem;
+    background: rgba(var(--card-bg-rgb), 0.7); /* Slightly more opaque */
+    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    border-radius: var(--border-radius-lg); /* Consistent radius */
+    padding: 2.5rem; /* Increased padding */
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 .benefits-column h3 {
     color: var(--heading-color);
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-family: var(--font-rajdhani);
+    font-size: 1.7rem; /* Slightly larger */
+    margin-bottom: 2rem;
+    font-family: var(--font-orbitron);
     font-weight: 600;
     text-align: center;
 }
@@ -387,10 +383,10 @@
 .benefits-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 auto 0; /* Push button to bottom */
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.8rem; /* Increased gap */
 }
 
 .benefits-list li {
@@ -415,25 +411,46 @@
 .benefits-list h4 {
     color: var(--heading-color);
     font-size: 1.1rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 var(--spacing-small) 0; /* Space below benefit title */
     font-family: var(--font-rajdhani);
     font-weight: 600;
 }
 
 .benefits-list p {
-    color: var(--text-color-secondary);
-    font-size: 0.95rem;
     margin: 0;
-    line-height: 1.5;
+    font-size: 1rem; /* Slightly larger text */
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+}
+
+.show-form-btn {
+    display: block;
+    max-width: 350px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-color-light));
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.show-form-btn:hover {
+    background: linear-gradient(90deg, var(--primary-color-light), var(--primary-color));
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 7px 20px rgba(var(--primary-rgb), 0.4);
 }
 
 /* Form Column */
 .form-column {
-    background: rgba(var(--card-bg-rgb), 0.6);
-    border: 1px solid rgba(var(--primary-color-rgb), 0.1);
-    border-radius: 16px;
-    padding: 2rem;
-    backdrop-filter: blur(8px);
+    background-color: rgba(var(--card-bg-rgb), 0.7); /* Consistent with benefits */
+    padding: 2.5rem; /* Match benefits padding */
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    backdrop-filter: blur(10px);
 }
 
 .platform-form h3 {
@@ -527,12 +544,24 @@
 
 .form-actions {
     margin-top: 2rem;
-    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(var(--primary-color-rgb), 0.1);
+    text-align: center; /* Center submit button */
 }
 
 .form-actions .btn {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
+    padding: 1rem 2.5rem; /* Increased padding */
+    font-size: 1.2rem; /* Increased font size */
+     /* Apply similar gradient/shadow as show-form-btn */
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-color-light));
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
+    transition: all 0.3s ease;
+}
+
+.form-actions .btn:hover {
+    background: linear-gradient(90deg, var(--primary-color-light), var(--primary-color));
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 7px 20px rgba(var(--primary-rgb), 0.4);
 }
 
 span.required {
@@ -541,28 +570,128 @@ span.required {
 }
 
 /* Responsive Styles for Submit Platform Section */
+/* Submit Platform Form Toggle */
+.form-column {
+    display: none; /* Hide form by default */
+}
+
+.benefits-column {
+    width: 100%; /* Full width when form is hidden */
+}
+
+.submit-platform-content.show-form .form-column {
+    display: block; /* Show form when parent has show-form class */
+}
+
+.show-form-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    color: var(--text-color-inverse);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.show-form-btn:hover {
+    background: var(--primary-color-light);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.submit-platform-content.show-form .show-form-btn {
+    display: none; /* Hide button when form is shown */
+}
+
 @media (max-width: 992px) {
     .submit-platform-content {
         grid-template-columns: 1fr;
+        gap: 2.5rem; /* Adjust gap */
+    }
+     .benefits-column, .form-column {
+        padding: 2rem; /* Slightly reduce padding */
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Platform Categories Responsive - 3 columns for large screens */
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .premium-features {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+    /* Pricing stays 2 columns on tablet */
+    
+    /* Platform Categories Responsive */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
         gap: 2rem;
     }
     
-    .benefits-column {
-        order: 2;
+    .category-card {
+        padding: 2rem 1.5rem;
     }
     
-    .form-column {
-        order: 1;
+    .category-icon {
+        font-size: 2.2rem;
+    }
+    
+    .category-card h3 {
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 768px) {
+    .premium-reports-section {
+        padding: 4rem 1rem;
+    }
+    .premium-reports-section h2 {
+        font-size: 2.2rem;
+    }
+    .premium-features {
+        grid-template-columns: 1fr; /* Stack features on mobile */
+    }
+    .pricing-options {
+        grid-template-columns: 1fr; /* Stack pricing on mobile */
+    }
+    
+    /* Platform Categories Responsive */
     .platform-categories,
     .platform-comparison,
     .platform-details {
         padding: 4rem 0;
     }
 
+    .platform-categories .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .platform-categories .section-header p {
+        margin-bottom: 3rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr; /* Stack on mobile */
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        transform: none !important; /* Disable 3D transforms on mobile */
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+    
+    .category-card:hover {
+        transform: translateY(-5px) !important; /* Simpler transform on mobile */
+    }
+    
     .comparison-table {
         display: block;
         overflow-x: auto; /* Allow horizontal scrolling */
@@ -610,16 +739,20 @@ span.required {
         border-bottom: none;
     }
 
-    .category-card {
-        padding: 1.5rem; /* Reduce padding on smaller screens */
-    }
-
     .category-icon {
         font-size: 2rem; /* Slightly smaller icon */
     }
 
     .category-card h3 {
         font-size: 1.3rem; /* Adjust heading size */
+    }
+    
+    .category-platforms li {
+        margin-bottom: 0.6rem;
+    }
+    
+    .category-platforms a {
+        font-size: 0.95rem;
     }
 
     /* Ensure featured card elements scale reasonably */
@@ -643,6 +776,27 @@ span.required {
     }
     #model-hosting-category h3 {
         font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .platform-categories .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .category-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .category-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .category-card p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -774,4 +928,416 @@ span.required {
     transform: translateX(3px);
     text-decoration: none;
     box-shadow: 0 2px 5px rgba(var(--primary-color-rgb), 0.2);
-} 
+}
+
+/* === Platforms Page Specific Styles === */
+
+/* === Platform Categories (Refined) === */
+.platform-categories .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.platform-categories .category-card {
+    /* Subtle gradient background */
+    background: linear-gradient(145deg, rgba(var(--card-bg-rgb), 0.7), rgba(var(--card-bg-rgb), 0.9));
+    border-radius: var(--border-radius-lg); /* Slightly larger radius */
+    padding: var(--spacing-large);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure gradient doesn't bleed */
+}
+
+.platform-categories .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: rgba(var(--primary-color-rgb), 0.5);
+}
+
+.platform-categories .category-icon {
+    font-size: 2.8rem; /* Larger icon */
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-large); /* More space below icon */
+    line-height: 1;
+    /* Optional: Add a background highlight to icon */
+    /* background: rgba(var(--primary-color-rgb), 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.platform-categories .category-card h3 {
+    margin-bottom: var(--spacing-medium);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+}
+
+.platform-categories .category-card p {
+    margin-bottom: var(--spacing-medium);
+    flex-grow: 1;
+}
+
+.platform-categories .category-platforms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.platform-categories .category-platforms li {
+    margin-bottom: var(--spacing-x-small);
+}
+
+.platform-categories .category-platforms li a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Add text-shadow transition */
+    display: inline-block; /* Needed for potential padding/border */
+    padding: 2px 0; /* Minimal padding for hover effect */
+    border-bottom: 1px solid transparent; /* Placeholder for hover border */
+}
+
+.platform-categories .category-platforms li a:hover {
+    color: var(--link-hover-color);
+    /* Optional: Subtle glow effect */
+    /* text-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.5); */
+    /* Optional: Underline effect */
+    /* text-decoration: underline; */
+    /* Optional: Bottom border effect */
+    border-bottom-color: rgba(var(--primary-color-rgb), 0.4);
+}
+
+/* === Platform Comparison Table (Enhanced) === */
+.platform-comparison {
+    padding: var(--spacing-x-large) 0;
+    background-color: var(--section-bg-light);
+}
+
+.platform-comparison .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
+
+.platform-comparison table {
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.platform-comparison th,
+.platform-comparison td {
+    padding: var(--spacing-medium);
+    text-align: left;
+    border: 1px solid var(--border-color);
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.platform-comparison thead th {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.platform-comparison tbody td:first-child {
+    font-weight: var(--font-weight-medium);
+    background-color: rgba(var(--card-bg-rgb), 0.5);
+}
+
+.platform-comparison tbody td {
+     text-align: center;
+}
+
+/* === Platform Details Cards (Refined) === */
+.platform-details {
+    padding: var(--spacing-x-large) 0;
+}
+
+.platform-details .platform-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-x-large);
+}
+
+.platform-details .platform-card {
+    background-color: var(--card-bg-color);
+}
+
+/* === Submit Platform Section (Enhanced) === */
+.submit-platform-section .submit-platform-content {
+    display: flex;
+    gap: var(--spacing-x-large);
+    flex-wrap: wrap;
+}
+
+.submit-platform-section .benefits-column,
+.submit-platform-section .form-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.submit-platform-section .benefits-column h3 {
+     margin-bottom: var(--spacing-large);
+     font-size: var(--font-size-xl);
+     font-family: var(--font-heading);
+}
+
+.submit-platform-section .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-x-large) 0; /* More space before button */
+}
+
+.submit-platform-section .benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-large); /* Increased gap */
+    margin-bottom: var(--spacing-large);
+}
+
+.submit-platform-section .benefits-list i {
+    font-size: 1.8rem; /* Slightly larger benefit icon */
+    color: var(--primary-color);
+    margin-top: 2px;
+    width: 35px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.submit-platform-section .benefits-list h4 {
+    margin: 0 0 var(--spacing-small) 0; /* Space below benefit title */
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.submit-platform-section .benefits-list p {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-secondary-color);
+    line-height: 1.6;
+}
+
+.submit-platform-section .show-form-btn {
+    width: 100%;
+    padding: var(--spacing-medium) var(--spacing-large);
+    font-size: 1.1rem; /* Make button slightly larger */
+}
+
+.submit-platform-section .form-column {
+    display: none; /* Hidden initially */
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(10px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+    background-color: rgba(var(--card-bg-rgb), 0.8); /* Subtle background for form */
+    padding: var(--spacing-x-large); /* More padding */
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.submit-platform-section .form-column.visible {
+    display: block;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move up to original position */
+}
+
+.submit-platform-section .platform-form h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-large);
+    font-family: var(--font-heading);
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 1px solid var(--border-color); /* Separator for form sections */
+}
+
+/* Add top margin to subsequent H3s for separation */
+.submit-platform-section .platform-form h3:not(:first-of-type) {
+    margin-top: var(--spacing-x-large);
+}
+
+.submit-platform-section .form-actions {
+    margin-top: var(--spacing-x-large); /* More space above submit */
+    padding-top: var(--spacing-large);
+    border-top: 1px solid var(--border-color);
+    text-align: right;
+}
+
+/* === Responsive Adjustments for Platforms Page === */
+
+/* Large Screens (e.g., > 1200px) - Default is often 4 columns */
+
+/* Medium Screens / Small Laptops (e.g., <= 1200px) */
+@media (max-width: 1200px) {
+    .platform-categories .categories-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+    .submit-platform-content {
+        grid-template-columns: 1fr 1fr; /* Adjust submit form layout if needed */
+    }
+}
+
+/* Tablet Screens (e.g., <= 992px) */
+@media (max-width: 992px) {
+    .platform-categories .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 2rem;
+    }
+    .platform-details .platform-cards {
+        grid-template-columns: 1fr; /* Stack detail cards earlier */
+        gap: 2rem;
+    }
+     .submit-platform-content {
+        grid-template-columns: 1fr; /* Stack submit form columns */
+        gap: 2rem;
+    }
+    .benefits-column {
+        order: 2; /* Keep benefits below form on tablet stack */
+    }
+    .form-column {
+        order: 1;
+    }
+}
+
+/* Mobile Screens (e.g., <= 768px) */
+@media (max-width: 768px) {
+    /* General Section Padding */
+    .platform-categories,
+    .platform-comparison,
+    .platform-details,
+    .submit-platform-section {
+        padding: 4rem 1rem; /* Reduce padding on mobile */
+    }
+
+    /* Section Headers */
+    .platform-categories .section-header h2,
+    .platform-comparison .section-header h2,
+    .platform-details .section-header h2,
+    .submit-platform-section .section-header h2 {
+        font-size: 2rem; /* Adjust header size */
+    }
+    .platform-categories .section-header p {
+        margin-bottom: 3rem;
+    }
+
+    /* Categories */
+    .platform-categories .categories-grid {
+        grid-template-columns: 1fr; /* 1 column */
+        gap: 1.5rem;
+    }
+    .platform-categories .category-card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Comparison Table - Mobile Stacking */
+    .platform-comparison .comparison-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Fallback scroll if needed */
+    }
+    .platform-comparison table,
+    .platform-comparison thead,
+    .platform-comparison tbody,
+    .platform-comparison th,
+    .platform-comparison td,
+    .platform-comparison tr {
+        display: block;
+    }
+    .platform-comparison thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .platform-comparison tr {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius-medium);
+        margin-bottom: 1rem;
+        background: rgba(var(--card-bg-rgb), 0.7);
+    }
+    .platform-comparison td {
+        border: none;
+        border-bottom: 1px dotted rgba(var(--border-color-rgb), 0.5);
+        position: relative;
+        padding-left: 50%; /* Space for the label */
+        text-align: right;
+        min-height: 3em; /* Ensure cells have some height */
+        display: flex; /* Use flex for alignment */
+        align-items: center;
+        justify-content: flex-end;
+        background: none;
+    }
+    .platform-comparison td:before {
+        content: attr(data-label); /* Use data-label for headers */
+        position: absolute;
+        left: 1rem;
+        width: 45%;
+        padding-right: 10px;
+        white-space: normal; /* Allow label wrapping */
+        text-align: left;
+        font-weight: bold;
+        color: var(--text-secondary-color);
+    }
+    .platform-comparison td:last-child {
+        border-bottom: none;
+    }
+     /* Add data-label attributes in HTML if not present */
+     /* Example: <td data-label="Model Types">Multiple</td> */
+
+    /* Platform Details */
+    .platform-details .platform-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .platform-details .platform-logo {
+        width: 40px; /* Adjust logo size */
+        height: 40px;
+    }
+    .platform-details .platform-features ul {
+        columns: 1;
+    }
+    .platform-details .platform-cta {
+        flex-direction: column;
+    }
+
+    /* Submit Form */
+    .submit-platform-content {
+        gap: 2rem;
+    }
+
+}
+
+/* Small Mobile Devices (e.g., <= 576px) */
+@media (max-width: 576px) {
+    .platform-categories .category-card {
+        padding: 1.5rem;
+    }
+    .platform-details .platform-card {
+         padding: 1.5rem;
+    }
+    .submit-platform-section .benefits-column,
+    .submit-platform-section .form-column {
+         padding: 1.5rem;
+    }
+     .platform-comparison td {
+         padding-left: 40%; /* Adjust label spacing */
+     }
+     .platform-comparison td:before {
+         width: 35%;
+     }
+}
+
+/* Very Small Mobile Devices (e.g., <= 480px) */
+@media (max-width: 480px) {
+     /* Further adjustments if needed */
+}
+
+/* Remove or integrate old responsive rules if they conflict */

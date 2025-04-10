@@ -1,0 +1,310 @@
+/**
+ * Model Guru - Models CSS File
+ * Styles for the models listing and comparison pages
+ */
+
+/* === Models Hero Section === */
+.models-hero {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(20, 20, 30, 0.95));
+}
+
+.models-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.1) 0%, transparent 70%),
+    linear-gradient(135deg, rgba(var(--accent-color-rgb), 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.models-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.models-hero h1 {
+  font-family: var(--font-orbitron);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Use standard property */
+  -webkit-text-fill-color: transparent; /* Keep for compatibility */
+  text-shadow: var(--neon-glow);
+}
+
+.models-hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary-color); /* Use variable */
+  margin-bottom: 2rem;
+}
+
+/* === Models Page Specific Styles === */
+
+/* Filters Layout */
+.model-filters {
+    padding: var(--spacing-large) 0;
+    background-color: var(--section-bg-light);
+    border-bottom: 1px solid var(--border-color);
+    /* Optional: Add sticky positioning if desired */
+    /* position: sticky;
+    top: var(--nav-height, 60px); /* Adjust based on actual nav height */
+    /* z-index: var(--z-index-sticky); */
+    /* backdrop-filter: blur(5px); */
+}
+
+.model-filters .filters-grid {
+    display: grid;
+    /* Use more columns on wider screens */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-large);
+    align-items: end;
+}
+
+.model-filters .filter-group label {
+    display: block;
+    margin-bottom: var(--spacing-x-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-muted-color);
+    font-size: var(--font-size-small);
+}
+
+/* .form-control styles are now inherited from forms.css */
+
+/* Curated Model Sections Layout */
+.model-category-section {
+    padding: var(--spacing-x-large) 0;
+}
+
+.model-category-section .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.model-category-section .section-header h2 {
+    margin-bottom: var(--spacing-small);
+    font-size: var(--h2-font-size);
+    font-family: var(--font-heading);
+}
+
+.model-category-section .models-preview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.model-category-section .view-all-container {
+    text-align: center;
+    margin-top: var(--spacing-medium);
+}
+
+/* Individual Model Card Styles (Specific to Models Page Context) */
+.model-card { /* Assuming base styles are in cards.css, add overrides here if needed */
+    /* Example override: might want slightly different padding/margin */
+    /* padding: var(--spacing-medium); */
+}
+
+/* Make sure styles defined in cards.css apply or replicate necessary ones here */
+/* These seem specific enough to keep/refine */
+.model-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+.model-card .platform-logo {
+    height: 24px;
+    width: auto;
+    opacity: 0.8;
+}
+
+.model-card .model-date {
+    font-size: var(--font-size-x-small);
+    color: var(--text-muted-color);
+}
+
+.model-card .model-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+}
+
+.model-card .model-description {
+    font-size: var(--font-size-small);
+    color: var(--text-secondary-color);
+    margin-bottom: var(--spacing-medium);
+    flex-grow: 1; /* Makes description take available space */
+    min-height: 60px; /* Ensure minimum height for alignment */
+}
+
+.model-card .model-metrics {
+    display: flex;
+    gap: var(--spacing-medium);
+    font-size: var(--font-size-small);
+    color: var(--text-muted-color);
+    margin-bottom: var(--spacing-medium);
+    align-items: center;
+}
+
+.model-card .metric i {
+    margin-right: var(--spacing-x-small);
+    color: var(--icon-color); /* Use variable */
+}
+
+.model-card .model-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-x-small);
+    margin-bottom: var(--spacing-large);
+}
+
+.model-card .tag {
+    background-color: var(--tag-bg-color);
+    color: var(--tag-text-color);
+    padding: var(--spacing-xx-small) var(--spacing-small);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-x-small);
+    font-weight: var(--font-weight-medium);
+}
+
+.model-card .add-to-comparison-btn {
+    margin-top: auto; /* Pushes button to bottom */
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-x-small);
+}
+
+.model-card .add-to-comparison-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast-color);
+    border-color: var(--primary-color);
+}
+
+/* Premium Features Section on Models Page */
+/* Assuming base styles for section/grid are in global/layout, only overrides here */
+.premium-features {
+    background-color: var(--section-bg-dark);
+    padding: var(--spacing-x-large) 0;
+    text-align: center;
+}
+
+.premium-features .section-header {
+    margin-bottom: var(--spacing-large);
+}
+
+.premium-features .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+    text-align: left; /* Ensure text within grid items is left-aligned */
+    margin-bottom: var(--spacing-large);
+}
+
+.premium-features .premium-feature {
+    background-color: var(--card-bg-color);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.premium-features .premium-feature i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+.premium-features .premium-feature h3 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-small);
+    font-size: var(--font-size-large);
+}
+
+.premium-features .premium-cta {
+    margin-top: var(--spacing-large);
+}
+
+/* Loading/Empty State */
+.models-preview-container:empty::before {
+    content: "Loading models..."; /* Optional loading indicator */
+    display: block;
+    text-align: center;
+    padding: var(--spacing-large);
+    color: var(--text-muted-color);
+}
+
+/* Remove redundant Search Container styles */
+/* Assuming search styles are handled globally or in hero-search.css */
+
+/* === Responsive Styles === */
+@media (max-width: 992px) {
+  .models-hero h1 {
+    font-size: 2.5rem;
+  }
+  /* Adjust grid columns if needed */
+  .model-filters .filters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .models-hero {
+    padding: 4rem 0;
+    min-height: 50vh;
+  }
+
+  .models-hero h1 {
+    font-size: 2rem;
+  }
+
+  .model-filters .filters-grid {
+    grid-template-columns: 1fr; /* Stack filters */
+  }
+
+  .model-category-section .models-preview-container {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust for smaller cards */
+  }
+}
+
+@media (max-width: 576px) {
+  .models-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .model-category-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .premium-features .premium-feature {
+    padding: 1.5rem;
+  }
+
+  .model-card {
+    padding: var(--spacing-medium); /* Reduce padding on small screens */
+  }
+}

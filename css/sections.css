@@ -261,3 +261,145 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
+
+/* === Mission Statement (Moved from team.css) === */
+.mission-statement {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-large);
+    background: var(--card-bg-color);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-color);
+    /* box-shadow: var(--shadow-sm); Removed, add back if desired */
+}
+
+.mission-statement h3 { /* Assuming H3 is used, adjust if needed */
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--spacing-medium);
+    color: var(--text-color);
+}
+
+.mission-statement p {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-large);
+    color: var(--text-secondary-color);
+    margin-bottom: 0;
+}
+
+/* === Values Section === */
+.values-section {
+    padding: var(--spacing-xx-large) 0;
+    background-color: var(--section-bg-light);
+    /* Add background image/gradient if desired */
+}
+
+.values-section .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.value-card {
+    background-color: var(--card-bg-color);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--primary-color);
+}
+
+.value-card .value-icon {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    display: inline-block; /* Or block if needed */
+}
+
+.value-card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--spacing-small);
+    color: var(--text-color);
+}
+
+.value-card p {
+    font-size: var(--font-size-small);
+    color: var(--text-secondary-color);
+    line-height: var(--line-height-base);
+}
+
+/* === Statistics Section === */
+.stats-section {
+    padding: var(--spacing-x-large) 0; /* Standard section padding */
+    background-color: var(--section-bg-dark); /* Or use --section-bg-light if preferred */
+    /* Optional: Add a subtle background pattern or gradient */
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: var(--spacing-large);
+    text-align: center;
+}
+
+.stat-item {
+    /* Optional: Add background/border if desired */
+    /* background-color: var(--card-bg-color); */
+    /* border: 1px solid var(--border-color); */
+    /* border-radius: var(--border-radius-medium); */
+    /* padding: var(--spacing-medium); */
+}
+
+.stat-value {
+    display: block;
+    font-family: var(--font-orbitron); /* Use Orbitron for numbers */
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+    line-height: 1.2;
+    text-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.5); /* Subtle glow */
+}
+
+.stat-label {
+    display: block;
+    font-size: var(--font-size-small);
+    color: var(--text-muted-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments for stats section */
+@media (max-width: 768px) {
+    .stats-section {
+        padding: var(--spacing-large) 0;
+    }
+    .stat-value {
+        font-size: 2rem;
+    }
+    .stats-grid {
+        gap: var(--spacing-medium);
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .stat-value {
+        font-size: 1.8rem;
+    }
+}

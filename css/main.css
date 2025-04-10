@@ -1,6 +1,7 @@
 /**
- * Model Guru - Main CSS File
- * This file imports all modular CSS components
+ * Main Stylesheet for Model Guru
+ *
+ * Imports component stylesheets and defines global styles.
  */
 
 /* Import all CSS modules */
@@ -23,7 +24,8 @@
 @import 'hero-search.css'; /* Import hero search styles */
 @import 'testimonials.css'; /* Import testimonials styles */
 @import 'faq.css'; /* Import FAQ styles */
-@import 'blog.css'; /* Import blog/resource center styles */
+/* @import 'blog.css'; Import blog/resource center styles */
+@import 'blog-enhanced.css'; /* Import enhanced blog styles */
 @import 'team.css'; /* Import team/about us styles */
 @import 'auth.css'; /* Import auth (signup/login) styles */
 @import 'model-comparison.css'; /* Import model comparison tool styles */
@@ -31,233 +33,29 @@
 @import 'reports.css'; /* Import reports section styles */
 @import 'responsive.css';
 @import 'fixes.css'; /* Import fixes for specific styling issues */
-
-.team-section {
-    padding: 6rem 0;  /* 增加上下内边距 */
-    margin-bottom: 6rem;  /* 增加底部外边距 */
-}
-
-.blog-section {
-    padding-top: 6rem;  /* 增加顶部内边距 */
-}
-
-/* Premium Reports Section (Revised Styles for Consistency) */
-.premium-reports-section {
-    padding: 6rem 0;
-    /* Keep the distinct background */
-    background: linear-gradient(145deg, rgba(18, 18, 40, 0.98), rgba(25, 15, 50, 1)); 
-    position: relative;
-    overflow: hidden;
-}
-
-.premium-reports-section::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    z-index: 1;
-}
-
-/* Standard container usage */
-.premium-reports-section .container {
-    position: relative;
-    z-index: 2;
-    /* No max-width override */
-}
-
-.premium-reports-section .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.premium-reports-section h2 {
-    font-family: var(--font-orbitron);
-    font-size: 2.5rem; /* Align with other section titles */
-    color: var(--heading-color);
-    margin-bottom: 1rem;
-}
-
-.premium-reports-section p.section-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-color-secondary);
-    max-width: 600px;
-    margin: 0 auto 4rem auto; /* Add margin below subtitle */
-}
-
-/* Premium Features Grid (like .features-grid) */
-.premium-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 2rem;
-    margin-bottom: 4rem; /* Space before pricing */
-}
-
-.premium-feature {
-    background: rgba(var(--card-bg-rgb), 0.5); /* Consistent card background */
-    border: 1px solid rgba(var(--primary-color-rgb), 0.1);
-    border-radius: var(--border-radius-lg);
-    padding: 1.5rem;
-    display: flex; /* Use flex for icon and text */
-    flex-direction: column; /* Stack icon/text vertically */
-    align-items: center; /* Center align content */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.premium-feature:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.premium-feature svg {
-    width: 40px; /* Control icon size */
-    height: 40px;
-    margin-bottom: 1rem;
-    flex-shrink: 0;
-    /* SVG path/stroke colors might need adjustment if not inheriting */
-}
-.premium-feature svg path,
-.premium-feature svg circle,
-.premium-feature svg rect {
-    stroke: var(--primary-color); /* Ensure consistent icon color */
-    fill: var(--primary-color-light); /* Optional fill */
-}
+@import 'platforms.css'; /* Platforms page specific sections */
 
 
-.premium-feature span { /* This is the text description */
-    color: var(--text-color);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
+/* === Utility Classes === */
+@import 'utilities.css';
 
-/* Pricing Options Grid */
-.pricing-options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 2rem;
-}
+/* --- Remove Platform Specific Styles from here --- */
 
-.pricing-option {
-    background: rgba(var(--card-bg-rgb), 0.7); /* Slightly more opaque background */
-    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    text-align: center;
-    position: relative;
-    display: flex; /* Use flex for vertical alignment */
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* === REMOVE START === */
 
-.pricing-option:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg); /* Slightly stronger shadow on hover */
-}
+/* === Platform Categories (Refined) === */
+/* REMOVE THIS BLOCK */
 
-.pricing-option.featured {
-    border: 2px solid var(--primary-color);
-    background: rgba(var(--primary-color-rgb), 0.08);
-    box-shadow: 0 8px 25px rgba(var(--primary-color-rgb), 0.1);
-}
+/* === Platform Comparison Table (Enhanced) === */
+/* REMOVE THIS BLOCK */
 
-.best-value {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary-color);
-    color: #ffffff;
-    padding: 0.3rem 1.2rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+/* === Platform Details Cards (Refined) === */
+/* REMOVE THIS BLOCK */
 
-.pricing-option h3 { /* Plan name */
-    font-size: 1.3rem;
-    color: var(--heading-color);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
+/* === Submit Platform Section === */
+/* REMOVE THIS BLOCK */
 
-.price {
-    font-family: var(--font-orbitron);
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-}
+/* === Responsive Adjustments for Platforms Page === */
+/* REMOVE THIS BLOCK */
 
-.price span {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-color-secondary);
-    margin-left: 0.25rem;
-}
-
-.savings {
-    color: var(--primary-color);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-/* Push button to bottom */
-.pricing-option .btn {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-    margin-top: auto; /* Pushes button down */
-}
-
-/* Newsletter Section Styles (Remain Separate) */
-.newsletter-section {
-    padding: 4rem 0;
-    background: linear-gradient(135deg, rgba(13, 12, 34, 0.99), rgba(13, 12, 34, 0.98));
-    position: relative;
-    overflow: hidden;
-}
-.newsletter-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at bottom right, rgba(128, 0, 255, 0.08), transparent 70%); z-index: 1; }
-.newsletter-section .newsletter-content { padding: 2rem; background: rgba(20, 20, 20, 0.3); border-radius: 16px; border: 1px solid rgba(128, 0, 255, 0.2); text-align: center; max-width: 600px; margin: 0 auto; position: relative; z-index: 2; }
-.newsletter-section .newsletter-icon { margin-bottom: 1.5rem; }
-.newsletter-section .newsletter-content h2 { color: #ffffff; font-size: 2rem; margin-bottom: 1rem; }
-.newsletter-section .newsletter-content p { color: #e0e0e0; font-size: 1rem; margin-bottom: 2rem; }
-.newsletter-section .newsletter-form { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1rem; }
-.newsletter-section .newsletter-form input { padding: 0.8rem 1rem; background: rgba(20, 20, 20, 0.6); border: 1px solid rgba(128, 0, 255, 0.3); border-radius: 8px; color: #ffffff; font-size: 1rem; }
-.newsletter-section .newsletter-form input:focus { outline: none; border-color: #8b5cf6; }
-.newsletter-section .privacy-note { color: #b0b0b0; font-size: 0.8rem; }
-
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-    .premium-features {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
-    }
-    /* Pricing stays 2 columns on tablet */
-}
-
-@media (max-width: 768px) {
-    .premium-reports-section {
-        padding: 4rem 1rem;
-    }
-    .premium-reports-section h2 {
-        font-size: 2.2rem;
-    }
-    .premium-features {
-        grid-template-columns: 1fr; /* Stack features on mobile */
-    }
-    .pricing-options {
-        grid-template-columns: 1fr; /* Stack pricing on mobile */
-    }
-}
-
-/* Keep Newsletter responsive styles */
-@media (max-width: 768px) {
-    .newsletter-section {
-        padding: 3rem 1rem;
-    }
-    .newsletter-section .newsletter-content h2 {
-        font-size: 1.8rem;
-    }
-}
+/* === REMOVE END === */

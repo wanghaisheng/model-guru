@@ -1,258 +1,270 @@
 /**
- * Models Page Specific JavaScript
- * Handles fetching, filtering, sorting, and displaying models.
+ * Model Guru - Models Page Script
+ *
+ * Handles fetching, filtering, sorting, and displaying AI models.
  */
-
-// Only import what's necessary - currentLanguage might be needed for date formatting later
 import { currentLanguage } from './i18n.js';
-
-// --- Mock Data (Replace with actual API call) ---
-const allModels = [
-    {
-        id: 'sdxl-turbo',
-        name: 'SDXL-Turbo',
-        platform: 'Stability AI',
-        description: 'Lightning-fast text-to-image generation based on Stable Diffusion XL.',
-        likes: 4800,
-        runs: 125000,
-        dateAdded: '2024-04-15',
-        category: 'Image Generation',
-        tags: ['Image Generation', 'Real-time', 'Stable Diffusion'],
-        logo: 'img/stability-logo.svg'
-    },
-    {
-        id: 'mixtral-8x7b',
-        name: 'Mixtral-8x7B',
-        platform: 'Hugging Face',
-        description: 'High-quality sparse mixture of experts language model (SMoE).',
-        likes: 3200,
-        runs: 89000,
-        dateAdded: '2024-04-10',
-        category: 'Text Generation',
-        tags: ['Text Generation', 'LLM', 'Open Source'],
-        logo: 'img/huggingface-logo.svg'
-    },
-    {
-        id: 'stable-audio',
-        name: 'Stable Audio',
-        platform: 'Stability AI',
-        description: 'Generate high-quality stereo music and sound effects from text prompts.',
-        likes: 2100,
-        runs: 45000,
-        dateAdded: '2024-04-05',
-        category: 'Audio Generation',
-        tags: ['Audio Generation', 'Music', 'Sound Effects'],
-        logo: 'img/stability-logo.svg'
-    },
-    {
-        id: 'llama-3-70b',
-        name: 'Llama 3 70B',
-        platform: 'Replicate',
-        description: 'Meta\'s latest large language model, instruction-tuned.',
-        likes: 5500,
-        runs: 150000,
-        dateAdded: '2024-04-18',
-        category: 'Text Generation',
-        tags: ['LLM', 'Instruction-Tuned', 'Meta'],
-        logo: 'img/replicate-logo.svg' // Assuming Replicate hosts it
-    },
-    {
-        id: 'stable-diffusion-3',
-        name: 'Stable Diffusion 3',
-        platform: 'Stability AI',
-        description: 'Next generation text-to-image model with improved prompt following.',
-        likes: 6000,
-        runs: 95000,
-        dateAdded: '2024-03-20',
-        category: 'Image Generation',
-        tags: ['Image Generation', 'Diffusion', 'New'],
-        logo: 'img/stability-logo.svg'
-    },
-    {
-        id: 'whisper-large-v3',
-        name: 'Whisper Large v3',
-        platform: 'OpenAI',
-        description: 'State-of-the-art speech-to-text transcription model.',
-        likes: 4000,
-        runs: 110000,
-        dateAdded: '2024-02-15',
-        category: 'Audio Processing',
-        tags: ['Speech-to-Text', 'Transcription', 'OpenAI'],
-        logo: 'img/openai-logo.png' // Placeholder logo
-    },
-    {
-        id: 'wan2.1',
-        name: 'Wan2.1',
-        platform: 'Replicate',
-        description: 'Specialized video generation supporting various styles.',
-        likes: 3200,
-        runs: 80000,
-        dateAdded: '2024-02-10',
-        category: 'Video Generation',
-        tags: ['Video Generation', 'Animation'],
-        logo: 'img/replicate-logo.svg'
-    },
-    // Add more mock models...
-];
 
 // --- DOM Elements ---
 const newlyAddedContainer = document.querySelector('#new-models .models-preview-container');
 const trendingContainer = document.querySelector('#trending-models .models-preview-container');
 const popularContainer = document.querySelector('#popular-models .models-preview-container');
-const modelCardTemplate = document.getElementById('model-card-template');
+const filteredModelsContainer = document.getElementById('filtered-models-container');
+const filteredSection = document.getElementById('filtered-models-section');
+const noResultsMessage = document.getElementById('no-results-message');
 
 const purposeFilter = document.getElementById('purpose-filter');
 const platformFilter = document.getElementById('platform-filter');
 const sortFilter = document.getElementById('sort-filter');
+const modelCardTemplate = document.getElementById('model-card-template');
 
-// --- Functions ---
-
-/**
- * Creates an HTML element for a single model card.
- * @param {object} model - The model data object.
- * @returns {HTMLElement} - The model card element.
- */
-function createModelCard(model) {
-    if (!modelCardTemplate) return null;
-
-    const card = modelCardTemplate.content.cloneNode(true).querySelector('.model-card');
-    card.dataset.modelId = model.id;
-
-    const logo = card.querySelector('.platform-logo');
-    const date = card.querySelector('.model-date');
-    const title = card.querySelector('.model-title');
-    const description = card.querySelector('.model-description');
-    const runs = card.querySelector('.metric.runs span');
-    const likes = card.querySelector('.metric.likes span');
-    const tagsContainer = card.querySelector('.model-tags');
-    const compareBtn = card.querySelector('.add-to-comparison-btn');
-
-    if (logo) logo.src = model.logo || 'img/platform-placeholder.svg'; // Use placeholder if no logo
-    if (logo) logo.alt = `${model.platform || 'Unknown'} Logo`;
-    if (date) date.textContent = `Added ${new Date(model.dateAdded).toLocaleDateString()}`;
-    if (title) title.textContent = model.name;
-    if (description) description.textContent = model.description;
-    if (runs) runs.textContent = formatMetric(model.runs);
-    if (likes) likes.textContent = formatMetric(model.likes);
-
-    if (tagsContainer && model.tags) {
-        tagsContainer.innerHTML = ''; // Clear existing
-        model.tags.slice(0, 3).forEach(tag => { // Show max 3 tags
-            const tagElement = document.createElement('span');
-            tagElement.className = 'tag';
-            tagElement.textContent = tag;
-            tagsContainer.appendChild(tagElement);
-        });
-    }
-
-    if (compareBtn) {
-        compareBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent triggering card click if any
-            addToComparison(model.id);
-        });
-    }
-
-    // Add click listener to the card itself (optional)
-    card.addEventListener('click', () => {
-        // Navigate to model detail page (implementation needed)
-        console.log(`Navigate to details for model: ${model.id}`);
-        // window.location.href = `/models/${model.id}`; 
-    });
-
-    return card;
-}
-
-/**
- * Populates a container with model cards.
- * @param {HTMLElement} container - The container element.
- * @param {Array<object>} models - Array of model objects.
- * @param {number} limit - Maximum number of models to display.
- */
-function populateModelContainer(container, models, limit = 3) {
-    if (!container) return;
-    container.innerHTML = ''; // Clear previous content
-    models.slice(0, limit).forEach(model => {
-        const card = createModelCard(model);
-        if (card) {
-            container.appendChild(card);
-        }
-    });
-}
-
-/**
- * Formats large numbers for display (e.g., 125000 -> 125K).
- * @param {number} num - The number to format.
- * @returns {string} - The formatted string.
- */
+// --- Helper Functions ---
 function formatMetric(num) {
-    if (num >= 1000000) {
-        return (num / 1000000).toFixed(1).replace('.0', '') + 'M';
-    } else if (num >= 1000) {
-        return (num / 1000).toFixed(1).replace('.0', '') + 'K';
+    if (num >= 1000000) return (num / 1000000).toFixed(1).replace('.0', '') + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1).replace('.0', '') + 'K';
+    return num.toString();
+}
+
+function timeAgo(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const seconds = Math.floor((now - date) / 1000);
+
+    let interval = seconds / 31536000;
+    if (interval > 1) return Math.floor(interval) + " years ago";
+    interval = seconds / 2592000;
+    if (interval > 1) return Math.floor(interval) + " months ago";
+    interval = seconds / 86400;
+    if (interval > 1) return Math.floor(interval) + " days ago";
+    interval = seconds / 3600;
+    if (interval > 1) return Math.floor(interval) + " hours ago";
+    interval = seconds / 60;
+    if (interval > 1) return Math.floor(interval) + " minutes ago";
+    return Math.floor(seconds) + " seconds ago";
+}
+
+// --- Core Logic Functions ---
+function createModelCard(model) {
+    if (!modelCardTemplate) {
+        console.error('Model card template not found!');
+        return null;
+    }
+    const cardClone = modelCardTemplate.content.cloneNode(true);
+    const cardElement = cardClone.querySelector('.model-card');
+
+    cardElement.dataset.modelId = model.id;
+    cardElement.querySelector('.platform-logo').src = model.logo || 'img/platform-placeholder.svg';
+    cardElement.querySelector('.platform-logo').alt = `${model.platform} Logo`;
+    cardElement.querySelector('.model-date').textContent = timeAgo(model.dateAdded);
+    cardElement.querySelector('.model-title').textContent = model.name;
+    cardElement.querySelector('.model-description').textContent = model.description;
+    cardElement.querySelector('.metric.runs span').textContent = formatMetric(model.runs);
+    cardElement.querySelector('.metric.likes span').textContent = formatMetric(model.likes);
+
+    const tagsContainer = cardElement.querySelector('.model-tags');
+    tagsContainer.innerHTML = ''; // Clear existing tags
+    model.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.classList.add('tag');
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
+    });
+
+    const comparisonBtn = cardElement.querySelector('.add-to-comparison-btn');
+    comparisonBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        addToComparison(model.id);
+    });
+
+    return cardElement;
+}
+
+function populateModelContainer(container, models, limit = null) {
+    if (!container) {
+        console.error('Target container not found:', container);
+        return;
+    }
+    container.innerHTML = '';
+    const modelsToDisplay = limit ? models.slice(0, limit) : models;
+
+    if (modelsToDisplay.length === 0) {
+        if (container === filteredModelsContainer && noResultsMessage) {
+            noResultsMessage.style.display = 'block';
+        } else {
+            container.innerHTML = '<p style="text-align: center; color: var(--text-muted-color);">No models to display.</p>';
+        }
     } else {
-        return num.toString();
+        if (container === filteredModelsContainer && noResultsMessage) {
+            noResultsMessage.style.display = 'none';
+        }
+        modelsToDisplay.forEach(model => {
+            const card = createModelCard(model);
+            if (card) {
+                container.appendChild(card);
+            }
+        });
     }
 }
 
-/**
- * Filters and sorts models based on current filter selections.
- * TODO: Implement actual filtering/sorting logic if needed beyond the curated sections.
- */
-function updateFilteredModels() {
-    const purpose = purposeFilter.value;
-    const platform = platformFilter.value;
-    const sortBy = sortFilter.value;
+function getFilteredAndSortedModels(sourceModels) {
+    const selectedPurpose = purposeFilter ? purposeFilter.value : '';
+    const selectedPlatform = platformFilter ? platformFilter.value : '';
+    const sortBy = sortFilter ? sortFilter.value : 'newest';
 
-    console.log(`Filtering/Sorting: Purpose=${purpose}, Platform=${platform}, SortBy=${sortBy}`);
-    // This function would typically fetch/filter data and update a main grid
-    // For now, it only logs the selections as the main view shows curated lists
+    let filteredModels = [...sourceModels]; // Create a copy to avoid modifying the original
+
+    if (selectedPurpose) {
+        filteredModels = filteredModels.filter(model => model.category === selectedPurpose);
+    }
+
+    if (selectedPlatform) {
+        filteredModels = filteredModels.filter(model => model.platform === selectedPlatform);
+    }
+
+    switch (sortBy) {
+        case 'newest':
+            filteredModels.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+            break;
+        case 'oldest':
+             filteredModels.sort((a, b) => new Date(a.dateAdded) - new Date(b.dateAdded));
+             break;
+        case 'mostLikes':
+            filteredModels.sort((a, b) => b.likes - a.likes);
+            break;
+        case 'mostRuns':
+            filteredModels.sort((a, b) => b.runs - a.runs);
+            break;
+        case 'trending':
+            filteredModels.sort((a, b) => (b.likes + b.runs / 10) - (a.likes + a.runs / 10));
+            break;
+        case 'alphabetical':
+            filteredModels.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+    }
+    return filteredModels;
 }
 
-// --- Comparison Logic (Basic Example) ---
+function updateFilteredModelsDisplay() {
+     if (!allModels || !filteredSection || !filteredModelsContainer || !document.getElementById('new-models')) {
+        console.error("Required elements for filtering not found.");
+        return;
+    }
+    const filteredModels = getFilteredAndSortedModels(allModels);
+
+    document.getElementById('new-models').style.display = 'none';
+    document.getElementById('trending-models').style.display = 'none';
+    document.getElementById('popular-models').style.display = 'none';
+    filteredSection.style.display = 'block';
+
+    populateModelContainer(filteredModelsContainer, filteredModels);
+
+    filteredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// --- Comparison Logic (Placeholder) ---
 let comparisonList = [];
+const MAX_COMPARISON = 3;
 
 function addToComparison(modelId) {
     if (comparisonList.includes(modelId)) {
-        console.log(`${modelId} already in comparison.`);
+        console.log(`Model ${modelId} already in comparison.`);
         return;
     }
-    if (comparisonList.length >= 3) { // Example limit
-        alert('Maximum comparison items reached (3).'); // Replace with better UI
+    if (comparisonList.length >= MAX_COMPARISON) {
+        alert(`You can only compare up to ${MAX_COMPARISON} models.`);
         return;
     }
     comparisonList.push(modelId);
-    console.log(`Added ${modelId} to comparison. Current list:`, comparisonList);
+    console.log('Comparison List:', comparisonList);
     updateComparisonUI();
 }
 
 function updateComparisonUI() {
-    // TODO: Implement UI update for comparison bar/preview
     console.log('Updating comparison UI...');
 }
 
-// --- Initialization ---
+// --- Mock Data (Moved Lower) ---
+const allModels = [
+    { id: 'sdxl-turbo', name: 'SDXL Turbo', platform: 'stability', description: 'Lightning-fast image generation with high quality.', likes: 4800, runs: 125000, dateAdded: '2024-07-15', category: 'image', tags: ['Image Generation', 'Real-time', 'SDXL'], logo: 'img/stability-logo.svg' },
+    { id: 'mixtral-8x7b', name: 'Mixtral 8x7B', platform: 'huggingface', description: 'Powerful mixture-of-experts language model.', likes: 3200, runs: 89000, dateAdded: '2024-06-20', category: 'text', tags: ['Text Generation', 'LLM', 'MoE'], logo: 'img/huggingface-logo.svg' },
+    { id: 'stable-audio', name: 'Stable Audio', platform: 'stability', description: 'High-quality music and sound generation.', likes: 2100, runs: 45000, dateAdded: '2024-07-01', category: 'audio', tags: ['Audio Generation', 'Music', 'Sound Effects'], logo: 'img/stability-logo.svg' },
+    { id: 'gpt-4o', name: 'GPT-4o', platform: 'openai', description: 'OpenAI's flagship multimodal model with text, audio, and vision capabilities.', likes: 98000, runs: 2500000, dateAdded: '2024-05-13', category: 'text', tags: ['Text Generation', 'Multimodal', 'Vision', 'Audio'], logo: 'img/openai-logo.svg' },
+    { id: 'llama-3-70b', name: 'Llama 3 70B', platform: 'replicate', description: 'Large language model from Meta, known for strong reasoning and coding.', likes: 75000, runs: 1800000, dateAdded: '2024-04-18', category: 'text', tags: ['Text Generation', 'LLM', 'Open Source', 'Meta'], logo: 'img/replicate-logo.svg' },
+    { id: 'wan2.1', name: 'Wan 2.1', platform: 'replicate', description: 'Video generation model focused on style transfer and animation.', likes: 32000, runs: 800000, dateAdded: '2024-02-10', category: 'video', tags: ['Video Generation', 'Animation', 'Style Transfer'], logo: 'img/replicate-logo.svg' },
+    { id: 'stable-diffusion-3', name: 'Stable Diffusion 3', platform: 'stability', description: 'Latest iteration of Stable Diffusion with improved text understanding.', likes: 6000, runs: 150000, dateAdded: '2024-06-10', category: 'image', tags: ['Image Generation', 'Text-to-Image', 'SD3'], logo: 'img/stability-logo.svg' },
+    { id: 'whisper-large-v3', name: 'Whisper Large V3', platform: 'openai', description: 'State-of-the-art speech-to-text transcription model.', likes: 45000, runs: 1200000, dateAdded: '2023-11-06', category: 'audio', tags: ['Audio Processing', 'Transcription', 'Speech-to-Text'], logo: 'img/openai-logo.svg' },
+    { id: 'zeroscope-v2-xl', name: 'ZeroScope V2 XL', platform: 'huggingface', description: 'Text-to-video generation model optimized for quality and coherence.', likes: 15000, runs: 300000, dateAdded: '2024-03-05', category: 'video', tags: ['Video Generation', 'Text-to-Video', 'Open Source'], logo: 'img/huggingface-logo.svg' },
+];
+
+// --- Initialization Logic ---
 function initializeModelsPage() {
-    // Populate curated sections
-    const sortedByDate = [...allModels].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
-    const sortedByRuns = [...allModels].sort((a, b) => b.runs - a.runs);
-    const sortedByLikes = [...allModels].sort((a, b) => b.likes - a.likes);
-    // Basic trending score (example: combine likes and recentness)
-    const trending = [...allModels].sort((a, b) => {
-        const scoreA = a.likes * 0.6 + (new Date(a.dateAdded).getTime() / (1000 * 60 * 60 * 24)) * 0.4;
-        const scoreB = b.likes * 0.6 + (new Date(b.dateAdded).getTime() / (1000 * 60 * 60 * 24)) * 0.4;
-        return scoreB - scoreA;
-    });
+    // Get containers and template
+    const newModelsContainer = document.querySelector('#new-models .models-preview-container');
+    const trendingModelsContainer = document.querySelector('#trending-models .models-preview-container');
+    const popularModelsContainer = document.querySelector('#popular-models .models-preview-container');
+    const filteredModelsContainer = document.getElementById('filtered-models-container');
+    const noResultsMessage = document.getElementById('no-results-message');
+    const filteredSection = document.getElementById('filtered-models-section');
+    const modelCardTemplate = document.getElementById('model-card-template');
 
-    populateModelContainer(newlyAddedContainer, sortedByDate, 4); // Show 4 new models
-    populateModelContainer(trendingContainer, trending, 4);        // Show 4 trending models
-    populateModelContainer(popularContainer, sortedByRuns, 4);     // Show 4 popular (by runs)
+    // Check if template exists
+    if (!modelCardTemplate) {
+        console.error("Model card template not found! Cannot populate models.");
+        return; // Stop initialization if template is missing
+    }
 
-    // Add event listeners to filters
-    if (purposeFilter) purposeFilter.addEventListener('change', updateFilteredModels);
-    if (platformFilter) platformFilter.addEventListener('change', updateFilteredModels);
-    if (sortFilter) sortFilter.addEventListener('change', updateFilteredModels);
+    // --- Populate Initial Curated Sections ---
+    if (!allModels || allModels.length === 0) {
+        console.warn("No models data available to populate sections.");
+    } else {
+        try {
+            // Newly Added (Sort by dateAdded descending)
+            const newlyAddedModels = [...allModels].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+            if (newModelsContainer) {
+                populateModelContainer(newModelsContainer, newlyAddedModels, 4); // Show latest 4
+            } else {
+                console.warn("New models container not found (#new-models .models-preview-container)");
+            }
 
-    console.log('Models page initialized.');
+            // Trending This Week (Sort by runs descending)
+            const trendingModels = [...allModels].sort((a, b) => (b.runs || 0) - (a.runs || 0));
+             if (trendingModelsContainer) {
+                populateModelContainer(trendingModelsContainer, trendingModels, 4); // Show top 4 by runs
+            } else {
+                 console.warn("Trending models container not found (#trending-models .models-preview-container)");
+            }
+
+            // Most Popular This Month (Sort by likes descending)
+            const popularModels = [...allModels].sort((a, b) => (b.likes || 0) - (a.likes || 0));
+            if (popularModelsContainer) {
+                populateModelContainer(popularModelsContainer, popularModels, 4); // Show top 4 by likes
+            } else {
+                console.warn("Popular models container not found (#popular-models .models-preview-container)");
+            }
+        } catch (error) {
+            console.error("Error populating curated sections:", error);
+        }
+    }
+
+    // --- Setup Filters ---
+    const purposeFilter = document.getElementById('purpose-filter');
+    const platformFilter = document.getElementById('platform-filter');
+    const sortFilter = document.getElementById('sort-filter');
+
+    if (!purposeFilter || !platformFilter || !sortFilter || !filteredModelsContainer || !noResultsMessage || !filteredSection) {
+        console.warn("One or more filter/display elements not found. Filtering UI might be incomplete.");
+    } else {
+        // Add event listeners only if all required elements are found
+        purposeFilter.addEventListener('change', updateFilteredModelsDisplay);
+        platformFilter.addEventListener('change', updateFilteredModelsDisplay);
+        sortFilter.addEventListener('change', updateFilteredModelsDisplay);
+
+        // Initial population of the filtered view (optional, can be empty initially)
+        // updateFilteredModelsDisplay(); // Uncomment if you want filters applied on load
+    }
+
+    // Note: The updateFilteredModelsDisplay function handles showing/hiding sections
 }
 
+// --- Wait for DOM Ready ---
 document.addEventListener('DOMContentLoaded', initializeModelsPage); 
