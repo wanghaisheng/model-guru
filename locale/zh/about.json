@@ -1,0 +1,71 @@
+{
+  "about": {
+    "title": "关于 Model Guru",
+    "subtitle": "简化AI模型发现与分析",
+    "mission": {
+      "title": "我们的使命",
+      "text": "我们的使命是通过提供一个集中、全面的平台，用于发现、追踪和分析快速发展的AI模型领域，从而赋能开发者、研究人员和企业。我们旨在简化寻找合适AI工具的复杂过程，推动创新并支持明智决策。"
+    },
+    "story": {
+      "title": "我们的故事",
+      "text": "Model Guru由一群AI爱好者和工程师创立，他们亲身经历了在碎片化的AI模型世界中导航的挑战。由于缺乏用于比较模型和追踪趋势的统一资源而感到沮丧，我们着手构建我们希望存在的平台。如今，Model Guru服务于成千上万的用户，帮助他们在AI探索中节省时间并做出更好的选择。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "items": {
+        "transparency": {
+          "title": "透明度",
+          "description": "我们相信信息的开放获取，并努力提供清晰、准确的数据和方法论。"
+        },
+        "community": {
+          "title": "社区驱动",
+          "description": "我们积极听取用户意见，并根据反馈和需求不断改进平台。"
+        },
+        "innovation": {
+          "title": "创新",
+          "description": "我们对AI充满热情，并致力于保持在模型发现和分析领域的前沿。"
+        },
+        "empowerment": {
+          "title": "赋能",
+          "description": "我们的目标是为用户提供在AI领域取得成功所需的洞察和工具。"
+        }
+      }
+    }
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "由AI和机器学习专家组成的团队，致力于简化AI模型发现过程",
+    "members": [
+      {
+        "name": "陈宇轩 (Alex Chen)",
+        "role": "创始人兼CEO",
+        "bio": "宇轩是一位经验丰富的AI工程师，在机器学习和数据科学领域拥有超过10年的经验。他创立Model Guru是为了解决他在模型发现中遇到的挑战。",
+        "image": "images/team/alex.jpg"
+      },
+      {
+        "name": "李静 (Brenda Lee)",
+        "role": "产品负责人",
+        "bio": "李静负责产品开发，专注于用户体验并将复杂数据转化为可行的见解。她拥有数据可视化和产品管理的背景。",
+        "image": "images/team/brenda.jpg"
+      },
+      {
+        "name": "帕特尔 (Chris Patel)",
+        "role": "首席数据科学家",
+        "bio": "帕特尔负责数据聚合和分析流程，确保数据质量并开发新指标。他拥有计算机科学博士学位，专注于自然语言处理。",
+        "image": "images/team/chris.jpg"
+      },
+      {
+        "name": "加西亚 (Diana Garcia)",
+        "role": "社区经理",
+        "bio": "加西亚与Model Guru社区互动，收集反馈并营造协作环境。她对开源和AI伦理充满热情。",
+        "image": "images/team/diana.jpg"
+      }
+    ]
+  },
+  "careers": {
+    "title": "加入我们",
+    "subtitle": "帮助我们塑造AI模型发现的未来",
+    "description": "我们一直在寻找对AI充满热情并希望产生影响的优秀人才。查看我们的空缺职位，看看是否有适合您的技能和抱负的职位。",
+    "cta": "查看空缺职位"
+  }
+} 

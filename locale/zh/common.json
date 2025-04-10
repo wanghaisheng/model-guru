@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Model Guru - AI模型探索与分析平台",
+    "description": "您的一站式AI模型发现与分析中心，跨平台追踪热门模型，掌握使用数据，助您做出明智决策。"
+  },
+  "nav": {
+    "home": "首页",
+    "models": "模型库",
+    "platforms": "平台",
+    "reports": "分析报告",
+    "about": "关于我们",
+    "testimonials": "用户心声",
+    "faq": "常见问题",
+    "blog": "技术博客",
+    "login": "登录"
+  },
+  "footer": {
+    "description": "您发现、追踪和分析不断发展的AI模型领域的核心枢纽。",
+    "sections": {
+      "explore": {
+        "title": "探索",
+        "links": {
+          "models": "模型库",
+          "platforms": "平台",
+          "reports": "高级报告",
+          "compare": "模型对比"
+        }
+      },
+      "company": {
+        "title": "公司",
+        "links": {
+          "about": "关于我们",
+          "blog": "技术博客",
+          "careers": "加入我们",
+          "contact": "联系方式"
+        }
+      },
+      "resources": {
+        "title": "资源",
+        "links": {
+          "faq": "常见问题",
+          "methodology": "数据方法论",
+          "support": "支持",
+          "apiDocs": "API文档 (即将推出)"
+        }
+      },
+      "legal": {
+        "title": "法律",
+        "links": {
+          "privacy": "隐私政策",
+          "terms": "服务条款",
+          "cookies": "Cookie政策"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "保持更新",
+      "description": "订阅以获取最新的AI模型新闻和见解。",
+      "placeholder": "输入您的邮箱",
+      "button": "订阅"
+    },
+    "copyright": "© {year} Model Guru。保留所有权利。",
+    "madeWith": "由AI爱好者{heart}制作。"
+  },
+  "newsletter": {
+    "title": "订阅AI模型动态",
+    "description": "每周获取最新的AI模型、趋势和教程资讯",
+    "subscribe": "订阅",
+    "privacy": "我们尊重您的隐私，绝不会分享您的邮箱信息。您可以随时取消订阅。"
+  }
+} 

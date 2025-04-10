@@ -1,118 +1,135 @@
 /**
  * i18n.js - Internationalization module
- * Handles language switching and translation
+ * Handles language switching and translation loading from modular files.
  */
 
-// Internationalization module
-export const translations = {
-    en: {
-        meta: {
-            title: 'Model Guru - AI Model Discovery & Analytics',
-            description: 'Discover, compare, and track AI models across multiple platforms with real-time analytics and insights.'
-        },
-        nav: {
-            home: 'Home',
-            models: 'All Models',
-            platforms: 'Platforms',
-            reports: 'Reports',
-            about: 'About',
-            testimonials: 'Testimonials',
-            faq: 'FAQ',
-            blog: 'Blog'
-        },
-        hero: {
-            title: 'Discover AI Models',
-            subtitle: 'Find the perfect model for your needs'
-        }
-    },
-    zh: {
-        meta: {
-            title: 'Model Guru - AI模型发现与分析',
-            description: '通过实时分析和洞察，发现、比较和跟踪多个平台上的AI模型。'
-        },
-        nav: {
-            home: '首页',
-            models: '所有模型',
-            platforms: '平台',
-            reports: '报告',
-            about: '关于',
-            testimonials: '用户评价',
-            faq: '常见问题',
-            blog: '博客'
-        },
-        hero: {
-            title: '发现AI模型',
-            subtitle: '找到适合您需求的完美模型'
-        }
-    }
-};
-
-export let currentLanguage = 'en';
-
-export function updateContent(lang) {
-    currentLanguage = lang;
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (!key) return;
-        
-        const keys = key.split('.');
-        let value = translations[lang];
-        
-        for (const k of keys) {
-            if (value && value[k]) {
-                value = value[k];
+/**
+ * Recursively merge properties of two objects.
+ * Source properties overwrite target properties unless both are objects,
+ * in which case they are merged recursively.
+ * @param {object} target - The target object to merge into.
+ * @param {object} source - The source object.
+ * @returns {object} - The merged target object.
+ */
+function mergeObjects(target, source) {
+    for (const key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+            if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key]) &&
+                target[key] && typeof target[key] === 'object' && !Array.isArray(target[key])) {
+                // Both are objects, merge recursively
+                mergeObjects(target[key], source[key]);
             } else {
-                value = undefined;
-                break;
+                // Overwrite target property with source property
+                target[key] = source[key];
             }
         }
-        
-        if (value !== undefined) {
-            if (element.tagName === 'META') {
-                element.setAttribute('content', value);
-            } else {
-                element.textContent = value;
-            }
-        }
-    });
-}
-
-export function switchLanguage(lang) {
-    if (translations[lang]) {
-        updateContent(lang);
-        localStorage.setItem('language', lang);
     }
+    return target;
 }
 
 class I18n {
     constructor() {
-        this.translations = {};
-        this.currentLang = localStorage.getItem('lang') || 'en';
-        this.loadedLanguages = new Set();
+        this.translations = {}; // Will hold merged translations for each language
+        this.currentLang = localStorage.getItem('lang') || 'en'; // Or your default language
+        this.loadedLanguages = new Set(); // Track which languages have been fully loaded
     }
 
     /**
-     * Load translations for a specific language
-     * @param {string} lang - Language code
-     * @returns {Promise} - Promise that resolves when translations are loaded
+     * Get the module name corresponding to the current HTML page.
+     * Extracts the filename without extension from the URL path.
+     * Defaults to 'index' if the path is '/' or empty.
+     * @returns {string} - The page module name (e.g., 'index', 'models', 'faq')
+     * @private
+     */
+    _getPageModuleName() {
+        const path = window.location.pathname;
+        const filename = path.substring(path.lastIndexOf('/') + 1);
+        if (filename === '' || path === '/') {
+            return 'index'; // Default for root page
+        }
+        // Remove extension
+        const moduleName = filename.substring(0, filename.lastIndexOf('.')) || filename;
+        // Handle potential edge cases or map specific filenames if needed
+        // e.g., if 'product-detail.html' should load 'product.json'
+        // switch (moduleName) {
+        //     case 'product-detail': return 'product';
+        // }
+        return moduleName;
+    }
+
+    /**
+     * Load translations for a specific language from common and page-specific files.
+     * @param {string} lang - Language code (e.g., 'en', 'zh')
+     * @returns {Promise<void>} - Promise that resolves when translations are loaded and merged.
      */
     async loadTranslations(lang) {
         if (this.loadedLanguages.has(lang)) {
+            // console.log(`Translations for ${lang} already loaded.`);
             return Promise.resolve();
         }
+        console.log(`Loading translations for ${lang}...`);
+
+        // Initialize language object if it doesn't exist
+        if (!this.translations[lang]) {
+            this.translations[lang] = {};
+        }
+
+        const pageModuleName = this._getPageModuleName();
+        console.log(`Current page module detected: ${pageModuleName}`);
+
+        const commonPath = `locale/${lang}/common.json`;
+        const pageSpecificPath = `locale/${lang}/${pageModuleName}.json`;
+
+        // Create fetch promises for common and page-specific modules
+        const fetchPromises = [
+            // Fetch common translations
+            fetch(commonPath)
+                .then(response => {
+                    if (!response.ok) {
+                        console.error(`Failed to load common translations: ${commonPath} (Status: ${response.status})`);
+                        // Common translations are essential, throw error if missing
+                        throw new Error(`Failed to load common translations for ${lang}`);
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    console.error(`Error fetching common translation module ${commonPath}:`, error);
+                    throw error; // Re-throw to fail the Promise.all
+                }),
+
+            // Fetch page-specific translations (optional)
+            fetch(pageSpecificPath)
+                .then(response => {
+                    if (!response.ok) {
+                        // Don't throw error if page-specific file missing, just warn and return empty.
+                        console.warn(`Optional page-specific translation module not found or failed to load: ${pageSpecificPath} (Status: ${response.status})`);
+                        return {}; // Return empty object on failure
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    // Log error but return empty object to allow app to continue with common translations
+                    console.error(`Error fetching page-specific translation module ${pageSpecificPath}:`, error);
+                    return {}; // Return empty object on fetch error
+                })
+        ];
 
         try {
-            const response = await fetch(`locale/${lang}.json`);
-            if (!response.ok) {
-                throw new Error(`Failed to load translations for ${lang}`);
-            }
-            
-            this.translations[lang] = await response.json();
+            // Wait for both fetch operations to complete
+            const [commonData, pageSpecificData] = await Promise.all(fetchPromises);
+
+            // Merge common data first, then page-specific data over it
+            let mergedTranslations = mergeObjects({}, commonData); // Start with common
+            mergedTranslations = mergeObjects(mergedTranslations, pageSpecificData); // Merge page-specific
+
+            // Assign the final merged object to the language
+            this.translations[lang] = mergedTranslations;
             this.loadedLanguages.add(lang);
-            return Promise.resolve();
+            console.log(`Translations for ${lang} (common + ${pageModuleName}) loaded successfully.`);
+
         } catch (error) {
-            console.error(`Error loading translations for ${lang}:`, error);
+            console.error(`Error processing translations for ${lang}:`, error);
+            // Indicate loading failed
             return Promise.reject(error);
         }
     }
@@ -120,14 +137,30 @@ class I18n {
     /**
      * Switch to a different language
      * @param {string} lang - Language code
-     * @returns {Promise} - Promise that resolves when language is switched
+     * @returns {Promise<void>} - Promise that resolves when language is switched
      */
     async switchLanguage(lang) {
+        console.log(`Attempting to switch language to: ${lang}`);
+        // Check if the target language exists in our potential list (e.g., ['en', 'zh'])
+        // This prevents attempting to load unsupported languages.
+        const supportedLanguages = ['en', 'zh']; // Consider making this configurable
+        if (!supportedLanguages.includes(lang)) {
+            console.warn(`Unsupported language selected: ${lang}`);
+            return Promise.reject(new Error(`Unsupported language: ${lang}`));
+        }
+
         try {
-            await this.loadTranslations(lang);
+            await this.loadTranslations(lang); // Load or ensure translations are loaded
             this.currentLang = lang;
             localStorage.setItem('lang', lang);
-            this.updateContent();
+            document.documentElement.lang = lang; // Update the lang attribute of the HTML element
+            this.updateContent(); // Apply translations to the page
+            // Update language switcher dropdown if it exists
+            const switcher = document.getElementById('languageSwitcher');
+            if (switcher) {
+                switcher.value = lang;
+            }
+            console.log(`Successfully switched language to: ${lang}`);
             return Promise.resolve();
         } catch (error) {
             console.error(`Error switching to language ${lang}:`, error);
@@ -137,36 +170,60 @@ class I18n {
 
     /**
      * Get translation for a key
-     * @param {string} key - Translation key
-     * @param {Object} params - Parameters for interpolation
-     * @returns {string} - Translated text
+     * @param {string} key - Translation key (e.g., 'nav.home')
+     * @param {Object} [params={}] - Parameters for interpolation (e.g., { count: 5 })
+     * @param {string} [fallback=key] - Value to return if key not found
+     * @returns {string} - Translated text or fallback
      */
-    t(key, params = {}) {
+    t(key, params = {}, fallback = key) {
         const keys = key.split('.');
         let value = this.translations[this.currentLang];
-        
+
         for (const k of keys) {
-            if (!value || !value[k]) {
-                console.warn(`Translation key not found: ${key}`);
-                return key;
+            if (value && typeof value === 'object' && k in value) {
+                value = value[k];
+            } else {
+                console.warn(`Translation key not found for language '${this.currentLang}': ${key}`);
+                return fallback; // Return the fallback string
             }
-            value = value[k];
         }
-        
-        // Replace parameters
-        return value.replace(/\{(\w+)\}/g, (match, key) => {
-            return params[key] !== undefined ? params[key] : match;
+
+        if (typeof value !== 'string') {
+            console.warn(`Translation value is not a string for key '${key}' in language '${this.currentLang}'. Returning key.`);
+            return fallback;
+        }
+
+        // Basic interpolation: Replace {paramName} with value from params
+        return value.replace(/\{(\w+)\}/g, (match, paramName) => {
+            return params[paramName] !== undefined ? params[paramName] : match;
         });
     }
 
     /**
-     * Update all elements with data-i18n attribute
+     * Update all elements with data-i18n attributes
      */
     updateContent() {
+        if (!this.translations[this.currentLang]) {
+            console.warn(`No translations loaded for current language: ${this.currentLang}. Skipping content update.`);
+            return;
+        }
+
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
+            if (!key) return;
+
             const params = {};
-            
+            let fallbackText = element.textContent || element.getAttribute('placeholder') || key;
+
+            // Check for specific attribute translations (like placeholder)
+            let isPlaceholder = false;
+            if (element.hasAttribute('data-i18n-placeholder')) {
+                isPlaceholder = true;
+                fallbackText = element.getAttribute('placeholder') || key;
+            } else if (element.hasAttribute('data-i18n-title')) {
+                 // Add support for title attribute if needed
+            } // Add more attributes like 'aria-label' if necessary
+
             // Get parameters from data attributes
             Array.from(element.attributes).forEach(attr => {
                 if (attr.name.startsWith('data-i18n-param-')) {
@@ -174,16 +231,63 @@ class I18n {
                     params[paramName] = attr.value;
                 }
             });
-            
-            if (element.tagName === 'INPUT' && element.getAttribute('placeholder')) {
-                element.placeholder = this.t(key, params);
+
+            const translatedText = this.t(key, params, fallbackText); // Use current content as fallback
+
+            // Update the correct attribute or text content
+            if (element.tagName === 'META' && element.name === 'description') {
+                element.setAttribute('content', translatedText);
+            } else if (element.tagName === 'TITLE') {
+                element.textContent = translatedText;
+            } else if (isPlaceholder) {
+                element.setAttribute('placeholder', translatedText);
             } else {
-                element.textContent = this.t(key, params);
+                // Default to textContent
+                element.textContent = translatedText;
             }
         });
+        console.log(`Content updated for language: ${this.currentLang}`);
+    }
+
+    /**
+     * Initialize the i18n system on page load
+     */
+    async init() {
+        try {
+            // Ensure loadTranslations is called before accessing this.translations or updating content
+            await this.loadTranslations(this.currentLang);
+            document.documentElement.lang = this.currentLang; // Set initial lang attribute
+            this.updateContent(); // Apply initial translations
+
+            // Setup language switcher listener
+            const switcher = document.getElementById('languageSwitcher');
+            if (switcher) {
+                switcher.value = this.currentLang; // Set dropdown to current lang
+                switcher.addEventListener('change', (event) => {
+                    this.switchLanguage(event.target.value);
+                });
+            } else {
+                console.warn('Language switcher element not found.');
+            }
+        } catch (error) {
+            console.error("Failed to initialize i18n:", error);
+            // Handle initialization error (e.g., display default language or error message)
+        }
     }
 }
 
 // Create and export a singleton instance
 const i18n = new I18n();
-export default i18n; 
+
+// Initialize on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    i18n.init();
+});
+
+export default i18n;
+
+// --- Remove old non-class based functions ---
+// export let currentLanguage = 'en';
+// export const translations = {}; // Remove old hardcoded object
+// export function updateContent(lang) { ... }
+// export function switchLanguage(lang) { ... } 

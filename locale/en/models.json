@@ -1,0 +1,64 @@
+{
+  "models": {
+    "title": "All AI Models",
+    "subtitle": "Browse and compare models across platforms",
+    "searchPlaceholder": "Search models...",
+    "modelSelection": {
+      "title": "Filter Models",
+      "compareTitle": "Select Models to Compare",
+      "selected": "Selected",
+      "modelsSelected": "models selected",
+      "purposeFilter": "Select Purpose",
+      "platformFilter": "Select Platform",
+      "sortFilter": {
+        "title": "Sort by",
+        "nameAZ": "Name A-Z",
+        "popular": "Most Popular",
+        "newest": "Newest"
+      },
+      "purposes": {
+        "video": "Make videos",
+        "image": "Generate images",
+        "transcribe": "Transcribe speech",
+        "text": "Generate text"
+      }
+    },
+    "premiumFeatures": {
+      "title": "Premium Features",
+      "subtitle": "Unlock advanced model comparison and analytics",
+      "features": {
+        "analytics": {
+          "title": "Advanced Analytics",
+          "description": "Detailed performance metrics and trends"
+        },
+        "reports": {
+          "title": "Custom Reports",
+          "description": "Generate tailored model comparison reports"
+        },
+        "api": {
+          "title": "API Access",
+          "description": "Programmatic access to model data"
+        },
+        "support": {
+          "title": "Priority Support",
+          "description": "Dedicated support for premium users"
+        }
+      },
+      "cta": "Upgrade to Premium"
+    }
+  },
+  "modelList": {
+    "title": "Explore Models",
+    "filterPlatform": "Filter by Platform",
+    "filterCategory": "Filter by Category",
+    "sortBy": "Sort By",
+    "sortOptions": {
+      "newest": "Date Added (Newest)",
+      "oldest": "Date Added (Oldest)",
+      "mostLikes": "Most Popular (Likes)",
+      "mostRuns": "Most Popular (Runs)",
+      "trending": "Trending Score",
+      "alphabetical": "Alphabetical (A-Z)"
+    }
+  }
+} 

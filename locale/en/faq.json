@@ -1,0 +1,75 @@
+{
+  "faq": {
+    "pageTitle": "Frequently Asked Questions - Model Guru",
+    "pageDescription": "Find answers to common questions about Model Guru, including data collection, features, premium access, and platform suggestions.",
+    "heroTitle": "Have Questions? We've Got Answers!",
+    "heroSubtitle": "Find answers to frequently asked questions about Model Guru.",
+    "searchPlaceholder": "Search FAQ...",
+    "categories": {
+      "general": "General",
+      "data": "Data & Methodology",
+      "features": "Features & Usage",
+      "premium": "Premium Access",
+      "community": "Community & Suggestions"
+    },
+    "questions": {
+      "general": {
+        "whatIsMg": {
+          "q": "What is Model Guru?",
+          "a": "Model Guru is a platform dedicated to discovering, tracking, and analyzing AI/ML models across various platforms. We provide consolidated metrics, trend analysis, and tools to help developers, researchers, and businesses make informed decisions about AI models."
+        },
+        "whoIsItFor": {
+          "q": "Who is Model Guru for?",
+          "a": "Model Guru is designed for anyone working with or interested in AI models, including AI engineers, data scientists, researchers, product managers, and business leaders who need to stay updated on the rapidly evolving AI landscape."
+        }
+      },
+      "data": {
+        "howCollectData": {
+          "q": "How does Model Guru collect model data?",
+          "a": "We aggregate data from publicly available APIs and information provided by various platforms like Hugging Face, Replicate, etc. We strive to keep our data updated regularly to ensure accuracy and timeliness. For more details, please see our <a href=\"methodology.html\">Methodology</a> page."
+        },
+        "howOftenUpdate": {
+          "q": "How often is the data updated?",
+          "a": "We aim to update our core data daily to provide the latest information on model popularity, runs, and new additions across the platforms we track."
+        },
+        "accuracy": {
+          "q": "How accurate is the data?",
+          "a": "We rely on data provided by the platforms themselves. While we strive for accuracy, discrepancies can occasionally occur due to changes in platform APIs or reporting methods. We continuously work to improve our data collection and verification processes."
+        }
+      },
+      "features": {
+        "apiAccess": {
+          "q": "Does Model Guru offer API access?",
+          "a": "Currently, we do not offer public API access. However, API access is a planned feature for our premium users in the future. If this is critical for you, please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> to discuss your needs."
+        },
+        "compareModels": {
+          "q": "How can I compare models?",
+          "a": "You can use our Model Comparison tool (available on the 'All Models' page or as a dedicated feature for premium users) to select and compare models side-by-side based on various metrics and features."
+        }
+      },
+      "premium": {
+        "premiumBenefits": {
+          "q": "What are the benefits of a Premium subscription?",
+          "a": "Premium users get access to advanced features like detailed reports (daily, weekly, monthly), in-depth analytics, customizable dashboards, potentially API access in the future, and priority support. Visit our <a href=\"reports.html\">Reports</a> page for more details on premium offerings."
+        },
+        "howToUpgrade": {
+          "q": "How do I upgrade to Premium?",
+          "a": "You can upgrade to a premium plan directly from the <a href=\"reports.html\">Reports</a> page by selecting either the Monthly or Annual subscription option."
+        }
+      },
+      "community": {
+        "suggestPlatform": {
+          "q": "Can I suggest a new platform or model to track?",
+          "a": "Absolutely! We are always looking to expand our coverage and value community input. Please use the <a href=\"platforms.html#submit-platform\">Submit Platform</a> form or <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> directly with your suggestions for new platforms or specific models you'd like to see."
+        },
+        "reportIssue": {
+          "q": "How can I report an issue or provide feedback?",
+          "a": "We appreciate your feedback! You can report data inaccuracies, bugs, or provide general feedback by contacting us at <a href=\"mailto:support@modelguru.deepseek.diy\">support@modelguru.deepseek.diy</a>."
+        }
+      }
+    },
+    "stillHaveQuestions": "Still have questions?",
+    "contactUs": "Contact Us",
+    "contactDescription": "If you didn't find the answer you were looking for, please feel free to reach out to our support team."
+  }
+} 

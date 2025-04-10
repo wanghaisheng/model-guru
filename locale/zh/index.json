@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "一站掌握全球AI模型动态",
+    "subtitle": "您的AI模型探索与分析智囊团",
+    "cta": "立即探索"
+  },
+  "features": {
+    "newModels": {
+      "title": "最新上线",
+      "description": "及时了解各平台新增的最新模型",
+      "viewAll": "查看全部新模型"
+    },
+    "trending": {
+      "title": "本周热门",
+      "description": "发现基于使用量和点赞数快速增长的模型",
+      "viewAll": "查看全部热门模型"
+    },
+    "popular": {
+      "title": "本月最受欢迎",
+      "description": "探索使用最广泛、评价最高的模型",
+      "viewAll": "查看全部流行模型"
+    }
+  },
+  "comparison": {
+    "title": "为什么选择Model Guru",
+    "huggingface": "Hugging Face",
+    "replicate": "Replicate",
+    "modelGuru": "Model Guru",
+    "features": {
+      "discovery": "跨平台AI模型趋势追踪",
+      "metrics": "全面的模型数据分析与整理",
+      "trends": "为独立开发者提供专业报告",
+      "tracking": "通过API创建发现商业机会"
+    }
+  },
+  "howItWorks": {
+    "title": "Model Guru如何工作",
+    "step1": {
+      "title": "数据采集",
+      "description": "我们持续监控并收集主要AI平台的数据，追踪模型发布、更新和使用指标。"
+    },
+    "step2": {
+      "title": "分析处理",
+      "description": "我们的系统分析模型性能、用户互动和趋势，识别最相关和最有影响力的模型。"
+    },
+    "step3": {
+      "title": "洞察发现",
+      "description": "我们提供精选列表和深度洞察，帮助您发现最适合需求的模型。"
+    }
+  },
+  "stats": {
+      "modelsTracked": "追踪模型数",
+      "platformsIntegrated": "集成平台数",
+      "totalRuns": "模型总运行次数",
+      "monthlyUsers": "月活跃用户数"
+  },
+  "platforms": {
+    "title": "我们追踪的平台"
+  },
+  "painPoints": {
+    "title": "我们解决的常见痛点",
+    "fragmented": {
+      "title": "模型发现碎片化",
+      "description": "AI模型分散在多个平台，难以找到最合适的选择。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "提供全面模型库和高级搜索功能的一站式平台。"
+    },
+    "metrics": {
+      "title": "缺乏统一评估标准",
+      "description": "不同平台使用不同指标，难以进行有效比较。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "统一的评估体系，提供清晰的性能指标和趋势分析。"
+    },
+    "time": {
+      "title": "研究耗时费力",
+      "description": "跟踪新模型和更新需要持续不断的监控。",
+      "solution": "我们的解决方案",
+      "solutionDescription": "自动追踪并精选新模型和热门趋势，节省您的宝贵时间。"
+    }
+  },
+  "testimonials": {
+    "title": "用户使用心得",
+    "viewAll": "查看全部用户评价",
+    "subtitle": "了解Model Guru如何帮助开发者和企业做出更明智的AI决策"
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "Model Guru如何收集模型数据？",
+    "a1": "我们通过各平台提供的公开API和可获取信息收集数据。我们定期更新数据以确保信息的准确性和时效性。详细信息请查看我们的<a href=\"methodology.html\">数据方法论</a>。",
+    "q2": "Model Guru是否提供API访问？",
+    "a2": "目前我们尚未提供API访问，但这是我们未来计划中的功能。会员用户将在功能推出时优先获得访问权限。如果您对此特别感兴趣，请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>。",
+    "q3": "数据更新频率是多久？",
+    "a3": "我们每天更新数据，确保您能获取各大平台AI模型的最新信息。",
+    "q4": "我可以推荐添加新平台吗？",
+    "a4": "非常欢迎！我们一直在寻求扩大平台覆盖范围。请<a href=\"mailto:support@modelguru.deepseek.diy\">联系我们</a>提出您的建议。"
+  },
+  "blog": {
+    "title": "技术博客",
+    "subtitle": "最新AI模型趋势、实用教程和最佳实践",
+    "viewAll": "查看全部文章"
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "由AI和机器学习专家组成的团队，致力于简化AI模型发现过程"
+  },
+  "modelComparison": {
+    "title": "模型对比工具",
+    "description": "并排对比不同AI模型，找到最适合您需求的选择",
+    "compare": "对比模型",
+    "fullTool": "使用完整对比工具"
+  },
+  "playground": {
+    "title": "模型搜索体验",
+    "subtitle": "体验我们强大的模型搜索和追踪功能",
+    "searchPlaceholder": "搜索AI模型...",
+    "filterLabel": "按平台筛选：",
+    "sortLabel": "排序方式：",
+    "noResults": "未找到相关模型，请尝试其他关键词。"
+  },
+   "cta": {
+      "title": "准备好提升您的AI应用体验？",
+      "description": "加入数千名开发者和企业的行列，利用Model Guru找到最适合您需求的AI模型。今天就开始，探索AI模型对比的强大功能。",
+      "newsletter": {
+        "title": "获取最新资讯",
+        "description": "订阅我们的周刊，获取最新AI模型动态和专业见解",
+        "emailLabel": "邮箱地址",
+        "emailPlaceholder": "请输入您的邮箱",
+        "button": "立即订阅"
+      }
+  }
+} 

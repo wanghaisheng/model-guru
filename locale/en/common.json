@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Model Guru - Discover & Track AI Models",
+    "description": "Your central hub for discovering and tracking AI/ML models across platforms. Find trending models, track usage metrics, and make informed decisions."
+  },
+  "nav": {
+    "home": "Home",
+    "models": "All Models",
+    "platforms": "Platforms",
+    "reports": "Reports",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Log In"
+  },
+  "footer": {
+    "description": "Your central hub for discovering, tracking, and analyzing AI models across the evolving landscape.",
+    "sections": {
+      "explore": {
+        "title": "Explore",
+        "links": {
+          "models": "All Models",
+          "platforms": "Platforms",
+          "reports": "Premium Reports",
+          "compare": "Compare Models"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About Us",
+          "blog": "Blog",
+          "careers": "Careers",
+          "contact": "Contact"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "faq": "FAQ",
+          "methodology": "Methodology",
+          "support": "Support",
+          "apiDocs": "API Docs (Soon)"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Service",
+          "cookies": "Cookie Policy"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe for the latest AI model news and insights.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "copyright": "© {year} Model Guru. All rights reserved.",
+    "madeWith": "Made with {heart} by AI enthusiasts."
+  },
+  "newsletter": {
+    "title": "Subscribe to AI Model Updates",
+    "description": "Receive the latest AI models, trends, and tutorials delivered straight to your inbox weekly",
+    "subscribe": "Subscribe",
+    "privacy": "We respect your privacy and will never share your email. You can unsubscribe at any time."
+  }
+}

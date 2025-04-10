@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "Track AI Models Across Platforms",
+    "subtitle": "Your AI Model Discovery & Analytics Hub",
+    "cta": "Explore Models"
+  },
+  "features": {
+    "newModels": {
+      "title": "Newly Added",
+      "description": "Stay updated with the latest models added across platforms",
+      "viewAll": "View All New Models"
+    },
+    "trending": {
+      "title": "Trending This Week",
+      "description": "Discover models gaining traction based on usage and likes",
+      "viewAll": "View All Trending Models"
+    },
+    "popular": {
+      "title": "Popular This Month",
+      "description": "Explore the most used and highest-rated models",
+      "viewAll": "View All Popular Models"
+    }
+  },
+  "comparison": {
+    "title": "Why Choose Model Guru?",
+    "huggingface": "Hugging Face",
+    "replicate": "Replicate",
+    "modelGuru": "Model Guru",
+    "features": {
+      "discovery": "AI Model Trend Tracking Across Platforms",
+      "metrics": "Consolidated Model Metrics & Analytics",
+      "trends": "Actionable Reports for Independent Developers",
+      "tracking": "Opportunity Identification via API"
+    }
+  },
+  "howItWorks": {
+    "title": "How Model Guru Works",
+    "step1": {
+      "title": "Data Aggregation",
+      "description": "We monitor major AI platforms, collecting data on model releases, updates, and usage metrics."
+    },
+    "step2": {
+      "title": "Analysis & Processing",
+      "description": "Our system analyzes model performance, user engagement, and trends to identify relevant and impactful models."
+    },
+    "step3": {
+      "title": "Insight Delivery",
+      "description": "We provide curated lists and insights to help you discover models tailored to your needs."
+    }
+  },
+  "stats": {
+    "modelsTracked": "Models Tracked",
+    "platformsIntegrated": "Platforms Integrated",
+    "totalRuns": "Total Model Runs",
+    "monthlyUsers": "Monthly Active Users"
+  },
+  "platforms": {
+    "title": "Platforms We Track"
+  },
+  "painPoints": {
+    "title": "Common Pain Points We Solve",
+    "fragmented": {
+      "title": "Fragmented Model Discovery",
+      "description": "Finding the right AI model is difficult with options scattered across platforms.",
+      "solution": "Our Solution",
+      "solutionDescription": "A unified platform with a comprehensive model library and advanced search."
+    },
+    "metrics": {
+      "title": "Lack of Standardized Metrics",
+      "description": "Comparing models is challenging due to varying metrics across platforms.",
+      "solution": "Our Solution",
+      "solutionDescription": "Standardized scoring and clear performance indicators with trend analysis."
+    },
+    "time": {
+      "title": "Time-Consuming Research",
+      "description": "Keeping up with new models and updates requires constant monitoring.",
+      "solution": "Our Solution",
+      "solutionDescription": "Automated tracking and curation of new and trending models, saving you time."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "viewAll": "View All Testimonials",
+    "subtitle": "Hear how Model Guru helps developers and businesses make smarter AI decisions"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How does Model Guru collect model data?",
+    "a1": "We aggregate data from publicly available APIs and information provided by various platforms. We update our data regularly to ensure accuracy and timeliness. See our <a href=\"methodology.html\">Methodology</a> for details.",
+    "q2": "Does Model Guru offer API access?",
+    "a2": "API access is not currently available but is planned for future development. Premium users will get priority access when launched. Please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> if you are interested.",
+    "q3": "How often is the data updated?",
+    "a3": "We update our data daily to provide the latest information on AI models across platforms.",
+    "q4": "Can I suggest a new platform to track?",
+    "a4": "Absolutely! We are always looking to expand our coverage. Please <a href=\"mailto:support@modelguru.deepseek.diy\">contact us</a> with your suggestions."
+  },
+  "blog": {
+    "title": "From Our Blog",
+    "subtitle": "Latest AI model trends, tutorials, and best practices",
+    "viewAll": "View All Posts"
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "A passionate group of AI and ML experts dedicated to simplifying model discovery"
+  },
+  "modelComparison": {
+    "title": "Model Comparison Tool",
+    "description": "Compare different AI models side-by-side to find the perfect fit for your needs",
+    "compare": "Compare Models",
+    "fullTool": "Use Full Comparison Tool"
+  },
+  "playground": {
+    "title": "Model Discovery Playground",
+    "subtitle": "Experience our powerful model search and tracking capabilities",
+    "searchPlaceholder": "Search AI models...",
+    "filterLabel": "Filter by platform:",
+    "sortLabel": "Sort by:",
+    "noResults": "No models found matching your criteria. Try different keywords."
+  },
+  "cta": {
+    "title": "Ready to Transform Your AI Experience?",
+    "description": "Join thousands of developers and businesses who are already using Model Guru to find the perfect AI models for their needs. Get started today and discover the power of AI model comparison.",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest AI model updates and insights",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "button": "Subscribe Now"
+    }
+  }
+} 

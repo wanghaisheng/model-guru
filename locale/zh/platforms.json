@@ -1,0 +1,165 @@
+{
+  "platforms": {
+    "title": "AI模型平台",
+    "subtitle": "对比并发现最适合您需求的AI平台",
+    "searchPlaceholder": "搜索平台...",
+    "categories": {
+      "title": "按类别浏览平台",
+      "subtitle": "根据平台的主要功能或专长领域查找合适的平台",
+      "modelHosting": {
+        "title": "模型托管",
+        "description": "提供AI模型API服务的专业平台"
+      },
+      "developmentTools": {
+        "title": "开发工具",
+        "description": "用于构建和训练模型的专业工具和环境"
+      },
+      "cloudServices": {
+        "title": "云服务",
+        "description": "提供全面机器学习基础设施的云服务商"
+      }
+    },
+    "comparison": {
+      "title": "平台对比",
+      "subtitle": "对比各大AI平台的核心功能",
+      "headers": {
+        "feature": "功能",
+        "replicate": "Replicate",
+        "huggingFace": "Hugging Face",
+        "stabilityAI": "Stability AI",
+        "openAI": "OpenAI"
+      },
+      "rows": {
+        "modelTypes": {
+          "label": "模型类型",
+          "replicate": "多种类型",
+          "huggingFace": "多种类型",
+          "stabilityAI": "图像/视频",
+          "openAI": "文本/图像"
+        },
+        "apiAccess": {
+          "label": "API访问",
+          "replicate": "支持",
+          "huggingFace": "支持",
+          "stabilityAI": "支持",
+          "openAI": "支持"
+        },
+        "pricingModel": {
+          "label": "计费模式",
+          "replicate": "按量付费",
+          "huggingFace": "免费/付费",
+          "stabilityAI": "订阅制",
+          "openAI": "按量付费"
+        },
+        "customModels": {
+          "label": "自定义模型",
+          "replicate": "支持",
+          "huggingFace": "支持",
+          "stabilityAI": "不支持",
+          "openAI": "有限支持"
+        }
+      }
+    },
+    "details": {
+      "replicate": {
+        "name": "Replicate",
+        "description": "Replicate让云端运行机器学习模型变得简单高效。只需几行代码即可部署模型，并实现自动扩展。",
+        "metrics": {
+          "models": "500+",
+          "runs": "1000万+",
+          "users": "5万+"
+        },
+        "features": "核心优势",
+        "featuresList": [
+          "便捷的模型部署",
+          "自动扩展能力",
+          "按量计费模式",
+          "完整API支持"
+        ]
+      },
+      "huggingFace": {
+        "name": "Hugging Face",
+        "description": "Hugging Face是构建AI未来的开源社区。支持构建、训练和部署由开源机器学习技术驱动的前沿模型。",
+        "metrics": {
+          "models": "10万+",
+          "datasets": "100万+",
+          "users": "50万+"
+        },
+        "features": "核心优势",
+        "featuresList": [
+          "丰富的开源模型",
+          "完善的模型中心",
+          "高效的推理API",
+          "便捷的演示空间"
+        ]
+      }
+    },
+    "submitPlatform": {
+      "title": "提交您的平台",
+      "subtitle": "在Model Guru上展示您的AI平台，接触成千上万的潜在用户",
+      "benefits": {
+        "title": "平台展示的优势",
+        "items": {
+          "visibility": {
+            "title": "提升曝光度",
+            "description": "接触成千上万正在寻找AI解决方案的工程师、数据科学家和开发者。"
+          },
+          "traffic": {
+            "title": "精准流量",
+            "description": "吸引对AI技术有明确需求的高质量访问者。"
+          },
+          "insights": {
+            "title": "数据洞察",
+            "description": "获取用户如何发现和使用您平台的匿名分析数据。"
+          },
+          "integration": {
+            "title": "合作机会",
+            "description": "探索与Model Guru深度整合和战略合作的可能性。"
+          }
+        }
+      },
+      "form": {
+        "title": "平台信息",
+        "platformName": "平台名称",
+        "websiteUrl": "网站地址",
+        "urlPlaceholder": "https://your-platform.com",
+        "category": "类别",
+        "categoryOptions": {
+          "select": "请选择类别",
+          "modelHosting": "模型托管",
+          "developmentTools": "开发工具",
+          "cloudServices": "云服务",
+          "trainingPlatforms": "训练平台",
+          "specializedAI": "专业AI服务",
+          "other": "其他(请说明)"
+        },
+        "description": "平台描述",
+        "descriptionPlaceholder": "请描述您的平台及其主要特点(最多500字)",
+        "metricsTitle": "数据与功能",
+        "modelsCount": "模型数量",
+        "usersCount": "用户数量",
+        "keyFeatures": "核心功能(逗号分隔)",
+        "featuresPlaceholder": "例如：API接口、自定义模型、免费版本",
+        "logo": "平台标志",
+        "logoNote": "建议：方形标志，最小200x200像素(推荐PNG或SVG格式)",
+        "contactTitle": "联系方式",
+        "contactName": "联系人",
+        "contactEmail": "联系邮箱",
+        "termsAgree": "我同意平台展示的条款和条件",
+        "submit": "提交平台",
+        "requiredNote": "* 必填项。所有提交内容将经过审核后发布，通常需要3-5个工作日。"
+      }
+    },
+    "newsletter": {
+      "title": "获取最新资讯",
+      "description": "订阅每周精选的平台动态和功能更新",
+      "emailPlaceholder": "您的邮箱地址",
+      "button": "订阅",
+      "privacy": "我们尊重您的隐私，绝不会分享您的邮箱信息。"
+    },
+    "cta": {
+      "visitPlatform": "访问平台",
+      "viewModels": "查看模型"
+    }
+  }
+} 

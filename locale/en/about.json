@@ -1,0 +1,71 @@
+{
+  "about": {
+    "title": "About Model Guru",
+    "subtitle": "Simplifying AI Model Discovery and Analysis",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Our mission is to empower developers, researchers, and businesses by providing a centralized, comprehensive platform for discovering, tracking, and analyzing AI models across the rapidly evolving landscape. We aim to simplify the complex process of finding the right AI tools, enabling innovation and informed decision-making."
+    },
+    "story": {
+      "title": "Our Story",
+      "text": "Model Guru was founded by a group of AI enthusiasts and engineers who experienced firsthand the challenges of navigating the fragmented world of AI models. Frustrated by the lack of a unified resource for comparing models and tracking trends, we set out to build the platform we wished existed. Today, Model Guru serves thousands of users, helping them save time and make better choices in their AI endeavors."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "transparency": {
+          "title": "Transparency",
+          "description": "We believe in open access to information and strive to provide clear, accurate data and methodologies."
+        },
+        "community": {
+          "title": "Community-Driven",
+          "description": "We actively listen to our users and continuously evolve the platform based on feedback and needs."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We are passionate about AI and committed to staying at the forefront of model discovery and analysis."
+        },
+        "empowerment": {
+          "title": "Empowerment",
+          "description": "Our goal is to equip our users with the insights and tools they need to succeed in the AI space."
+        }
+      }
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "A passionate group of AI and ML experts dedicated to simplifying model discovery",
+    "members": [
+      {
+        "name": "Alex Chen",
+        "role": "Founder & CEO",
+        "bio": "Alex is a seasoned AI engineer with over 10 years of experience in machine learning and data science. He founded Model Guru to address the challenges he faced in model discovery.",
+        "image": "images/team/alex.jpg"
+      },
+      {
+        "name": "Brenda Lee",
+        "role": "Head of Product",
+        "bio": "Brenda leads product development, focusing on user experience and translating complex data into actionable insights. She has a background in data visualization and product management.",
+        "image": "images/team/brenda.jpg"
+      },
+      {
+        "name": "Chris Patel",
+        "role": "Lead Data Scientist",
+        "bio": "Chris oversees the data aggregation and analysis pipelines, ensuring data quality and developing new metrics. He holds a Ph.D. in Computer Science with a focus on NLP.",
+        "image": "images/team/chris.jpg"
+      },
+      {
+        "name": "Diana Garcia",
+        "role": "Community Manager",
+        "bio": "Diana engages with the Model Guru community, gathering feedback and fostering a collaborative environment. She is passionate about open source and AI ethics.",
+        "image": "images/team/diana.jpg"
+      }
+    ]
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "subtitle": "Help us shape the future of AI model discovery",
+    "description": "We are always looking for talented individuals who are passionate about AI and want to make an impact. Check out our open positions and see if there's a role that fits your skills and ambitions.",
+    "cta": "View Open Positions"
+  }
+} 

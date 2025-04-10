@@ -1,0 +1,66 @@
+{
+  "models": {
+    "title": "AI模型全库",
+    "subtitle": "浏览并对比各大平台的优质模型",
+    "searchPlaceholder": "搜索模型...",
+    "modelSelection": {
+      "title": "筛选模型",
+      "compareTitle": "选择模型进行比较",
+      "selected": "已选择",
+      "modelsSelected": "个模型",
+      "purposeFilter": "选择用途",
+      "platformFilter": "选择平台",
+      "sortFilter": {
+        "title": "排序方式",
+        "nameAZ": "按名称 A-Z",
+        "popular": "最受欢迎",
+        "newest": "最新发布"
+      },
+      "purposes": {
+        "video": "制作视频",
+        "image": "生成图片",
+        "transcribe": "语音转文字",
+        "text": "文本生成"
+      }
+    },
+    "premiumFeatures": {
+      "title": "会员专享",
+      "subtitle": "解锁高级模型对比与深度分析功能",
+      "features": {
+        "analytics": {
+          "title": "深度分析",
+          "description": "全面的性能指标与趋势洞察"
+        },
+        "reports": {
+          "title": "定制报告",
+          "description": "生成专属模型对比分析报告"
+        },
+        "api": {
+          "title": "API接口",
+          "description": "以编程方式获取模型数据"
+        },
+        "support": {
+          "title": "专属支持",
+          "description": "会员用户专享的技术支持服务"
+        }
+      },
+      "cta": "升级会员"
+    }
+  },
+  "modelList": {
+    "explore": "探索模型库",
+    "filterByPlatform": "按平台筛选",
+    "filterByCategory": "按类别筛选",
+    "sortBy": "排序方式",
+    "newlyAddedTitle": "最新添加",
+    "trendingTitle": "本周热门",
+    "popularTitle": "本月最热",
+    "likes": "点赞",
+    "runs": "运行次数",
+    "addToCompare": "加入对比",
+    "removeFromCompare": "移出对比",
+    "viewDetails": "查看详情",
+    "loadMore": "加载更多",
+    "noModelsFound": "未找到符合条件的模型"
+  }
+} 
